@@ -59,10 +59,10 @@ body {
   }
 }
 
-h3 {
+strong {
   text-align: left;
-  letter-spacing: -0.05rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+  display: inline-block;
 }
 
 input[type="text"],
