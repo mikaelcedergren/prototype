@@ -1,9 +1,11 @@
 function startsTyping(event) {
-  if (event.target.value.length === 0) return;
-  event.target.nextElementSibling.style.display = "none";
+  if (event.target.value.length === 0) {
+    event.target.nextElementSibling.style.display = "none";
+  }
+
 }
 
-const inputs = document.querySelectorAll("input, textarea");
+const inputs = document.querySelectorAll("input, textarea, select");
 [...inputs].forEach(input => {
   input.addEventListener("focusout", onFocusOut);
   input.addEventListener("keyup", startsTyping);
@@ -15,6 +17,7 @@ function onFocusOut(event) {
 
 function inlineValidate(input) {
   if (input.value == "") {
+    input.classList.add("field-error");
     input.nextElementSibling.style.display = "block";
     return false;
   }
@@ -22,7 +25,7 @@ function inlineValidate(input) {
 }
 
 function globalValidate() {
-  const inputs = document.querySelectorAll("input, textarea");
+  const inputs = document.querySelectorAll("input, textarea, select");
   const error = [...inputs].reduce((error, currentValue) => {
     const inputError = !inlineValidate(currentValue);
     return error || inputError;

@@ -5,10 +5,10 @@
   text-rendering: optimizeLegibility; }
 
 html, body {
-  font-size: 16px;
-  background-color: #f5f5f5;
+  font-size: 14px;
+  background-color: #f7f9fc;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  font-family: 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 body {
   display: flex;
@@ -32,24 +32,31 @@ body {
         border-bottom-right-radius: 1rem; }
       body > div > div + div {
         min-width: 200px;
-        font-size: 0.7rem;
-        background-color: rgba(0, 0, 0, 0.04);
+        font-size: 0.8rem;
+        color: #fff;
+        background-color: #3b88fd;
         text-align: left; }
 
 h3 {
-  text-align: left; }
+  text-align: left;
+  letter-spacing: -0.05rem;
+  margin-bottom: 0.5rem; }
 
 input[type="text"], textarea, select {
   height: 48px;
   border-radius: 0.5rem;
   box-shadow: none;
-  border: 1px solid #ddd;
+  border: 1px solid #e6eaf0;
   width: 100%;
   text-align: left;
   outline: none;
   padding: 0 1rem;
   font-size: 1rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  border: 1px solid #e6eaf0;
+  background-color: #fff; }
+  input[type="text"].field-error, textarea.field-error, select.field-error {
+    border-color: #fd3b3b; }
 
 .radiobutton, .checkbox {
   text-align: left;
@@ -67,9 +74,10 @@ a {
 
 p {
   margin: 0 0 3rem 0;
-  color: #ddd; }
+  color: #d3d9e0; }
 
 .button {
+  transition: all 0.5s ease;
   display: inline-block;
   background-color: #3b88fd;
   color: #fff;
@@ -79,12 +87,14 @@ p {
   text-decoration: none;
   margin: 3rem auto 0 auto;
   border-radius: 0.5rem;
-  font-weight: bold; }
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(59, 136, 253, 0.3); }
   .button:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    background-color: #5497fd; }
 
 .error {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #fd3b3b;
   font-weight: bold;
   text-align: left;

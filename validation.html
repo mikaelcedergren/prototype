@@ -8,25 +8,28 @@
     <div>
         <div>
             <p>In this case it's invalid to leave the fields empty.</p>
-            <input type="text" id="inputfield" name="inputfield" required />
-            <div class="error" id="error" style="display:none">
+            <input type="text" id="textfield" name="textfield" required onfocusout="validateTextField()" />
+            <div class="error" id="textfield-error" style="display:none">
                 This is an inline error that triggers when user clicks outside of the form field.
             </div>
 
-            <textarea id="w3mission" rows="4" cols="50"></textarea>
-            <div class="error" id="error" style="display:none">
+            <textarea id="textarea" rows="4" cols="50" onfocusout="validateTextArea()"></textarea>
+            <div class="error" id="textarea-error" style="display:none">
                 This is an inline error that triggers when user clicks outside of the form field.
             </div>
 
-            <select id="cars">
-                <option>...</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
+
+
+            <select id="select">
+                <option value="" selected disabled>...</option>
+                <option value="man">Man</option>
+                <option value="woman">Woman</option>
             </select>
-            <div class="error" id="error" style="display:none">
+            <div class="error" id="select-error" style="display:none">
                 This is an inline error that triggers when user clicks outside of the form field.
             </div>
+
+            <!--
 
             <h3>Radiobuttons</h3>
 
@@ -66,7 +69,7 @@
             </div>
             <div class="error" id="error" style="display:none">
                 This is an inline error that triggers when user clicks outside of the form field.
-            </div>
+            </div> -->
 
 
             <a href="#" class="button" onClick="globalValidate()">
@@ -81,7 +84,68 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="scripts.js"></script>
+    <!-- <script type="text/javascript" src="scripts.js"></script> -->
+
+    <script>
+        var textField = document.getElementById('textfield');
+        var textFieldError = document.getElementById('textfield-error');
+        var textArea = document.getElementById('textarea');
+        var textAreaError = document.getElementById('textarea-error');
+        var select = document.getElementById('select');
+        var selectError = document.getElementById('select-error');
+
+
+        document.onkeyup = function () {
+            if (textField.value.length !== 0) {
+                textFieldError.style.display = 'none';
+            }
+
+            if (textArea.value.length !== 0) {
+                textAreaError.style.display = 'none';
+            }
+        }
+
+        select.onchange = function () {
+            if (select.value) {
+                selectError.style.display = 'none';
+            }
+        }
+
+        function validateTextField() {
+            if (textField.value == "") {
+                textFieldError.style.display = "block";
+                return true;
+            }
+        }
+
+        function validateTextArea() {
+            if (textArea.value == "") {
+                textAreaError.style.display = "block";
+                return true;
+            }
+        }
+
+        function validateSelect() {
+            if (select.value == "") {
+                selectError.style.display = "block";
+                return true;
+            }
+        }
+
+        function globalValidate() {
+            validateTextField();
+            validateTextArea();
+            validateSelect();
+
+            if (validateTextField() || validateTextArea()) {
+                document.getElementById("globalError").style.display = "block";
+                setTimeout(function () { document.getElementById("globalError").style.display = "none"; }, 4200);
+                return false;
+            } else {
+                alert("All is well!");
+            }
+        }
+    </script>
 
 </body>
 
