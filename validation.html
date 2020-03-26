@@ -2,50 +2,35 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script>
-        document.onkeyup = function () {
-            var inputField = document.getElementById('inputfield');
-            var errorMessage = document.getElementById('error');
-
-            if (inputField.value.length === 0) return;
-            errorMessage.style.display = 'none';
-        }
-
-        function inlineValidate() {
-            var x = document.getElementById("inputfield");
-            if (x.value == "") {
-                document.getElementById("error").style.display = "block";
-            }
-        }
-
-        function globalValidate() {
-            if (inputfield.value == "") {
-                document.getElementById("globalError").style.display = "block";
-                document.getElementById("error").style.display = "block";
-                setTimeout(function () { document.getElementById("globalError").style.display = "none"; }, 4200);
-                inputfield.focus();
-                return false;
-            } else {
-                alert("All is well!");
-            }
-        }
-    </script>
 </head>
 
 <body>
     <div>
-        <p>In this case it's invalid to leave the fields empty.</p>
-        <input type="text" id="inputfield" name="inputfield" required onfocusout="inlineValidate()" />
-        <div class="error" id="error" style="display:none">
-            This is an inline error that triggers when user clicks outside of the form field.
+        <div>
+            <p>In this case it's invalid to leave the fields empty.</p>
+            <input type="text" id="inputfield" name="inputfield" required />
+            <div class="error" id="error" style="display:none">
+                This is an inline error that triggers when user clicks outside of the form field.
+            </div>
+
+            <textarea id="w3mission" rows="4" cols="50"></textarea>
+            <div class="error" id="error" style="display:none">
+                This is an inline error that triggers when user clicks outside of the form field.
+            </div>
+
+            <div class="global-error" id="globalError" style="display:none">
+                This is a global error.
+            </div>
+            <a href="#" class="button" onClick="globalValidate()">
+                Submit
+            </a>
         </div>
-        <div class="global-error" id="globalError" style="display:none">
-            This is a global error.
+        <div>
+            Some notes
         </div>
-        <a href="#" class="button" onClick="globalValidate()">
-            Submit
-        </a>
     </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
 
 </body>
 

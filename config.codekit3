@@ -36,6 +36,17 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/scripts.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/scripts-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/styles.css": {
 		"aP": 1,
 		"bl": 0,
