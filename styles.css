@@ -23,8 +23,7 @@ body {
       min-width: 480px;
       max-width: 480px;
       background-color: #fff;
-      padding: 2rem;
-      text-align: center; }
+      padding: 2rem; }
       body > div > div:first-child {
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem; }
