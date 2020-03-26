@@ -1,8 +1,8 @@
 $click-area: 48px;
 $gray: #ddd;
-$primary: #5d9aeb;
+$primary: #3b88fd;
 $white: #fff;
-$danger: #eb6a89;
+$danger: #fd3b3b;
 
 * {
     box-sizing: border-box;
@@ -55,7 +55,11 @@ body {
      }
 }
 
-input[type="text"], textarea {
+h3 {
+    text-align: left;
+}
+
+input[type="text"], textarea, select {
     height: 48px;
     border-radius: 0.5rem;
     box-shadow: none;
@@ -68,10 +72,16 @@ input[type="text"], textarea {
     margin-bottom: 1rem;
 }
 
+.radiobutton, .checkbox {
+    text-align: left;
+    margin-bottom: 0.25rem;
+}
+
 textarea {
     height: auto;
     padding: 1rem;
 }
+
 
 a {
     color: $primary;

@@ -18,12 +18,63 @@
                 This is an inline error that triggers when user clicks outside of the form field.
             </div>
 
-            <div class="global-error" id="globalError" style="display:none">
-                This is a global error.
+            <select id="cars">
+                <option>...</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <div class="error" id="error" style="display:none">
+                This is an inline error that triggers when user clicks outside of the form field.
             </div>
+
+            <h3>Radiobuttons</h3>
+
+            <div class="radio-group">
+                <div class="radiobutton">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div class="radiobutton">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div class="radiobutton">
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div class="error" id="error" style="display:none">
+                This is an inline error that triggers when user clicks outside of the form field.
+            </div>
+
+            <h3>Checkboxes</h3>
+
+            <div class="checkbox-group">
+                <div class="checkbox">
+                    <input type="checkbox" id="checkboxmale" name="something" value="male">
+                    <label for="checkboxmale">Male</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkboxfemale" name="something" value="female">
+                    <label for="checkboxfemale">Female</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkboxother" name="something" value="other">
+                    <label for="checkboxother">Other</label>
+                </div>
+            </div>
+            <div class="error" id="error" style="display:none">
+                This is an inline error that triggers when user clicks outside of the form field.
+            </div>
+
+
             <a href="#" class="button" onClick="globalValidate()">
                 Submit
             </a>
+            <div class="global-error" id="globalError" style="display:none">
+                This is a global error.
+            </div>
         </div>
         <div>
             Some notes

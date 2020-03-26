@@ -36,7 +36,10 @@ body {
         background-color: rgba(0, 0, 0, 0.04);
         text-align: left; }
 
-input[type="text"], textarea {
+h3 {
+  text-align: left; }
+
+input[type="text"], textarea, select {
   height: 48px;
   border-radius: 0.5rem;
   box-shadow: none;
@@ -48,12 +51,16 @@ input[type="text"], textarea {
   font-size: 1rem;
   margin-bottom: 1rem; }
 
+.radiobutton, .checkbox {
+  text-align: left;
+  margin-bottom: 0.25rem; }
+
 textarea {
   height: auto;
   padding: 1rem; }
 
 a {
-  color: #5d9aeb;
+  color: #3b88fd;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -64,7 +71,7 @@ p {
 
 .button {
   display: inline-block;
-  background-color: #5d9aeb;
+  background-color: #3b88fd;
   color: #fff;
   height: 48px;
   line-height: 48px;
@@ -78,7 +85,7 @@ p {
 
 .error {
   font-size: 0.7rem;
-  color: #eb6a89;
+  color: #fd3b3b;
   font-weight: bold;
   text-align: left;
   margin-top: -0.75rem;
@@ -91,7 +98,7 @@ p {
   right: 0;
   bottom: 0;
   padding: 1rem;
-  background-color: #eb6a89;
+  background-color: #fd3b3b;
   color: #fff;
   text-align: center; }
 
