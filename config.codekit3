@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/currency.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/currency.html",
+		"oF": 0
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -80,6 +88,14 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/typography.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/typography.html",
+		"oF": 0
 		},
 	"/validation.html": {
 		"cB": 0,
