@@ -32,10 +32,17 @@ body {
         border-bottom-right-radius: 1rem; }
       body > div > div + div {
         min-width: 200px;
+        max-width: 200px;
         font-size: 0.8rem;
         color: #fff;
         background-color: #3b88fd;
         text-align: left; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    margin-bottom: 0.5rem; }
 
 strong {
   text-align: left;
@@ -75,15 +82,18 @@ textarea {
 a {
   color: #3b88fd;
   text-decoration: none; }
+  a.block {
+    display: block;
+    width: 100%; }
   a:hover {
     text-decoration: underline; }
 
 p {
   margin: 0 0 3rem 0;
-  color: #d3d9e0; }
+  color: #a3afbf; }
 
 .button {
-  transition: all 0.5s ease;
+  transition: background-color 0.5s ease;
   display: inline-block;
   background-color: #3b88fd;
   color: #fff;
@@ -95,6 +105,8 @@ p {
   border-radius: 0.5rem;
   font-weight: bold;
   box-shadow: 0 10px 20px rgba(59, 136, 253, 0.3); }
+  .button:active {
+    transform: translateY(1px); }
   .button:hover {
     text-decoration: none;
     background-color: #5497fd; }

@@ -10,12 +10,12 @@
             <p>In this case it's invalid to leave the fields empty.</p>
             <input type="text" id="textfield" name="textfield" required onfocusout="validateTextField()" />
             <div class="error" id="textfield-error" style="display:none">
-                Can't be empty.
+                This field can't be left empty.
             </div>
 
             <textarea id="textarea" rows="4" cols="50" onfocusout="validateTextArea()"></textarea>
             <div class="error" id="textarea-error" style="display:none">
-                Can't be empty.
+                This field can't be left empty.
             </div>
 
 
@@ -26,7 +26,7 @@
                 <option value="woman">Woman</option>
             </select>
             <div class="error" id="select-error" style="display:none">
-                Please select one of the options.
+                Please select one.
             </div>
 
 
@@ -65,125 +65,29 @@
 
 
             <a href="#" class="button" onClick="globalValidate()">
-                Submit
+                Validate
             </a>
             <div class="global-error" id="globalError" style="display:none">
-                Some information is missing.
+                Some information is missing. Please look over the form before submitting again.
             </div>
         </div>
         <div>
-            Some notes
+            <ul>
+                <li>Errors are displayed inline, when they leave the field. Never during input.</li>
+                <li>Missing information is displayed when clicking the button. Errors are displayed during input.</li>
+                <li>Errors must explain to the user as to WHAT is wrong, so they are lead to what to do to correct it.</li>
+                <li>Errors positioned close to the field explain what they need to do. Global errors simply catch their attention to that there is something wrong.</li>
+                <li>Don't mark required fields, if it's there the user expects it should be filled out. Instead, mark if it's optional.</li>
+                <li>If less than 5 options, use radio buttons instead of a select.</li>
+                <li>Buttons should never communicate errors. Instead they should communicate what the button will do.</li>
+                <li>Only one primary button, and that should move the user forward.</li>
+                <li>Strive for short and clear texts.</li>
+                <li>Don't use placeholder and label, always either or.</li>
+            </ul>
         </div>
     </div>
 
-    <!-- <script type="text/javascript" src="scripts.js"></script> -->
-
-    <script>
-        var textField = document.getElementById('textfield');
-        var textFieldError = document.getElementById('textfield-error');
-        var textArea = document.getElementById('textarea');
-        var textAreaError = document.getElementById('textarea-error');
-        var select = document.getElementById('select');
-        var selectError = document.getElementById('select-error');
-        var radio = document.getElementsByClassName('radio');
-        var radioError = document.getElementById('radio-error');
-        var checkbox = document.getElementsByClassName('checkbox');
-        var checkboxError = document.getElementById('checkbox-error');
-
-
-        document.onkeyup = function () {
-            if (textField.value.length !== 0) {
-                textFieldError.style.display = 'none';
-            }
-
-            if (textArea.value.length !== 0) {
-                textAreaError.style.display = 'none';
-            }
-        }
-
-        select.onchange = function () {
-            if (select.value) {
-                selectError.style.display = 'none';
-            }
-        }
-
-        for (i = 0; i < radio.length; ++i) {
-            radio[i].onclick = function () {
-                if (radio[i].value) {
-                    radioError.style.display = 'none';
-                }
-            }
-        }
-
-        for (i = 0; i < checkbox.length; ++i) {
-            checkbox[i].onclick = function () {
-                if (checkbox[i].value) {
-                    checkboxError.style.display = 'none';
-                }
-            }
-        }
-
-
-
-        function validateTextField() {
-            if (textField.value == "") {
-                textFieldError.style.display = "block";
-                return true;
-            }
-        }
-
-        function validateTextArea() {
-            if (textArea.value == "") {
-                textAreaError.style.display = "block";
-                return true;
-            }
-        }
-
-        function validateSelect() {
-            if (select.value == "") {
-                selectError.style.display = "block";
-                return true;
-            }
-        }
-
-        function validateRadio() {
-            for (i = 0; i < radio.length; ++i) {
-                if (radio[i].checked) {
-                    return false;
-                } else {
-                    radioError.style.display = "block";
-                    return true;
-                }
-            }
-        }
-
-        function validateCheckbox() {
-            for (i = 0; i < checkbox.length; ++i) {
-                if (checkbox[i].checked) {
-                    return false;
-                } else {
-                    checkboxError.style.display = "block";
-                    return true;
-                }
-            }
-        }
-
-        function globalValidate() {
-            validateTextField();
-            validateTextArea();
-            validateSelect();
-            validateRadio();
-            validateCheckbox();
-
-            if (validateTextField() || validateTextArea() || validateSelect() || validateRadio() || validateCheckbox()) {
-                document.getElementById("globalError").style.display = "block";
-                setTimeout(function () { document.getElementById("globalError").style.display = "none"; }, 5000);
-                return false;
-            } else {
-                alert("All fields are properly filled out and validated.");
-            }
-        }
-    </script>
+    <script type="text/javascript" src="scripts.js"></script>
 
 </body>
 
