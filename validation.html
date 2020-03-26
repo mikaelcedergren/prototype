@@ -10,12 +10,12 @@
             <p>In this case it's invalid to leave the fields empty.</p>
             <input type="text" id="textfield" name="textfield" required onfocusout="validateTextField()" />
             <div class="error" id="textfield-error" style="display:none">
-                This is an inline error that triggers when user clicks outside of the form field.
+                Can't be empty.
             </div>
 
             <textarea id="textarea" rows="4" cols="50" onfocusout="validateTextArea()"></textarea>
             <div class="error" id="textarea-error" style="display:none">
-                This is an inline error that triggers when user clicks outside of the form field.
+                Can't be empty.
             </div>
 
 
@@ -26,57 +26,49 @@
                 <option value="woman">Woman</option>
             </select>
             <div class="error" id="select-error" style="display:none">
-                This is an inline error that triggers when user clicks outside of the form field.
+                Please select one of the options.
             </div>
 
-            <!--
+
 
             <h3>Radiobuttons</h3>
 
             <div class="radio-group">
-                <div class="radiobutton">
-                    <input type="radio" id="male" name="gender" value="male">
+                <div>
+                    <input type="radio" id="male" name="gender" class="radio" value="male">
                     <label for="male">Male</label>
                 </div>
-                <div class="radiobutton">
-                    <input type="radio" id="female" name="gender" value="female">
+                <div>
+                    <input type="radio" id="female" name="gender" class="radio" value="female">
                     <label for="female">Female</label>
                 </div>
-                <div class="radiobutton">
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label>
-                </div>
             </div>
-            <div class="error" id="error" style="display:none">
-                This is an inline error that triggers when user clicks outside of the form field.
+            <div class="error" id="radio-error" style="display:none">
+                Please select one.
             </div>
 
             <h3>Checkboxes</h3>
 
             <div class="checkbox-group">
-                <div class="checkbox">
-                    <input type="checkbox" id="checkboxmale" name="something" value="male">
+                <div>
+                    <input type="checkbox" id="checkboxmale" name="something" class="checkbox" value="male">
                     <label for="checkboxmale">Male</label>
                 </div>
-                <div class="checkbox">
-                    <input type="checkbox" id="checkboxfemale" name="something" value="female">
+                <div>
+                    <input type="checkbox" id="checkboxfemale" name="something" class="checkbox" value="female">
                     <label for="checkboxfemale">Female</label>
                 </div>
-                <div class="checkbox">
-                    <input type="checkbox" id="checkboxother" name="something" value="other">
-                    <label for="checkboxother">Other</label>
-                </div>
             </div>
-            <div class="error" id="error" style="display:none">
-                This is an inline error that triggers when user clicks outside of the form field.
-            </div> -->
+            <div class="error" id="checkbox-error" style="display:none">
+                Please select at least one option.
+            </div>
 
 
             <a href="#" class="button" onClick="globalValidate()">
                 Submit
             </a>
             <div class="global-error" id="globalError" style="display:none">
-                This is a global error.
+                Some information is missing.
             </div>
         </div>
         <div>
@@ -93,6 +85,10 @@
         var textAreaError = document.getElementById('textarea-error');
         var select = document.getElementById('select');
         var selectError = document.getElementById('select-error');
+        var radio = document.getElementsByClassName('radio');
+        var radioError = document.getElementById('radio-error');
+        var checkbox = document.getElementsByClassName('checkbox');
+        var checkboxError = document.getElementById('checkbox-error');
 
 
         document.onkeyup = function () {
@@ -110,6 +106,24 @@
                 selectError.style.display = 'none';
             }
         }
+
+        for (i = 0; i < radio.length; ++i) {
+            radio[i].onclick = function () {
+                if (radio[i].value) {
+                    radioError.style.display = 'none';
+                }
+            }
+        }
+
+        for (i = 0; i < checkbox.length; ++i) {
+            checkbox[i].onclick = function () {
+                if (checkbox[i].value) {
+                    checkboxError.style.display = 'none';
+                }
+            }
+        }
+
+
 
         function validateTextField() {
             if (textField.value == "") {
@@ -132,14 +146,38 @@
             }
         }
 
+        function validateRadio() {
+            for (i = 0; i < radio.length; ++i) {
+                if (radio[i].checked) {
+                    return false;
+                } else {
+                    radioError.style.display = "block";
+                    return true;
+                }
+            }
+        }
+
+        function validateCheckbox() {
+            for (i = 0; i < checkbox.length; ++i) {
+                if (checkbox[i].checked) {
+                    return false;
+                } else {
+                    checkboxError.style.display = "block";
+                    return true;
+                }
+            }
+        }
+
         function globalValidate() {
             validateTextField();
             validateTextArea();
             validateSelect();
+            validateRadio();
+            validateCheckbox();
 
-            if (validateTextField() || validateTextArea()) {
+            if (validateTextField() || validateTextArea() || validateSelect() || validateRadio() || validateCheckbox()) {
                 document.getElementById("globalError").style.display = "block";
-                setTimeout(function () { document.getElementById("globalError").style.display = "none"; }, 4200);
+                setTimeout(function () { document.getElementById("globalError").style.display = "none"; }, 5000);
                 return false;
             } else {
                 alert("All is well!");
