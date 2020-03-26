@@ -36,6 +36,16 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/styles-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -48,6 +58,14 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/validation.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/validation.html",
+		"oF": 0
 		}
 	},
 "hooks": [
