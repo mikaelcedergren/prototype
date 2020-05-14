@@ -72,17 +72,19 @@
             </div>
         </div>
         <div>
+            <p>Inline validation occurs in every field where it's possible. Button validates every inline check (in case you leave fields empty for instance) and gives feedback on missing fields.</p>
             <ul>
-                <li>Errors are displayed inline, when they leave the field. Never during input.</li>
-                <li>Missing information is displayed when clicking the button. Errors are displayed during input.</li>
-                <li>Errors must explain to the user as to WHAT is wrong, so they are lead to what to do to correct it.</li>
-                <li>Errors positioned close to the field explain what they need to do. Global errors simply catch their attention to that there is something wrong.</li>
+                <li>Don't use ambivalent warnings. Either something is required or it's not.</li>
+                <li>Errors are displayed inline when user leave the field. Never during input.</li>
+                <li>Error vanishes when user starts correcting it.</li>
+                <li>Errors must not only communicate that something is wrong. Errors must explain to the user as to WHAT is wrong, so they are lead to what to do to correct it.</li>
+                <li>Errors should be as short as possible and in normal language, no technical jargon.</li>
+                <li>Errors positioned close to the field explain what user needs to do. Global errors simply catch their attention to that there is something wrong.</li>
                 <li>Don't mark required fields, if it's there the user expects it should be filled out. Instead, mark if it's optional.</li>
-                <li>If less than 5 options, use radio buttons instead of a select.</li>
-                <li>Buttons should never communicate errors. Instead they should communicate what the button will do.</li>
+                <li>Buttons should never change appearance to communicate anything. They're there only for triggering of events.</li>
+                <li>Don't disable buttons. The user should always be able to click the button to activate validation to get help to proceed. If it's disabled or hidden user will be left in the dark.</li>
                 <li>Only one primary button, and that should move the user forward.</li>
-                <li>Strive for short and clear texts.</li>
-                <li>Don't use placeholder and label, always either or.</li>
+                <li>Don't use placeholder and label, always one or the other.</li>
             </ul>
         </div>
     </div>

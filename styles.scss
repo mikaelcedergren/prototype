@@ -24,15 +24,13 @@ body {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
+  // padding: 2rem;
 
   & > div {
     display: flex;
     justify-content: center;
     align-items: stretch;
+    padding: 2rem;
 
     & > div {
       min-width: 480px;
@@ -57,12 +55,18 @@ body {
         color: $white;
         background-color: $primary;
         text-align: left;
+
+        p {
+          color: $white;
+          font-weight: bold;
+        }
       }
     }
   }
 }
 
 h1 {
+    margin: 6rem auto 2rem auto;
     font-size: 5rem;
     line-height: 1;
     color: $primary;
