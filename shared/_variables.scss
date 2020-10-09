@@ -1,0 +1,12 @@
+$primary: #ff536c;
+$accent: #4cc8ea;
+$primary-offset: adjust-hue($primary, -50);
+$primary-darken: mix($primary, black, 90%);
+$complement: #82f34f;
+$white: #ffffff;
+$black: #555555;
+$border-radius: 3px;
+$font-size: 16px;
+$light: 300;
+$breakpoint-small: 480px;
+$breakpoint-medium: 768px;
