@@ -33,6 +33,17 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
+	"/lanefinder/images/header-image-dashboard.png": {
+		"ft": 32768,
+		"iS": 2107900,
+		"oA": 0,
+		"oAP": "/lanefinder/images/header-image-dashboard.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/lanefinder/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -90,6 +101,19 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/shared/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/shared/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/shared/_variables.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -125,6 +149,38 @@
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
+		},
+	"/shared/images/status-bar-left.png": {
+		"ft": 32768,
+		"iS": 1317,
+		"oA": 0,
+		"oAP": "/shared/images/status-bar-left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/shared/images/status-bar-right.png": {
+		"ft": 32768,
+		"iS": 1317,
+		"oA": 0,
+		"oAP": "/shared/images/status-bar-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/shared/normalize-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/shared/normalize-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/shared/normalize.css": {
 		"aP": 1,

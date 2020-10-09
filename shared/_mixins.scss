@@ -1,0 +1,22 @@
+@mixin barberpole($color) {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 1rem,
+      $color 1rem,
+      $color 2rem
+    );
+    background-size: 200% 200%;
+    animation: barberpole 10s linear infinite reverse;
+
+    @keyframes barberpole {
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+  }
+
+  @mixin font-smooth() {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

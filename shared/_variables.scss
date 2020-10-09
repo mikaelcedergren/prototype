@@ -1,12 +1,27 @@
 $primary: #ff536c;
 $accent: #4cc8ea;
+
+$black: #3e4a5e;
+$gray-6: #4d5b73;
+$gray-5: #778396;
+$gray-4: #a3afbf;
+$gray-3: #d3d9e0;
+$gray-2: #e6eaf0;
+$gray-1: #f7f9fc;
+$white: #fff;
+
 $primary-offset: adjust-hue($primary, -50);
 $primary-darken: mix($primary, black, 90%);
 $complement: #82f34f;
-$white: #ffffff;
-$black: #555555;
-$border-radius: 3px;
-$font-size: 16px;
+$border-radius: 4px;
+$factor: 16px;
+$font-size: $factor - 2px;
+$font-size-small: 12px;
 $light: 300;
 $breakpoint-small: 480px;
 $breakpoint-medium: 768px;
+$font-family: 'DM Sans', sans-serif;
+$font-family-headings: 'Rubik', sans-serif;
+$font-bold: 500;
+$font-size-h3: 20px;
+$line: 1px solid $gray-2;

@@ -1,3 +1,11 @@
+html,
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  height: 100%;
+  color: #3e4a5e;
+  background-color: #3e4a5e; }
+
 .mt-0 {
   margin-top: 0 !important; }
 
@@ -142,3 +150,71 @@ grid-wrapper {
       min-width: 66.666666%; }
   grid-wrapper grid-wrapper > grid-cell {
     min-width: 0; }
+
+tab-view {
+  display: block;
+  height: 100%;
+  background-image: url(/lanefinder/images/header-image-dashboard.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed; }
+  tab-view tab-header {
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    height: 100px; }
+    tab-view tab-header tab-header-title {
+      display: block;
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      font-family: "Rubik", sans-serif; }
+  tab-view tab-content {
+    display: block;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 1rem;
+    height: 100%;
+    background-color: #f7f9fc; }
+
+navigation-bar {
+  height: 44px;
+  background: red;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+status-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px; }
+  status-bar img {
+    max-height: 14px; }
+
+mobile-tabs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  border-top: 1px solid #e6eaf0; }
+  mobile-tabs mobile-tab-item {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 20%;
+    align-items: center; }
+    mobile-tabs mobile-tab-item mobile-tab-title {
+      font-size: 12px; }
