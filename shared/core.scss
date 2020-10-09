@@ -8,6 +8,60 @@ body {
   height: 100%;
   color: $black;
   background-color: $black;
+  font-weight: $font-regular;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: $primary;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $primary;
+    height: 1px;
+  }
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+i {
+  vertical-align: middle;
+
+  & + span {
+    vertical-align: middle;
+    margin-left: 0.5rem;
+  }
+}
+
+button {
+  border-radius: 100px;
+  background-color: $accent;
+  color: $white;
+  border: none;
+  height: 40px;
+  padding: 0 1rem;
+  outline: none;
+
+  i {
+    font-size: $font-size;
+  }
+
+  &[data-size="small"] {
+    padding: 0 0.5rem;
+    height: 28px;
+    font-size: $font-size-small;
+
+    i {
+      font-size: $font-size-small;
+    }
+  }
 }
 
 // ****************************
@@ -174,6 +228,14 @@ body {
   padding-left: 4rem !important;
 }
 
+.color-discreet {
+  color: $gray-4;
+}
+
+.color-text-discreet {
+  color: $gray-5;
+}
+
 // ****************************
 // GRID
 // ****************************
@@ -273,6 +335,12 @@ grid-wrapper {
     margin-bottom: 0;
   }
 
+  &[data-align="center"] {
+    & > grid-cell {
+      align-self: center;
+    }
+  }
+
   // &.gallery {
   //   display: grid;
   //   grid-gap: 1rem;
@@ -292,15 +360,11 @@ grid-wrapper {
   //   }
   // }
 
-  &.fixed {
-    flex-flow: row nowrap;
-  }
-
-  &.middle {
-    & > grid-cell {
-      align-self: center;
-    }
-  }
+  // &.middle {
+  //   & > grid-cell {
+  //     align-self: center;
+  //   }
+  // }
 
   // &.bottom {
   //   & > grid-cell {
@@ -337,6 +401,11 @@ grid-wrapper {
   // }
 }
 
+grid-wrapper-fixed {
+  @extend grid-wrapper;
+  flex-flow: row nowrap;
+}
+
 tab-view {
   display: block;
   height: 100%;
@@ -349,6 +418,7 @@ tab-view {
   tab-header {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
     padding: 1rem;
     height: 100px;
 
@@ -358,6 +428,13 @@ tab-view {
       font-weight: $font-bold;
       font-size: $font-size-h3;
       font-family: $font-family-headings;
+    }
+
+    tab-header-button {
+      button {
+        background-color: rgba(black, 0.4);
+        border: 2px solid $white;
+      }
     }
   }
 
@@ -373,7 +450,6 @@ tab-view {
 
 navigation-bar {
   height: 44px;
-  background: red;
   display: flex;
   position: fixed;
   top: 0;
@@ -414,9 +490,23 @@ mobile-tabs {
     flex-flow: column nowrap;
     width: 20%;
     align-items: center;
+    color: $gray-4;
+
+    i {
+      font-size: 20px !important;
+      margin-bottom: 0.25rem;
+    }
 
     mobile-tab-title {
-      font-size: $font-size-small;
+      font-size: $font-size-tiny;
     }
   }
+}
+
+x-box {
+  display: block;
+  padding: 1rem;
+  border-radius: $border-radius * 2;
+  background: $white;
+  box-shadow: $box-shadow;
 }

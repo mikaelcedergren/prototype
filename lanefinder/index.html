@@ -11,57 +11,63 @@
   <link rel="stylesheet" href="/shared/core.css">
   <link rel="stylesheet" type="text/css" href="/shared/normalize.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <tab-view>
-      <navigation-bar>
-        ddd
-      </navigation-bar>
-      <tab-header>
-        <tab-header-title>
-          Jobs
-        </tab-header-title>
-      </tab-header>
-      <tab-content>
-        <grid-wrapper>
+    <navigation-bar>
+      ddd
+    </navigation-bar>
+    <tab-header>
+      <tab-header-title>
+        Jobs
+      </tab-header-title>
+      <tab-header-button>
+        <button data-size="small"><i class="material-icons">favorite</i><span>Save this search</span></button>
+      </tab-header-button>
+    </tab-header>
+    <tab-content>
+      <x-box>
+        <grid-wrapper-fixed data-align="center">
           <grid-cell>
-            Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.
+            <i class="material-icons color-discreet">tune</i><span class="color-text-discreet">Filters</span>
           </grid-cell>
           <grid-cell>
-            Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.
+            <a href="#">Edit</a>
           </grid-cell>
-        </grid-wrapper>
-      </tab-content>
+        </grid-wrapper-fixed>
+        <p class="color-text-discreet">Team OTR, local company driver jobs in 90210 with a minimum weekly average...</p>
+        <strong>12 out of 284 jobs</strong>
+      </x-box>
+    </tab-content>
   </tab-view>
+
 
   <mobile-tabs>
     <mobile-tab-item>
-      <i class="material-icons">face</i>
-      <mobile-tab-title>test</mobile-tab-title>
+      <i class="material-icons">policy</i>
+      <mobile-tab-title>Jobs</mobile-tab-title>
     </mobile-tab-item>
     <mobile-tab-item>
-      <i class="material-icons">face</i>
-      <mobile-tab-title>test</mobile-tab-title>
+      <i class="material-icons">apartment</i>
+      <mobile-tab-title>Carriers</mobile-tab-title>
     </mobile-tab-item>
     <mobile-tab-item>
-      <i class="material-icons">face</i>
-      <mobile-tab-title>test</mobile-tab-title>
+      <i class="material-icons">favorite</i>
+      <mobile-tab-title>Saved</mobile-tab-title>
     </mobile-tab-item>
     <mobile-tab-item>
-      <i class="material-icons">face</i>
-      <mobile-tab-title>test</mobile-tab-title>
+      <i class="material-icons">notifications</i>
+      <mobile-tab-title>Notifications</mobile-tab-title>
     </mobile-tab-item>
     <mobile-tab-item>
-      <i class="material-icons">face</i>
-      <mobile-tab-title>test</mobile-tab-title>
+      <i class="material-icons">menu</i>
+      <mobile-tab-title>More</mobile-tab-title>
     </mobile-tab-item>
   </mobile-tabs>
 

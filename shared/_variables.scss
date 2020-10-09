@@ -1,5 +1,7 @@
-$primary: #ff536c;
-$accent: #4cc8ea;
+$primary: #ff8b4a;
+$secondary: #ef3662;
+$accent: #ef3662;
+$contrast: #4e2055;
 
 $black: #3e4a5e;
 $gray-6: #4d5b73;
@@ -17,11 +19,14 @@ $border-radius: 4px;
 $factor: 16px;
 $font-size: $factor - 2px;
 $font-size-small: 12px;
+$font-size-tiny: 10px;
+$font-size-h3: 20px;
 $light: 300;
 $breakpoint-small: 480px;
 $breakpoint-medium: 768px;
 $font-family: 'DM Sans', sans-serif;
 $font-family-headings: 'Rubik', sans-serif;
-$font-bold: 500;
-$font-size-h3: 20px;
+$font-regular: 500;
+$font-bold: 700;
 $line: 1px solid $gray-2;
+$box-shadow: 0 9px 30px 0 rgba(black, 0.1);
