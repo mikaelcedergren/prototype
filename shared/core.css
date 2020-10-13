@@ -5,9 +5,7 @@ body {
   height: 100%;
   color: #3e4a5e;
   background-color: #3e4a5e;
-  font-weight: 500;
-  overflow-y: auto;
-  overflow-x: hidden; }
+  font-weight: 500; }
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -211,41 +209,49 @@ grid-wrapper-fixed {
 
 tab-view {
   display: block;
-  height: 122vh; }
-  tab-view tab-header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 1rem;
-    height: 120px;
-    position: sticky;
-    top: -64px;
-    z-index: 3;
-    background-image: url(/lanefinder/images/header-image-dashboard.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    -webkit-mask-image: url(/lanefinder/images/header-mask.png);
-    -webkit-mask-size: 100% 100%;
-    -webkit-mask-position: bottom; }
-    tab-view tab-header tab-header-title {
-      display: block;
-      color: #fff;
-      font-weight: 700;
-      font-size: 24px;
-      font-family: "Rubik", sans-serif;
-      margin-bottom: 1rem; }
-    tab-view tab-header tab-header-button {
-      margin-bottom: 1rem; }
-      tab-view tab-header tab-header-button button {
-        background-color: rgba(0, 0, 0, 0.4);
-        border: 1px solid #fff; }
-  tab-view tab-content {
+  min-height: 100vh; }
+
+tab-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem 1rem 2rem 1rem;
+  height: 120px;
+  background-image: url(/lanefinder/images/header-image-dashboard.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed; }
+  tab-header.sticky {
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(78, 32, 85, 0.6);
+    height: 40px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); }
+  tab-header.sticky + tab-content {
+    padding-top: 154px; }
+  tab-header tab-header-title {
     display: block;
-    height: 100%;
-    background-color: #f7f9fc;
-    margin-top: -20px; }
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "Rubik", sans-serif; }
+  tab-header tab-header-button button {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #fff; }
+
+tab-content {
+  display: block;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 100%;
+  background-color: #f7f9fc;
+  margin-top: -15px; }
 
 x-tag {
   display: inline-block;
