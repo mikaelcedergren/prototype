@@ -251,42 +251,38 @@ tab-header-content {
   background-attachment: contain; }
 
 tab-header {
-  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem;
   height: 120px;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top left;
-  background-attachment: contain; }
+  z-index: 2;
+  position: sticky;
+  top: -64px; }
   tab-header.sticky {
-    background-image: url(/lanefinder/images/header-image-dashboard.png);
     transition: box-shadow 0.3s ease, background 0.3s ease;
-    position: fixed;
-    z-index: 2;
-    padding-bottom: 1rem;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 40px;
+    z-index: 3;
+    padding-bottom: 0;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); }
-  tab-header.sticky + tab-content {
-    margin-top: 154px; }
   tab-header tab-header-title {
     display: block;
     color: #fff;
     font-weight: 700;
     font-size: 18px;
-    font-family: "Rubik", sans-serif; }
-  tab-header tab-header-button button {
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 1px solid #fff; }
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 1rem; }
+  tab-header tab-header-button {
+    margin-bottom: 1rem; }
+    tab-header tab-header-button button {
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 1px solid #fff; }
 
 tab-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: block;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -337,13 +333,18 @@ list-item {
 navigation-bar {
   height: 44px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding: 0 1rem;
   position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  opacity: 0; }
+  navigation-bar.sticky {
+    transition: opacity 0.3s ease;
+    background-color: #4e2055;
+    opacity: 1; }
 
 status-bar {
   position: fixed;
@@ -360,8 +361,7 @@ status-bar {
     max-height: 14px; }
 
 content {
-  display: block;
-  overflow-x: hidden; }
+  display: block; }
 
 mobile-tabs {
   display: flex;

@@ -472,33 +472,36 @@ tab-header-content {
 }
 
 tab-header {
-  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem;
   height: 120px;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top left;
-  background-attachment: contain;
+  z-index: 2;
+  position: sticky;
+  top: -64px;
+  // background: rgba(black, 0.4);
+  // background-image: url(/lanefinder/images/header-image-dashboard.png);
 
   &.sticky {
-    background-image: url(/lanefinder/images/header-image-dashboard.png);
     transition: box-shadow 0.3s ease, background 0.3s ease;
-    position: fixed;
-    z-index: 2;
-    padding-bottom: 1rem;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 40px;
+    z-index: 3;
+    padding-bottom: 0;
+    // position: fixed;
+    // padding-bottom: 1rem;
+    // top: 0;
+    // right: 0;
+    // left: 0;
+    // height: 40px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   }
 
-  &.sticky + tab-content {
-    margin-top: 154px;
-  }
+  // &.sticky + tab-content {
+  //   margin-top: 154px;
+  // }
   // position: sticky;
   // top: -64px;
   // z-index: 3;
@@ -512,9 +515,12 @@ tab-header {
     font-weight: $font-bold;
     font-size: $font-size-h3;
     font-family: $font-family-headings;
+    margin-bottom: 1rem;
   }
 
   tab-header-button {
+    margin-bottom: 1rem;
+
     button {
       background-color: rgba(black, 0.4);
       border: 1px solid $white;
@@ -524,7 +530,7 @@ tab-header {
 
 tab-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: block;
   border-top-left-radius: $border-radius * 3;
   border-top-right-radius: $border-radius * 3;
@@ -597,13 +603,21 @@ list-item {
 navigation-bar {
   height: 44px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding: 0 1rem;
   position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
   right: 0;
+  opacity: 0;
+
+  &.sticky {
+    transition: opacity 0.3s ease;
+    background-color: $contrast;
+    // border-bottom: $line;
+    opacity: 1;
+  }
 }
 
 status-bar {
@@ -625,7 +639,7 @@ status-bar {
 
 content {
   display: block;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 mobile-tabs {

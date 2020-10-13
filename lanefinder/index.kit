@@ -26,7 +26,7 @@
 <content>
   <tab-view>
     <div class="backdrop"></div>
-    <tab-header id="header">
+    <tab-header>
       <tab-header-content>
         <tab-header-title>
           Jobs
@@ -120,7 +120,10 @@
     </mobile-tab-item>
   </mobile-tabs>
 
-  <!-- <navigation-bar></navigation-bar> -->
+  <navigation-bar id="header">
+
+    <a>Save this search</a>
+  </navigation-bar>
 
   <status-bar>
     <img src="../shared/images/status-bar-left.png">
@@ -132,7 +135,7 @@
 
     var header = document.getElementById("header");
     var filters = document.getElementById("filters");
-    var sticky = header.offsetTop + 120 - 40;
+    var sticky = header.offsetTop + 120;
     var stickyFilters = filters.offsetTop;
 
     function myFunction() {
