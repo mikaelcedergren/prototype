@@ -653,7 +653,7 @@ mobile-tabs {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 0.5rem;
+  padding: 0.25rem;
   border-top: $line;
 
   mobile-tab-item {
@@ -662,9 +662,10 @@ mobile-tabs {
     width: 20%;
     align-items: center;
     color: $gray-4;
+    font-weight: $font-bold;
 
     i {
-      font-size: 20px !important;
+      font-size: 21px !important;
       margin-bottom: 0.25rem;
     }
 
