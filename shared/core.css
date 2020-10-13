@@ -359,12 +359,17 @@ status-bar {
   status-bar img {
     max-height: 14px; }
 
+content {
+  display: block;
+  overflow-x: hidden; }
+
 mobile-tabs {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   background: #fff;
   position: fixed;
+  z-index: 3;
   bottom: 0;
   left: 0;
   right: 0;
