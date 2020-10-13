@@ -9,6 +9,17 @@ body {
   color: $black;
   background-color: $black;
   font-weight: $font-regular;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+small {
+  font-size: $font-size-small;
 }
 
 a {
@@ -17,7 +28,7 @@ a {
   color: $primary;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
@@ -29,6 +40,10 @@ a {
 
 p {
   margin: 0 0 1rem 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 i {
@@ -408,19 +423,30 @@ grid-wrapper-fixed {
 
 tab-view {
   display: block;
-  height: 100%;
-  background-image: url(/lanefinder/images/header-image-dashboard.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+  height: 122vh;
+  // background-image: url(/lanefinder/images/header-image-dashboard.png);
+  // background-position: top center;
+  // background-repeat: no-repeat;
+  // background-size: 100%;
+  // background-attachment: fixed;
 
   tab-header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     padding: 1rem;
-    height: 100px;
+    height: 120px;
+    position: sticky;
+    top: -64px;
+    z-index: 3;
+    background-image: url(/lanefinder/images/header-image-dashboard.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    -webkit-mask-image: url(/lanefinder/images/header-mask.png);
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-position: bottom;
 
     tab-header-title {
       display: block;
@@ -428,30 +454,86 @@ tab-view {
       font-weight: $font-bold;
       font-size: $font-size-h3;
       font-family: $font-family-headings;
+      margin-bottom: 1rem;
     }
 
     tab-header-button {
+      margin-bottom: 1rem;
+
       button {
         background-color: rgba(black, 0.4);
-        border: 2px solid $white;
+        border: 1px solid $white;
       }
     }
   }
 
   tab-content {
     display: block;
-    border-top-left-radius: $border-radius * 3;
-    border-top-right-radius: $border-radius * 3;
-    padding: 1rem;
+    // border-top-left-radius: $border-radius * 3;
+    // border-top-right-radius: $border-radius * 3;
     height: 100%;
     background-color: $gray-1;
+    margin-top: -20px;
+  }
+}
+
+x-tag {
+  display: inline-block;
+  background-color: $gray-2;
+  margin-right: 2px;
+  padding: 6px 8px;
+  border-radius: $border-radius;
+  font-size: $font-size-small;
+  font-weight: $font-bold;
+  margin-bottom: 0.25rem;
+  line-height: 1;
+
+  &[data-color="accent"] {
+    background-color: $accent;
+    color: $white;
+  }
+}
+
+padding-wrapper {
+  display: block;
+  padding: 1rem;
+}
+
+list-heading {
+  display: block;
+  border-top: $line;
+  padding: 1rem;
+  color: $gray-5;
+  font-weight: $font-bold;
+}
+
+list-item {
+  background-color: $white;
+  padding: 1rem;
+  display: block;
+  box-shadow: 0 2px 2px 0 rgba(black, 0.1);
+  border-top: $line;
+  margin-bottom: 3px;
+
+  strong {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  small {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: $gray-5;
   }
 }
 
 navigation-bar {
   height: 44px;
   display: flex;
+  align-items: flex-end;
+  padding: 0 1rem;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   right: 0;
@@ -459,6 +541,7 @@ navigation-bar {
 
 status-bar {
   position: fixed;
+  z-index: 3;
   top: 0;
   left: 0;
   right: 0;

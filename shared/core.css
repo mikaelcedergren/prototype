@@ -1,18 +1,27 @@
 html,
 body {
   font-family: "DM Sans", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   height: 100%;
   color: #3e4a5e;
   background-color: #3e4a5e;
-  font-weight: 500; }
+  font-weight: 500;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+small {
+  font-size: 14px; }
 
 a {
   position: relative;
   text-decoration: none;
   color: #ff8b4a; }
   a::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
@@ -22,6 +31,8 @@ a {
 
 p {
   margin: 0 0 1rem 0; }
+  p:last-child {
+    margin-bottom: 0; }
 
 i {
   vertical-align: middle; }
@@ -38,13 +49,13 @@ button {
   padding: 0 1rem;
   outline: none; }
   button i {
-    font-size: 14px; }
+    font-size: 16px; }
   button[data-size="small"] {
     padding: 0 0.5rem;
     height: 28px;
-    font-size: 12px; }
+    font-size: 14px; }
     button[data-size="small"] i {
-      font-size: 12px; }
+      font-size: 14px; }
 
 .mt-0 {
   margin-top: 0 !important; }
@@ -200,45 +211,96 @@ grid-wrapper-fixed {
 
 tab-view {
   display: block;
-  height: 100%;
-  background-image: url(/lanefinder/images/header-image-dashboard.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed; }
+  height: 122vh; }
   tab-view tab-header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     padding: 1rem;
-    height: 100px; }
+    height: 120px;
+    position: sticky;
+    top: -64px;
+    z-index: 3;
+    background-image: url(/lanefinder/images/header-image-dashboard.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    -webkit-mask-image: url(/lanefinder/images/header-mask.png);
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-position: bottom; }
     tab-view tab-header tab-header-title {
       display: block;
       color: #fff;
       font-weight: 700;
-      font-size: 20px;
-      font-family: "Rubik", sans-serif; }
-    tab-view tab-header tab-header-button button {
-      background-color: rgba(0, 0, 0, 0.4);
-      border: 2px solid #fff; }
+      font-size: 24px;
+      font-family: "Rubik", sans-serif;
+      margin-bottom: 1rem; }
+    tab-view tab-header tab-header-button {
+      margin-bottom: 1rem; }
+      tab-view tab-header tab-header-button button {
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 1px solid #fff; }
   tab-view tab-content {
     display: block;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    padding: 1rem;
     height: 100%;
-    background-color: #f7f9fc; }
+    background-color: #f7f9fc;
+    margin-top: -20px; }
+
+x-tag {
+  display: inline-block;
+  background-color: #e6eaf0;
+  margin-right: 2px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  line-height: 1; }
+  x-tag[data-color="accent"] {
+    background-color: #ef3662;
+    color: #fff; }
+
+padding-wrapper {
+  display: block;
+  padding: 1rem; }
+
+list-heading {
+  display: block;
+  border-top: 1px solid #e6eaf0;
+  padding: 1rem;
+  color: #778396;
+  font-weight: 700; }
+
+list-item {
+  background-color: #fff;
+  padding: 1rem;
+  display: block;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #e6eaf0;
+  margin-bottom: 3px; }
+  list-item strong {
+    display: block;
+    margin-bottom: 0.25rem; }
+  list-item small {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #778396; }
 
 navigation-bar {
   height: 44px;
   display: flex;
+  align-items: flex-end;
+  padding: 0 1rem;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   right: 0; }
 
 status-bar {
   position: fixed;
+  z-index: 3;
   top: 0;
   left: 0;
   right: 0;
@@ -278,4 +340,4 @@ x-box {
   padding: 1rem;
   border-radius: 8px;
   background: #fff;
-  box-shadow: 0 9px 30px 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.06); }
