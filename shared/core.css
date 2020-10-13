@@ -19,7 +19,8 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default; }
+  cursor: default;
+  overflow-x: hidden; }
 
 * {
   -webkit-font-smoothing: antialiased;
