@@ -26,7 +26,7 @@
 
   <tab-view>
     <div class="backdrop"></div>
-    <tab-header id="myHeader">
+    <tab-header id="header">
       <tab-header-content>
         <tab-header-title>
           Jobs
@@ -38,7 +38,7 @@
     </tab-header>
     <tab-content>
       <padding-wrapper>
-        <x-box>
+        <x-box id="filters">
           <grid-wrapper-fixed data-align="center">
             <grid-cell>
               <i class="material-icons color-discreet">tune</i><span class="color-text-discreet">Filters</span>
@@ -130,14 +130,18 @@
   <script>
     window.onscroll = function () { myFunction() };
 
-    var header = document.getElementById("myHeader");
+    var header = document.getElementById("header");
+    var filters = document.getElementById("filters");
     var sticky = header.offsetTop + 120 - 40;
+    var stickyFilters = filters.offsetTop;
 
     function myFunction() {
       if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
+        filters.classList.add("sticky");
       } else {
         header.classList.remove("sticky");
+        filters.classList.remove("sticky");
       }
     }
   </script>
