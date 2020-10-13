@@ -342,7 +342,7 @@ navigation-bar {
   right: 0;
   opacity: 0; }
   navigation-bar.sticky {
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
     background-color: #4e2055;
     opacity: 1; }
 
