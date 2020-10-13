@@ -443,7 +443,7 @@ tab-view {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-attachment: fixed;
+  background-attachment: contain;
   position: absolute;
   left: 0;
   right: 0;
@@ -464,13 +464,13 @@ tab-header {
   justify-content: space-between;
   padding: 1rem 1rem 2rem 1rem;
   height: 120px;
-  background-image: url(/lanefinder/images/header-image-dashboard.png);
-  background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-attachment: fixed;
+  background-position: 0 -80px;
+  background-attachment: contain;
 
   &.sticky {
+    background-image: url(/lanefinder/images/header-image-dashboard.png);
     transition: box-shadow 0.3s ease, background 0.3s ease;
     padding-bottom: 1rem;
     position: fixed;
