@@ -224,11 +224,6 @@ grid-wrapper-fixed {
 tab-view {
   display: block;
   min-height: 100vh;
-  background-image: url(/lanefinder/images/header-image-dashboard.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: contain;
   position: absolute;
   left: 0;
   right: 0;
@@ -241,7 +236,20 @@ tab-header-content {
   align-items: center;
   justify-content: space-between; }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background-image: url(/lanefinder/images/header-image-dashboard.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: contain; }
+
 tab-header {
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -249,17 +257,17 @@ tab-header {
   height: 120px;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0 -80px;
+  background-position: top left;
   background-attachment: contain; }
   tab-header.sticky {
     background-image: url(/lanefinder/images/header-image-dashboard.png);
     transition: box-shadow 0.3s ease, background 0.3s ease;
-    padding-bottom: 1rem;
     position: fixed;
+    z-index: 2;
+    padding-bottom: 1rem;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1;
     height: 40px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); }
   tab-header.sticky + tab-content {
@@ -275,6 +283,8 @@ tab-header {
     border: 1px solid #fff; }
 
 tab-content {
+  position: relative;
+  z-index: 1;
   display: block;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
