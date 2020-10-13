@@ -611,10 +611,10 @@ navigation-bar {
   left: 0;
   right: 0;
   opacity: 0;
+  background-color: $contrast;
+  transition: opacity 0.5s ease;
 
   &.sticky {
-    transition: opacity 0.5s ease;
-    background-color: $contrast;
     // border-bottom: $line;
     opacity: 1;
   }
