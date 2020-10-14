@@ -180,7 +180,7 @@ navigation-bar {
   right: 0;
   opacity: 0;
   background-color: $white;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease;
 
   &.sticky {
     border-bottom: $line;

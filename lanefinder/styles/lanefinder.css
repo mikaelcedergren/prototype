@@ -359,7 +359,7 @@ navigation-bar {
   right: 0;
   opacity: 0;
   background-color: #fff;
-  transition: opacity 0.5s ease; }
+  transition: opacity 0.3s ease; }
   navigation-bar.sticky {
     border-bottom: 1px solid #e6eaf0;
     opacity: 1; }
