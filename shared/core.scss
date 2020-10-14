@@ -266,93 +266,6 @@ button {
   color: $gray-5;
 }
 
-// ****************************
-// GRID
-// ****************************
-
-// .grid {
-//   display: grid;
-//   grid-gap: 1rem;
-//   align-items: start;
-//   grid-template-columns: repeat(auto-fit, [column] minmax(220px, 1fr));
-//   justify-items: stretch;
-//   grid-auto-flow: dense;
-
-//   & > div {
-//     min-width: 220px;
-//   }
-
-//   @media (max-width: $breakpoint-small) {
-//     grid-template-columns: none;
-
-//     & > div {
-//       min-width: 0;
-//       grid-column: 1 / -1 !important;
-//     }
-//   }
-
-//   .grid {
-//     grid-template-columns: repeat(auto-fit, minmax(0, auto));
-
-//     & > div {
-//       min-width: 0;
-//     }
-//   }
-
-//   &.grid-gap-large {
-//     grid-gap: 2rem;
-//   }
-
-//   &.grid-gap-none {
-//     grid-gap: 0;
-//   }
-
-//   &.grid-first-column-large {
-//     & > div:nth-child(1) {
-//       grid-column: auto / span 2;
-//     }
-//   }
-
-//   &.grid-second-column-large {
-//     & > div:nth-child(2) {
-//       grid-column: auto / span 2;
-//     }
-//   }
-
-//   &.grid-third-column-large {
-//     & > div:nth-child(3) {
-//       grid-column: auto / span 2;
-//     }
-//   }
-
-//   &.grid-fixed {
-//     grid-auto-flow: column;
-//   }
-
-//   &.grid-middle {
-//     align-items: center;
-//   }
-
-//   &.grid-bottom {
-//     align-items: end;
-//   }
-
-//   &.grid-equal {
-//     align-items: stretch;
-//     grid-auto-rows: 1fr;
-//   }
-// }
-
-// ****************************
-// DEMO
-// ****************************
-// .grid {
-//   & > div {
-//     background-color: rgba(black, 0.1);
-//     padding: 1rem;
-//   }
-// }
-
 grid-wrapper {
   box-sizing: border-box;
   display: flex;
@@ -365,42 +278,11 @@ grid-wrapper {
     margin-bottom: 0;
   }
 
-  &[data-align="center"] {
+  &[data-align="middle"] {
     & > grid-cell {
       align-self: center;
     }
   }
-
-  // &.gallery {
-  //   display: grid;
-  //   grid-gap: 1rem;
-  //   align-items: start;
-  //   grid-template-columns: repeat(auto-fit, [column] minmax(220px, 1fr));
-  //   justify-items: stretch;
-  //   grid-auto-flow: dense;
-  //   align-items: stretch;
-  //   grid-auto-rows: 1fr;
-  //   margin: 0;
-
-  //   & > grid-cell {
-  //     vertical-align: baseline;
-  //     font-size: inherit;
-  //     margin: 0;
-  //     align-self: stretch;
-  //   }
-  // }
-
-  // &.middle {
-  //   & > grid-cell {
-  //     align-self: center;
-  //   }
-  // }
-
-  // &.bottom {
-  //   & > grid-cell {
-  //     align-self: flex-end;
-  //   }
-  // }
 
   & > grid-cell {
     vertical-align: baseline;
@@ -410,10 +292,8 @@ grid-wrapper {
     margin: 0.5rem;
     max-width: 100%;
 
-    // Set large cells instead of small so that it can
-    // grow to 100% in responsive. You can only grow one cell though.
-    &.grow {
-      min-width: 66.666666%;
+    &[data-align="right"] {
+      text-align: right;
     }
   }
 
@@ -422,28 +302,20 @@ grid-wrapper {
       min-width: 0;
     }
   }
-
-  // @media (max-width: $breakpoint-small) {
-  //   & > grid-cell {
-  //     flex: 1 1 100% !important;
-  //     max-width: 100%;
-  //   }
-  // }
 }
 
 grid-wrapper-fixed {
   @extend grid-wrapper;
   flex-flow: row nowrap;
+
+  & > grid-cell {
+    min-width: 0;
+  }
 }
 
 tab-view {
   display: block;
   min-height: 100vh;
-  // background-image: url(/lanefinder/images/header-image-dashboard.png);
-  // background-position: top center;
-  // background-repeat: no-repeat;
-  // background-size: 100%;
-  // background-attachment: contain;
   position: absolute;
   left: 0;
   right: 0;
@@ -483,31 +355,6 @@ tab-header {
   z-index: 2;
   position: sticky;
   top: -64px;
-  // background: rgba(black, 0.4);
-  // background-image: url(/lanefinder/images/header-image-dashboard.png);
-
-  &.sticky {
-    transition: box-shadow 0.3s ease, background 0.3s ease;
-    z-index: 3;
-    padding-bottom: 0;
-    // position: fixed;
-    // padding-bottom: 1rem;
-    // top: 0;
-    // right: 0;
-    // left: 0;
-    // height: 40px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  // &.sticky + tab-content {
-  //   margin-top: 154px;
-  // }
-  // position: sticky;
-  // top: -64px;
-  // z-index: 3;
-  // -webkit-mask-image: url(/lanefinder/images/header-mask.png);
-  // -webkit-mask-size: 100% 100%;
-  // -webkit-mask-position: bottom;
 
   tab-header-title {
     display: block;
@@ -538,17 +385,6 @@ tab-content {
   margin-top: -15px;
   min-height: 100vh;
 }
-
-// #filters {
-//   &.sticky {
-//     position: fixed;
-//   z-index: 2;
-//   padding-bottom: 1rem;
-//   top: 0;
-//   right: 0;
-//   left: 0;
-//   }
-// }
 
 x-tag {
   display: inline-block;
@@ -600,10 +436,30 @@ list-item {
   }
 }
 
+cell-left,
+cell-middle,
+cell-right {
+  width: 33.33333333333%;
+}
+
+cell-left {
+  text-align: left;
+}
+
+cell-middle {
+  text-align: center;
+  font-weight: $font-bold;
+}
+
+cell-right {
+  text-align: right;
+}
+
 navigation-bar {
-  height: 44px;
+  height: $navigation-bar-height;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 1rem;
   position: fixed;
   z-index: 10;
@@ -611,11 +467,11 @@ navigation-bar {
   left: 0;
   right: 0;
   opacity: 0;
-  background-color: $contrast;
+  background-color: $white;
   transition: opacity 0.5s ease;
 
   &.sticky {
-    // border-bottom: $line;
+    border-bottom: $line;
     opacity: 1;
   }
 }
@@ -647,13 +503,15 @@ mobile-tabs {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
   background: $white;
   position: fixed;
   z-index: 3;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 0.25rem;
+  height: $tab-bar-height;
+  padding: 0 0.25rem;
   border-top: $line;
 
   mobile-tab-item {
