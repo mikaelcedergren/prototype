@@ -14,10 +14,9 @@ body {
 body > div {
   display: flex;
   justify-content: center;
-  align-items: stretch;
-  padding: 2rem; }
+  align-items: stretch; }
   body > div > div {
-    min-width: 480px;
+    width: 100%;
     max-width: 480px;
     background-color: #fff;
     padding: 2rem; }
@@ -39,7 +38,7 @@ body > div {
         font-weight: bold; }
 
 h1 {
-  margin: 6rem auto 2rem auto;
+  margin: 0 auto 2rem auto;
   font-size: 5rem;
   line-height: 1;
   color: #3b88fd;
@@ -72,15 +71,19 @@ select {
   margin-bottom: 1rem;
   border: 1px solid #e6eaf0;
   background-color: #fff; }
-  input[type="text"].field-error,
+  input.field-error[type="text"],
   textarea.field-error,
   select.field-error {
     border-color: #fd3b3b; }
 
-.radio-group, .checkbox-group {
+.radio-group,
+.checkbox-group {
   margin-bottom: 1rem;
   text-align: left; }
-  .radio-group .radio, .radio-group .checkbox, .checkbox-group .radio, .checkbox-group .checkbox {
+  .radio-group .radio,
+  .radio-group .checkbox,
+  .checkbox-group .radio,
+  .checkbox-group .checkbox {
     margin-bottom: 0.25rem; }
 
 textarea {
@@ -151,7 +154,8 @@ p {
   justify-content: center;
   align-items: stretch;
   flex-flow: row nowrap; }
-  .comparison .correct, .comparison .wrong {
+  .comparison .correct,
+  .comparison .wrong {
     margin: 1rem;
     padding: 1rem;
     display: inline-block;

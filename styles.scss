@@ -30,10 +30,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    padding: 2rem;
 
     & > div {
-      min-width: 480px;
+      width: 100%;
       max-width: 480px;
       background-color: $white;
       padding: 2rem;
@@ -66,21 +65,21 @@ body {
 }
 
 h1 {
-    margin: 6rem auto 2rem auto;
-    font-size: 5rem;
-    line-height: 1;
-    color: $primary;
-    max-width: 480px;
-    text-align: left;
+  margin: 0 auto 2rem auto;
+  font-size: 5rem;
+  line-height: 1;
+  color: $primary;
+  max-width: 480px;
+  text-align: left;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    li {
-        margin-bottom: 0.5rem;
-    }
+  li {
+    margin-bottom: 0.5rem;
+  }
 }
 
 strong {
@@ -110,11 +109,13 @@ select {
   }
 }
 
-.radio-group, .checkbox-group {
+.radio-group,
+.checkbox-group {
   margin-bottom: 1rem;
   text-align: left;
 
-  .radio, .checkbox {
+  .radio,
+  .checkbox {
     margin-bottom: 0.25rem;
   }
 }
@@ -129,17 +130,17 @@ a {
   text-decoration: none;
 
   &.menu {
-      padding: 1rem;
-      text-align: left;
-      display: block;
-      width: 100%;
-      border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: left;
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
 
-      &:hover {
-          background-color: $primary;
-          color: $white;
-          text-decoration: none;
-      }
+    &:hover {
+      background-color: $primary;
+      color: $white;
+      text-decoration: none;
+    }
   }
 
   &:hover {
@@ -199,27 +200,27 @@ p {
 }
 
 .comparison {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-flow: row nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: row nowrap;
 
-    .correct, .wrong {
-        margin: 1rem;
-        padding: 1rem;
-        display: inline-block;
-        border: 1px solid $gray;
-        border-radius: 1rem;
-    }
+  .correct,
+  .wrong {
+    margin: 1rem;
+    padding: 1rem;
+    display: inline-block;
+    border: 1px solid $gray;
+    border-radius: 1rem;
+  }
 
-    .correct {
-        border-color: $success;
-    }
+  .correct {
+    border-color: $success;
+  }
 
-    .wrong {
-        border-color: $danger;
-    }
-
+  .wrong {
+    border-color: $danger;
+  }
 }
 
 @keyframes show-global-error {

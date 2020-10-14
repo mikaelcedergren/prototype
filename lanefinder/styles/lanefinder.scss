@@ -1,231 +1,232 @@
+@import "_variables.scss";
 @import "../../shared/styles/core.scss";
 // @import "../../shared/styles/_variables.scss";
 // @import "../../shared/styles/_mixins.scss";
 
 tab-view {
+  display: block;
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+tab-header-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background-image: url(/lanefinder/images/header-image-dashboard.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: contain;
+}
+
+tab-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top left;
+  z-index: 2;
+  position: sticky;
+  top: -64px;
+
+  tab-header-title {
     display: block;
-    min-height: 100vh;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-  }
-
-  tab-header-content {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 200px;
-    background-image: url(/lanefinder/images/header-image-dashboard.png);
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: contain;
-  }
-
-  tab-header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 1rem;
-    height: 120px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top left;
-    z-index: 2;
-    position: sticky;
-    top: -64px;
-
-    tab-header-title {
-      display: block;
-      color: $white;
-      font-weight: $font-bold;
-      font-size: $font-size-h3;
-      font-family: $font-family-headings;
-      margin-bottom: 1rem;
-    }
-
-    tab-header-button {
-      margin-bottom: 1rem;
-
-      button {
-        background-color: rgba(black, 0.4);
-        border: 1px solid $white;
-      }
-    }
-  }
-
-  tab-content {
-    position: relative;
-    z-index: 2;
-    display: block;
-    border-top-left-radius: $border-radius * 3;
-    border-top-right-radius: $border-radius * 3;
-    background-color: $gray-1;
-    margin-top: -15px;
-    min-height: 100vh;
-  }
-
-  x-tag {
-    display: inline-block;
-    background-color: $gray-2;
-    margin-right: 2px;
-    padding: 6px 8px;
-    border-radius: $border-radius;
-    font-size: $font-size-small;
+    color: $white;
     font-weight: $font-bold;
+    font-size: $font-size-h3;
+    font-family: $font-family-headings;
+    margin-bottom: 1rem;
+  }
+
+  tab-header-button {
+    margin-bottom: 1rem;
+
+    button {
+      background-color: rgba(black, 0.4);
+      border: 1px solid $white;
+    }
+  }
+}
+
+tab-content {
+  position: relative;
+  z-index: 2;
+  display: block;
+  border-top-left-radius: $border-radius * 3;
+  border-top-right-radius: $border-radius * 3;
+  background-color: $gray-1;
+  margin-top: -15px;
+  min-height: 100vh;
+}
+
+x-tag {
+  display: inline-block;
+  background-color: $gray-2;
+  margin-right: 2px;
+  padding: 6px 8px;
+  border-radius: $border-radius;
+  font-size: $font-size-small;
+  font-weight: $font-bold;
+  margin-bottom: 0.25rem;
+  line-height: 1;
+
+  &[data-color="accent"] {
+    background-color: $accent;
+    color: $white;
+  }
+}
+
+padding-wrapper {
+  display: block;
+  padding: 1rem;
+}
+
+list-heading {
+  display: block;
+  border-top: $line;
+  padding: 1rem;
+  color: $gray-5;
+  font-weight: $font-bold;
+}
+
+list-item {
+  background-color: $white;
+  padding: 1rem;
+  display: block;
+  box-shadow: 0 2px 2px 0 rgba(black, 0.1);
+  border-top: $line;
+  margin-bottom: 3px;
+
+  strong {
+    display: block;
     margin-bottom: 0.25rem;
-    line-height: 1;
-
-    &[data-color="accent"] {
-      background-color: $accent;
-      color: $white;
-    }
   }
 
-  padding-wrapper {
+  small {
     display: block;
-    padding: 1rem;
-  }
-
-  list-heading {
-    display: block;
-    border-top: $line;
-    padding: 1rem;
+    margin-bottom: 0.5rem;
     color: $gray-5;
-    font-weight: $font-bold;
   }
+}
 
-  list-item {
-    background-color: $white;
-    padding: 1rem;
-    display: block;
-    box-shadow: 0 2px 2px 0 rgba(black, 0.1);
-    border-top: $line;
-    margin-bottom: 3px;
+cell-left,
+cell-middle,
+cell-right {
+  width: 33.33333333333%;
+}
 
-    strong {
-      display: block;
+cell-left {
+  text-align: left;
+}
+
+cell-middle {
+  text-align: center;
+  font-weight: $font-bold;
+}
+
+cell-right {
+  text-align: right;
+}
+
+navigation-bar {
+  height: $navigation-bar-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: $white;
+  transition: opacity 0.5s ease;
+
+  &.sticky {
+    border-bottom: $line;
+    opacity: 1;
+  }
+}
+
+status-bar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+  background-color: #000;
+
+  img {
+    max-height: 15px;
+  }
+}
+
+content {
+  display: block;
+  // overflow-x: hidden;
+}
+
+mobile-tabs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: $white;
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: $tab-bar-height;
+  padding: 0 0.25rem;
+  border-top: $line;
+
+  mobile-tab-item {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 20%;
+    align-items: center;
+    color: $gray-4;
+    font-weight: $font-bold;
+
+    i {
+      font-size: 21px !important;
       margin-bottom: 0.25rem;
     }
 
-    small {
-      display: block;
-      margin-bottom: 0.5rem;
-      color: $gray-5;
+    mobile-tab-title {
+      font-size: $font-size-tiny;
     }
   }
+}
 
-  cell-left,
-  cell-middle,
-  cell-right {
-    width: 33.33333333333%;
-  }
-
-  cell-left {
-    text-align: left;
-  }
-
-  cell-middle {
-    text-align: center;
-    font-weight: $font-bold;
-  }
-
-  cell-right {
-    text-align: right;
-  }
-
-  navigation-bar {
-    height: $navigation-bar-height;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    background-color: $white;
-    transition: opacity 0.5s ease;
-
-    &.sticky {
-      border-bottom: $line;
-      opacity: 1;
-    }
-  }
-
-  status-bar {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 4px;
-    background-color: #000;
-
-    img {
-      max-height: 15px;
-    }
-  }
-
-  content {
-    display: block;
-    // overflow-x: hidden;
-  }
-
-  mobile-tabs {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    background: $white;
-    position: fixed;
-    z-index: 3;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: $tab-bar-height;
-    padding: 0 0.25rem;
-    border-top: $line;
-
-    mobile-tab-item {
-      display: flex;
-      flex-flow: column nowrap;
-      width: 20%;
-      align-items: center;
-      color: $gray-4;
-      font-weight: $font-bold;
-
-      i {
-        font-size: 21px !important;
-        margin-bottom: 0.25rem;
-      }
-
-      mobile-tab-title {
-        font-size: $font-size-tiny;
-      }
-    }
-  }
-
-  x-box {
-    display: block;
-    padding: 1rem;
-    border-radius: $border-radius * 2;
-    background: $white;
-    box-shadow: $box-shadow;
-  }
+x-box {
+  display: block;
+  padding: 1rem;
+  border-radius: $border-radius * 2;
+  background: $white;
+  box-shadow: $box-shadow;
+}
