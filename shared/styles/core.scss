@@ -37,22 +37,6 @@ small {
   font-size: $font-size-small;
 }
 
-a {
-  position: relative;
-  text-decoration: none;
-  color: $primary;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: $primary;
-    height: 1px;
-  }
-}
-
 p {
   margin: 0 0 1rem 0;
 

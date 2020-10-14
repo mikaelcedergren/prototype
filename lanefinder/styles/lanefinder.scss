@@ -3,6 +3,27 @@
 // @import "../../shared/styles/_variables.scss";
 // @import "../../shared/styles/_mixins.scss";
 
+a {
+  color: $black;
+  text-decoration: none;
+
+  &.link {
+    position: relative;
+    text-decoration: none;
+    color: $primary;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: $primary;
+      height: 1px;
+    }
+  }
+}
+
 tab-view {
   display: block;
   min-height: 100vh;
@@ -209,8 +230,15 @@ mobile-tabs {
     flex-flow: column nowrap;
     width: 20%;
     align-items: center;
-    color: $gray-4;
     font-weight: $font-bold;
+
+    a {
+      color: $gray-4;
+      display: flex;
+      align-items: center;
+      flex-flow: column nowrap;
+      width: 100%;
+    }
 
     i {
       font-size: 21px !important;
@@ -219,6 +247,10 @@ mobile-tabs {
 
     mobile-tab-title {
       font-size: $font-size-tiny;
+    }
+
+    &.active a {
+      color: $black;
     }
   }
 }
@@ -229,4 +261,10 @@ x-box {
   border-radius: $border-radius * 2;
   background: $white;
   box-shadow: $box-shadow;
+}
+
+// FIX FOR FOUC
+html {
+  visibility: visible;
+  opacity: 1;
 }

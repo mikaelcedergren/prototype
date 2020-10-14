@@ -30,19 +30,6 @@ body {
 small {
   font-size: 14px; }
 
-a {
-  position: relative;
-  text-decoration: none;
-  color: #ff8b4a; }
-  a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #ff8b4a;
-    height: 1px; }
-
 p {
   margin: 0 0 1rem 0; }
   p:last-child {
@@ -225,6 +212,22 @@ grid-wrapper-fixed {
 .color-text-discreet {
   color: #778396; }
 
+a {
+  color: #3e4a5e;
+  text-decoration: none; }
+  a.link {
+    position: relative;
+    text-decoration: none;
+    color: #ff8b4a; }
+    a.link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #ff8b4a;
+      height: 1px; }
+
 tab-view {
   display: block;
   min-height: 100vh;
@@ -397,13 +400,20 @@ mobile-tabs {
     flex-flow: column nowrap;
     width: 20%;
     align-items: center;
-    color: #a3afbf;
     font-weight: 700; }
+    mobile-tabs mobile-tab-item a {
+      color: #a3afbf;
+      display: flex;
+      align-items: center;
+      flex-flow: column nowrap;
+      width: 100%; }
     mobile-tabs mobile-tab-item i {
       font-size: 21px !important;
       margin-bottom: 0.25rem; }
     mobile-tabs mobile-tab-item mobile-tab-title {
       font-size: 12px; }
+    mobile-tabs mobile-tab-item.active a {
+      color: #3e4a5e; }
 
 x-box {
   display: block;
@@ -411,3 +421,7 @@ x-box {
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.06); }
+
+html {
+  visibility: visible;
+  opacity: 1; }
