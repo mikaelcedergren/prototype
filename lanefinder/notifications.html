@@ -35,7 +35,7 @@
 
 
 <tab-view>
-  <div class="backdrop"></div>
+  <header-backdrop style="background-image: url(/lanefinder/images/header-image-driver-with-phone.png);"></header-backdrop>
   <tab-header>
     <tab-header-content>
       <tab-header-title>
@@ -87,25 +87,23 @@
 
 
 <navigation-bar id="sticker">
-  <cell-left><i class="material-icons">tune</i></cell-left>
-  <cell-middle>Jobs</cell-middle>
-  <cell-right><i class="material-icons">favorite</i></cell-right>
+  <cell-left></cell-left>
+  <cell-middle>Notifications</cell-middle>
+  <cell-right></cell-right>
 </navigation-bar>
 
 </content>
 <script>
     window.onscroll = function () { myFunction() };
 
-    var header = document.getElementById("sticker");
-    var sticky = header.offsetTop + 120;
+    var sticker = document.getElementById("sticker");
+    var sticky = sticker.offsetTop + 120;
 
     function myFunction() {
         if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-            filters.classList.add("sticky");
+            sticker.classList.add("sticky");
         } else {
-            header.classList.remove("sticky");
-            filters.classList.remove("sticky");
+            sticker.classList.remove("sticky");
         }
     }
 </script>

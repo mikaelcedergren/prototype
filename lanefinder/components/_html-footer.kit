@@ -2,16 +2,14 @@
 <script>
     window.onscroll = function () { myFunction() };
 
-    var header = document.getElementById("sticker");
-    var sticky = header.offsetTop + 120;
+    var sticker = document.getElementById("sticker");
+    var sticky = sticker.offsetTop + 120;
 
     function myFunction() {
         if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-            filters.classList.add("sticky");
+            sticker.classList.add("sticky");
         } else {
-            header.classList.remove("sticky");
-            filters.classList.remove("sticky");
+            sticker.classList.remove("sticky");
         }
     }
 </script>

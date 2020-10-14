@@ -63,8 +63,19 @@
 		"oA": 0,
 		"oAP": "/lanefinder/images/header-image-dashboard.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/lanefinder/images/header-image-driver-with-phone.png": {
+		"ft": 32768,
+		"iS": 2240667,
+		"oA": 0,
+		"oAP": "/lanefinder/images/header-image-driver-with-phone.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

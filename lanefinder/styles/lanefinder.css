@@ -243,7 +243,8 @@ tab-header-content {
   align-items: center;
   justify-content: space-between; }
 
-.backdrop {
+header-backdrop {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;

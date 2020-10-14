@@ -41,7 +41,8 @@ tab-header-content {
   justify-content: space-between;
 }
 
-.backdrop {
+header-backdrop {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
