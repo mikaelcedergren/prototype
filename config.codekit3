@@ -33,6 +33,22 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
+	"/lanefinder/components/_html-footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/lanefinder/components/_html-footer.html",
+		"oF": 0
+		},
+	"/lanefinder/components/_html-header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/lanefinder/components/_html-header.html",
+		"oF": 0
+		},
 	"/lanefinder/images/header-image-dashboard.png": {
 		"ft": 32768,
 		"iS": 2107900,
@@ -70,6 +86,42 @@
 		"oA": 0,
 		"oAP": "/lanefinder/index.html",
 		"oF": 0
+		},
+	"/lanefinder/styles/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/lanefinder/styles/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/lanefinder/styles/lanefinder.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/lanefinder/styles/lanefinder-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/lanefinder/styles/lanefinder.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/lanefinder/styles/lanefinder.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
 	"/README.md": {
 		"cB": 0,
@@ -112,55 +164,6 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"/shared/_mixins.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/shared/_mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/shared/_variables.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/shared/_variables.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/shared/core.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/shared/core-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/shared/core.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/shared/core.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
 	"/shared/images/status-bar-left.png": {
 		"ft": 32768,
 		"iS": 1317,
@@ -183,25 +186,77 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/shared/normalize-min.css": {
+	"/shared/styles/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/shared/styles/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/shared/styles/_normalize.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/shared/normalize-min-min.css",
+		"oAP": "/shared/styles/_normalize-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"/shared/normalize.css": {
+	"/shared/styles/_utilities.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/shared/styles/_utilities.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/shared/styles/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/shared/styles/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/shared/styles/core.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/shared/normalize-min.css",
+		"oAP": "/shared/styles/core-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/shared/styles/core.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/shared/styles/core.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
 	"/styles.css": {
 		"aP": 1,

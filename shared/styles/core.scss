@@ -1,0 +1,144 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+html,
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  height: 100%;
+  color: $black;
+  background-color: $gray-1;
+  font-weight: $font-regular;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+small {
+  font-size: $font-size-small;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: $primary;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $primary;
+    height: 1px;
+  }
+}
+
+p {
+  margin: 0 0 1rem 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+i {
+  vertical-align: middle;
+
+  & + span {
+    vertical-align: middle;
+    margin-left: 0.5rem;
+  }
+}
+
+button {
+  border-radius: 100px;
+  background-color: $accent;
+  color: $white;
+  border: none;
+  height: 40px;
+  padding: 0 1rem;
+  outline: none;
+
+  i {
+    font-size: $font-size;
+  }
+
+  &[data-size="small"] {
+    padding: 0 0.5rem;
+    height: 28px;
+    font-size: $font-size-small;
+
+    i {
+      font-size: $font-size-small;
+    }
+  }
+}
+
+grid-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: -0.5rem -0.5rem 0.5rem -0.5rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &[data-align="middle"] {
+    & > grid-cell {
+      align-self: center;
+    }
+  }
+
+  & > grid-cell {
+    vertical-align: baseline;
+    font-size: inherit;
+    min-width: 220px;
+    flex: 1 1 0%;
+    margin: 0.5rem;
+    max-width: 100%;
+
+    &[data-align="right"] {
+      text-align: right;
+    }
+  }
+
+  grid-wrapper {
+    & > grid-cell {
+      min-width: 0;
+    }
+  }
+}
+
+grid-wrapper-fixed {
+  @extend grid-wrapper;
+  flex-flow: row nowrap;
+
+  & > grid-cell {
+    min-width: 0;
+  }
+}
+
+@import "_utilities.scss";

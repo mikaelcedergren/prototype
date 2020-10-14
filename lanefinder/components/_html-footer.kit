@@ -1,0 +1,22 @@
+</content>
+
+<script>
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("sticker");
+    var sticky = header.offsetTop + 120;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+            filters.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+            filters.classList.remove("sticky");
+        }
+    }
+</script>
+
+</body>
+
+</html>

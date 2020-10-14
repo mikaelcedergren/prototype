@@ -71,6 +71,34 @@ button {
     button[data-size="small"] i {
       font-size: 14px; }
 
+grid-wrapper, grid-wrapper-fixed {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: -0.5rem -0.5rem 0.5rem -0.5rem; }
+  grid-wrapper:last-of-type, grid-wrapper-fixed:last-of-type {
+    margin-bottom: 0; }
+  grid-wrapper[data-align="middle"] > grid-cell, grid-wrapper-fixed[data-align="middle"] > grid-cell {
+    align-self: center; }
+  grid-wrapper > grid-cell, grid-wrapper-fixed > grid-cell {
+    vertical-align: baseline;
+    font-size: inherit;
+    min-width: 220px;
+    flex: 1 1 0%;
+    margin: 0.5rem;
+    max-width: 100%; }
+    grid-wrapper > grid-cell[data-align="right"], grid-wrapper-fixed > grid-cell[data-align="right"] {
+      text-align: right; }
+  grid-wrapper grid-wrapper > grid-cell, grid-wrapper-fixed grid-wrapper > grid-cell, grid-wrapper grid-wrapper-fixed > grid-cell, grid-wrapper-fixed grid-wrapper-fixed > grid-cell {
+    min-width: 0; }
+
+grid-wrapper-fixed {
+  flex-flow: row nowrap; }
+  grid-wrapper-fixed > grid-cell {
+    min-width: 0; }
+
 .mt-0 {
   margin-top: 0 !important; }
 
@@ -196,34 +224,6 @@ button {
 
 .color-text-discreet {
   color: #778396; }
-
-grid-wrapper, grid-wrapper-fixed {
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  margin: -0.5rem -0.5rem 0.5rem -0.5rem; }
-  grid-wrapper:last-of-type, grid-wrapper-fixed:last-of-type {
-    margin-bottom: 0; }
-  grid-wrapper[data-align="middle"] > grid-cell, grid-wrapper-fixed[data-align="middle"] > grid-cell {
-    align-self: center; }
-  grid-wrapper > grid-cell, grid-wrapper-fixed > grid-cell {
-    vertical-align: baseline;
-    font-size: inherit;
-    min-width: 220px;
-    flex: 1 1 0%;
-    margin: 0.5rem;
-    max-width: 100%; }
-    grid-wrapper > grid-cell[data-align="right"], grid-wrapper-fixed > grid-cell[data-align="right"] {
-      text-align: right; }
-  grid-wrapper grid-wrapper > grid-cell, grid-wrapper-fixed grid-wrapper > grid-cell, grid-wrapper grid-wrapper-fixed > grid-cell, grid-wrapper-fixed grid-wrapper-fixed > grid-cell {
-    min-width: 0; }
-
-grid-wrapper-fixed {
-  flex-flow: row nowrap; }
-  grid-wrapper-fixed > grid-cell {
-    min-width: 0; }
 
 tab-view {
   display: block;
