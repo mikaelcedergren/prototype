@@ -43,17 +43,16 @@ tab-header-content {
 
 header-backdrop {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  // background-image: url(/lanefinder/images/header-image-dashboard.png);
-  // background-position: top left;
-  // background-repeat: no-repeat;
-  // background-size: 100%;
-  // background-attachment: contain;
   min-height: 400px;
-  background: transparent;
+  // background-image: url(/lanefinder/images/header-image-dashboard.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: contain;
 }
 
 tab-header {

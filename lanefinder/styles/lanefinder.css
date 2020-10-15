@@ -245,12 +245,15 @@ tab-header-content {
 
 header-backdrop {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   min-height: 400px;
-  background: transparent; }
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: contain; }
 
 tab-header {
   display: flex;

@@ -23,7 +23,7 @@
   <link rel="stylesheet" type="text/css" href="/shared/styles/_normalize.css">
   <link rel="stylesheet" href="/lanefinder/styles/lanefinder.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script>
   <script type="text/javascript"
     src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js"></script>
@@ -35,7 +35,8 @@
 
 
 <tab-view>
-  <img class="parallax" src="/lanefinder/images/header-image-driver-with-phone.png">
+  <header-backdrop style="background-image: url(/lanefinder/images/header-image-driver-with-phone.png);"></header-backdrop>
+  <!-- <img class="parallax" src="/lanefinder/images/header-image-driver-with-phone.png"> -->
   <tab-header>
     <tab-header-content>
       <tab-header-title>
@@ -152,7 +153,6 @@
     </mobile-tab-item>
 </mobile-tabs>
 
-
 <navigation-bar id="sticker">
   <cell-left><i class="material-icons">tune</i></cell-left>
   <cell-middle>Jobs</cell-middle>
@@ -160,12 +160,12 @@
 </navigation-bar>
 
 </x-content>
-<script>
+<!-- <script>
 var image = document.getElementsByClassName('parallax');
 new simpleParallax(image, {
-	scale: 1.5
+	scale: 2
 });
-</script>
+</script> -->
 <script>
     window.onscroll = function () { myFunction() };
 
