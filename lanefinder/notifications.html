@@ -36,22 +36,89 @@
 
 
 <tab-view>
+  <!-- <header-backdrop></header-backdrop> -->
   <img class="parallax" src="/lanefinder/images/header-image-driver-with-phone.png">
-  <!-- <header-backdrop style="background-image: url(/lanefinder/images/header-image-driver-with-phone.png);"></header-backdrop> -->
   <tab-header>
     <tab-header-content>
       <tab-header-title>
-        Notifications
+        Jobs
       </tab-header-title>
+      <tab-header-button>
+        <button data-size="small"><i class="material-icons">favorite</i><span>Save this search</span></button>
+      </tab-header-button>
     </tab-header-content>
   </tab-header>
   <tab-content>
-  <padding-wrapper>Notifications</padding-wrapper>
+    <padding-wrapper>
+      <x-box id="filters">
+        <grid-wrapper-fixed data-align="center">
+          <grid-cell>
+            <i class="material-icons color-discreet">tune</i><span class="color-text-discreet">Filters</span>
+          </grid-cell>
+          <grid-cell data-align="right">
+            <a href="#">Edit</a>
+          </grid-cell>
+        </grid-wrapper-fixed>
+        <p class="color-text-discreet">Team OTR, local company driver jobs in 90210 with a minimum weekly average...
+        </p>
+        <strong>12 out of 284 jobs</strong>
+      </x-box>
+    </padding-wrapper>
+
+    <list-heading>
+      <grid-wrapper-fixed>
+        <grid-cell>
+          Matching all of your filters
+        </grid-cell>
+        <grid-cell data-align="right">
+          2 jobs
+        </grid-cell>
+      </grid-wrapper-fixed>
+    </list-heading>
+
+    <list-item>
+      <x-tag data-color="accent">Urgently hiring</x-tag>
+      <strong>Dedicated Line Haul</strong>
+      <small>Billy Bob Riggers</small>
+      <p>$1.000 - $2.500 per week</p>
+      <p>Expected to be out 20-21 days. Flatbed.</p>
+      <x-tag>O/O</x-tag>
+      <x-tag>1-99 trucks</x-tag>
+    </list-item>
+    <list-item>
+      <x-tag data-color="accent">Urgently hiring</x-tag>
+      <strong>Dedicated Line Haul</strong>
+      <small>Billy Bob Riggers</small>
+      <p>$1.000 - $2.500 per week</p>
+      <p>Expected to be out 20-21 days. Flatbed.</p>
+      <x-tag>O/O</x-tag>
+      <x-tag>1-99 trucks</x-tag>
+    </list-item>
+    <list-item>
+      <x-tag data-color="accent">Urgently hiring</x-tag>
+      <strong>Dedicated Line Haul</strong>
+      <small>Billy Bob Riggers</small>
+      <p>$1.000 - $2.500 per week</p>
+      <p>Expected to be out 20-21 days. Flatbed.</p>
+      <x-tag>O/O</x-tag>
+      <x-tag>1-99 trucks</x-tag>
+    </list-item>
+    <list-item>
+      <x-tag data-color="accent">Urgently hiring</x-tag>
+      <strong>Dedicated Line Haul</strong>
+      <small>Billy Bob Riggers</small>
+      <p>$1.000 - $2.500 per week</p>
+      <p>Expected to be out 20-21 days. Flatbed.</p>
+      <x-tag>O/O</x-tag>
+      <x-tag>1-99 trucks</x-tag>
+    </list-item>
+    <list-item>This is a list item</list-item>
+    <list-item>This is a list item</list-item>
   </tab-content>
 </tab-view>
 
 <mobile-tabs>
-    <mobile-tab-item class="">
+    <mobile-tab-item class="active">
         <a href="index.html">
             <i class="material-icons">policy</i>
             <mobile-tab-title>Jobs</mobile-tab-title>
@@ -72,7 +139,7 @@
         </a>
     </mobile-tab-item>
 
-    <mobile-tab-item class="active">
+    <mobile-tab-item class="">
         <a href="notifications.html">
             <i class="material-icons">notifications</i>
             <mobile-tab-title>Notifications</mobile-tab-title>
@@ -89,9 +156,9 @@
 
 
 <navigation-bar id="sticker">
-  <cell-left></cell-left>
-  <cell-middle>Notifications</cell-middle>
-  <cell-right></cell-right>
+  <cell-left><i class="material-icons">tune</i></cell-left>
+  <cell-middle>Jobs</cell-middle>
+  <cell-right><i class="material-icons">favorite</i></cell-right>
 </navigation-bar>
 
 </content>
