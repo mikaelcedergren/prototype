@@ -1,5 +1,11 @@
 </content>
 <script>
+var image = document.getElementsByClassName('parallax');
+new simpleParallax(image, {
+	scale: 1.5
+});
+</script>
+<script>
     window.onscroll = function () { myFunction() };
 
     var sticker = document.getElementById("sticker");

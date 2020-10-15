@@ -221,6 +221,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/shared/scripts/parallax.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/shared/scripts/parallax-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/shared/styles/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,

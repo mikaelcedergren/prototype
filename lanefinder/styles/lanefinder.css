@@ -245,16 +245,12 @@ tab-header-content {
 
 header-backdrop {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 200px;
-  background-image: url(/lanefinder/images/header-image-dashboard.png);
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: contain; }
+  min-height: 400px;
+  background: transparent; }
 
 tab-header {
   display: flex;
@@ -354,15 +350,14 @@ navigation-bar {
   padding: 0 1rem;
   position: fixed;
   z-index: 10;
-  top: 0;
+  top: -44px;
   left: 0;
   right: 0;
-  opacity: 0;
   background-color: #fff;
-  transition: opacity 0.3s ease; }
+  transition: top 0.3s cubic-bezier(0, 0.6, 0.5, 1); }
   navigation-bar.sticky {
     border-bottom: 1px solid #e6eaf0;
-    opacity: 1; }
+    top: 0; }
 
 status-bar {
   position: fixed;
@@ -422,6 +417,11 @@ x-box {
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.06); }
+
+.simpleParallax {
+  position: fixed; }
+  .simpleParallax img {
+    max-width: 100%; }
 
 html {
   visibility: visible;
