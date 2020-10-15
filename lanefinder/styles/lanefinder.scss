@@ -48,11 +48,13 @@ header-backdrop {
   left: 0;
   right: 0;
   min-height: 400px;
-  // background-image: url(/lanefinder/images/header-image-dashboard.png);
+  background-color: $black;
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: contain;
+  -webkit-transform:translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
 }
 
 tab-header {
@@ -60,7 +62,7 @@ tab-header {
   align-items: flex-end;
   justify-content: space-between;
   padding: 1rem;
-  height: 120px;
+  height: $tab-header-height;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top left;
