@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+    html {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <title>Prototype</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Mikael Cedergren">
+  <meta name="description" content="Prototyping by Mikael Cedergren.">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/shared/styles/_normalize.css">
+  <link rel="stylesheet" href="/lanefinder/styles/lanefinder.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
+ <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script>
+  <script type="text/javascript"
+    src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js"></script>
+</head>
+
+<body>
+  <x-content>
+
+
+
+<tab-view>
+  <header-backdrop style="background-image: url(/lanefinder/images/header-image-flag.png);"></header-backdrop>
+  <tab-header>
+    <tab-header-content>
+      <tab-header-title>
+        Notifications
+      </tab-header-title>
+    </tab-header-content>
+  </tab-header>
+  <tab-content>
+    <padding-wrapper>This will be a screen for more alternatives.</padding-wrapper>
+  </tab-content>
+</tab-view>
+
+<mobile-tabs>
+    <mobile-tab-item class="">
+        <a href="index.html">
+            <i class="material-icons">policy</i>
+            <mobile-tab-title>Jobs</mobile-tab-title>
+        </a>
+    </mobile-tab-item>
+
+    <mobile-tab-item class="">
+        <a href="carriers.html">
+            <i class="material-icons">apartment</i>
+            <mobile-tab-title>Carriers</mobile-tab-title>
+        </a>
+    </mobile-tab-item>
+
+    <mobile-tab-item class="">
+        <a href="saved.html">
+            <i class="material-icons">favorite</i>
+            <mobile-tab-title>Saved</mobile-tab-title>
+        </a>
+    </mobile-tab-item>
+
+    <mobile-tab-item class="">
+        <a href="notifications.html">
+            <i class="material-icons">notifications</i>
+            <mobile-tab-title>Notifications</mobile-tab-title>
+        </a>
+    </mobile-tab-item>
+
+    <mobile-tab-item class="active">
+        <a href="more.html">
+            <i class="material-icons">menu</i>
+            <mobile-tab-title>More</mobile-tab-title>
+        </a>
+    </mobile-tab-item>
+</mobile-tabs>
+
+<navigation-bar id="sticker">
+  <cell-left></cell-left>
+  <cell-middle>Notifications</cell-middle>
+  <cell-right></cell-right>
+</navigation-bar>
+
+</x-content>
+<!-- <script>
+var image = document.getElementsByClassName('parallax');
+new simpleParallax(image, {
+	scale: 2
+});
+</script> -->
+<script>
+    window.onscroll = function () { myFunction() };
+
+    var sticker = document.getElementById("sticker");
+    var sticky = sticker.offsetTop + 200;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            sticker.classList.add("sticky");
+        } else {
+            sticker.classList.remove("sticky");
+        }
+    }
+</script>
+</body>
+</html>
+
