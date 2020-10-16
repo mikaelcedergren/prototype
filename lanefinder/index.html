@@ -164,13 +164,11 @@
 
 
 <my-overlay id="modal1">
-  <div class="modal-dialog">
-    <header class="modal-header">
-      The header of the first modal
-      <button class="close-modal" aria-label="close modal" data-close>
-        ✕
-      </button>
-    </header>
+  <my-overlay-content>
+    <my-overlay-header>
+      <i class="material-icons" data-close>expand_more</i>
+      242 jobs
+    </my-overlay-header>
     <section class="modal-content">
       <p><strong>Press ✕, ESC, or click outside of the modal to close it</strong></p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus reprehenderit accusamus totam ratione!
@@ -193,7 +191,7 @@
     <footer class="modal-footer">
       The footer of the first modal
     </footer>
-  </div>
+  </my-overlay-content>
 </my-overlay>
 
 <script>
