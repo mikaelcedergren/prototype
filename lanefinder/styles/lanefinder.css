@@ -47,7 +47,12 @@ button {
   border: none;
   height: 40px;
   padding: 0 1rem;
-  outline: none; }
+  outline: none;
+  font-weight: 700;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap; }
   button i {
     font-size: 16px; }
   button[data-size="small"] {
@@ -278,15 +283,9 @@ a {
       background-color: #ff8b4a;
       height: 1px; }
 
-tab-view {
+my-view {
   display: block;
   min-height: 100vh; }
-
-tab-header-content {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
 
 header-backdrop {
   display: block;
@@ -303,7 +302,7 @@ header-backdrop {
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden; }
 
-tab-header {
+my-header {
   position: absolute;
   left: 0;
   top: 0;
@@ -313,45 +312,43 @@ tab-header {
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-attachment: contain;
+  background-attachment: fixed;
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   height: 172px;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top left;
   z-index: 2;
   position: sticky;
-  top: -96px;
-  -webkit-mask-image: url(/lanefinder/images/header-mask.png);
-  -webkit-mask-position-y: bottom;
-  -webkit-mask-repeat: no-repeat; }
-  tab-header tab-header-title {
+  top: -112px; }
+  my-header my-header-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  my-header my-header-title {
     display: block;
     color: #fff;
     font-weight: 700;
     font-size: 18px;
-    font-family: "Rubik", sans-serif;
-    margin-bottom: 0.5rem; }
-  tab-header tab-header-button {
-    margin-bottom: 0.5rem; }
-    tab-header tab-header-button button {
-      background-color: rgba(0, 0, 0, 0.4);
-      border: 1px solid #fff; }
+    font-family: "Rubik", sans-serif; }
+  my-header my-header-button button {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px); }
 
-tab-content {
+my-content {
   position: relative;
   display: block;
   background-color: #f7f9fc;
-  margin-top: -1rem;
   min-height: 100vh;
   padding-bottom: 48px; }
 
-x-tag {
+my-tag {
   display: inline-block;
   background-color: #e6eaf0;
   margin-right: 2px;
@@ -361,32 +358,32 @@ x-tag {
   font-weight: 700;
   margin-bottom: 0.25rem;
   line-height: 1; }
-  x-tag[data-color="accent"] {
+  my-tag[data-color="accent"] {
     background-color: #ef3662;
     color: #fff; }
 
-padding-wrapper {
+my-padding-wrapper {
   display: block;
   padding: 1rem; }
 
-list-heading {
+my-list-heading {
   display: block;
   border-top: 1px solid #e6eaf0;
   padding: 1rem;
   color: #778396;
   font-weight: 700; }
 
-list-item {
+my-list-item {
   background-color: #fff;
   padding: 1rem;
   display: block;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
   border-top: 1px solid #e6eaf0;
   margin-bottom: 3px; }
-  list-item strong {
+  my-list-item strong {
     display: block;
     margin-bottom: 0.25rem; }
-  list-item small {
+  my-list-item small {
     display: block;
     margin-bottom: 0.5rem;
     color: #778396; }
@@ -474,7 +471,7 @@ mobile-tabs {
     mobile-tabs mobile-tab-item.active a {
       color: #3e4a5e; }
 
-x-box {
+my-box {
   display: block;
   padding: 1rem;
   border-radius: 8px;

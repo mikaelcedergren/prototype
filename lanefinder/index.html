@@ -34,22 +34,23 @@
 
 
 
-<tab-view>
+<my-view>
   <!-- <header-backdrop style="background-image: url(/lanefinder/images/header-image-dashboard.png);"></header-backdrop> -->
   <!-- <img class="parallax" src="/lanefinder/images/header-image-dashboard.png"> -->
-  <tab-header>
-    <tab-header-content>
-      <tab-header-title>
+  <my-header>
+    <my-header-content>
+      <my-header-title>
         Jobs
-      </tab-header-title>
-      <tab-header-button>
-        <button data-size="small"><i class="material-icons">favorite</i><span>Save this search</span></button>
-      </tab-header-button>
-    </tab-header-content>
-  </tab-header>
-  <tab-content>
-    <padding-wrapper>
-      <x-box id="filters" data-open="modal1">
+      </my-header-title>
+      <my-header-button>
+        <button data-size="small"><i class="material-icons">favorite</i><span>Save search</span></button>
+      </my-header-button>
+    </my-header-content>
+  </my-header>
+
+  <my-content>
+    <my-padding-wrapper>
+      <my-box id="filters" data-open="modal1">
         <grid-wrapper-fixed data-align="center">
           <grid-cell>
             <i class="material-icons color-discreet">tune</i><span class="color-text-discreet">Filters</span>
@@ -61,10 +62,10 @@
         <p class="color-text-discreet">Team OTR, local company driver jobs in 90210 with a minimum weekly average...
         </p>
         <strong>12 out of 284 jobs</strong>
-      </x-box>
-    </padding-wrapper>
+      </my-box>
+    </my-padding-wrapper>
 
-    <list-heading>
+    <my-list-heading>
       <grid-wrapper-fixed data-align="middle">
         <grid-cell>
           Matching all of your filters
@@ -73,48 +74,48 @@
           2 jobs
         </grid-cell>
       </grid-wrapper-fixed>
-    </list-heading>
+    </my-list-heading>
 
-    <list-item>
-      <x-tag data-color="accent">Urgently hiring</x-tag>
+    <my-list-item>
+      <my-tag data-color="accent">Urgently hiring</my-tag>
       <strong>Dedicated Line Haul</strong>
       <small>Billy Bob Riggers</small>
       <p>$1.000 - $2.500 per week</p>
       <p>Expected to be out 20-21 days. Flatbed.</p>
-      <x-tag>O/O</x-tag>
-      <x-tag>1-99 trucks</x-tag>
-    </list-item>
-    <list-item>
-      <x-tag data-color="accent">Urgently hiring</x-tag>
+      <my-tag>O/O</my-tag>
+      <my-tag>1-99 trucks</my-tag>
+    </my-list-item>
+    <my-list-item>
+      <my-tag data-color="accent">Urgently hiring</my-tag>
       <strong>Dedicated Line Haul</strong>
       <small>Billy Bob Riggers</small>
       <p>$1.000 - $2.500 per week</p>
       <p>Expected to be out 20-21 days. Flatbed.</p>
-      <x-tag>O/O</x-tag>
-      <x-tag>1-99 trucks</x-tag>
-    </list-item>
-    <list-item>
-      <x-tag data-color="accent">Urgently hiring</x-tag>
+      <my-tag>O/O</my-tag>
+      <my-tag>1-99 trucks</my-tag>
+    </my-list-item>
+    <my-list-item>
+      <my-tag data-color="accent">Urgently hiring</my-tag>
       <strong>Dedicated Line Haul</strong>
       <small>Billy Bob Riggers</small>
       <p>$1.000 - $2.500 per week</p>
       <p>Expected to be out 20-21 days. Flatbed.</p>
-      <x-tag>O/O</x-tag>
-      <x-tag>1-99 trucks</x-tag>
-    </list-item>
-    <list-item>
-      <x-tag data-color="accent">Urgently hiring</x-tag>
+      <my-tag>O/O</my-tag>
+      <my-tag>1-99 trucks</my-tag>
+    </my-list-item>
+    <my-list-item>
+      <my-tag data-color="accent">Urgently hiring</my-tag>
       <strong>Dedicated Line Haul</strong>
       <small>Billy Bob Riggers</small>
       <p>$1.000 - $2.500 per week</p>
       <p>Expected to be out 20-21 days. Flatbed.</p>
-      <x-tag>O/O</x-tag>
-      <x-tag>1-99 trucks</x-tag>
-    </list-item>
-    <list-item>This is a list item</list-item>
-    <list-item>This is a list item</list-item>
-  </tab-content>
-</tab-view>
+      <my-tag>O/O</my-tag>
+      <my-tag>1-99 trucks</my-tag>
+    </my-list-item>
+    <my-list-item>This is a list item</my-list-item>
+    <my-list-item>This is a list item</my-list-item>
+  </my-content>
+</my-view>
 
 
 <mobile-tabs>
