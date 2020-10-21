@@ -34,62 +34,67 @@
 
 
 
-<tab-view>
-  <header-backdrop style="background-image: url(/lanefinder/images/header-image-driver-with-phone.png);"></header-backdrop>
-  <tab-header>
-    <tab-header-content>
-      <tab-header-title>
+<my-view>
+  <my-header id="detect-top" style="background-image: url(/lanefinder/images/header-image-driver-with-phone.png);">
+    <my-header-content>
+      <my-header-title>
         Notifications
-      </tab-header-title>
-    </tab-header-content>
-  </tab-header>
-  <tab-content>
-    <padding-wrapper>This will be a screen for notifications.</padding-wrapper>
-  </tab-content>
-</tab-view>
+      </my-header-title>
+    </my-header-content>
+  </my-header>
 
-<mobile-tabs>
-    <mobile-tab-item class="">
+  <my-content>
+
+    <my-padding-wrapper>
+      <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.</p>
+
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.</p>
+
+      <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.</p>
+
+      <p>Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
+    </my-padding-wrapper>
+
+    </my-content>
+</my-view>
+
+<my-mobile-tabs>
+    <my-mobile-tab-item class="">
         <a href="index.html">
             <i class="material-icons">policy</i>
-            <mobile-tab-title>Jobs</mobile-tab-title>
+            <my-mobile-tab-title>Jobs</my-mobile-tab-title>
         </a>
-    </mobile-tab-item>
+    </my-mobile-tab-item>
 
-    <mobile-tab-item class="">
+    <my-mobile-tab-item class="">
         <a href="carriers.html">
             <i class="material-icons">apartment</i>
-            <mobile-tab-title>Carriers</mobile-tab-title>
+            <my-mobile-tab-title>Carriers</my-mobile-tab-title>
         </a>
-    </mobile-tab-item>
+    </my-mobile-tab-item>
 
-    <mobile-tab-item class="">
+    <my-mobile-tab-item class="">
         <a href="saved.html">
             <i class="material-icons">favorite</i>
-            <mobile-tab-title>Saved</mobile-tab-title>
+            <my-mobile-tab-title>Saved</my-mobile-tab-title>
         </a>
-    </mobile-tab-item>
+    </my-mobile-tab-item>
 
-    <mobile-tab-item class="active">
+    <my-mobile-tab-item class="active">
         <a href="notifications.html">
             <i class="material-icons">notifications</i>
-            <mobile-tab-title>Notifications</mobile-tab-title>
+            <my-mobile-tab-title>Notifications</my-mobile-tab-title>
         </a>
-    </mobile-tab-item>
+    </my-mobile-tab-item>
 
-    <mobile-tab-item class="">
+    <my-mobile-tab-item class="">
         <a href="more.html">
             <i class="material-icons">menu</i>
-            <mobile-tab-title>More</mobile-tab-title>
+            <my-mobile-tab-title>More</my-mobile-tab-title>
         </a>
-    </mobile-tab-item>
-</mobile-tabs>
+    </my-mobile-tab-item>
+</my-mobile-tabs>
 
-<navigation-bar id="sticker">
-  <cell-left></cell-left>
-  <cell-middle>Notifications</cell-middle>
-  <cell-right></cell-right>
-</navigation-bar>
 
 <!-- </x-content> -->
 <!-- <script>
@@ -98,6 +103,11 @@ new simpleParallax(image, {
 	scale: 2
 });
 </script> -->
+<status-bar>
+    <img src="../shared/images/status-bar-left.png" />
+    <img src="../shared/images/status-bar-right.png" />
+</status-bar>
+
 <script>
     window.onscroll = function () { myFunction() };
 

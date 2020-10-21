@@ -397,7 +397,7 @@ status-bar {
 x-content {
   display: block; }
 
-mobile-tabs {
+my-mobile-tabs {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -411,24 +411,24 @@ mobile-tabs {
   height: 48px;
   padding: 0 0.25rem;
   border-top: 1px solid #e6eaf0; }
-  mobile-tabs mobile-tab-item {
+  my-mobile-tabs my-mobile-tab-item {
     display: flex;
     flex-flow: column nowrap;
     width: 20%;
     align-items: center;
     font-weight: 700; }
-    mobile-tabs mobile-tab-item a {
+    my-mobile-tabs my-mobile-tab-item a {
       color: #a3afbf;
       display: flex;
       align-items: center;
       flex-flow: column nowrap;
       width: 100%; }
-    mobile-tabs mobile-tab-item i {
+    my-mobile-tabs my-mobile-tab-item i {
       font-size: 21px !important;
-      margin-bottom: 0.25rem; }
-    mobile-tabs mobile-tab-item mobile-tab-title {
+      margin-bottom: 2px; }
+    my-mobile-tabs my-mobile-tab-item my-mobile-tab-title {
       font-size: 12px; }
-    mobile-tabs mobile-tab-item.active a {
+    my-mobile-tabs my-mobile-tab-item.active a {
       color: #3e4a5e; }
 
 my-box {
