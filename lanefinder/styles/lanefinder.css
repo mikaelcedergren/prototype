@@ -2,13 +2,11 @@ html,
 body {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
-  height: 100%;
   color: #3e4a5e;
   background-color: #f7f9fc;
   font-weight: 500;
   -webkit-overflow-scrolling: touch;
-  width: 100%;
-  height: 100%;
+  min-height: 100%;
   padding: 0;
   margin: 0; }
 
@@ -282,12 +280,7 @@ a {
 
 tab-view {
   display: block;
-  min-height: 100vh;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0; }
+  min-height: 100vh; }
 
 tab-header-content {
   width: 100%;
@@ -311,39 +304,52 @@ header-backdrop {
   -webkit-backface-visibility: hidden; }
 
 tab-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-image: url(/lanefinder/images/header-image-dashboard.png);
+  background-color: #3e4a5e;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: contain;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding: 1rem;
-  height: 144px;
+  height: 172px;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top left;
   z-index: 2;
   position: sticky;
-  top: -64px; }
+  top: -96px;
+  -webkit-mask-image: url(/lanefinder/images/header-mask.png);
+  -webkit-mask-position-y: bottom;
+  -webkit-mask-repeat: no-repeat; }
   tab-header tab-header-title {
     display: block;
     color: #fff;
     font-weight: 700;
     font-size: 18px;
     font-family: "Rubik", sans-serif;
-    margin-bottom: 1rem; }
+    margin-bottom: 0.5rem; }
   tab-header tab-header-button {
-    margin-bottom: 1rem; }
+    margin-bottom: 0.5rem; }
     tab-header tab-header-button button {
       background-color: rgba(0, 0, 0, 0.4);
       border: 1px solid #fff; }
 
 tab-content {
   position: relative;
-  z-index: 2;
   display: block;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
   background-color: #f7f9fc;
-  margin-top: -15px;
-  min-height: 100vh; }
+  margin-top: -1rem;
+  min-height: 100vh;
+  padding-bottom: 48px; }
 
 x-tag {
   display: inline-block;
@@ -427,8 +433,7 @@ status-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 4px;
-  background-color: #000; }
+  padding: 0 8px; }
   status-bar img {
     max-height: 15px; }
 

@@ -27,11 +27,11 @@ a {
 tab-view {
   display: block;
   min-height: 100vh;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
+  // position: absolute;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // top: 0;
 }
 
 tab-header-content {
@@ -58,6 +58,18 @@ header-backdrop {
 }
 
 tab-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-image: url(/lanefinder/images/header-image-dashboard.png);
+  background-color: $black;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: contain;
+  -webkit-transform:translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -68,7 +80,10 @@ tab-header {
   background-position: top left;
   z-index: 2;
   position: sticky;
-  top: -64px;
+  top: -96px;
+  -webkit-mask-image: url(/lanefinder/images/header-mask.png);
+  -webkit-mask-position-y: bottom;
+  -webkit-mask-repeat: no-repeat;
 
   tab-header-title {
     display: block;
@@ -76,11 +91,11 @@ tab-header {
     font-weight: $font-bold;
     font-size: $font-size-h3;
     font-family: $font-family-headings;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   tab-header-button {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 
     button {
       background-color: rgba(black, 0.4);
@@ -91,13 +106,14 @@ tab-header {
 
 tab-content {
   position: relative;
-  z-index: 2;
   display: block;
-  border-top-left-radius: $border-radius * 4;
-  border-top-right-radius: $border-radius * 4;
+  // border-top-left-radius: $border-radius * 4;
+  // border-top-right-radius: $border-radius * 4;
   background-color: $gray-1;
-  margin-top: -15px;
+  margin-top: -1rem;
+  // padding-top: $tab-header-height;
   min-height: 100vh;
+  padding-bottom: $mobile-tabs-height;
 }
 
 x-tag {
@@ -199,8 +215,7 @@ status-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 4px;
-  background-color: #000;
+  padding: 0 8px;
 
   img {
     max-height: 15px;
@@ -223,7 +238,7 @@ mobile-tabs {
   bottom: 0;
   left: 0;
   right: 0;
-  height: $tab-bar-height;
+  height: $mobile-tabs-height;
   padding: 0 0.25rem;
   border-top: $line;
 
