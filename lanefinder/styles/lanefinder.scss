@@ -287,7 +287,6 @@ my-box {
   box-shadow: $box-shadow;
 }
 
-
 my-overlay {
   display: block;
   position: fixed;
@@ -322,6 +321,7 @@ my-overlay {
 
   my-overlay-header {
     display: flex;
+    padding: 1rem;
     align-items: center;
     justify-content: space-between;
     font-weight: $font-bold;
@@ -340,7 +340,7 @@ my-overlay {
   }
 
   my-overlay-wrapper {
-    transition: transform 0.3s $ease-out;
+    transition: transform 0.3s 0.1s $ease-out;
     position: relative;
     max-width: 480px;
     max-height: 80vh;
@@ -349,10 +349,71 @@ my-overlay {
     overflow: hidden;
     cursor: default;
     transform: translateY(100%);
+  }
+}
 
-    & > * {
-      padding: 1rem;
+my-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(black, 0);
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+  pointer-events: none;
+
+  my-modal-content {
+    display: block;
+    padding: 0 1rem;
+    max-height: calc(50vh - #{$overlay-header-height} - 1rem);
+    overflow-y: auto;
+  }
+
+  &.is-visible {
+    background: rgba(black, 0.7);
+    pointer-events: all;
+
+    my-modal-wrapper {
+      transform: translateY(0);
     }
+  }
+
+  my-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: $font-bold;
+    padding: 1rem;
+  }
+
+  my-modal-footer {
+    display: block;
+    padding: 1rem;
+
+    button {
+      &:first-child {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  my-modal-wrapper {
+    transition: transform 0.3s 0.1s $ease-out;
+    position: relative;
+    max-width: 480px;
+    max-height: 50vh;
+    margin: 0 1rem 1rem 1rem;
+    border-radius: $border-radius * 4;
+    background: $white;
+    overflow: hidden;
+    cursor: default;
+    transform: translateY(110%);
   }
 }
 

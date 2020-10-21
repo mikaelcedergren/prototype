@@ -9,7 +9,7 @@
         Jobs
       </my-header-title>
       <my-header-button>
-        <button data-size="small"><i class="material-icons">favorite</i><span>Save search</span></button>
+        <button id="save-search" data-open="modal-save-search" data-size="small"><i class="material-icons">favorite</i><span>Save search</span></button>
       </my-header-button>
     </my-header-content>
   </my-header>
@@ -67,5 +67,18 @@
     </my-overlay-content>
   </my-overlay-wrapper>
 </my-overlay>
+
+<my-modal id="modal-save-search">
+  <my-modal-wrapper>
+    <my-modal-header>Save this search</my-modal-header>
+  <my-modal-content>
+    <p>We will notify you once a day when any jobs become available that match this search.</p>
+  </my-modal-content>
+  <my-modal-footer>
+    <button data-close data-color="accent" data-block>Save search</button>
+    <button data-close data-block>Close</button>
+  </my-modal-footer>
+  </my-modal-wrapper>
+</my-modal>
 
 <!-- @import '/lanefinder/components/_html-footer.kit' -->

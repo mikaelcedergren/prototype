@@ -31,8 +31,8 @@ body {
 }
 
 * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
 
@@ -59,7 +59,7 @@ i {
 
 button {
   border-radius: 100px;
-  background-color: $accent;
+  background-color: $gray-5;
   color: $white;
   border: none;
   height: 40px;
@@ -71,8 +71,17 @@ button {
   align-items: center;
   flex-flow: row nowrap;
 
+  &[data-block] {
+    display: block;
+    width: 100%;
+  }
+
   i {
     font-size: $font-size;
+  }
+
+  &[data-color="accent"] {
+    background-color: $accent;
   }
 
   &[data-size="small"] {

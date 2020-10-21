@@ -24,8 +24,6 @@ body {
     overflow-y: hidden; }
 
 * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box; }
 
 small {
@@ -44,7 +42,7 @@ i {
 
 button {
   border-radius: 100px;
-  background-color: #ef3662;
+  background-color: #778396;
   color: #fff;
   border: none;
   height: 40px;
@@ -55,8 +53,13 @@ button {
   display: flex;
   align-items: center;
   flex-flow: row nowrap; }
+  button[data-block] {
+    display: block;
+    width: 100%; }
   button i {
     font-size: 16px; }
+  button[data-color="accent"] {
+    background-color: #ef3662; }
   button[data-size="small"] {
     padding: 0 0.5rem;
     height: 28px;
@@ -464,6 +467,7 @@ my-overlay {
       transform: translateY(0); }
   my-overlay my-overlay-header {
     display: flex;
+    padding: 1rem;
     align-items: center;
     justify-content: space-between;
     font-weight: 700; }
@@ -478,7 +482,7 @@ my-overlay {
       align-items: center;
       justify-content: center; }
   my-overlay my-overlay-wrapper {
-    transition: transform 0.3s cubic-bezier(0, 0.6, 0.5, 1);
+    transition: transform 0.3s 0.1s cubic-bezier(0, 0.6, 0.5, 1);
     position: relative;
     max-width: 480px;
     max-height: 80vh;
@@ -487,8 +491,54 @@ my-overlay {
     overflow: hidden;
     cursor: default;
     transform: translateY(100%); }
-    my-overlay my-overlay-wrapper > * {
-      padding: 1rem; }
+
+my-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+  pointer-events: none; }
+  my-modal my-modal-content {
+    display: block;
+    padding: 0 1rem;
+    max-height: calc(50vh - 48px - 1rem);
+    overflow-y: auto; }
+  my-modal.is-visible {
+    background: rgba(0, 0, 0, 0.7);
+    pointer-events: all; }
+    my-modal.is-visible my-modal-wrapper {
+      transform: translateY(0); }
+  my-modal my-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    padding: 1rem; }
+  my-modal my-modal-footer {
+    display: block;
+    padding: 1rem; }
+    my-modal my-modal-footer button:first-child {
+      margin-bottom: 0.5rem; }
+  my-modal my-modal-wrapper {
+    transition: transform 0.3s 0.1s cubic-bezier(0, 0.6, 0.5, 1);
+    position: relative;
+    max-width: 480px;
+    max-height: 50vh;
+    margin: 0 1rem 1rem 1rem;
+    border-radius: 16px;
+    background: #fff;
+    overflow: hidden;
+    cursor: default;
+    transform: translateY(110%); }
 
 html {
   visibility: visible;
