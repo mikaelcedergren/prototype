@@ -416,19 +416,11 @@ my-modal {
   }
 }
 
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px transparent;
-  background-color: transparent;
+* {
+  &::-webkit-scrollbar{
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
-
-::-webkit-scrollbar {
-  display: none;
-  width: 6px;
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: transparent;
 }
 
 // FIX FOR FOUC

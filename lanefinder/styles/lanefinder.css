@@ -20,8 +20,6 @@ body {
   cursor: default;
   overflow-x: hidden;
   overflow-y: auto; }
-  body ::-webkit-scrollbar {
-    display: none; }
   body.turn-off-scroll {
     overflow-y: hidden; }
 
@@ -543,17 +541,11 @@ my-modal {
     cursor: default;
     transform: translateY(110%); }
 
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px transparent;
-  background-color: transparent; }
-
-::-webkit-scrollbar {
-  display: none;
-  width: 6px;
-  background-color: transparent; }
-
-::-webkit-scrollbar-thumb {
-  background-color: transparent; }
+*::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */ }
 
 html {
   visibility: visible;
