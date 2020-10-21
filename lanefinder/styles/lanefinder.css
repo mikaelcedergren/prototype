@@ -20,6 +20,8 @@ body {
   cursor: default;
   overflow-x: hidden;
   overflow-y: auto; }
+  body.turn-off-scroll {
+    overflow-y: hidden; }
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -92,54 +94,6 @@ grid-wrapper-fixed {
   flex-flow: row nowrap; }
   grid-wrapper-fixed > grid-cell {
     min-width: 0; }
-
-my-overlay {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0);
-  cursor: pointer;
-  transition: background 0.3s ease-in;
-  pointer-events: none; }
-  my-overlay.is-visible {
-    background: rgba(0, 0, 0, 0.7);
-    pointer-events: all; }
-    my-overlay.is-visible my-overlay-content {
-      transform: translateY(0); }
-  my-overlay my-overlay-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 700; }
-    my-overlay my-overlay-header i.material-icons {
-      background-color: #ef3662;
-      border-radius: 100%;
-      color: #fff;
-      font-size: 20px;
-      height: 24px;
-      width: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-  my-overlay my-overlay-content {
-    transition: transform 0.3s cubic-bezier(0, 0.6, 0.5, 1);
-    position: relative;
-    max-width: 480px;
-    max-height: 80vh;
-    border-radius: 16px 16px 0 0;
-    background: #fff;
-    overflow: auto;
-    cursor: default;
-    transform: translateY(100%); }
-    my-overlay my-overlay-content > * {
-      padding: 1rem; }
 
 .mt-0 {
   margin-top: 0 !important; }
@@ -484,10 +438,53 @@ my-box {
   background: #fff;
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.06); }
 
-.simpleParallax {
-  position: fixed; }
-  .simpleParallax img {
-    max-width: 100%; }
+my-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+  pointer-events: none; }
+  my-overlay.is-visible {
+    background: rgba(0, 0, 0, 0.7);
+    pointer-events: all; }
+    my-overlay.is-visible my-overlay-content {
+      transform: translateY(0); }
+  my-overlay my-overlay-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700; }
+    my-overlay my-overlay-header i.material-icons {
+      background-color: #ef3662;
+      border-radius: 100%;
+      color: #fff;
+      font-size: 20px;
+      height: 28px;
+      width: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  my-overlay my-overlay-content {
+    transition: transform 0.3s cubic-bezier(0, 0.6, 0.5, 1);
+    position: relative;
+    max-width: 480px;
+    max-height: 80vh;
+    border-radius: 16px 16px 0 0;
+    background: #fff;
+    overflow: auto;
+    cursor: default;
+    transform: translateY(100%); }
+    my-overlay my-overlay-content > * {
+      padding: 1rem; }
 
 html {
   visibility: visible;

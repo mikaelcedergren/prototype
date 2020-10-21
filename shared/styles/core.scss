@@ -24,6 +24,10 @@ body {
   cursor: default;
   overflow-x: hidden;
   overflow-y: auto;
+
+  &.turn-off-scroll {
+    overflow-y: hidden;
+  }
 }
 
 * {
@@ -131,67 +135,6 @@ grid-wrapper-fixed {
 
   & > grid-cell {
     min-width: 0;
-  }
-}
-
-my-overlay {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  background: rgba(black,0);
-  cursor: pointer;
-  transition: background 0.3s ease-in;
-  pointer-events: none;
-
-  &.is-visible {
-    background: rgba(black,0.7);
-    pointer-events: all;
-
-    my-overlay-content {
-      transform: translateY(0);
-    }
-  }
-
-  my-overlay-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: $font-bold;
-
-    i.material-icons {
-      background-color: $accent;
-      border-radius: 100%;
-      color: $white;
-      font-size: 20px;
-      height: 24px;
-      width: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  my-overlay-content {
-    transition: transform 0.3s $ease-out;
-    position: relative;
-    max-width: 480px;
-    max-height: 80vh;
-    border-radius: $border-radius * 4 $border-radius * 4 0 0;
-    background: $white;
-    overflow: auto;
-    cursor: default;
-    transform: translateY(100%);
-
-    & > * {
-      padding: 1rem;
-    }
   }
 }
 
