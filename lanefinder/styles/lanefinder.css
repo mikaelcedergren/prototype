@@ -23,6 +23,9 @@ body {
   body.turn-off-scroll {
     overflow-y: hidden; }
 
+h1, h2, h3, h4, h5 {
+  margin-top: 0; }
+
 * {
   box-sizing: border-box; }
 
@@ -546,6 +549,75 @@ my-modal {
   /* Remove scrollbar space */
   background: transparent;
   /* Optional: just make scrollbar invisible */ }
+
+my-ad-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+  pointer-events: none; }
+  my-ad-overlay my-ad-overlay-sub-heading {
+    color: #ef3662;
+    display: block;
+    font-size: 14px;
+    font-weight: 700; }
+  my-ad-overlay my-ad-overlay-heading {
+    display: block;
+    font-size: 20px;
+    font-weight: 700; }
+  my-ad-overlay my-ad-overlay-content {
+    display: block;
+    padding: 0 1rem 4rem 1rem;
+    max-height: calc(100vh - 48px - 2rem);
+    overflow-y: auto; }
+    my-ad-overlay my-ad-overlay-content button {
+      transition: bottom 0.5s 0.3s cubic-bezier(0, 0.6, 0.5, 1);
+      position: fixed;
+      bottom: -4rem;
+      left: 50%;
+      transform: translateX(-50%); }
+  my-ad-overlay.is-visible {
+    background: rgba(0, 0, 0, 0.7);
+    pointer-events: all; }
+    my-ad-overlay.is-visible button {
+      bottom: 1rem; }
+    my-ad-overlay.is-visible my-ad-overlay-wrapper {
+      transform: translateY(0); }
+  my-ad-overlay my-ad-overlay-header {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700; }
+    my-ad-overlay my-ad-overlay-header i.material-icons {
+      background-color: #ef3662;
+      border-radius: 100%;
+      color: #fff;
+      font-size: 20px;
+      height: 28px;
+      width: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  my-ad-overlay my-ad-overlay-wrapper {
+    transition: transform 0.3s 0.1s cubic-bezier(0, 0.6, 0.5, 1);
+    position: relative;
+    max-width: 480px;
+    height: calc(100vh - 2rem);
+    border-radius: 16px 16px 0 0;
+    background: #fff;
+    overflow: hidden;
+    cursor: default;
+    transform: translateY(100%); }
 
 html {
   visibility: visible;

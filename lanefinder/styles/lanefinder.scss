@@ -423,6 +423,97 @@ my-modal {
 }
 }
 
+
+my-ad-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(black, 0);
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+  pointer-events: none;
+
+  my-ad-overlay-sub-heading {
+    color: $accent;
+    display: block;
+    font-size: $font-size-small;
+    font-weight: $font-bold;
+  }
+
+  my-ad-overlay-heading {
+    display: block;
+    font-size: 20px;
+    font-weight: $font-bold;
+  }
+
+  my-ad-overlay-content {
+    display: block;
+    padding: 0 1rem 4rem 1rem;
+    max-height: calc(100vh - #{$overlay-header-height} - 2rem);
+    overflow-y: auto;
+
+    button {
+      transition: bottom 0.5s 0.3s $ease-out;
+      position: fixed;
+      bottom: -4rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &.is-visible {
+    background: rgba(black, 0.7);
+    pointer-events: all;
+
+    button {
+      bottom: 1rem;
+    }
+
+    my-ad-overlay-wrapper {
+      transform: translateY(0);
+    }
+  }
+
+  my-ad-overlay-header {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: $font-bold;
+
+    i.material-icons {
+      background-color: $accent;
+      border-radius: 100%;
+      color: $white;
+      font-size: 20px;
+      height: 28px;
+      width: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  my-ad-overlay-wrapper {
+    transition: transform 0.3s 0.1s $ease-out;
+    position: relative;
+    max-width: 480px;
+    height: calc(100vh - 2rem);
+    border-radius: $border-radius * 4 $border-radius * 4 0 0;
+    background: $white;
+    overflow: hidden;
+    cursor: default;
+    transform: translateY(100%);
+  }
+}
+
 // FIX FOR FOUC
 html {
   visibility: visible;
