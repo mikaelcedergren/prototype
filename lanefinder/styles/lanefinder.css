@@ -52,7 +52,8 @@ button {
   white-space: nowrap;
   display: flex;
   align-items: center;
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+  font-size: 1rem; }
   button[data-block] {
     display: block;
     width: 100%; }
