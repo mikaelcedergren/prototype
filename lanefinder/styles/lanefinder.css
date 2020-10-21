@@ -307,7 +307,6 @@ my-header {
   left: 0;
   top: 0;
   right: 0;
-  background-image: url(/lanefinder/images/header-image-dashboard.png);
   background-color: #3e4a5e;
   background-position: top left;
   background-repeat: no-repeat;
@@ -338,6 +337,7 @@ my-header {
     font-size: 18px;
     font-family: "Rubik", sans-serif; }
   my-header my-header-button button {
+    transition: all 0.3s ease;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(2px); }
 
@@ -367,11 +367,17 @@ my-padding-wrapper {
   padding: 1rem; }
 
 my-list-heading {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
   border-top: 1px solid #e6eaf0;
   padding: 1rem;
   color: #778396;
   font-weight: 700; }
+  my-list-heading > *:last-child {
+    font-weight: normal;
+    color: #a3afbf; }
 
 my-list-item {
   background-color: #fff;

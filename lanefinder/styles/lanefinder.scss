@@ -48,7 +48,6 @@ my-header {
   left: 0;
   top: 0;
   right: 0;
-  background-image: url(/lanefinder/images/header-image-dashboard.png);
   background-color: $black;
   background-position: top left;
   background-repeat: no-repeat;
@@ -70,6 +69,16 @@ my-header {
   // -webkit-mask-image: url(/lanefinder/images/header-mask.png);
   // -webkit-mask-position-y: bottom;
   // -webkit-mask-repeat: no-repeat;
+  // -webkit-mask-size: 100%;
+
+  // &.at-top {
+  //   my-header-button {
+  //     button {
+  //       width: 24px;
+  //       overflow: hidden;
+  //     }
+  //   }
+  // }
 
   my-header-content {
     width: 100%;
@@ -88,6 +97,7 @@ my-header {
 
   my-header-button {
     button {
+      transition: all 0.3s ease;
       background-color: rgba(black, 0.4);
       // border: 1px solid $white;
       backdrop-filter: blur(2px);
@@ -126,11 +136,22 @@ my-padding-wrapper {
 }
 
 my-list-heading {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
   border-top: $line;
   padding: 1rem;
   color: $gray-5;
   font-weight: $font-bold;
+
+  & > * {
+    &:last-child {
+      font-weight: normal;
+      color: $gray-4;
+    }
+  }
+
 }
 
 my-list-item {

@@ -37,7 +37,7 @@
 <my-view>
   <!-- <header-backdrop style="background-image: url(/lanefinder/images/header-image-dashboard.png);"></header-backdrop> -->
   <!-- <img class="parallax" src="/lanefinder/images/header-image-dashboard.png"> -->
-  <my-header>
+  <my-header id="detect-top" style="background-image: url(/lanefinder/images/header-image-dashboard.png);">
     <my-header-content>
       <my-header-title>
         Jobs
@@ -50,70 +50,57 @@
 
   <my-content>
     <my-padding-wrapper>
-      <my-box id="filters" data-open="modal1">
-        <grid-wrapper-fixed data-align="center">
-          <grid-cell>
-            <i class="material-icons color-discreet">tune</i><span class="color-text-discreet">Filters</span>
-          </grid-cell>
-          <grid-cell data-align="right">
-            <a href="#">Edit</a>
-          </grid-cell>
-        </grid-wrapper-fixed>
-        <p class="color-text-discreet">Team OTR, local company driver jobs in 90210 with a minimum weekly average...
-        </p>
-        <strong>12 out of 284 jobs</strong>
-      </my-box>
-    </my-padding-wrapper>
+        <my-box id="filters" data-open="modal1">
+          <grid-wrapper-fixed data-align="center">
+            <grid-cell>
+              <i class="material-icons color-discreet">tune</i><span class="color-text-discreet">Filters</span>
+            </grid-cell>
+            <grid-cell data-align="right">
+              <a href="#">Edit</a>
+            </grid-cell>
+          </grid-wrapper-fixed>
+          <p class="color-text-discreet">Team OTR, local company driver jobs in 90210 with a minimum weekly average...
+          </p>
+          <strong>12 out of 284 jobs</strong>
+        </my-box>
+      </my-padding-wrapper>
+    
 
     <my-list-heading>
-      <grid-wrapper-fixed data-align="middle">
-        <grid-cell>
-          Matching all of your filters
-        </grid-cell>
-        <grid-cell data-shrink data-align="right">
-          2 jobs
-        </grid-cell>
-      </grid-wrapper-fixed>
+          <div>Matching all of your filters</div>
+          <div>2 jobs</div>
     </my-list-heading>
 
     <my-list-item>
-      <my-tag data-color="accent">Urgently hiring</my-tag>
-      <strong>Dedicated Line Haul</strong>
-      <small>Billy Bob Riggers</small>
-      <p>$1.000 - $2.500 per week</p>
-      <p>Expected to be out 20-21 days. Flatbed.</p>
-      <my-tag>O/O</my-tag>
-      <my-tag>1-99 trucks</my-tag>
+        <my-tag data-color="accent">Urgently hiring</my-tag>
+        <strong>Line Haul Regional Team</strong>
+        <small>W Trucking Inc</small>
+        <p>$1,600 - $2,900 per week</p>
+        <p>Home at least 2 weekends. Dry Van, Refrigerated, Flatbed.</p>
+        <my-tag>1099</my-tag>
+        <my-tag>20-49 trucks</my-tag>
     </my-list-item>
+    
     <my-list-item>
-      <my-tag data-color="accent">Urgently hiring</my-tag>
-      <strong>Dedicated Line Haul</strong>
-      <small>Billy Bob Riggers</small>
-      <p>$1.000 - $2.500 per week</p>
-      <p>Expected to be out 20-21 days. Flatbed.</p>
-      <my-tag>O/O</my-tag>
-      <my-tag>1-99 trucks</my-tag>
-    </my-list-item>
+            <strong>Line Haul OTR</strong>
+            <small>TransGlobal Solutions, LLC</small>
+            <p>$3,000 per week</p>
+            <p>Home at least 2 weekends. Flatbed.</p>
+            <my-tag>O/O</my-tag>
+            <my-tag>50-99 trucks</my-tag>
+        </my-list-item>
+        
     <my-list-item>
-      <my-tag data-color="accent">Urgently hiring</my-tag>
-      <strong>Dedicated Line Haul</strong>
-      <small>Billy Bob Riggers</small>
-      <p>$1.000 - $2.500 per week</p>
-      <p>Expected to be out 20-21 days. Flatbed.</p>
-      <my-tag>O/O</my-tag>
-      <my-tag>1-99 trucks</my-tag>
-    </my-list-item>
-    <my-list-item>
-      <my-tag data-color="accent">Urgently hiring</my-tag>
-      <strong>Dedicated Line Haul</strong>
-      <small>Billy Bob Riggers</small>
-      <p>$1.000 - $2.500 per week</p>
-      <p>Expected to be out 20-21 days. Flatbed.</p>
-      <my-tag>O/O</my-tag>
-      <my-tag>1-99 trucks</my-tag>
-    </my-list-item>
-    <my-list-item>This is a list item</my-list-item>
-    <my-list-item>This is a list item</my-list-item>
+                <strong>Dedicated Line Haul</strong>
+                <small>Dee King Trucking</small>
+                <p>$1,200 - $1,500 per week</p>
+                <p>Expected to be out 7-10 days. Tanker.</p>
+                <my-tag>W2</my-tag>
+                <my-tag>100-249 trucks</my-tag>
+            </my-list-item>
+            
+
+
   </my-content>
 </my-view>
 
@@ -163,9 +150,10 @@
 </navigation-bar> -->
 
 <status-bar>
-  <img src="../shared/images/status-bar-left.png" />
-  <img src="../shared/images/status-bar-right.png" />
+    <img src="../shared/images/status-bar-left.png" />
+    <img src="../shared/images/status-bar-right.png" />
 </status-bar>
+
 
 <my-overlay id="modal1">
   <my-overlay-content>
@@ -198,39 +186,6 @@
   </my-overlay-content>
 </my-overlay>
 
-<script>
-  const openEls = document.querySelectorAll("[data-open]");
-  const closeEls = document.querySelectorAll("[data-close]");
-  const isVisible = "is-visible";
-
-  for (const el of openEls) {
-    el.addEventListener("click", function () {
-      const modalId = this.dataset.open;
-      document.getElementById(modalId).classList.add(isVisible);
-    });
-  }
-
-  for (const el of closeEls) {
-    el.addEventListener("click", function () {
-      this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-    });
-  }
-
-  document.addEventListener("click", e => {
-    if (e.target == document.querySelector(".modal.is-visible")) {
-      document.querySelector(".modal.is-visible").classList.remove(isVisible);
-    }
-  });
-
-  document.addEventListener("keyup", e => {
-    // if we press the ESC
-    if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
-      document.querySelector(".modal.is-visible").classList.remove(isVisible);
-    }
-  });
-
-</script>
-
 <!-- </x-content> -->
 <!-- <script>
 var image = document.getElementsByClassName('parallax');
@@ -241,17 +196,51 @@ new simpleParallax(image, {
 <script>
     window.onscroll = function () { myFunction() };
 
-    var sticker = document.getElementById("sticker");
-    var sticky = sticker.offsetTop + 200;
+    var sticker = document.getElementById("detect-top");
+    var sticky = sticker.offsetTop + 104;
 
     function myFunction() {
         if (window.pageYOffset > sticky) {
-            sticker.classList.add("sticky");
+            sticker.classList.add("at-top");
         } else {
-            sticker.classList.remove("sticky");
+            sticker.classList.remove("at-top");
         }
     }
 </script>
+
+<script>
+    const openEls = document.querySelectorAll("[data-open]");
+    const closeEls = document.querySelectorAll("[data-close]");
+    const isVisible = "is-visible";
+
+    for (const el of openEls) {
+        el.addEventListener("click", function () {
+            const modalId = this.dataset.open;
+            document.getElementById(modalId).classList.add(isVisible);
+        });
+    }
+
+    for (const el of closeEls) {
+        el.addEventListener("click", function () {
+            this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+        });
+    }
+
+    document.addEventListener("click", e => {
+        if (e.target == document.querySelector(".modal.is-visible")) {
+            document.querySelector(".modal.is-visible").classList.remove(isVisible);
+        }
+    });
+
+    document.addEventListener("keyup", e => {
+        // if we press the ESC
+        if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+            document.querySelector(".modal.is-visible").classList.remove(isVisible);
+        }
+    });
+
+</script>
 </body>
+
 </html>
 
