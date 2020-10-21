@@ -25,6 +25,10 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   &.turn-off-scroll {
     overflow-y: hidden;
   }
