@@ -217,7 +217,7 @@ status-bar {
   top: 0;
   left: 0;
   right: 0;
-  height: 22px;
+  height: $status-bar-height;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -449,8 +449,9 @@ my-ad-overlay {
 
   my-ad-overlay-heading {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: $font-bold;
+    font-family: $font-family-headings;
   }
 
   my-ad-overlay-content {
@@ -518,4 +519,31 @@ my-ad-overlay {
 html {
   visibility: visible;
   opacity: 1;
+}
+
+
+my-wizard-view {
+  display: block;
+  min-height: 100vh;
+  background-color: $contrast;
+  background-image: url('/lanefinder/images/wizard-background-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 1rem;
+
+  my-wizard-navigation-bar {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: $white;
+    padding: 1rem;
+    margin-top: $status-bar-height;
+  }
+
+  my-box {
+    margin-bottom: 1rem;
+  }
 }

@@ -223,6 +223,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/lanefinder/images/wizard-background-1.png": {
+		"ft": 32768,
+		"iS": 369633,
+		"oA": 0,
+		"oAP": "/lanefinder/images/wizard-background-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/lanefinder/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -322,6 +333,22 @@
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
+		},
+	"/lanefinder/wizards/apply/step-1.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/lanefinder/wizards/apply/step-1.html",
+		"oF": 0
+		},
+	"/lanefinder/wizards/apply/step-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/lanefinder/wizards/apply/step-1.html",
+		"oF": 0
 		},
 	"/README.md": {
 		"cB": 0,

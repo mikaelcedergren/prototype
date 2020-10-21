@@ -572,8 +572,9 @@ my-ad-overlay {
     font-weight: 700; }
   my-ad-overlay my-ad-overlay-heading {
     display: block;
-    font-size: 20px;
-    font-weight: 700; }
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Rubik", sans-serif; }
   my-ad-overlay my-ad-overlay-content {
     display: block;
     padding: 0 1rem 4rem 1rem;
@@ -622,3 +623,24 @@ my-ad-overlay {
 html {
   visibility: visible;
   opacity: 1; }
+
+my-wizard-view {
+  display: block;
+  min-height: 100vh;
+  background-color: #4e2055;
+  background-image: url("/lanefinder/images/wizard-background-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 1rem; }
+  my-wizard-view my-wizard-navigation-bar {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 22px; }
+  my-wizard-view my-box {
+    margin-bottom: 1rem; }
