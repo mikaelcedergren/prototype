@@ -257,7 +257,6 @@ header-backdrop {
   -webkit-backface-visibility: hidden; }
 
 my-header {
-  position: fixed;
   left: 0;
   top: 0;
   right: 0;
