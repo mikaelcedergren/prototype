@@ -308,6 +308,8 @@ my-overlay {
   my-overlay-content {
     display: block;
     padding: 1rem;
+    max-height: calc(80vh - #{$overlay-header-height} - 1rem);
+    overflow-y: auto;
   }
 
   &.is-visible {
@@ -345,7 +347,7 @@ my-overlay {
     max-height: 80vh;
     border-radius: $border-radius * 4 $border-radius * 4 0 0;
     background: $white;
-    overflow: auto;
+    overflow: hidden;
     cursor: default;
     transform: translateY(100%);
 

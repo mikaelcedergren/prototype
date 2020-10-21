@@ -455,7 +455,9 @@ my-overlay {
   pointer-events: none; }
   my-overlay my-overlay-content {
     display: block;
-    padding: 1rem; }
+    padding: 1rem;
+    max-height: calc(80vh - 48px - 1rem);
+    overflow-y: auto; }
   my-overlay.is-visible {
     background: rgba(0, 0, 0, 0.7);
     pointer-events: all; }
@@ -483,7 +485,7 @@ my-overlay {
     max-height: 80vh;
     border-radius: 16px 16px 0 0;
     background: #fff;
-    overflow: auto;
+    overflow: hidden;
     cursor: default;
     transform: translateY(100%); }
     my-overlay my-overlay-wrapper > * {
