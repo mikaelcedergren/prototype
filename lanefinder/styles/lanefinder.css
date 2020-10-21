@@ -77,6 +77,9 @@ grid-wrapper, grid-wrapper-fixed {
     flex: 1 1 0%;
     margin: 0.5rem;
     max-width: 100%; }
+    grid-wrapper > grid-cell[data-shrink], grid-wrapper-fixed > grid-cell[data-shrink] {
+      flex-basis: auto;
+      flex-grow: 0; }
     grid-wrapper > grid-cell[data-align="right"], grid-wrapper-fixed > grid-cell[data-align="right"] {
       text-align: right; }
   grid-wrapper grid-wrapper > grid-cell, grid-wrapper-fixed grid-wrapper > grid-cell, grid-wrapper grid-wrapper-fixed > grid-cell, grid-wrapper-fixed grid-wrapper-fixed > grid-cell {

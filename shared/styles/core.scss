@@ -105,6 +105,11 @@ grid-wrapper {
     margin: 0.5rem;
     max-width: 100%;
 
+    &[data-shrink] {
+      flex-basis: auto;
+      flex-grow: 0;
+    }
+
     &[data-align="right"] {
       text-align: right;
     }
