@@ -541,6 +541,20 @@ my-modal {
     cursor: default;
     transform: translateY(110%); }
 
+::-webkit-scrollbar {
+  display: none; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px transparent;
+  background-color: transparent; }
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent; }
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent; }
+
 html {
   visibility: visible;
   opacity: 1; }
