@@ -453,10 +453,13 @@ my-overlay {
   cursor: pointer;
   transition: background 0.3s ease-in;
   pointer-events: none; }
+  my-overlay my-overlay-content {
+    display: block;
+    padding: 1rem; }
   my-overlay.is-visible {
     background: rgba(0, 0, 0, 0.7);
     pointer-events: all; }
-    my-overlay.is-visible my-overlay-content {
+    my-overlay.is-visible my-overlay-wrapper {
       transform: translateY(0); }
   my-overlay my-overlay-header {
     display: flex;
@@ -473,7 +476,7 @@ my-overlay {
       display: flex;
       align-items: center;
       justify-content: center; }
-  my-overlay my-overlay-content {
+  my-overlay my-overlay-wrapper {
     transition: transform 0.3s cubic-bezier(0, 0.6, 0.5, 1);
     position: relative;
     max-width: 480px;
@@ -483,7 +486,7 @@ my-overlay {
     overflow: auto;
     cursor: default;
     transform: translateY(100%); }
-    my-overlay my-overlay-content > * {
+    my-overlay my-overlay-wrapper > * {
       padding: 1rem; }
 
 html {

@@ -305,11 +305,16 @@ my-overlay {
   transition: background 0.3s ease-in;
   pointer-events: none;
 
+  my-overlay-content {
+    display: block;
+    padding: 1rem;
+  }
+
   &.is-visible {
     background: rgba(black,0.7);
     pointer-events: all;
 
-    my-overlay-content {
+    my-overlay-wrapper {
       transform: translateY(0);
     }
   }
@@ -333,7 +338,7 @@ my-overlay {
     }
   }
 
-  my-overlay-content {
+  my-overlay-wrapper {
     transition: transform 0.3s $ease-out;
     position: relative;
     max-width: 480px;
