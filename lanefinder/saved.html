@@ -15,14 +15,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap"
-    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/shared/styles/_normalize.css">
   <link rel="stylesheet" href="/lanefinder/styles/lanefinder.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
   <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
   <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script>
   <script type="text/javascript"
@@ -35,7 +32,9 @@
 
 
 <my-view>
-  <my-header id="detect-top" style="background-image: url(/lanefinder/images/header-image-road.png);">
+  <header-backdrop style="background-image: url(/lanefinder/images/header-image-road.png);"></header-backdrop>
+
+  <my-header>
     <my-header-content>
       <my-header-title>
         Saved
@@ -46,22 +45,42 @@
   <my-content>
 
     <my-padding-wrapper>
-      <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.</p>
+      <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit
+        aliquet. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a
+        pharetra augue.</p>
 
-      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.</p>
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Duis mollis, est non
+        commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis
+        ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh
+        ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.</p>
 
-      <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.</p>
+      <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere
+        velit aliquet. Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl
+        consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.</p>
 
-      <p>Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
+      <p>Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Sed
+        posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non
+        commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus,
+        nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.
+      </p>
     </my-padding-wrapper>
 
-    </my-content>
+  </my-content>
 </my-view>
+
+<navigation-bar id="detect-top">
+  <navigation-left>
+    Saved
+  </navigation-left>
+  <navigation-right>
+    <a href="#">Help</a>
+  </navigation-right>
+</navigation-bar>
 
 <my-mobile-tabs>
     <my-mobile-tab-item class="">
         <a href="index.html">
-            <i class="material-icons">policy</i>
+            <i class="material-icons">search</i>
             <my-mobile-tab-title>Jobs</my-mobile-tab-title>
         </a>
     </my-mobile-tab-item>
@@ -104,15 +123,15 @@ new simpleParallax(image, {
 });
 </script> -->
 <status-bar>
-    <img src="/shared/images/status-bar-left.png" />
-    <img src="/shared/images/status-bar-right.png" />
+    <img src="/shared/images/status-bar-black-left.png" />
+    <img src="/shared/images/status-bar-black-right.png" />
 </status-bar>
 
 <script>
     window.onscroll = function () { myFunction() };
 
     var sticker = document.getElementById("detect-top");
-    var sticky = sticker.offsetTop + 104;
+    var sticky = sticker.offsetTop + 172;
 
     function myFunction() {
         if (window.pageYOffset > sticky) {

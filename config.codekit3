@@ -391,6 +391,28 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/shared/images/status-bar-black-left.png": {
+		"ft": 32768,
+		"iS": 2906,
+		"oA": 0,
+		"oAP": "/shared/images/status-bar-black-left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/shared/images/status-bar-black-right.png": {
+		"ft": 32768,
+		"iS": 2845,
+		"oA": 0,
+		"oAP": "/shared/images/status-bar-black-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/shared/images/status-bar-left.png": {
 		"ft": 32768,
 		"iS": 1317,
@@ -408,8 +430,8 @@
 		"oA": 0,
 		"oAP": "/shared/images/status-bar-right.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

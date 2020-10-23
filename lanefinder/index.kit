@@ -1,15 +1,16 @@
 <!-- @import '/lanefinder/components/_html-header.kit' -->
 
 <my-view>
-  <!-- <header-backdrop style="background-image: url(/lanefinder/images/header-image-dashboard.png);"></header-backdrop> -->
+  <header-backdrop style="background-image: url(/lanefinder/images/header-image-dashboard.png);"></header-backdrop>
   <!-- <img class="parallax" src="/lanefinder/images/header-image-dashboard.png"> -->
-  <my-header id="detect-top" style="background-image: url(/lanefinder/images/header-image-dashboard.png);">
+  <my-header>
     <my-header-content>
       <my-header-title>
         Jobs
       </my-header-title>
       <my-header-button>
-        <button id="save-search" data-open="modal-save-search" data-size="small"><i class="material-icons">favorite</i><span>Save search</span></button>
+        <button id="save-search" data-open="modal-save-search" data-size="small"><i
+            class="material-icons">favorite</i><span>Save search</span></button>
       </my-header-button>
     </my-header-content>
   </my-header>
@@ -18,8 +19,8 @@
     <!-- @import '/lanefinder/components/_filters-box.kit -->
 
     <my-list-heading>
-          <div>Matching all of your filters</div>
-          <div>2 jobs</div>
+      <div>Matching all of your filters</div>
+      <div>2 jobs</div>
     </my-list-heading>
 
     <!-- @import '/lanefinder/components/_job-item-1.kit -->
@@ -30,15 +31,19 @@
   </my-content>
 </my-view>
 
+<navigation-bar id="detect-top">
+  <navigation-left>
+    Jobs
+  </navigation-left>
+  <navigation-right>
+    <a href="#">Help</a>
+    <i class="material-icons" data-open="overlay-filters">tune</i>
+    <i class="material-icons" data-open="modal-save-search">favorite</i></navigation-right>
+</navigation-bar>
 
 <!-- $tab-item-1 = active -->
 <!-- @import '/lanefinder/components/_mobile-tabs.kit -->
 
-<!-- <navigation-bar id="sticker">
-  <cell-left><i class="material-icons">tune</i></cell-left>
-  <cell-middle>Jobs</cell-middle>
-  <cell-right><i class="material-icons">favorite</i></cell-right>
-</navigation-bar> -->
 
 <my-overlay id="overlay-filters">
   <my-overlay-wrapper>
@@ -93,7 +98,7 @@
         trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
         it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
         consequences, or one who avoids a pain that produces no resultant pleasure</p>
-        <a href="/lanefinder/wizards/apply/step-1.html"><button data-color="accent">Apply now</button></a>
+      <a href="/lanefinder/wizards/apply/step-1.html"><button data-color="accent">Apply now</button></a>
     </my-ad-overlay-content>
   </my-ad-overlay-wrapper>
 </my-ad-overlay>
@@ -101,13 +106,13 @@
 <my-modal id="modal-save-search">
   <my-modal-wrapper>
     <my-modal-header>Save this search</my-modal-header>
-  <my-modal-content>
-    <p>We will notify you once a day when any jobs become available that match this search.</p>
-  </my-modal-content>
-  <my-modal-footer>
-    <button data-close data-color="accent" data-block>Save search</button>
-    <button data-close data-block>Close</button>
-  </my-modal-footer>
+    <my-modal-content>
+      <p>We will notify you once a day when any jobs become available that match this search.</p>
+    </my-modal-content>
+    <my-modal-footer>
+      <button data-close data-color="accent" data-block>Save search</button>
+      <button data-close data-block>Close</button>
+    </my-modal-footer>
   </my-modal-wrapper>
 </my-modal>
 

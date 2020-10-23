@@ -15,14 +15,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap"
-    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/shared/styles/_normalize.css">
   <link rel="stylesheet" href="/lanefinder/styles/lanefinder.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
   <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
   <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script>
   <script type="text/javascript"
@@ -35,15 +32,16 @@
 
 
 <my-view>
-  <!-- <header-backdrop style="background-image: url(/lanefinder/images/header-image-dashboard.png);"></header-backdrop> -->
+  <header-backdrop style="background-image: url(/lanefinder/images/header-image-dashboard.png);"></header-backdrop>
   <!-- <img class="parallax" src="/lanefinder/images/header-image-dashboard.png"> -->
-  <my-header id="detect-top" style="background-image: url(/lanefinder/images/header-image-dashboard.png);">
+  <my-header>
     <my-header-content>
       <my-header-title>
         Jobs
       </my-header-title>
       <my-header-button>
-        <button id="save-search" data-open="modal-save-search" data-size="small"><i class="material-icons">favorite</i><span>Save search</span></button>
+        <button id="save-search" data-open="modal-save-search" data-size="small"><i
+            class="material-icons">favorite</i><span>Save search</span></button>
       </my-header-button>
     </my-header-content>
   </my-header>
@@ -67,8 +65,8 @@
     
 
     <my-list-heading>
-          <div>Matching all of your filters</div>
-          <div>2 jobs</div>
+      <div>Matching all of your filters</div>
+      <div>2 jobs</div>
     </my-list-heading>
 
     <my-list-item id="job-item-1" data-open="overlay-ad">
@@ -104,11 +102,20 @@
   </my-content>
 </my-view>
 
+<navigation-bar id="detect-top">
+  <navigation-left>
+    Jobs
+  </navigation-left>
+  <navigation-right>
+    <a href="#">Help</a>
+    <i class="material-icons" data-open="overlay-filters">tune</i>
+    <i class="material-icons" data-open="modal-save-search">favorite</i></navigation-right>
+</navigation-bar>
 
 <my-mobile-tabs>
     <my-mobile-tab-item class="active">
         <a href="index.html">
-            <i class="material-icons">policy</i>
+            <i class="material-icons">search</i>
             <my-mobile-tab-title>Jobs</my-mobile-tab-title>
         </a>
     </my-mobile-tab-item>
@@ -143,11 +150,6 @@
 </my-mobile-tabs>
 
 
-<!-- <navigation-bar id="sticker">
-  <cell-left><i class="material-icons">tune</i></cell-left>
-  <cell-middle>Jobs</cell-middle>
-  <cell-right><i class="material-icons">favorite</i></cell-right>
-</navigation-bar> -->
 
 <my-overlay id="overlay-filters">
   <my-overlay-wrapper>
@@ -202,7 +204,7 @@
         trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
         it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
         consequences, or one who avoids a pain that produces no resultant pleasure</p>
-        <a href="/lanefinder/wizards/apply/step-1.html"><button data-color="accent">Apply now</button></a>
+      <a href="/lanefinder/wizards/apply/step-1.html"><button data-color="accent">Apply now</button></a>
     </my-ad-overlay-content>
   </my-ad-overlay-wrapper>
 </my-ad-overlay>
@@ -210,13 +212,13 @@
 <my-modal id="modal-save-search">
   <my-modal-wrapper>
     <my-modal-header>Save this search</my-modal-header>
-  <my-modal-content>
-    <p>We will notify you once a day when any jobs become available that match this search.</p>
-  </my-modal-content>
-  <my-modal-footer>
-    <button data-close data-color="accent" data-block>Save search</button>
-    <button data-close data-block>Close</button>
-  </my-modal-footer>
+    <my-modal-content>
+      <p>We will notify you once a day when any jobs become available that match this search.</p>
+    </my-modal-content>
+    <my-modal-footer>
+      <button data-close data-color="accent" data-block>Save search</button>
+      <button data-close data-block>Close</button>
+    </my-modal-footer>
   </my-modal-wrapper>
 </my-modal>
 
@@ -228,15 +230,15 @@ new simpleParallax(image, {
 });
 </script> -->
 <status-bar>
-    <img src="/shared/images/status-bar-left.png" />
-    <img src="/shared/images/status-bar-right.png" />
+    <img src="/shared/images/status-bar-black-left.png" />
+    <img src="/shared/images/status-bar-black-right.png" />
 </status-bar>
 
 <script>
     window.onscroll = function () { myFunction() };
 
     var sticker = document.getElementById("detect-top");
-    var sticky = sticker.offsetTop + 104;
+    var sticky = sticker.offsetTop + 172;
 
     function myFunction() {
         if (window.pageYOffset > sticky) {

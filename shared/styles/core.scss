@@ -1,6 +1,11 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 
+html {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
 html,
 body {
   font-family: $font-family;
@@ -30,7 +35,11 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin-top: 0;
 }
 
@@ -38,6 +47,9 @@ h1, h2, h3, h4, h5 {
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 small {
