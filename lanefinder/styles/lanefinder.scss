@@ -25,7 +25,7 @@ a {
 my-view {
   display: block;
   min-height: 100vh;
-  padding-bottom: $mobile-tabs-height;
+  padding-bottom: calc(#{$mobile-tabs-height} + 1rem);
 }
 
 header-backdrop {
@@ -83,7 +83,6 @@ my-content {
   position: relative;
   display: block;
   background-color: $gray-1;
-  min-height: 100vh;
   border-radius: $border-radius * 4 $border-radius * 4 0 0;
 }
 
@@ -98,12 +97,32 @@ my-tag {
   margin-bottom: 0.25rem;
   line-height: 1;
 
+  &:empty {
+    display: none;
+ }
+
   &[data-color="accent"] {
     background-color: $accent;
     color: $white;
   }
+
+  &[data-color="primary"] {
+    background-color: $primary;
+    color: $white;
+  }
 }
 
+my-item-title {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: $font-family-headings;
+  font-size: 1.2rem;
+  font-weight: $font-bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100% - 2rem);
+}
 my-padding-wrapper {
   display: block;
   padding: 1rem;
@@ -534,5 +553,33 @@ my-wizard-view {
 
   my-box {
     margin-bottom: 1rem;
+  }
+}
+
+my-saved-searches-item {
+  display: block;
+  position: relative;
+  background-color: $white;
+  border-bottom: $line;
+  padding: 1rem;
+
+  &:first-child {
+    border-radius: $border-radius-large;
+  }
+
+  i {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: $gray-3;
+  }
+
+  p {
+    color: $gray-4;
+    margin: 0;
+  }
+
+  my-tag {
+    margin-top: 1rem;
   }
 }

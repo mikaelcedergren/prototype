@@ -105,6 +105,14 @@
 		"oAP": "/lanefinder/components/_mobile-tabs.html",
 		"oF": 0
 		},
+	"/lanefinder/components/_my-saved-searches-item.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/lanefinder/components/_my-saved-searches-item.html",
+		"oF": 0
+		},
 	"/lanefinder/components/_status-bar.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -179,6 +187,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/lanefinder/images/header-image-looking-out.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/lanefinder/images/header-image-looking-out.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/lanefinder/images/header-image-road.png": {
 		"ft": 32768,
 		"iS": 3150937,
@@ -207,8 +226,8 @@
 		"oA": 0,
 		"oAP": "/lanefinder/images/header-image-truck.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

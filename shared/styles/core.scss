@@ -29,6 +29,7 @@ body {
   cursor: default;
   overflow-x: hidden;
   overflow-y: auto;
+  line-height: 1.25;
 
   &.turn-off-scroll {
     overflow-y: hidden;
