@@ -99,7 +99,7 @@ my-tag {
 
   &:empty {
     display: none;
- }
+  }
 
   &[data-color="accent"] {
     background-color: $accent;
@@ -185,7 +185,7 @@ navigation-bar {
   top: 0;
   left: 0;
   right: 0;
-  transform: translateY(-100%) translate3d(0,0,0);
+  transform: translateY(-100%) translate3d(0, 0, 0);
   background-color: rgba(white, 0.85);
   transition: transform 0.3s $ease-out;
   backdrop-filter: blur(5px);
@@ -204,7 +204,7 @@ navigation-bar {
   navigation-right {
     text-align: right;
     height: 44px;
-line-height: 44px;
+    line-height: 44px;
     a {
       margin-right: 0.5rem;
     }
@@ -220,7 +220,7 @@ line-height: 44px;
 
   &.at-top {
     border-bottom: $line;
-    transform: translateY(0) translate3d(0,0,0);
+    transform: translateY(0) translate3d(0, 0, 0);
   }
 }
 
@@ -588,5 +588,51 @@ my-saved-searches-item {
 
   my-tag {
     margin-top: 1rem;
+  }
+}
+
+list-item {
+  display: block;
+  position: relative;
+  background-color: $white;
+
+  &:first-child {
+    border-top-left-radius: $border-radius-large;
+    border-top-right-radius: $border-radius-large;
+  }
+
+  list-item-title {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-family: $font-family-headings;
+    font-size: 1.2rem;
+    font-weight: $font-bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 2rem);
+    padding: 0 1rem;
+  }
+
+  list-item-description {
+    display: block;
+    padding: 0 1rem;
+    color: $gray-4;
+  }
+
+  &[data-layout="right"] {
+    border-bottom: $line;
+    padding: 1rem 0;
+
+    &::after {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1.5rem;
+      color: $gray-3;
+      font-family: "Material Icons";
+      content: "navigate_next";
+      -webkit-font-feature-settings: "liga";
+    }
   }
 }

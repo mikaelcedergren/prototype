@@ -354,7 +354,7 @@ my-list-heading {
   justify-content: space-between;
   align-items: center;
   flex-flow: row nowrap;
-  border-top: 1px solid #e6eaf0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
   padding: 1rem;
   color: #778396;
   font-weight: 700; }
@@ -369,7 +369,7 @@ my-list-item {
   padding: 1rem;
   display: block;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-  border-top: 1px solid #e6eaf0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
   margin-bottom: 3px; }
   my-list-item strong {
     display: block;
@@ -416,7 +416,7 @@ navigation-bar {
       navigation-bar navigation-right i:hover {
         color: #ef3662; }
   navigation-bar.at-top {
-    border-bottom: 1px solid #e6eaf0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     transform: translateY(0) translate3d(0, 0, 0); }
 
 status-bar {
@@ -451,7 +451,7 @@ my-mobile-tabs {
   right: 0;
   height: 56px;
   padding: 0 0.25rem;
-  border-top: 1px solid #e6eaf0; }
+  border-top: 1px solid rgba(0, 0, 0, 0.08); }
   my-mobile-tabs my-mobile-tab-item {
     display: flex;
     flex-flow: column nowrap;
@@ -686,7 +686,7 @@ my-saved-searches-item {
   display: block;
   position: relative;
   background-color: #fff;
-  border-bottom: 1px solid #e6eaf0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding: 1rem; }
   my-saved-searches-item:first-child {
     border-radius: 16px; }
@@ -700,3 +700,38 @@ my-saved-searches-item {
     margin: 0; }
   my-saved-searches-item my-tag {
     margin-top: 1rem; }
+
+list-item {
+  display: block;
+  position: relative;
+  background-color: #fff; }
+  list-item:first-child {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px; }
+  list-item list-item-title {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 2rem);
+    padding: 0 1rem; }
+  list-item list-item-description {
+    display: block;
+    padding: 0 1rem;
+    color: #a3afbf; }
+  list-item[data-layout="right"] {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 1rem 0; }
+    list-item[data-layout="right"]::after {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1.5rem;
+      color: #d3d9e0;
+      font-family: "Material Icons";
+      content: "navigate_next";
+      -webkit-font-feature-settings: "liga"; }
