@@ -111,6 +111,20 @@ button {
       font-size: $font-size-small;
     }
   }
+
+  &[data-glow] {
+    box-shadow: 0 8px 12px rgba($accent, 0.5);
+  }
+
+  &[data-size="large"] {
+    padding: 0 2rem;
+    height: 48px;
+    font-size: $font-size-small;
+
+    i {
+      font-size: $font-size-small;
+    }
+  }
 }
 
 grid-wrapper {

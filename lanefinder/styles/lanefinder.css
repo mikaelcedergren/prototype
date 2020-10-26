@@ -82,6 +82,14 @@ button {
     font-size: 14px; }
     button[data-size="small"] i {
       font-size: 14px; }
+  button[data-glow] {
+    box-shadow: 0 8px 12px rgba(239, 54, 98, 0.5); }
+  button[data-size="large"] {
+    padding: 0 2rem;
+    height: 48px;
+    font-size: 14px; }
+    button[data-size="large"] i {
+      font-size: 14px; }
 
 grid-wrapper, grid-wrapper-fixed {
   box-sizing: border-box;
@@ -350,6 +358,8 @@ my-list-heading {
   padding: 1rem;
   color: #778396;
   font-weight: 700; }
+  my-list-heading:first-of-type {
+    border-top: none; }
   my-list-heading > *:last-child {
     font-weight: normal;
     color: #a3afbf; }
@@ -431,7 +441,9 @@ my-mobile-tabs {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   position: fixed;
   z-index: 3;
   bottom: 0;
@@ -461,6 +473,7 @@ my-mobile-tabs {
       color: #3e4a5e; }
 
 my-box {
+  position: relative;
   display: block;
   padding: 1rem;
   border-radius: 12px;

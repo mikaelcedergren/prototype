@@ -32,7 +32,7 @@
 
 
 <my-view>
-  <header-backdrop style="background-image: url(/lanefinder/images/header-image-looking-out.png);"></header-backdrop>
+  <header-backdrop style="background-image: url(/lanefinder/images/header-image-looking-out.png); background-size: 120%;"></header-backdrop>
   <!-- <img class="parallax" src="/lanefinder/images/header-image-dashboard.png"> -->
   <my-header>
     <my-header-content>
@@ -46,24 +46,24 @@
     </my-header-content>
   </my-header>
 
-  <my-content>
-    <my-padding-wrapper>
-        <my-box id="filters" data-open="overlay-filters">
-          <grid-wrapper-fixed data-align="center">
-            <grid-cell>
-              <i class="material-icons color-discreet">tune</i><span class="color-text-discreet">Filters</span>
-            </grid-cell>
-            <grid-cell data-align="right">
-              <a href="#" class="link">Edit</a>
-            </grid-cell>
-          </grid-wrapper-fixed>
-          <p class="color-text-discreet">Team OTR, local company driver jobs in 90210 with a minimum weekly average...
-          </p>
-          <strong>12 out of 284 jobs</strong>
-        </my-box>
-      </my-padding-wrapper>
-    
+  <my-padding-wrapper>
+      <my-box id="filters" data-open="overlay-filters">
+        <grid-wrapper-fixed data-align="center">
+          <grid-cell>
+            <i class="material-icons color-discreet">tune</i><span class="color-text-discreet">Filters</span>
+          </grid-cell>
+          <grid-cell data-align="right">
+            <a href="#" class="link">Edit</a>
+          </grid-cell>
+        </grid-wrapper-fixed>
+        <p class="color-text-discreet">Team OTR, local company driver jobs in 90210 with a minimum weekly average...
+        </p>
+        <strong>12 out of 284 jobs</strong>
+      </my-box>
+    </my-padding-wrapper>
+  
 
+  <my-content>
     <my-list-heading>
       <div>Matching all of your filters</div>
       <div>2 jobs</div>
@@ -97,8 +97,28 @@
                 <my-tag>100-249 trucks</my-tag>
             </my-list-item>
             
-
-
+    <my-list-heading>
+      <div>You might also be interested in</div>
+      <div>12 jobs</div>
+    </my-list-heading>
+    <my-list-item>
+        <strong>Line Haul OTR</strong>
+        <small>TransGlobal Solutions, LLC</small>
+        <p>$3,000 per week</p>
+        <p>Home at least 2 weekends. Flatbed.</p>
+        <my-tag>O/O</my-tag>
+        <my-tag>50-99 trucks</my-tag>
+    </my-list-item>
+    
+    <my-list-item>
+            <strong>Dedicated Line Haul</strong>
+            <small>Dee King Trucking</small>
+            <p>$1,200 - $1,500 per week</p>
+            <p>Expected to be out 7-10 days. Tanker.</p>
+            <my-tag>W2</my-tag>
+            <my-tag>100-249 trucks</my-tag>
+        </my-list-item>
+        
   </my-content>
 </my-view>
 
@@ -204,7 +224,7 @@
         trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
         it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
         consequences, or one who avoids a pain that produces no resultant pleasure</p>
-      <a href="/lanefinder/wizards/apply/step-1.html"><button data-color="accent">Apply now</button></a>
+      <a href="/lanefinder/wizards/apply/step-1.html"><button data-color="accent" data-size="large" data-glow>Apply now</button></a>
     </my-ad-overlay-content>
   </my-ad-overlay-wrapper>
 </my-ad-overlay>

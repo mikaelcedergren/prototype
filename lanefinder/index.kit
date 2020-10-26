@@ -1,7 +1,7 @@
 <!-- @import '/lanefinder/components/_html-header.kit' -->
 
 <my-view>
-  <header-backdrop style="background-image: url(/lanefinder/images/header-image-looking-out.png);"></header-backdrop>
+  <header-backdrop style="background-image: url(/lanefinder/images/header-image-looking-out.png); background-size: 120%;"></header-backdrop>
   <!-- <img class="parallax" src="/lanefinder/images/header-image-dashboard.png"> -->
   <my-header>
     <my-header-content>
@@ -15,9 +15,9 @@
     </my-header-content>
   </my-header>
 
-  <my-content>
-    <!-- @import '/lanefinder/components/_filters-box.kit -->
+  <!-- @import '/lanefinder/components/_filters-box.kit -->
 
+  <my-content>
     <my-list-heading>
       <div>Matching all of your filters</div>
       <div>2 jobs</div>
@@ -26,8 +26,12 @@
     <!-- @import '/lanefinder/components/_job-item-1.kit -->
     <!-- @import '/lanefinder/components/_job-item-2.kit -->
     <!-- @import '/lanefinder/components/_job-item-3.kit -->
-
-
+    <my-list-heading>
+      <div>You might also be interested in</div>
+      <div>12 jobs</div>
+    </my-list-heading>
+    <!-- @import '/lanefinder/components/_job-item-2.kit -->
+    <!-- @import '/lanefinder/components/_job-item-3.kit -->
   </my-content>
 </my-view>
 
@@ -98,7 +102,7 @@
         trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
         it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
         consequences, or one who avoids a pain that produces no resultant pleasure</p>
-      <a href="/lanefinder/wizards/apply/step-1.html"><button data-color="accent">Apply now</button></a>
+      <a href="/lanefinder/wizards/apply/step-1.html"><button data-color="accent" data-size="large" data-glow>Apply now</button></a>
     </my-ad-overlay-content>
   </my-ad-overlay-wrapper>
 </my-ad-overlay>
