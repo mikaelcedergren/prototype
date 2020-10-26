@@ -2,7 +2,6 @@
 @import "_mixins.scss";
 
 html {
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 
@@ -103,8 +102,8 @@ button {
   }
 
   &[data-size="small"] {
-    padding: 0 0.5rem;
-    height: 28px;
+    padding: 0 1rem;
+    height: 32px;
     font-size: $font-size-small;
 
     i {

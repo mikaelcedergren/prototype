@@ -72,8 +72,7 @@ my-header {
   my-header-button {
     button {
       transition: all 0.3s ease;
-      background-color: rgba(black, 0.4);
-      // border: 1px solid $white;
+      background-color: rgba(black, 0.5);
       backdrop-filter: blur(2px);
     }
   }
@@ -190,6 +189,14 @@ navigation-bar {
   transition: transform 0.3s $ease-out;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+
+  &[data-static] {
+    position: static;
+    background-color: transparent;
+    transform: translateY(0);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
 
   navigation-left {
     font-family: $font-family-headings;
@@ -317,6 +324,18 @@ my-overlay {
   transition: background 0.3s ease-in;
   pointer-events: none;
 
+  my-overlay-wrapper {
+    transition: transform 0.3s $ease-out;
+    position: relative;
+    max-width: 480px;
+    max-height: 80vh;
+    border-radius: $border-radius * 4 $border-radius * 4 0 0;
+    background: $white;
+    overflow: hidden;
+    cursor: default;
+    transform: translateY(100%) translateZ(0);
+  }
+
   my-overlay-content {
     display: block;
     padding: 1rem;
@@ -329,7 +348,7 @@ my-overlay {
     pointer-events: all;
 
     my-overlay-wrapper {
-      transform: translateY(0);
+      transform: translateY(0) translateZ(0);
     }
   }
 
@@ -351,18 +370,6 @@ my-overlay {
       align-items: center;
       justify-content: center;
     }
-  }
-
-  my-overlay-wrapper {
-    transition: transform 0.3s 0.1s $ease-out;
-    position: relative;
-    max-width: 480px;
-    max-height: 80vh;
-    border-radius: $border-radius * 4 $border-radius * 4 0 0;
-    background: $white;
-    overflow: hidden;
-    cursor: default;
-    transform: translateY(100%);
   }
 }
 
@@ -549,13 +556,8 @@ my-wizard-view {
 
   my-wizard-navigation-bar {
     display: block;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
     color: $white;
-    padding: 1rem;
-    margin-top: $status-bar-height;
+    padding: 0 1rem 1rem 1rem;
   }
 
   my-box {
@@ -605,7 +607,7 @@ list-item {
     display: block;
     margin-bottom: 0.25rem;
     font-family: $font-family-headings;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: $font-bold;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -618,6 +620,12 @@ list-item {
     display: block;
     padding: 0 1rem;
     color: $gray-4;
+  }
+
+  list-item-tags {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0 1rem;
   }
 
   &[data-layout="right"] {
