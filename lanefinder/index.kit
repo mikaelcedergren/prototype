@@ -1,61 +1,60 @@
 <!-- @import '/lanefinder/components/_html-header.kit' -->
 
-<my-view>
+<main-view>
   <header-backdrop style="background-image: url(/lanefinder/images/header-image-looking-out.png); background-size: 120%;"></header-backdrop>
   <!-- <img class="parallax" src="/lanefinder/images/header-image-dashboard.png"> -->
-  <my-header>
-    <my-header-content>
-      <my-header-title>
+  <view-header>
+    <header-content>
+      <header-title>
         Jobs
-      </my-header-title>
-      <my-header-button>
+      </header-title>
+      <header-button>
         <button id="save-search" data-open="modal-save-search" data-size="small"><i
             class="material-icons">favorite</i><span>Save search</span></button>
-      </my-header-button>
-    </my-header-content>
-  </my-header>
+      </header-button>
+    </header-content>
+  </view-header>
 
   <!-- @import '/lanefinder/components/_filters-box.kit -->
 
-  <my-content>
-    <my-list-heading>
-      <div>Matching all of your filters</div>
-      <div>2 jobs</div>
-    </my-list-heading>
+  <view-content>
+    <list-heading>
+      <left-block>Matching all of your filters</left-block>
+      <right-block>2 jobs</right-block>
+    </list-heading>
 
     <!-- @import '/lanefinder/components/_job-item-1.kit -->
     <!-- @import '/lanefinder/components/_job-item-2.kit -->
     <!-- @import '/lanefinder/components/_job-item-3.kit -->
-    <my-list-heading>
-      <div>You might also be interested in</div>
-      <div>12 jobs</div>
-    </my-list-heading>
+    <list-heading>
+      <left-block>You might also be interested in</left-block>
+      <right-block>12 jobs</right-block>
+    </list-heading>
     <!-- @import '/lanefinder/components/_job-item-2.kit -->
     <!-- @import '/lanefinder/components/_job-item-3.kit -->
-  </my-content>
-</my-view>
+  </view-content>
+</main-view>
 
 <navigation-bar id="detect-top">
-  <navigation-left>
+  <left-block>
     Jobs
-  </navigation-left>
-  <navigation-right>
+  </left-block>
+  <right-block>
     <a href="#">Help</a>
     <i class="material-icons" data-open="overlay-filters">tune</i>
-    <i class="material-icons" data-open="modal-save-search">favorite</i></navigation-right>
+    <i class="material-icons" data-open="modal-save-search">favorite</i></right-block>
 </navigation-bar>
 
 <!-- $tab-item-1 = active -->
 <!-- @import '/lanefinder/components/_mobile-tabs.kit -->
 
-
-<my-overlay id="overlay-filters">
-  <my-overlay-wrapper>
-    <my-overlay-header>
+<generic-overlay id="overlay-filters">
+  <overlay-wrapper>
+    <overlay-header>
       <icon-button data-close><i class="material-icons">expand_more</i></icon-button>
       242 jobs
-    </my-overlay-header>
-    <my-overlay-content>
+    </overlay-header>
+    <overlay-content>
       <p><strong>Press ✕, ESC, or click outside of the modal to close it</strong></p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus reprehenderit accusamus totam ratione!
         Nesciunt, nemo dolorum recusandae ad ex nam similique dolorem ab perspiciatis qui. Facere, dignissimos. Nemo,
@@ -73,18 +72,18 @@
         trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
         it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
         consequences, or one who avoids a pain that produces no resultant pleasure</p>
-    </my-overlay-content>
-  </my-overlay-wrapper>
-</my-overlay>
+    </overlay-content>
+  </overlay-wrapper>
+</generic-overlay>
 
-<my-ad-overlay id="overlay-ad">
-  <my-ad-overlay-wrapper>
-    <my-ad-overlay-header>
+<ad-overlay id="overlay-ad">
+  <ad-overlay-wrapper>
+    <ad-overlay-header>
       <i class="material-icons" data-close>expand_more</i>
-    </my-ad-overlay-header>
-    <my-ad-overlay-content>
-      <my-ad-overlay-sub-heading>W Trucking Inc</my-ad-overlay-sub-heading>
-      <my-ad-overlay-heading>Line Haul Regional Team</my-ad-overlay-heading>
+    </ad-overlay-header>
+    <ad-overlay-content>
+      <ad-overlay-sub-heading>W Trucking Inc</ad-overlay-sub-heading>
+      <ad-overlay-heading>Line Haul Regional Team</ad-overlay-heading>
       <p><strong>Press ✕, ESC, or click outside of the modal to close it</strong></p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus reprehenderit accusamus totam ratione!
         Nesciunt, nemo dolorum recusandae ad ex nam similique dolorem ab perspiciatis qui. Facere, dignissimos. Nemo,
@@ -103,21 +102,22 @@
         it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
         consequences, or one who avoids a pain that produces no resultant pleasure</p>
       <a href="/lanefinder/wizards/apply/step-1.html"><button data-color="accent" data-size="large" data-glow>Apply now</button></a>
-    </my-ad-overlay-content>
-  </my-ad-overlay-wrapper>
-</my-ad-overlay>
+    </ad-overlay-content>
+  </ad-overlay-wrapper>
+</ad-overlay>
 
-<my-modal id="modal-save-search">
-  <my-modal-wrapper>
-    <my-modal-header>Save this search</my-modal-header>
-    <my-modal-content>
+<generic-modal id="modal-save-search">
+  <modal-wrapper>
+    <modal-header>Save this search</modal-header>
+    <modal-content>
       <p>We will notify you once a day when any jobs become available that match this search.</p>
-    </my-modal-content>
-    <my-modal-footer>
+    </modal-content>
+    <modal-footer>
       <button data-close data-color="accent" data-block>Save search</button>
       <button data-close data-block>Close</button>
-    </my-modal-footer>
-  </my-modal-wrapper>
-</my-modal>
+    </modal-footer>
+  </modal-wrapper>
+</generic-modal>
 
+<!-- @import '/lanefinder/components/_status-bar.kit -->
 <!-- @import '/lanefinder/components/_html-footer.kit' -->

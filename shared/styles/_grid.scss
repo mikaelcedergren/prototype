@@ -1,0 +1,51 @@
+grid-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: -0.5rem -0.5rem 0.5rem -0.5rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &[data-align="middle"] {
+    & > grid-cell {
+      align-self: center;
+    }
+  }
+
+  & > grid-cell {
+    vertical-align: baseline;
+    font-size: inherit;
+    min-width: 220px;
+    flex: 1 1 0%;
+    margin: 0.5rem;
+    max-width: 100%;
+
+    &[data-shrink] {
+      flex-basis: auto;
+      flex-grow: 0;
+    }
+
+    &[data-align="right"] {
+      text-align: right;
+    }
+  }
+
+  grid-wrapper {
+    & > grid-cell {
+      min-width: 0;
+    }
+  }
+}
+
+grid-wrapper-fixed {
+  @extend grid-wrapper;
+  flex-flow: row nowrap;
+
+  & > grid-cell {
+    min-width: 0;
+  }
+}

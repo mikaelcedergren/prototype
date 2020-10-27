@@ -1,0 +1,52 @@
+button {
+  border-radius: 100px;
+  background-color: $gray-5;
+  color: $white;
+  border: none;
+  height: 40px;
+  padding: 0 1rem;
+  outline: none;
+  font-weight: $font-bold;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  font-size: $font-size;
+
+  &[data-block] {
+    display: block;
+    width: 100%;
+  }
+
+  i {
+    font-size: $font-size;
+  }
+
+  &[data-color="accent"] {
+    background-color: $accent;
+  }
+
+  &[data-size="small"] {
+    padding: 0 1rem;
+    height: 32px;
+    font-size: $font-size-small;
+
+    i {
+      font-size: $font-size-small;
+    }
+  }
+
+  &[data-glow] {
+    box-shadow: 0 8px 12px rgba($accent, 0.5);
+  }
+
+  &[data-size="large"] {
+    padding: 0 2rem;
+    height: 48px;
+    font-size: $font-size-small;
+
+    i {
+      font-size: $font-size-small;
+    }
+  }
+}

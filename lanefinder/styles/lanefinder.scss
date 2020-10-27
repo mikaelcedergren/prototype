@@ -22,7 +22,7 @@ a {
   }
 }
 
-my-view {
+main-view {
   display: block;
   min-height: 100vh;
   padding-bottom: calc(#{$mobile-tabs-height} + 1rem);
@@ -42,7 +42,7 @@ header-backdrop {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-my-header {
+view-header {
   position: relative;
   left: 0;
   top: 0;
@@ -54,14 +54,14 @@ my-header {
   height: $tab-header-height;
   z-index: 1;
 
-  my-header-content {
+  header-content {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  my-header-title {
+  header-title {
     display: block;
     color: $white;
     font-weight: $font-bold;
@@ -69,7 +69,7 @@ my-header {
     font-family: $font-family-headings;
   }
 
-  my-header-button {
+  header-button {
     button {
       transition: all 0.3s ease;
       background-color: rgba(black, 0.5);
@@ -78,7 +78,7 @@ my-header {
   }
 }
 
-my-content {
+view-content {
   position: relative;
   display: block;
   background-color: $gray-1;
@@ -122,12 +122,12 @@ my-item-title {
   white-space: nowrap;
   max-width: calc(100% - 2rem);
 }
-my-padding-wrapper {
+padding-wrapper {
   display: block;
   padding: 1rem;
 }
 
-my-list-heading {
+list-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -204,7 +204,7 @@ navigation-bar {
     }
   }
 
-  navigation-left {
+  left-block {
     font-family: $font-family-headings;
     font-size: 20px;
     font-weight: $font-bold;
@@ -214,10 +214,11 @@ navigation-bar {
     line-height: 44px;
   }
 
-  navigation-right {
+  right-block {
     text-align: right;
     height: 44px;
     line-height: 44px;
+
     a {
       margin-right: 0.5rem;
     }
@@ -251,6 +252,19 @@ status-bar {
 
   img {
     max-height: 15px;
+  }
+
+  .black {
+    display: none;
+  }
+
+  &[data-color="black"] {
+    .black {
+      display: block;
+    }
+    .white {
+      display: none;
+    }
   }
 }
 
@@ -306,7 +320,7 @@ my-mobile-tabs {
   }
 }
 
-my-box {
+box-block {
   position: relative;
   display: block;
   padding: 1rem;
@@ -314,7 +328,7 @@ my-box {
   background: $white;
 }
 
-my-overlay {
+generic-overlay {
   display: block;
   position: fixed;
   top: 0;
@@ -330,7 +344,7 @@ my-overlay {
   transition: background 0.3s ease-in;
   pointer-events: none;
 
-  my-overlay-wrapper {
+  overlay-wrapper {
     transition: transform 0.3s $ease-out;
     position: relative;
     max-width: 480px;
@@ -342,7 +356,7 @@ my-overlay {
     transform: translateY(100%) translateZ(0);
   }
 
-  my-overlay-content {
+  overlay-content {
     display: block;
     padding: 1rem;
     max-height: calc(80vh - #{$overlay-header-height} - 1rem);
@@ -353,12 +367,12 @@ my-overlay {
     background: rgba(black, 0.7);
     pointer-events: all;
 
-    my-overlay-wrapper {
+    overlay-wrapper {
       transform: translateY(0) translateZ(0);
     }
   }
 
-  my-overlay-header {
+  overlay-header {
     display: flex;
     padding: 1rem;
     align-items: center;
@@ -367,7 +381,7 @@ my-overlay {
   }
 }
 
-my-modal {
+generic-modal {
   display: block;
   position: fixed;
   top: 0;
@@ -383,7 +397,7 @@ my-modal {
   transition: background 0.3s ease-in;
   pointer-events: none;
 
-  my-modal-content {
+  modal-content {
     display: block;
     padding: 0 1rem 2rem 1rem;
     max-height: calc(50vh - #{$overlay-header-height} - 1rem);
@@ -394,12 +408,12 @@ my-modal {
     background: rgba(black, 0.7);
     pointer-events: all;
 
-    my-modal-wrapper {
+    modal-wrapper {
       transform: translateY(0);
     }
   }
 
-  my-modal-header {
+  modal-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -409,7 +423,7 @@ my-modal {
     font-family: $font-family-headings;
   }
 
-  my-modal-footer {
+  modal-footer {
     display: block;
     padding: 1rem;
 
@@ -420,7 +434,7 @@ my-modal {
     }
   }
 
-  my-modal-wrapper {
+  modal-wrapper {
     transition: transform 0.3s 0.1s $ease-out;
     position: relative;
     max-width: 480px;
@@ -441,7 +455,7 @@ my-modal {
   }
 }
 
-my-ad-overlay {
+ad-overlay {
   display: block;
   position: fixed;
   top: 0;
@@ -457,21 +471,21 @@ my-ad-overlay {
   transition: background 0.3s ease-in;
   pointer-events: none;
 
-  my-ad-overlay-sub-heading {
+  ad-overlay-sub-heading {
     color: $accent;
     display: block;
     font-size: $font-size-small;
     font-weight: $font-bold;
   }
 
-  my-ad-overlay-heading {
+  ad-overlay-heading {
     display: block;
     font-size: 18px;
     font-weight: $font-bold;
     font-family: $font-family-headings;
   }
 
-  my-ad-overlay-content {
+  ad-overlay-content {
     display: block;
     padding: 0 1rem 4rem 1rem;
     max-height: calc(100vh - #{$overlay-header-height} - 2rem);
@@ -494,12 +508,12 @@ my-ad-overlay {
       bottom: 1rem;
     }
 
-    my-ad-overlay-wrapper {
+    ad-overlay-wrapper {
       transform: translateY(0);
     }
   }
 
-  my-ad-overlay-header {
+  ad-overlay-header {
     display: flex;
     padding: 1rem;
     align-items: center;
@@ -519,7 +533,7 @@ my-ad-overlay {
     }
   }
 
-  my-ad-overlay-wrapper {
+  ad-overlay-wrapper {
     transition: transform 0.3s 0.1s $ease-out;
     position: relative;
     max-width: 480px;
@@ -538,7 +552,7 @@ html {
   opacity: 1;
 }
 
-my-wizard-view {
+wizard-view {
   display: block;
   min-height: 100vh;
   background-color: $contrast;
@@ -555,11 +569,11 @@ my-wizard-view {
     padding: 0 1rem;
   }
 
-  my-box {
+  box-block {
     margin-bottom: 1rem;
   }
 
-  my-wizard-content {
+  wizard-content {
     display: block;
     padding: 1rem;
   }
