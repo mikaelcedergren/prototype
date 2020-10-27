@@ -90,15 +90,18 @@ button {
   background-color: #778396;
   color: #fff;
   border: none;
-  height: 40px;
-  padding: 0 1rem;
   outline: none;
   font-weight: 700;
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
   flex-flow: row nowrap;
-  font-size: 16px; }
+  font-size: 16px;
+  padding: 0 2rem;
+  height: 48px;
+  font-size: 14px; }
+  button i {
+    font-size: 14px; }
   button[data-block] {
     display: block;
     width: 100%; }
@@ -114,12 +117,21 @@ button {
       font-size: 14px; }
   button[data-glow] {
     box-shadow: 0 8px 12px rgba(239, 54, 98, 0.5); }
-  button[data-size="large"] {
-    padding: 0 2rem;
-    height: 48px;
-    font-size: 14px; }
-    button[data-size="large"] i {
-      font-size: 14px; }
+
+button-container {
+  display: block;
+  text-align: center;
+  padding: 1rem; }
+  button-container[data-position="fixed"] {
+    transition: transform 0.3s cubic-bezier(0, 0.6, 0.5, 1);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 48px; }
+    button-container[data-position="fixed"][data-hide] {
+      transform: translateX(-50%) translateY(200%); }
+      button-container.show[data-position="fixed"][data-hide] {
+        transform: translateX(-50%) translateY(0%); }
 
 .mt-0 {
   margin-top: 0rem !important; }
@@ -266,7 +278,7 @@ a {
 main-view {
   display: block;
   min-height: 100vh;
-  padding-bottom: calc(56px + 1rem); }
+  padding-bottom: calc(56px + 1rem + 48px); }
 
 header-backdrop {
   display: block;
@@ -775,8 +787,3 @@ carrier-list-item {
     padding-right: 1rem;
     white-space: nowrap;
     color: #a3afbf; }
-
-button-container {
-  display: block;
-  text-align: center;
-  padding: 1rem 1rem 0 1rem; }

@@ -3,8 +3,6 @@ button {
   background-color: $gray-5;
   color: $white;
   border: none;
-  height: 40px;
-  padding: 0 1rem;
   outline: none;
   font-weight: $font-bold;
   white-space: nowrap;
@@ -12,6 +10,13 @@ button {
   align-items: center;
   flex-flow: row nowrap;
   font-size: $font-size;
+  padding: 0 2rem;
+  height: 48px;
+  font-size: $font-size-small;
+
+  i {
+    font-size: $font-size-small;
+  }
 
   &[data-block] {
     display: block;
@@ -39,14 +44,27 @@ button {
   &[data-glow] {
     box-shadow: 0 8px 12px rgba($accent, 0.5);
   }
+}
 
-  &[data-size="large"] {
-    padding: 0 2rem;
-    height: 48px;
-    font-size: $font-size-small;
+button-container {
+  display: block;
+  text-align: center;
+  padding: 1rem;
 
-    i {
-      font-size: $font-size-small;
+
+  &[data-position="fixed"] {
+    transition: transform 0.3s $ease-out;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: $tab-bar-height;
+
+    &[data-hide] {
+      transform: translateX(-50%) translateY(200%);
+
+      &.show {
+        transform: translateX(-50%) translateY(0%)
+      }
     }
   }
 }

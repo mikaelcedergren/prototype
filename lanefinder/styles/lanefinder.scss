@@ -25,7 +25,7 @@ a {
 main-view {
   display: block;
   min-height: 100vh;
-  padding-bottom: calc(#{$mobile-tabs-height} + 1rem);
+  padding-bottom: calc(#{$mobile-tabs-height} + 1rem + 48px);
 }
 
 header-backdrop {
@@ -697,10 +697,4 @@ carrier-list-item {
     white-space: nowrap;
     color: $gray-4;
   }
-}
-
-button-container {
-  display: block;
-  text-align: center;
-  padding: 1rem 1rem 0 1rem;
 }

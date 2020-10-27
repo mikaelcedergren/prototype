@@ -29,6 +29,13 @@
 <body>
 
 
+<script>
+  function showSendButton() {
+    var element = document.getElementById("send-button");
+  element.classList.add("show");
+  }
+</script>
+
 <main-view>
   <header-backdrop style="background-image: url(/lanefinder/images/header-image-inspecting.png);"></header-backdrop>
 
@@ -58,7 +65,7 @@
   <view-content>
     <carrier-list-item>
                     <list-item-checkbox>
-                        <input type="checkbox">
+                        <input type="checkbox" onClick="showSendButton();">
                     </list-item-checkbox>
                     <list-item-carrier>
                         Martin Rodriguez
@@ -72,7 +79,7 @@
 
     <carrier-list-item>
                     <list-item-checkbox>
-                        <input type="checkbox">
+                        <input type="checkbox" onClick="showSendButton();">
                     </list-item-checkbox>
                     <list-item-carrier>
                         Mike Moralez
@@ -86,7 +93,7 @@
 
     <carrier-list-item>
                     <list-item-checkbox>
-                        <input type="checkbox">
+                        <input type="checkbox" onClick="showSendButton();">
                     </list-item-checkbox>
                     <list-item-carrier>
                         Emmet Logistics
@@ -100,7 +107,7 @@
 
     <carrier-list-item>
                     <list-item-checkbox>
-                        <input type="checkbox">
+                        <input type="checkbox" onClick="showSendButton();">
                     </list-item-checkbox>
                     <list-item-carrier>
                         Eazy Line Express Inc
@@ -114,7 +121,7 @@
 
     <carrier-list-item>
                     <list-item-checkbox>
-                        <input type="checkbox">
+                        <input type="checkbox" onClick="showSendButton();">
                     </list-item-checkbox>
                     <list-item-carrier>
                         Eazy Line Express Inc
@@ -128,7 +135,7 @@
 
     <carrier-list-item>
                     <list-item-checkbox>
-                        <input type="checkbox">
+                        <input type="checkbox" onClick="showSendButton();">
                     </list-item-checkbox>
                     <list-item-carrier>
                         Eazy Line Express Inc
@@ -142,7 +149,7 @@
 
     <carrier-list-item>
                     <list-item-checkbox>
-                        <input type="checkbox">
+                        <input type="checkbox" onClick="showSendButton();">
                     </list-item-checkbox>
                     <list-item-carrier>
                         Eazy Line Express Inc
@@ -154,8 +161,8 @@
                 </carrier-list-item>
                 
 
-    <button-container>
-      <button data-size="large" data-color="accent">Send to these carriers</button>
+    <button-container id="send-button" data-position="fixed" data-hide>
+      <button data-glow data-color="accent">Send to these carriers</button>
     </button-container>
 
   </view-content>

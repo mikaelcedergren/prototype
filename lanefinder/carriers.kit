@@ -1,5 +1,12 @@
 <!-- @import '/lanefinder/components/_html-header.kit' -->
 
+<script>
+  function showSendButton() {
+    var element = document.getElementById("send-button");
+  element.classList.add("show");
+  }
+</script>
+
 <main-view>
   <header-backdrop style="background-image: url(/lanefinder/images/header-image-inspecting.png);"></header-backdrop>
 
@@ -49,8 +56,8 @@
     <!-- $distance = 3 miles -->
     <!-- @import '/lanefinder/components/_carrier-list-item.kit -->
 
-    <button-container>
-      <button data-size="large" data-color="accent">Send to these carriers</button>
+    <button-container id="send-button" data-position="fixed" data-hide>
+      <button data-glow data-color="accent">Send to these carriers</button>
     </button-container>
 
   </view-content>
