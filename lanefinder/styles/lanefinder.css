@@ -441,9 +441,9 @@ status-bar {
     max-height: 15px; }
   status-bar .black {
     display: none; }
-  status-bar[data-color="black"] .black {
+  status-bar[data-color="black"] .black, status-bar.at-top .black {
     display: block; }
-  status-bar[data-color="black"] .white {
+  status-bar[data-color="black"] .white, status-bar.at-top .white {
     display: none; }
 
 x-content {

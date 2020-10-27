@@ -117,21 +117,15 @@
 
 
 <script>
-    window.onscroll = function () { myFunction() };
-
-    var sticker = document.getElementsByClassName("detect-top");
-    var sticky = 172;
-    var i;
-
-    function myFunction() {
-        for (i = 0; i < sticker.length; i++) {
-            if (window.pageYOffset > sticky) {
-                sticker[i].classList.add("at-top");
+    window.onscroll = function () {
+        [...document.querySelectorAll('.detect-top')].forEach(sticker => {
+            if (window.pageYOffset > 172) {
+                sticker.classList.add('at-top');
             } else {
-                sticker[i].classList.remove("at-top");
+                sticker.classList.remove('at-top');
             }
-        }
-    }
+        });
+     };
 </script>
 
 <script>

@@ -258,7 +258,7 @@ status-bar {
     display: none;
   }
 
-  &[data-color="black"] {
+  &[data-color="black"], &.at-top {
     .black {
       display: block;
     }
