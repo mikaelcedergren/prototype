@@ -132,7 +132,6 @@ list-heading {
   justify-content: space-between;
   align-items: center;
   flex-flow: row nowrap;
-  border-top: $line;
   padding: 1rem;
   color: $gray-5;
   font-weight: $font-bold;
@@ -146,28 +145,6 @@ list-heading {
       font-weight: normal;
       color: $gray-4;
     }
-  }
-}
-
-my-list-item {
-  background-color: $white;
-  padding: 1rem;
-  display: block;
-  box-shadow: 0 2px 2px 0 rgba(black, 0.1);
-  border-top: $line;
-  margin-bottom: 3px;
-
-  strong {
-    display: block;
-    margin-bottom: 0.25rem;
-    font-family: $font-family-headings;
-    font-size: 1.2rem;
-  }
-
-  small {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: $gray-5;
   }
 }
 
@@ -258,7 +235,8 @@ status-bar {
     display: none;
   }
 
-  &[data-color="black"], &.at-top {
+  &[data-color="black"],
+  &.at-top {
     .black {
       display: block;
     }
@@ -266,11 +244,6 @@ status-bar {
       display: none;
     }
   }
-}
-
-x-content {
-  display: block;
-  // overflow-x: hidden;
 }
 
 my-mobile-tabs {
@@ -579,31 +552,14 @@ wizard-view {
   }
 }
 
-my-saved-searches-item {
+job-list-item {
   display: block;
-  position: relative;
   background-color: $white;
-  border-bottom: $line;
-  padding: 1rem;
+  padding: 1rem 0 0 0;
 
-  &:first-child {
-    border-radius: $border-radius-large;
-  }
-
-  i {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    color: $gray-3;
-  }
-
-  p {
-    color: $gray-4;
-    margin: 0;
-  }
-
-  my-tag {
+  list-item-description {
     margin-top: 1rem;
+    color: $black;
   }
 }
 
@@ -611,40 +567,24 @@ list-item {
   display: block;
   position: relative;
   background-color: $white;
+  padding: 1rem 0 0 0;
 
   &:first-child {
     border-top-left-radius: $border-radius-large;
     border-top-right-radius: $border-radius-large;
   }
 
-  list-item-title {
-    display: block;
-    margin-bottom: 0.25rem;
-    font-family: $font-family-headings;
-    font-size: 1.1rem;
-    font-weight: $font-bold;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: calc(100% - 2rem);
-    padding: 0 1rem;
-  }
-
-  list-item-description {
-    display: block;
-    padding: 0 1rem;
-    color: $gray-4;
-  }
-
-  list-item-tags {
-    display: block;
-    margin-top: 0.5rem;
-    padding: 0 1rem;
+  & + list-heading {
+    margin-top: -5px;
   }
 
   &[data-layout="right"] {
-    border-bottom: $line;
-    padding: 1rem 0;
+    list-divider {
+      height: 0;
+      background-color: transparent;
+      box-shadow: none;
+      border-top: $line;
+    }
 
     &::after {
       position: absolute;
@@ -659,18 +599,108 @@ list-item {
   }
 }
 
+list-item-title {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: $font-family-headings;
+  font-size: 1.1rem;
+  font-weight: $font-bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100% - 2rem);
+  padding: 0 1rem;
+}
+
+list-item-sub-title {
+  display: block;
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+  color: $gray-5;
+}
+
+list-item-description {
+  display: block;
+  padding: 0 1rem;
+  color: $gray-4;
+}
+
+list-item-tags {
+  display: block;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+list-item-header-tags {
+  display: block;
+  padding: 0 1rem;
+}
+
+list-divider {
+  display: block;
+  margin-top: 1rem;
+  height: 5px;
+  background-color: $gray-1;
+  box-shadow: inset 0 1px 2px rgba(black, 0.1);
+}
+
 icon-button {
   display: inline-block;
 
   i.material-icons {
     background-color: $accent;
-  border-radius: 100%;
-  color: $white;
-  font-size: 20px;
-  height: 28px;
-  width: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    border-radius: 100%;
+    color: $white;
+    font-size: 20px;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+}
+
+carrier-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  padding: 1rem 0;
+  border-bottom: $line;
+  background-color: $white;
+
+  &:first-child {
+    border-top-left-radius: $border-radius-large;
+    border-top-right-radius: $border-radius-large;
+  }
+
+  list-item-checkbox {
+    display: block;
+    flex: 0 1 auto;
+    padding-left: 1rem;
+  }
+
+  list-item-carrier {
+    display: block;
+    flex: 1 1 auto;
+    padding: 0 1rem;
+
+    & > div {
+      color: $gray-4;
+    }
+  }
+
+  list-item-distance {
+    display: block;
+    flex: 0 1 auto;
+    padding-right: 1rem;
+    white-space: nowrap;
+    color: $gray-4;
+  }
+}
+
+button-container {
+  display: block;
+  text-align: center;
+  padding: 1rem 1rem 0 1rem;
 }

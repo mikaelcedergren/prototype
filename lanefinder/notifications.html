@@ -43,37 +43,84 @@
 
   <view-content>
 
-    <padding-wrapper>
-      <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit
-        aliquet. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a
-        pharetra augue.</p>
+    <list-heading>
+      Today
+    </list-heading>
 
-      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Duis mollis, est non
-        commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis
-        ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh
-        ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.</p>
+    <list-item data-layout="">
+                        <list-item-title>
+                            Acme Inc has a new job for you
+                        </list-item-title>
+                        <list-item-description>
+                            Regional LTL has become available. Up to $1500 per week, at least 4 weekends home per month. Check it out now!
+                        </list-item-description>
+                        <list-item-tags>
+                            <my-tag data-color="primary">New job</my-tag>
+                        </list-item-tags>
+                        <list-divider></list-divider>
+                    </list-item>
+                    
 
-      <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere
-        velit aliquet. Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl
-        consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.</p>
+    <list-item data-layout="">
+                        <list-item-title>
+                            Acme Inc has a new job for you
+                        </list-item-title>
+                        <list-item-description>
+                            Regional LTL has become available. Up to $1500 per week, at least 4 weekends home per month. Check it out now!
+                        </list-item-description>
+                        <list-item-tags>
+                            <my-tag data-color="primary">New job</my-tag>
+                        </list-item-tags>
+                        <list-divider></list-divider>
+                    </list-item>
+                    
 
-      <p>Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Sed
-        posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non
-        commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus,
-        nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.
-      </p>
-    </padding-wrapper>
+    <list-heading>
+      Last 7 days
+    </list-heading>
+
+    <list-item data-layout="">
+                        <list-item-title>
+                            Acme Inc has a new job for you
+                        </list-item-title>
+                        <list-item-description>
+                            Regional LTL has become available. Up to $1500 per week, at least 4 weekends home per month. Check it out now!
+                        </list-item-description>
+                        <list-item-tags>
+                            <my-tag data-color="primary">New job</my-tag>
+                        </list-item-tags>
+                        <list-divider></list-divider>
+                    </list-item>
+                    
+
+    <list-heading>
+      Earlier
+    </list-heading>
+
+    <list-item data-layout="">
+                        <list-item-title>
+                            Acme Inc has a new job for you
+                        </list-item-title>
+                        <list-item-description>
+                            Regional LTL has become available. Up to $1500 per week, at least 4 weekends home per month. Check it out now!
+                        </list-item-description>
+                        <list-item-tags>
+                            <my-tag data-color="primary">New job</my-tag>
+                        </list-item-tags>
+                        <list-divider></list-divider>
+                    </list-item>
+                    
 
   </view-content>
 </main-view>
 
-<navigation-bar id="detect-top">
-  <navigation-left>
+<navigation-bar class="detect-top">
+  <left-block>
     Notifications
-  </navigation-left>
-  <navigation-right>
+  </left-block>
+  <right-block>
     <a href="#">Help</a>
-  </navigation-right>
+  </right-block>
 </navigation-bar>
 
 <my-mobile-tabs>
@@ -114,55 +161,14 @@
 </my-mobile-tabs>
 
 
-<script>
-    window.onscroll = function () {
-        [...document.querySelectorAll('.detect-top')].forEach(sticker => {
-            if (window.pageYOffset > 172) {
-                sticker.classList.add('at-top');
-            } else {
-                sticker.classList.remove('at-top');
-            }
-        });
-     };
-</script>
+<status-bar class="detect-top" data-color="">
+    <img src="/shared/images/status-bar-black-left.png" class="black"/>
+    <img src="/shared/images/status-bar-black-right.png" class="black"/>
+    <img src="/shared/images/status-bar-left.png" class="white"/>
+    <img src="/shared/images/status-bar-right.png" class="white"/>
+</status-bar>
 
-<script>
-    const openEls = document.querySelectorAll("[data-open]");
-    const closeEls = document.querySelectorAll("[data-close]");
-    const isVisible = "is-visible";
-    var body = document.body;
-
-    for (const el of openEls) {
-        el.addEventListener("click", function () {
-            const modalId = this.dataset.open;
-            document.getElementById(modalId).classList.add(isVisible);
-            body.classList.add("turn-off-scroll");
-        });
-    }
-
-    for (const el of closeEls) {
-        el.addEventListener("click", function () {
-            this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-            body.classList.remove("turn-off-scroll");
-        });
-    }
-
-    document.addEventListener("click", e => {
-        if (e.target == document.querySelector(".modal.is-visible")) {
-            document.querySelector(".modal.is-visible").classList.remove(isVisible);
-            body.classList.remove("turn-off-scroll");
-        }
-    });
-
-    document.addEventListener("keyup", e => {
-        // if we press the ESC
-        if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
-            document.querySelector(".modal.is-visible").classList.remove(isVisible);
-            body.classList.remove("turn-off-scroll");
-        }
-    });
-
-</script>
+<script type="text/javascript" src="/shared/scripts/footer-scripts.js"></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@ button {
   outline: none;
   font-weight: $font-bold;
   white-space: nowrap;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   flex-flow: row nowrap;
   font-size: $font-size;
