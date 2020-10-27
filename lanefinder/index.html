@@ -120,7 +120,7 @@
   </view-content>
 </main-view>
 
-<navigation-bar id="detect-top">
+<navigation-bar class="detect-top">
   <left-block>
     Jobs
   </left-block>
@@ -239,7 +239,7 @@
   </modal-wrapper>
 </generic-modal>
 
-<status-bar id="detect-top" data-color="">
+<status-bar class="detect-top" data-color="">
     <img src="/shared/images/status-bar-black-left.png" class="black"/>
     <img src="/shared/images/status-bar-black-right.png" class="black"/>
     <img src="/shared/images/status-bar-left.png" class="white"/>
@@ -249,14 +249,17 @@
 <script>
     window.onscroll = function () { myFunction() };
 
-    var sticker = document.getElementById("detect-top");
-    var sticky = sticker.offsetTop + 172;
+    var sticker = document.getElementsByClassName("detect-top");
+    var sticky = 172;
+    var i;
 
     function myFunction() {
-        if (window.pageYOffset > sticky) {
-            sticker.classList.add("at-top");
-        } else {
-            sticker.classList.remove("at-top");
+        for (i = 0; i < sticker.length; i++) {
+            if (window.pageYOffset > sticky) {
+                sticker[i].classList.add("at-top");
+            } else {
+                sticker[i].classList.remove("at-top");
+            }
         }
     }
 </script>

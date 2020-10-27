@@ -150,14 +150,17 @@
 <script>
     window.onscroll = function () { myFunction() };
 
-    var sticker = document.getElementById("detect-top");
-    var sticky = sticker.offsetTop + 172;
+    var sticker = document.getElementsByClassName("detect-top");
+    var sticky = 172;
+    var i;
 
     function myFunction() {
-        if (window.pageYOffset > sticky) {
-            sticker.classList.add("at-top");
-        } else {
-            sticker.classList.remove("at-top");
+        for (i = 0; i < sticker.length; i++) {
+            if (window.pageYOffset > sticky) {
+                sticker[i].classList.add("at-top");
+            } else {
+                sticker[i].classList.remove("at-top");
+            }
         }
     }
 </script>
