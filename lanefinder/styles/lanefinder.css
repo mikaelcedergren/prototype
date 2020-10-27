@@ -402,6 +402,8 @@ navigation-bar {
     transform: translateY(0);
     backdrop-filter: none;
     -webkit-backdrop-filter: none; }
+  navigation-bar[data-dark] a {
+    color: #ff8b4a; }
   navigation-bar navigation-left {
     font-family: "Helvetica Neue", sans-serif;
     font-size: 20px;
@@ -525,16 +527,6 @@ my-overlay {
     align-items: center;
     justify-content: space-between;
     font-weight: 700; }
-    my-overlay my-overlay-header i.material-icons {
-      background-color: #ef3662;
-      border-radius: 100%;
-      color: #fff;
-      font-size: 20px;
-      height: 28px;
-      width: 28px;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
 
 my-modal {
   display: block;
@@ -673,14 +665,18 @@ my-wizard-view {
   background-image: url("/lanefinder/images/wizard-background-1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
-  padding: 1rem; }
-  my-wizard-view my-wizard-navigation-bar {
+  background-position: top center; }
+  my-wizard-view wizard-title {
     display: block;
+    font-size: 18px;
+    font-family: "Helvetica Neue", sans-serif;
     color: #fff;
-    padding: 0 1rem 1rem 1rem; }
+    padding: 0 1rem; }
   my-wizard-view my-box {
     margin-bottom: 1rem; }
+  my-wizard-view my-wizard-content {
+    display: block;
+    padding: 1rem; }
 
 my-saved-searches-item {
   display: block;
@@ -739,3 +735,16 @@ list-item {
       font-family: "Material Icons";
       content: "navigate_next";
       -webkit-font-feature-settings: "liga"; }
+
+icon-button {
+  display: inline-block; }
+  icon-button i.material-icons {
+    background-color: #ef3662;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 20px;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }

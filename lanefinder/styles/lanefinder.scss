@@ -198,6 +198,12 @@ navigation-bar {
     -webkit-backdrop-filter: none;
   }
 
+  &[data-dark] {
+    a {
+      color: $primary;
+    }
+  }
+
   navigation-left {
     font-family: $font-family-headings;
     font-size: 20px;
@@ -358,18 +364,6 @@ my-overlay {
     align-items: center;
     justify-content: space-between;
     font-weight: $font-bold;
-
-    i.material-icons {
-      background-color: $accent;
-      border-radius: 100%;
-      color: $white;
-      font-size: 20px;
-      height: 28px;
-      width: 28px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
   }
 }
 
@@ -552,16 +546,22 @@ my-wizard-view {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  padding: 1rem;
 
-  my-wizard-navigation-bar {
+  wizard-title {
     display: block;
+    font-size: $font-size-large;
+    font-family: $font-family-headings;
     color: $white;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem;
   }
 
   my-box {
     margin-bottom: 1rem;
+  }
+
+  my-wizard-content {
+    display: block;
+    padding: 1rem;
   }
 }
 
@@ -642,5 +642,21 @@ list-item {
       content: "navigate_next";
       -webkit-font-feature-settings: "liga";
     }
+  }
+}
+
+icon-button {
+  display: inline-block;
+
+  i.material-icons {
+    background-color: $accent;
+  border-radius: 100%;
+  color: $white;
+  font-size: 20px;
+  height: 28px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
 }
