@@ -27,8 +27,6 @@
 </head>
 
 <body>
-  <!-- <x-content> -->
-
 
 
 <main-view>
@@ -51,8 +49,11 @@
                 <list-item-description>
                     The information used that is sent off to the carriers to qualify you for jobs.
                 </list-item-description>
+                <list-item-tags>
+                    
+                </list-item-tags>
             </list-item>
-
+            
 
     <list-item data-layout="right">
                 <list-item-title>
@@ -61,8 +62,11 @@
                 <list-item-description>
                     All applications you’ve sent in and all carrier applications.
                 </list-item-description>
+                <list-item-tags>
+                    
+                </list-item-tags>
             </list-item>
-
+            
 
     <list-item data-layout="right">
                 <list-item-title>
@@ -71,8 +75,11 @@
                 <list-item-description>
                     Whenever a carrier have made contact with you.
                 </list-item-description>
+                <list-item-tags>
+                    
+                </list-item-tags>
             </list-item>
-
+            
 
     <list-item data-layout="right">
                 <list-item-title>
@@ -81,8 +88,11 @@
                 <list-item-description>
                     If you need help or simply want to give us some feedback, we’d love to hear it.
                 </list-item-description>
+                <list-item-tags>
+                    
+                </list-item-tags>
             </list-item>
-
+            
 
     <list-item data-layout="right">
                 <list-item-title>
@@ -91,8 +101,11 @@
                 <list-item-description>
                     Settings for your account and the Lanefinder app.
                 </list-item-description>
+                <list-item-tags>
+                    
+                </list-item-tags>
             </list-item>
-
+            
 
   </view-content>
 </main-view>
@@ -144,31 +157,16 @@
 </my-mobile-tabs>
 
 
-<!-- </x-content> -->
-<!-- <script>
-var image = document.getElementsByClassName('parallax');
-new simpleParallax(image, {
-	scale: 2
-});
-</script> -->
-<status-bar>
-    <img src="/shared/images/status-bar-black-left.png" />
-    <img src="/shared/images/status-bar-black-right.png" />
-</status-bar>
-
 <script>
-    window.onscroll = function () { myFunction() };
-
-    var sticker = document.getElementById("detect-top");
-    var sticky = sticker.offsetTop + 172;
-
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            sticker.classList.add("at-top");
-        } else {
-            sticker.classList.remove("at-top");
-        }
-    }
+    window.onscroll = function () {
+        [...document.querySelectorAll('.detect-top')].forEach(sticker => {
+            if (window.pageYOffset > 172) {
+                sticker.classList.add('at-top');
+            } else {
+                sticker.classList.remove('at-top');
+            }
+        });
+     };
 </script>
 
 <script>
@@ -211,3 +209,4 @@ new simpleParallax(image, {
 </body>
 
 </html>
+
