@@ -1,4 +1,4 @@
-grid-wrapper {
+grid-row {
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
@@ -34,15 +34,15 @@ grid-wrapper {
     }
   }
 
-  grid-wrapper {
+  grid-row {
     & > grid-cell {
       min-width: 0;
     }
   }
 }
 
-grid-wrapper-fixed {
-  @extend grid-wrapper;
+grid-row-fixed {
+  @extend grid-row;
   flex-flow: row nowrap;
 
   & > grid-cell {
