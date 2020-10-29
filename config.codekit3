@@ -9,375 +9,10 @@
 	],
 "creatorBuild": "33070",
 "files": {
-	"/CNAME": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/CNAME",
-		"oF": 0
-		},
-	"/currency.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/currency.html",
-		"oF": 0
-		},
-	"/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/index.html",
-		"oF": 0
-		},
-	"/lanefinder/carriers.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/carriers.html",
-		"oF": 0
-		},
-	"/lanefinder/carriers.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/carriers.html",
-		"oF": 0
-		},
-	"/lanefinder/components/_carrier-filters-box.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
+	"/docs": {
+		"ft": 65536,
 		"oA": 1,
-		"oAP": "/lanefinder/components/_carrier-filters-box.html",
-		"oF": 0
-		},
-	"/lanefinder/components/_carrier-list-item.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/lanefinder/components/_carrier-list-item.html",
-		"oF": 0
-		},
-	"/lanefinder/components/_filters-box.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/lanefinder/components/_filters-box.html",
-		"oF": 0
-		},
-	"/lanefinder/components/_html-footer.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/lanefinder/components/_html-footer.html",
-		"oF": 0
-		},
-	"/lanefinder/components/_html-header.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/lanefinder/components/_html-header.html",
-		"oF": 0
-		},
-	"/lanefinder/components/_job-item.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/lanefinder/components/_job-item.html",
-		"oF": 0
-		},
-	"/lanefinder/components/_list-item.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/lanefinder/components/_list-item.html",
-		"oF": 0
-		},
-	"/lanefinder/components/_mobile-tabs.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/lanefinder/components/_mobile-tabs.html",
-		"oF": 0
-		},
-	"/lanefinder/components/_status-bar.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/lanefinder/components/_status-bar.html",
-		"oF": 0
-		},
-	"/lanefinder/images/header-image-checklist.png": {
-		"ft": 32768,
-		"iS": 2961142,
-		"oA": 0,
-		"oAP": "/lanefinder/images/header-image-checklist.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/lanefinder/images/header-image-dashboard.png": {
-		"ft": 32768,
-		"iS": 2107900,
-		"oA": 0,
-		"oAP": "/lanefinder/images/header-image-dashboard.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/lanefinder/images/header-image-driver-with-phone.png": {
-		"ft": 32768,
-		"iS": 2240667,
-		"oA": 0,
-		"oAP": "/lanefinder/images/header-image-driver-with-phone.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/lanefinder/images/header-image-flag.png": {
-		"ft": 32768,
-		"iS": 3940516,
-		"oA": 0,
-		"oAP": "/lanefinder/images/header-image-flag.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/lanefinder/images/header-image-inspecting.png": {
-		"ft": 32768,
-		"iS": 2202262,
-		"oA": 0,
-		"oAP": "/lanefinder/images/header-image-inspecting.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/lanefinder/images/header-image-logistics.png": {
-		"ft": 32768,
-		"iS": 2448844,
-		"oA": 0,
-		"oAP": "/lanefinder/images/header-image-logistics.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/lanefinder/images/header-image-looking-out.png": {
-		"ft": 32768,
-		"iS": 187278,
-		"oA": 0,
-		"oAP": "/lanefinder/images/header-image-looking-out.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/lanefinder/images/header-image-road.png": {
-		"ft": 32768,
-		"iS": 3150937,
-		"oA": 0,
-		"oAP": "/lanefinder/images/header-image-road.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/lanefinder/images/header-image-top-view.png": {
-		"ft": 32768,
-		"iS": 6710557,
-		"oA": 0,
-		"oAP": "/lanefinder/images/header-image-top-view.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/lanefinder/images/header-image-truck.png": {
-		"ft": 32768,
-		"iS": 3154991,
-		"oA": 0,
-		"oAP": "/lanefinder/images/header-image-truck.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/lanefinder/images/wizard-background-1.png": {
-		"ft": 32768,
-		"iS": 369633,
-		"oA": 0,
-		"oAP": "/lanefinder/images/wizard-background-1.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/lanefinder/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/index.html",
-		"oF": 0
-		},
-	"/lanefinder/index.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/index.html",
-		"oF": 0
-		},
-	"/lanefinder/more.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/more.html",
-		"oF": 0
-		},
-	"/lanefinder/more.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/more.html",
-		"oF": 0
-		},
-	"/lanefinder/notifications.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/notifications.html",
-		"oF": 0
-		},
-	"/lanefinder/notifications.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/notifications.html",
-		"oF": 0
-		},
-	"/lanefinder/saved.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/saved.html",
-		"oF": 0
-		},
-	"/lanefinder/saved.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/saved.html",
-		"oF": 0
-		},
-	"/lanefinder/styles/_variables.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/lanefinder/styles/_variables.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/lanefinder/styles/lanefinder.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/styles/lanefinder-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/lanefinder/styles/lanefinder.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/styles/lanefinder.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/lanefinder/wizards/apply/step-1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/wizards/apply/step-1.html",
-		"oF": 0
-		},
-	"/lanefinder/wizards/apply/step-1.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/lanefinder/wizards/apply/step-1.html",
+		"oAP": "/docs/docs",
 		"oF": 0
 		},
 	"/README.md": {
@@ -390,7 +25,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/README.html",
+		"oAP": "/docs/README.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -399,72 +34,19 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/scripts-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
+	"/source/index.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "/scripts-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oAP": "/docs/index.html",
+		"oF": 0
 		},
-	"/scripts.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "/scripts-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"/shared/images/status-bar-black-left.png": {
+	"/source/lanefinder/assets/images/header-image-checklist.png": {
 		"ft": 32768,
-		"iS": 2906,
+		"iS": 2961142,
 		"oA": 0,
-		"oAP": "/shared/images/status-bar-black-left.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/shared/images/status-bar-black-right.png": {
-		"ft": 32768,
-		"iS": 2845,
-		"oA": 0,
-		"oAP": "/shared/images/status-bar-black-right.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/shared/images/status-bar-left.png": {
-		"ft": 32768,
-		"iS": 1317,
-		"oA": 0,
-		"oAP": "/shared/images/status-bar-left.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
-	"/shared/images/status-bar-right.png": {
-		"ft": 32768,
-		"iS": 1317,
-		"oA": 0,
-		"oAP": "/shared/images/status-bar-right.png",
+		"oAP": "/docs/lanefinder/assets/images/header-image-checklist.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
@@ -473,29 +55,137 @@
 		"q": 100,
 		"rq": 75
 		},
-	"/shared/scripts/footer-scripts-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
+	"/source/lanefinder/assets/images/header-image-dashboard.png": {
+		"ft": 32768,
+		"iS": 2107900,
 		"oA": 0,
-		"oAP": "/shared/scripts/footer-scripts-min-min.js",
+		"oAP": "/docs/lanefinder/assets/images/header-image-dashboard.png",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
-	"/shared/scripts/footer-scripts.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
+	"/source/lanefinder/assets/images/header-image-driver-with-phone.png": {
+		"ft": 32768,
+		"iS": 2240667,
 		"oA": 0,
-		"oAP": "/shared/scripts/footer-scripts-min.js",
+		"oAP": "/docs/lanefinder/assets/images/header-image-driver-with-phone.png",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
-	"/shared/styles/_buttons.scss": {
+	"/source/lanefinder/assets/images/header-image-flag.png": {
+		"ft": 32768,
+		"iS": 3940516,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/assets/images/header-image-flag.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/source/lanefinder/assets/images/header-image-inspecting.png": {
+		"ft": 32768,
+		"iS": 2202262,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/assets/images/header-image-inspecting.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/source/lanefinder/assets/images/header-image-logistics.png": {
+		"ft": 32768,
+		"iS": 2448844,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/assets/images/header-image-logistics.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/source/lanefinder/assets/images/header-image-looking-out.png": {
+		"ft": 32768,
+		"iS": 187278,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/assets/images/header-image-looking-out.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/source/lanefinder/assets/images/header-image-road.png": {
+		"ft": 32768,
+		"iS": 3150937,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/assets/images/header-image-road.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/source/lanefinder/assets/images/header-image-top-view.png": {
+		"ft": 32768,
+		"iS": 6710557,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/assets/images/header-image-top-view.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/source/lanefinder/assets/images/header-image-truck.png": {
+		"ft": 32768,
+		"iS": 3154991,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/assets/images/header-image-truck.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/source/lanefinder/assets/images/wizard-background-1.png": {
+		"ft": 32768,
+		"iS": 369633,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/assets/images/wizard-background-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/source/lanefinder/assets/styles/_variables.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -503,107 +193,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/shared/styles/_buttons.css",
+		"oAP": "/docs/lanefinder/assets/styles/_variables.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/shared/styles/_grid.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/shared/styles/_grid.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/shared/styles/_mixins.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/shared/styles/_mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/shared/styles/_normalize.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/shared/styles/_normalize-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/shared/styles/_utilities.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/shared/styles/_utilities.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/shared/styles/_variables.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/shared/styles/_variables.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/shared/styles/core.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/shared/styles/core-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/shared/styles/core.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/shared/styles/core.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/styles-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/styles.scss": {
+	"/source/lanefinder/assets/styles/lanefinder.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -611,25 +206,331 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/styles.css",
+		"oAP": "/docs/lanefinder/assets/styles/lanefinder.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/typography.html": {
+	"/source/lanefinder/carriers.kit": {
 		"cB": 0,
-		"ft": 8192,
+		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/typography.html",
+		"oAP": "/docs/lanefinder/carriers.html",
 		"oF": 0
 		},
-	"/validation.html": {
+	"/source/lanefinder/components/_carrier-filters-box.kit": {
 		"cB": 0,
-		"ft": 8192,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/_carrier-filters-box.html",
+		"oF": 0
+		},
+	"/source/lanefinder/components/_carrier-list-item.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/_carrier-list-item.html",
+		"oF": 0
+		},
+	"/source/lanefinder/components/_filters-box.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/_filters-box.html",
+		"oF": 0
+		},
+	"/source/lanefinder/components/_html-footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/_html-footer.html",
+		"oF": 0
+		},
+	"/source/lanefinder/components/_html-header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/_html-header.html",
+		"oF": 0
+		},
+	"/source/lanefinder/components/_job-item.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/_job-item.html",
+		"oF": 0
+		},
+	"/source/lanefinder/components/_list-item.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/_list-item.html",
+		"oF": 0
+		},
+	"/source/lanefinder/components/_mobile-tabs.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/_mobile-tabs.html",
+		"oF": 0
+		},
+	"/source/lanefinder/components/_status-bar.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/_status-bar.html",
+		"oF": 0
+		},
+	"/source/lanefinder/index.kit": {
+		"cB": 0,
+		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/validation.html",
+		"oAP": "/docs/lanefinder/index.html",
+		"oF": 0
+		},
+	"/source/lanefinder/more.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/more.html",
+		"oF": 0
+		},
+	"/source/lanefinder/notifications.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/notifications.html",
+		"oF": 0
+		},
+	"/source/lanefinder/saved.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/saved.html",
+		"oF": 0
+		},
+	"/source/lanefinder/wizards/apply/step-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/wizards/apply/step-1.html",
+		"oF": 0
+		},
+	"/source/shared/images/status-bar-black-left.png": {
+		"ft": 32768,
+		"iS": 2906,
+		"oA": 0,
+		"oAP": "/docs/shared/images/status-bar-black-left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/source/shared/images/status-bar-black-right.png": {
+		"ft": 32768,
+		"iS": 2845,
+		"oA": 0,
+		"oAP": "/docs/shared/images/status-bar-black-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/source/shared/images/status-bar-left.png": {
+		"ft": 32768,
+		"iS": 1317,
+		"oA": 0,
+		"oAP": "/docs/shared/images/status-bar-left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/source/shared/images/status-bar-right.png": {
+		"ft": 32768,
+		"iS": 1317,
+		"oA": 0,
+		"oAP": "/docs/shared/images/status-bar-right.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/source/shared/scripts/footer-scripts.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/docs/shared/scripts/footer-scripts-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/source/shared/styles/_buttons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/docs/shared/styles/_buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/shared/styles/_grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/docs/shared/styles/_grid.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/shared/styles/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/docs/shared/styles/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/shared/styles/_normalize.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/docs/shared/styles/_normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/shared/styles/_utilities.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/docs/shared/styles/_utilities.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/shared/styles/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/docs/shared/styles/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/shared/styles/core.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/docs/shared/styles/core.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/ux-directives/currency.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/ux-directives/currency.html",
+		"oF": 0
+		},
+	"/source/ux-directives/scripts.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/docs/ux-directives/scripts-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/source/ux-directives/styles.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/docs/ux-directives/styles.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/ux-directives/typography.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/ux-directives/typography.html",
+		"oF": 0
+		},
+	"/source/ux-directives/validation.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/ux-directives/validation.html",
 		"oF": 0
 		}
 	},
@@ -645,7 +546,7 @@
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
-	"abortBuildOnError": 1,
+	"abortBuildOnError": 0,
 	"allowInjectionReloads": 1,
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
@@ -936,8 +837,8 @@
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
-	"buildFolderActive": 0,
-	"buildFolderName": "build",
+	"buildFolderActive": 1,
+	"buildFolderName": "docs",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
@@ -2489,7 +2390,7 @@
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
-		"autoOutputPathRelativePath": "",
+		"autoOutputPathRelativePath": "/",
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
 		"autoOutputPathStyle": 0,
@@ -2958,7 +2859,7 @@
 	"uglifyReservedNamesString": "$,exports,require",
 	"webpPresets": {
 		},
-	"websiteRelativeRoot": ""
+	"websiteRelativeRoot": "docs"
 	},
 "settingsFileVersion": "3"
 }

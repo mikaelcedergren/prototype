@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+    html {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <title>Prototype</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Mikael Cedergren">
+  <meta name="description" content="Prototyping by Mikael Cedergren.">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/docs/lanefinder/assets/styles/lanefinder.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script>
+  <script type="text/javascript"
+    src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js"></script>
+</head>
+
+<body>
+
+
+<script>
+  function showSendButton() {
+    var element = document.getElementById("send-button");
+  element.classList.add("show");
+  }
+</script>
+
+<main-view>
+  <header-backdrop style="background-image: url(/lanefinder/assets/images/header-image-inspecting.png);"></header-backdrop>
+
+  <view-header>
+    <header-content>
+      <header-title>
+        Carriers
+      </header-title>
+    </header-content>
+  </view-header>
+
+  <box-block id="filters" data-open="overlay-filters" class="mb-1 mr-1 ml-1">
+    <grid-wrapper-fixed data-align="center">
+      <grid-cell>
+        <i class="material-icons color-discreet">tune</i><span class="color-text-discreet">Filters</span>
+      </grid-cell>
+      <grid-cell data-align="right">
+        <a href="#" class="link">Edit</a>
+      </grid-cell>
+    </grid-wrapper-fixed>
+    <p class="color-text-discreet">Carriers in 90210 offering Dry Van, Flatbed, Tanker Jobs..
+    </p>
+    <strong>298 carriers</strong>
+  </box-block>
+  
+
+  <view-content>
+    <carrier-list-item>
+                    <list-item-checkbox>
+                        <input type="checkbox" onClick="showSendButton();">
+                    </list-item-checkbox>
+                    <list-item-carrier>
+                        Martin Rodriguez
+                        <div>10 trucks</div>
+                    </list-item-carrier>
+                    <list-item-distance>
+                        Nearby
+                    </list-item-distance>
+                </carrier-list-item>
+                
+
+    <carrier-list-item>
+                    <list-item-checkbox>
+                        <input type="checkbox" onClick="showSendButton();">
+                    </list-item-checkbox>
+                    <list-item-carrier>
+                        Mike Moralez
+                        <div>1 truck</div>
+                    </list-item-carrier>
+                    <list-item-distance>
+                        1 mile
+                    </list-item-distance>
+                </carrier-list-item>
+                
+
+    <carrier-list-item>
+                    <list-item-checkbox>
+                        <input type="checkbox" onClick="showSendButton();">
+                    </list-item-checkbox>
+                    <list-item-carrier>
+                        Emmet Logistics
+                        <div>42 trucks</div>
+                    </list-item-carrier>
+                    <list-item-distance>
+                        1 miles
+                    </list-item-distance>
+                </carrier-list-item>
+                
+
+    <carrier-list-item>
+                    <list-item-checkbox>
+                        <input type="checkbox" onClick="showSendButton();">
+                    </list-item-checkbox>
+                    <list-item-carrier>
+                        Eazy Line Express Inc
+                        <div>8 trucks</div>
+                    </list-item-carrier>
+                    <list-item-distance>
+                        3 miles
+                    </list-item-distance>
+                </carrier-list-item>
+                
+
+    <carrier-list-item>
+                    <list-item-checkbox>
+                        <input type="checkbox" onClick="showSendButton();">
+                    </list-item-checkbox>
+                    <list-item-carrier>
+                        Eazy Line Express Inc
+                        <div>8 trucks</div>
+                    </list-item-carrier>
+                    <list-item-distance>
+                        3 miles
+                    </list-item-distance>
+                </carrier-list-item>
+                
+
+    <carrier-list-item>
+                    <list-item-checkbox>
+                        <input type="checkbox" onClick="showSendButton();">
+                    </list-item-checkbox>
+                    <list-item-carrier>
+                        Eazy Line Express Inc
+                        <div>8 trucks</div>
+                    </list-item-carrier>
+                    <list-item-distance>
+                        3 miles
+                    </list-item-distance>
+                </carrier-list-item>
+                
+
+    <carrier-list-item>
+                    <list-item-checkbox>
+                        <input type="checkbox" onClick="showSendButton();">
+                    </list-item-checkbox>
+                    <list-item-carrier>
+                        Eazy Line Express Inc
+                        <div>8 trucks</div>
+                    </list-item-carrier>
+                    <list-item-distance>
+                        3 miles
+                    </list-item-distance>
+                </carrier-list-item>
+                
+
+    <button-container id="send-button" data-position="fixed" data-hide>
+      <button data-glow data-color="accent">Send to these carriers</button>
+    </button-container>
+
+  </view-content>
+</main-view>
+
+<navigation-bar class="detect-top">
+  <left-block>
+    Carriers
+  </left-block>
+  <right-block>
+    <a href="#">Help</a>
+  </right-block>
+</navigation-bar>
+
+<my-mobile-tabs>
+    <my-mobile-tab-item class="">
+        <a href="index.html">
+            <i class="material-icons">search</i>
+            <my-mobile-tab-title>Jobs</my-mobile-tab-title>
+        </a>
+    </my-mobile-tab-item>
+
+    <my-mobile-tab-item class="active">
+        <a href="carriers.html">
+            <i class="material-icons">apartment</i>
+            <my-mobile-tab-title>Carriers</my-mobile-tab-title>
+        </a>
+    </my-mobile-tab-item>
+
+    <my-mobile-tab-item class="">
+        <a href="saved.html">
+            <i class="material-icons">favorite</i>
+            <my-mobile-tab-title>Saved</my-mobile-tab-title>
+        </a>
+    </my-mobile-tab-item>
+
+    <my-mobile-tab-item class="">
+        <a href="notifications.html">
+            <i class="material-icons">notifications</i>
+            <my-mobile-tab-title>Notifications</my-mobile-tab-title>
+        </a>
+    </my-mobile-tab-item>
+
+    <my-mobile-tab-item class="">
+        <a href="more.html">
+            <i class="material-icons">menu</i>
+            <my-mobile-tab-title>More</my-mobile-tab-title>
+        </a>
+    </my-mobile-tab-item>
+</my-mobile-tabs>
+
+
+<status-bar class="detect-top" data-color="">
+    <img src="/docs/shared/images/status-bar-black-left.png" class="black"/>
+    <img src="/docs/shared/images/status-bar-black-right.png" class="black"/>
+    <img src="/docs/shared/images/status-bar-left.png" class="white"/>
+    <img src="/docs/shared/images/status-bar-right.png" class="white"/>
+</status-bar>
+
+<script type="text/javascript" src="/docs/shared/scripts/footer-scripts-min.js"></script>
+</body>
+
+</html>
+

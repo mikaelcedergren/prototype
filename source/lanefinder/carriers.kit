@@ -1,0 +1,79 @@
+<!-- @import '/source/lanefinder/components/_html-header.kit' -->
+
+<script>
+  function showSendButton() {
+    var element = document.getElementById("send-button");
+  element.classList.add("show");
+  }
+</script>
+
+<main-view>
+  <header-backdrop style="background-image: url(/lanefinder/assets/images/header-image-inspecting.png);"></header-backdrop>
+
+  <view-header>
+    <header-content>
+      <header-title>
+        Carriers
+      </header-title>
+    </header-content>
+  </view-header>
+
+  <!-- @import '/source/lanefinder/components/_carrier-filters-box.kit -->
+
+  <view-content>
+    <!-- $carrier = Martin Rodriguez -->
+    <!-- $carrier-size = 10 trucks -->
+    <!-- $distance = Nearby -->
+    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
+
+    <!-- $carrier = Mike Moralez -->
+    <!-- $carrier-size = 1 truck -->
+    <!-- $distance = 1 mile -->
+    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
+
+    <!-- $carrier = Emmet Logistics -->
+    <!-- $carrier-size = 42 trucks -->
+    <!-- $distance = 1 miles -->
+    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
+
+    <!-- $carrier = Eazy Line Express Inc -->
+    <!-- $carrier-size = 8 trucks -->
+    <!-- $distance = 3 miles -->
+    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
+
+    <!-- $carrier = Eazy Line Express Inc -->
+    <!-- $carrier-size = 8 trucks -->
+    <!-- $distance = 3 miles -->
+    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
+
+    <!-- $carrier = Eazy Line Express Inc -->
+    <!-- $carrier-size = 8 trucks -->
+    <!-- $distance = 3 miles -->
+    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
+
+    <!-- $carrier = Eazy Line Express Inc -->
+    <!-- $carrier-size = 8 trucks -->
+    <!-- $distance = 3 miles -->
+    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
+
+    <button-container id="send-button" data-position="fixed" data-hide>
+      <button data-glow data-color="accent">Send to these carriers</button>
+    </button-container>
+
+  </view-content>
+</main-view>
+
+<navigation-bar class="detect-top">
+  <left-block>
+    Carriers
+  </left-block>
+  <right-block>
+    <a href="#">Help</a>
+  </right-block>
+</navigation-bar>
+
+<!-- $tab-item-2 = active -->
+<!-- @import '/source/lanefinder/components/_mobile-tabs.kit -->
+
+<!-- @import '/source/lanefinder/components/_status-bar.kit -->
+<!-- @import '/source/lanefinder/components/_html-footer.kit' -->

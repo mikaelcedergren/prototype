@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+    html {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <title>Prototype</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Mikael Cedergren">
+  <meta name="description" content="Prototyping by Mikael Cedergren.">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/docs/lanefinder/assets/styles/lanefinder.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script>
+  <script type="text/javascript"
+    src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js"></script>
+</head>
+
+<body>
+
+<main-view>
+
+  <header-backdrop style="background-image: url(/lanefinder/assets/images/header-image-looking-out.png); background-size: 120%;"></header-backdrop>
+  <!-- <img class="parallax" src="/lanefinder/images/header-image-dashboard.png"> -->
+  <view-header>
+    <header-content>
+      <header-title>
+        Jobs
+      </header-title>
+      <header-button>
+        <button id="save-search" data-open="modal-save-search" data-size="small"><i
+            class="material-icons">favorite</i><span>Save search</span></button>
+      </header-button>
+    </header-content>
+  </view-header>
+
+  <box-block id="filters" data-open="overlay-filters" class="mb-1 mr-1 ml-1">
+    <grid-wrapper-fixed data-align="center">
+      <grid-cell>
+        <i class="material-icons color-discreet">tune</i><span class="color-text-discreet">Filters</span>
+      </grid-cell>
+      <grid-cell data-align="right">
+        <a href="#" class="link">Edit</a>
+      </grid-cell>
+    </grid-wrapper-fixed>
+    <p class="color-text-discreet">Team OTR, local company driver jobs in 90210 with a minimum weekly average...
+    </p>
+    <strong>12 out of 284 jobs</strong>
+  </box-block>
+  
+
+  <view-content>
+    <list-heading>
+      <left-block>Matching all of your filters</left-block>
+      <right-block>2 jobs</right-block>
+    </list-heading>
+    <job-list-item id="job-item-1" data-open="overlay-ad">
+                                <list-item-header-tags>
+                                    <my-tag data-color="accent">Urgently hiring</my-tag>
+                                </list-item-header-tags>
+                                <list-item-title>Line Haul Regional Team</list-item-title>
+                                <list-item-sub-title>W Trucking Inc</list-item-sub-title>
+                                <list-item-description>$1,600 - $2,900 per week</list-item-description>
+                                <list-item-description>Home at least 2 weekends. Dry Van, Refrigerated, Flatbed.</list-item-description>
+                                <list-item-tags>
+                                    <my-tag>1099</my-tag><my-tag>20-49 trucks</my-tag>
+                                </list-item-tags>
+                                <list-divider></list-divider>
+                            </job-list-item>
+                            
+
+    <job-list-item id="job-item-1" data-open="overlay-ad">
+                                <list-item-header-tags>
+                                    
+                                </list-item-header-tags>
+                                <list-item-title>Line Haul OTR</list-item-title>
+                                <list-item-sub-title>TransGlobal Solutions, LLC</list-item-sub-title>
+                                <list-item-description>$3,000 per week</list-item-description>
+                                <list-item-description>Home at least 2 weekends. Flatbed.</list-item-description>
+                                <list-item-tags>
+                                    <my-tag>O/O</my-tag><my-tag>50-99 trucks</my-tag>
+                                </list-item-tags>
+                                <list-divider></list-divider>
+                            </job-list-item>
+                            
+
+    <job-list-item id="job-item-1" data-open="overlay-ad">
+                                <list-item-header-tags>
+                                    
+                                </list-item-header-tags>
+                                <list-item-title>Dedicated Line Haul</list-item-title>
+                                <list-item-sub-title>Dee King Trucking</list-item-sub-title>
+                                <list-item-description>$1,200 - $1,500 per week</list-item-description>
+                                <list-item-description>Expected to be out 7-10 days. Tanker.</list-item-description>
+                                <list-item-tags>
+                                    <my-tag>W2</my-tag><my-tag>100-249 trucks</my-tag>
+                                </list-item-tags>
+                                <list-divider></list-divider>
+                            </job-list-item>
+                            
+
+    <list-heading>
+      <left-block>You might also be interested in</left-block>
+      <right-block>12 jobs</right-block>
+    </list-heading>
+
+    <job-list-item id="job-item-1" data-open="overlay-ad">
+                                <list-item-header-tags>
+                                    
+                                </list-item-header-tags>
+                                <list-item-title>Line Haul OTR</list-item-title>
+                                <list-item-sub-title>TransGlobal Solutions, LLC</list-item-sub-title>
+                                <list-item-description>$3,000 per week</list-item-description>
+                                <list-item-description>Home at least 2 weekends. Flatbed.</list-item-description>
+                                <list-item-tags>
+                                    <my-tag>O/O</my-tag><my-tag>50-99 trucks</my-tag>
+                                </list-item-tags>
+                                <list-divider></list-divider>
+                            </job-list-item>
+                            
+
+    <job-list-item id="job-item-1" data-open="overlay-ad">
+                                <list-item-header-tags>
+                                    
+                                </list-item-header-tags>
+                                <list-item-title>Dedicated Line Haul</list-item-title>
+                                <list-item-sub-title>Dee King Trucking</list-item-sub-title>
+                                <list-item-description>$1,200 - $1,500 per week</list-item-description>
+                                <list-item-description>Expected to be out 7-10 days. Tanker.</list-item-description>
+                                <list-item-tags>
+                                    <my-tag>W2</my-tag><my-tag>100-249 trucks</my-tag>
+                                </list-item-tags>
+                                <list-divider></list-divider>
+                            </job-list-item>
+                            
+  </view-content>
+</main-view>
+
+<navigation-bar class="detect-top">
+  <left-block>
+    Jobs
+  </left-block>
+  <right-block>
+    <a href="#">Help</a>
+    <i class="material-icons" data-open="overlay-filters">tune</i>
+    <i class="material-icons" data-open="modal-save-search">favorite</i></right-block>
+</navigation-bar>
+
+<my-mobile-tabs>
+    <my-mobile-tab-item class="active">
+        <a href="index.html">
+            <i class="material-icons">search</i>
+            <my-mobile-tab-title>Jobs</my-mobile-tab-title>
+        </a>
+    </my-mobile-tab-item>
+
+    <my-mobile-tab-item class="">
+        <a href="carriers.html">
+            <i class="material-icons">apartment</i>
+            <my-mobile-tab-title>Carriers</my-mobile-tab-title>
+        </a>
+    </my-mobile-tab-item>
+
+    <my-mobile-tab-item class="">
+        <a href="saved.html">
+            <i class="material-icons">favorite</i>
+            <my-mobile-tab-title>Saved</my-mobile-tab-title>
+        </a>
+    </my-mobile-tab-item>
+
+    <my-mobile-tab-item class="">
+        <a href="notifications.html">
+            <i class="material-icons">notifications</i>
+            <my-mobile-tab-title>Notifications</my-mobile-tab-title>
+        </a>
+    </my-mobile-tab-item>
+
+    <my-mobile-tab-item class="">
+        <a href="more.html">
+            <i class="material-icons">menu</i>
+            <my-mobile-tab-title>More</my-mobile-tab-title>
+        </a>
+    </my-mobile-tab-item>
+</my-mobile-tabs>
+
+
+<generic-overlay id="overlay-filters">
+  <overlay-wrapper>
+    <overlay-header>
+      <icon-button data-close><i class="material-icons">expand_more</i></icon-button>
+      242 jobs
+    </overlay-header>
+    <overlay-content>
+      <p><strong>Press ✕, ESC, or click outside of the modal to close it</strong></p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus reprehenderit accusamus totam ratione!
+        Nesciunt, nemo dolorum recusandae ad ex nam similique dolorem ab perspiciatis qui. Facere, dignissimos. Nemo,
+        ea.</p>
+      <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+        because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a
+        trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
+        it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+        consequences, or one who avoids a pain that produces no resultant pleasure</p>
+      <p>Nullam vitae enim vel diam elementum tincidunt a eget metus. Curabitur finibus vestibulum rutrum. Vestibulum
+        semper tellus vitae tortor condimentum porta. Sed id ex arcu. Vestibulum eleifend tortor non purus porta dapibus
+      </p>
+      <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+        because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a
+        trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
+        it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+        consequences, or one who avoids a pain that produces no resultant pleasure</p>
+    </overlay-content>
+  </overlay-wrapper>
+</generic-overlay>
+
+<ad-overlay id="overlay-ad">
+  <ad-overlay-wrapper>
+    <ad-overlay-header>
+      <i class="material-icons" data-close>expand_more</i>
+    </ad-overlay-header>
+    <ad-overlay-content>
+      <ad-overlay-sub-heading>W Trucking Inc</ad-overlay-sub-heading>
+      <ad-overlay-heading>Line Haul Regional Team</ad-overlay-heading>
+      <p><strong>Press ✕, ESC, or click outside of the modal to close it</strong></p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus reprehenderit accusamus totam ratione!
+        Nesciunt, nemo dolorum recusandae ad ex nam similique dolorem ab perspiciatis qui. Facere, dignissimos. Nemo,
+        ea.</p>
+      <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+        because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a
+        trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
+        it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+        consequences, or one who avoids a pain that produces no resultant pleasure</p>
+      <p>Nullam vitae enim vel diam elementum tincidunt a eget metus. Curabitur finibus vestibulum rutrum. Vestibulum
+        semper tellus vitae tortor condimentum porta. Sed id ex arcu. Vestibulum eleifend tortor non purus porta dapibus
+      </p>
+      <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+        because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a
+        trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
+        it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+        consequences, or one who avoids a pain that produces no resultant pleasure</p>
+      <a href="/lanefinder/wizards/apply/step-1.html"><button data-color="accent" data-size="large" data-glow>Apply now</button></a>
+    </ad-overlay-content>
+  </ad-overlay-wrapper>
+</ad-overlay>
+
+<generic-modal id="modal-save-search">
+  <modal-wrapper>
+    <modal-header>Save this search</modal-header>
+    <modal-content>
+      <p>We will notify you once a day when any jobs become available that match this search.</p>
+    </modal-content>
+    <modal-footer>
+      <button data-close data-color="accent" data-block>Save search</button>
+      <button data-close data-block>Close</button>
+    </modal-footer>
+  </modal-wrapper>
+</generic-modal>
+
+<status-bar class="detect-top" data-color="">
+    <img src="/docs/shared/images/status-bar-black-left.png" class="black"/>
+    <img src="/docs/shared/images/status-bar-black-right.png" class="black"/>
+    <img src="/docs/shared/images/status-bar-left.png" class="white"/>
+    <img src="/docs/shared/images/status-bar-right.png" class="white"/>
+</status-bar>
+
+<script type="text/javascript" src="/docs/shared/scripts/footer-scripts-min.js"></script>
+</body>
+
+</html>
+
