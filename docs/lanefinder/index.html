@@ -17,18 +17,20 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css">
+  <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=6d38c2bd2ed7732e1d2f7b07042c14a9">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script>
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=625671415"></script>
   <script type="text/javascript"
-    src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js"></script>
+    src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=625671415"></script>
 </head>
 
 <body>
 
 <main-view>
 
-  <header-backdrop style="background-image: url(/lanefinder/assets/images/header-image-looking-out.png); background-size: 120%;"></header-backdrop>
+  <header-backdrop
+    style="background-image: url(/lanefinder/assets/images/header-image-looking-out.png); background-size: 120%;">
+  </header-backdrop>
   <view-header>
     <header-content>
       <header-title>
@@ -57,20 +59,22 @@
   
 
   <view-content>
+
     <list-heading>
-      <left-block>Matching all of your filters</left-block>
-      <right-block>2 jobs</right-block>
+      <block-left>Matching all of your filters</block-left>
+      <block-right>2 jobs</block-right>
     </list-heading>
+
     <job-list-item id="job-item-1" data-open="overlay-ad">
                                 <list-item-header-tags>
-                                    <my-tag data-color="accent">Urgently hiring</my-tag>
+                                    <tag-item data-color="accent">Urgently hiring</tag-item>
                                 </list-item-header-tags>
                                 <list-item-title>Line Haul Regional Team</list-item-title>
                                 <list-item-sub-title>W Trucking Inc</list-item-sub-title>
                                 <list-item-description>$1,600 - $2,900 per week</list-item-description>
                                 <list-item-description>Home at least 2 weekends. Dry Van, Refrigerated, Flatbed.</list-item-description>
                                 <list-item-tags>
-                                    <my-tag>1099</my-tag><my-tag>20-49 trucks</my-tag>
+                                    <tag-item>1099</tag-item><tag-item>20-49 trucks</tag-item>
                                 </list-item-tags>
                                 <list-divider></list-divider>
                             </job-list-item>
@@ -85,7 +89,7 @@
                                 <list-item-description>$3,000 per week</list-item-description>
                                 <list-item-description>Home at least 2 weekends. Flatbed.</list-item-description>
                                 <list-item-tags>
-                                    <my-tag>O/O</my-tag><my-tag>50-99 trucks</my-tag>
+                                    <tag-item>O/O</tag-item><tag-item>50-99 trucks</tag-item>
                                 </list-item-tags>
                                 <list-divider></list-divider>
                             </job-list-item>
@@ -100,15 +104,15 @@
                                 <list-item-description>$1,200 - $1,500 per week</list-item-description>
                                 <list-item-description>Expected to be out 7-10 days. Tanker.</list-item-description>
                                 <list-item-tags>
-                                    <my-tag>W2</my-tag><my-tag>100-249 trucks</my-tag>
+                                    <tag-item>W2</tag-item><tag-item>100-249 trucks</tag-item>
                                 </list-item-tags>
                                 <list-divider></list-divider>
                             </job-list-item>
                             
 
     <list-heading>
-      <left-block>You might also be interested in</left-block>
-      <right-block>12 jobs</right-block>
+      <block-left>You might also be interested in</block-left>
+      <block-right>12 jobs</block-right>
     </list-heading>
 
     <job-list-item id="job-item-1" data-open="overlay-ad">
@@ -120,7 +124,7 @@
                                 <list-item-description>$3,000 per week</list-item-description>
                                 <list-item-description>Home at least 2 weekends. Flatbed.</list-item-description>
                                 <list-item-tags>
-                                    <my-tag>O/O</my-tag><my-tag>50-99 trucks</my-tag>
+                                    <tag-item>O/O</tag-item><tag-item>50-99 trucks</tag-item>
                                 </list-item-tags>
                                 <list-divider></list-divider>
                             </job-list-item>
@@ -135,22 +139,24 @@
                                 <list-item-description>$1,200 - $1,500 per week</list-item-description>
                                 <list-item-description>Expected to be out 7-10 days. Tanker.</list-item-description>
                                 <list-item-tags>
-                                    <my-tag>W2</my-tag><my-tag>100-249 trucks</my-tag>
+                                    <tag-item>W2</tag-item><tag-item>100-249 trucks</tag-item>
                                 </list-item-tags>
                                 <list-divider></list-divider>
                             </job-list-item>
                             
+
   </view-content>
+
 </main-view>
 
 <navigation-bar class="detect-top">
-  <left-block>
+  <block-left>
     Jobs
-  </left-block>
-  <right-block>
+  </block-left>
+  <block-right>
     <a href="#">Help</a>
     <i class="material-icons" data-open="overlay-filters">tune</i>
-    <i class="material-icons" data-open="modal-save-search">favorite</i></right-block>
+    <i class="material-icons" data-open="modal-save-search">favorite</i></block-right>
 </navigation-bar>
 
 <my-mobile-tabs>
@@ -244,7 +250,8 @@
         trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
         it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
         consequences, or one who avoids a pain that produces no resultant pleasure</p>
-      <a href="/lanefinder/wizards/apply/step-1.html"><button data-color="accent" data-size="large" data-glow>Apply now</button></a>
+      <a href="/lanefinder/wizards/apply/step-1.html"><button data-color="accent" data-size="large" data-glow>Apply
+          now</button></a>
     </ad-overlay-content>
   </ad-overlay-wrapper>
 </ad-overlay>
@@ -269,7 +276,7 @@
     <img src="/shared/images/status-bar-right.png" class="white"/>
 </status-bar>
 
-<script type="text/javascript" src="/shared/scripts/footer-scripts-min.js"></script>
+<script type="text/javascript" src="/shared/scripts/footer-scripts-min.js?ckcachebust=61cb4ee0d609c98aa675b9d6b9ef6906"></script>
 </body>
 
 </html>

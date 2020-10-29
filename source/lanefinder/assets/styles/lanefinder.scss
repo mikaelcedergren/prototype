@@ -85,7 +85,7 @@ view-content {
   border-radius: $border-radius * 4 $border-radius * 4 0 0;
 }
 
-my-tag {
+tag-item {
   display: inline-block;
   background-color: $gray-2;
   margin-right: 2px;
@@ -181,7 +181,7 @@ navigation-bar {
     }
   }
 
-  left-block {
+  block-left {
     font-family: $font-family-headings;
     font-size: 20px;
     font-weight: $font-bold;
@@ -191,7 +191,7 @@ navigation-bar {
     line-height: 44px;
   }
 
-  right-block {
+  block-right {
     text-align: right;
     height: 44px;
     line-height: 44px;

@@ -74,7 +74,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -321,7 +322,6 @@ body {
 body {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -623,7 +623,8 @@ view-header {
   view-header header-button button {
     transition: all 0.3s ease;
     background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2px); }
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px); }
 
 view-content {
   position: relative;
@@ -631,7 +632,7 @@ view-content {
   background-color: #eff1f4;
   border-radius: 16px 16px 0 0; }
 
-my-tag {
+tag-item {
   display: inline-block;
   background-color: #e6eaf0;
   margin-right: 2px;
@@ -641,12 +642,12 @@ my-tag {
   font-weight: 700;
   margin-bottom: 0.25rem;
   line-height: 1; }
-  my-tag:empty {
+  tag-item:empty {
     display: none; }
-  my-tag[data-color="accent"] {
+  tag-item[data-color="accent"] {
     background-color: #ef3662;
     color: #fff; }
-  my-tag[data-color="primary"] {
+  tag-item[data-color="primary"] {
     background-color: #ff8b4a;
     color: #fff; }
 
@@ -703,7 +704,7 @@ navigation-bar {
     -webkit-backdrop-filter: none; }
   navigation-bar[data-dark] a {
     color: #ff8b4a; }
-  navigation-bar left-block {
+  navigation-bar block-left {
     font-family: "Helvetica Neue", sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -711,15 +712,15 @@ navigation-bar {
     letter-spacing: -0.05rem;
     height: 44px;
     line-height: 44px; }
-  navigation-bar right-block {
+  navigation-bar block-right {
     text-align: right;
     height: 44px;
     line-height: 44px; }
-    navigation-bar right-block a {
+    navigation-bar block-right a {
       margin-right: 0.5rem; }
-    navigation-bar right-block i {
+    navigation-bar block-right i {
       margin-left: 0.5rem; }
-      navigation-bar right-block i:hover {
+      navigation-bar block-right i:hover {
         color: #ef3662; }
   navigation-bar.at-top {
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
