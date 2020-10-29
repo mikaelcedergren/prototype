@@ -22,6 +22,30 @@ a {
   }
 }
 
+button-container {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+
+
+  &[data-position="fixed"] {
+    transition: transform 0.3s $ease-out;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: $tab-bar-height;
+
+    &[data-hide] {
+      transform: translateX(-50%) translateY(200%);
+
+      &.show {
+        transform: translateX(-50%) translateY(0%)
+      }
+    }
+  }
+}
+
+
 main-view {
   display: block;
   min-height: 100vh;
@@ -519,12 +543,6 @@ ad-overlay {
   }
 }
 
-// FIX FOR FOUC
-html {
-  visibility: visible;
-  opacity: 1;
-}
-
 wizard-view {
   display: block;
   min-height: 100vh;
@@ -697,4 +715,10 @@ carrier-list-item {
     white-space: nowrap;
     color: $gray-4;
   }
+}
+
+// FIX FOR FOUC
+html {
+  visibility: visible;
+  opacity: 1;
 }

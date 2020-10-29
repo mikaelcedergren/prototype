@@ -243,22 +243,6 @@
 		"oAP": "/docs/lanefinder/components/_filters-box.html",
 		"oF": 0
 		},
-	"/source/lanefinder/components/_html-footer.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/lanefinder/components/_html-footer.html",
-		"oF": 0
-		},
-	"/source/lanefinder/components/_html-header.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/lanefinder/components/_html-header.html",
-		"oF": 0
-		},
 	"/source/lanefinder/components/_job-item.kit": {
 		"cB": 1,
 		"ft": 2048,
@@ -281,6 +265,22 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/docs/lanefinder/components/_mobile-tabs.html",
+		"oF": 0
+		},
+	"/source/lanefinder/components/_page-footer.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/_page-footer.html",
+		"oF": 0
+		},
+	"/source/lanefinder/components/_page-header.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/_page-header.html",
 		"oF": 0
 		},
 	"/source/lanefinder/components/_status-bar.kit": {
@@ -531,6 +531,56 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/docs/ux-directives/validation.html",
+		"oF": 0
+		},
+	"/source/youcruit/assets/styles/_variables.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/docs/youcruit/assets/styles/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/youcruit/assets/styles/youcruit.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/docs/youcruit/assets/styles/youcruit.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/youcruit/components/_page-footer.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/youcruit/components/_page-footer.html",
+		"oF": 0
+		},
+	"/source/youcruit/components/_page-header.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/youcruit/components/_page-header.html",
+		"oF": 0
+		},
+	"/source/youcruit/index.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/youcruit/index.html",
 		"oF": 0
 		}
 	},

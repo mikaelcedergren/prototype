@@ -1,0 +1,25 @@
+@import "_variables.scss";
+@import "../../../shared/styles/core.scss";
+
+body {
+    background-color: $gray-1;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $box-shadow;
+}
+
+// FIX FOR FOUC
+html {
+    visibility: visible;
+    opacity: 1;
+  }
