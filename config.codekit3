@@ -533,6 +533,16 @@
 		"oAP": "/docs/ux-directives/validation.html",
 		"oF": 0
 		},
+	"/source/youcruit/assets/images/youcruit-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/docs/youcruit/assets/images/youcruit-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/source/youcruit/assets/styles/_variables.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -596,7 +606,7 @@
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
-	"abortBuildOnError": 0,
+	"abortBuildOnError": 1,
 	"allowInjectionReloads": 1,
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,

@@ -2,24 +2,101 @@
 @import "../../../shared/styles/core.scss";
 
 body {
-    background-color: $gray-1;
+  background-color: $gray-1;
+}
+
+a {
+  color: $primary;
+  position: relative;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $primary;
+    height: 1px;
+  }
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 64px;
-    background-color: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+
+  img {
+    margin-right: 1rem;
+  }
+
+  a {
+    margin-right: 1rem;
+
+    &::after {
+      display: none;
+    }
+
+    &:not(.active) {
+      color: $gray-5;
+
+    }
+  }
+
+  nav-left,
+  nav-right {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    box-shadow: $box-shadow;
+  }
+
+  nav-right {
+    color: $gray-4;
+  }
+}
+
+header {
+  background: $white;
+  margin-top: $nav-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $header-height;
+  padding: 0 1rem;
+
+  header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    icon-button {
+      margin-right: 1rem;
+    }
+
+    h2 {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+
+  header-right {
+    display: block;
+    color: $gray-4;
+  }
 }
 
 // FIX FOR FOUC
 html {
-    visibility: visible;
-    opacity: 1;
-  }
+  visibility: visible;
+  opacity: 1;
+}

@@ -45,3 +45,19 @@ button {
     box-shadow: 0 8px 12px rgba($accent, 0.5);
   }
 }
+
+icon-button {
+  display: inline-block;
+
+  i.material-icons {
+    background-color: rgba(black, 0.2);
+    border-radius: 100%;
+    color: $white;
+    font-size: 20px;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

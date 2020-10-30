@@ -663,18 +663,8 @@ list-divider {
 }
 
 icon-button {
-  display: inline-block;
-
   i.material-icons {
     background-color: $accent;
-    border-radius: 100%;
-    color: $white;
-    font-size: 20px;
-    height: 28px;
-    width: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 

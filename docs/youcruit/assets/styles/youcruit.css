@@ -423,6 +423,19 @@ button {
   button[data-glow] {
     box-shadow: 0 8px 12px rgba(239, 54, 98, 0.5); }
 
+icon-button {
+  display: inline-block; }
+  icon-button i.material-icons {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    color: #fff;
+    font-size: 20px;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
 .mt-0 {
   margin-top: 0rem !important; }
 
@@ -552,6 +565,19 @@ button {
 body {
   background-color: #eff1f4; }
 
+a {
+  color: #ff8b4a;
+  position: relative;
+  text-decoration: none; }
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff8b4a;
+    height: 1px; }
+
 nav {
   position: fixed;
   top: 0;
@@ -562,7 +588,46 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.06); }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem; }
+  nav img {
+    margin-right: 1rem; }
+  nav a {
+    margin-right: 1rem; }
+    nav a::after {
+      display: none; }
+    nav a:not(.active) {
+      color: #778396; }
+  nav nav-left,
+  nav nav-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  nav nav-right {
+    color: #a3afbf; }
+
+header {
+  background: #fff;
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 112px;
+  padding: 0 1rem; }
+  header header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    header header-left icon-button {
+      margin-right: 1rem; }
+    header header-left h2 {
+      display: inline-block;
+      margin: 0; }
+  header header-right {
+    display: block;
+    color: #a3afbf; }
 
 html {
   visibility: visible;
