@@ -3,18 +3,20 @@
 <script>
   function showSendButton() {
     var element = document.getElementById("send-button");
-  element.classList.add("show");
+    element.classList.add("show");
   }
 </script>
 
 <main-view>
-  <header-backdrop style="background-image: url(/lanefinder/assets/images/header-image-inspecting.png);"></header-backdrop>
+  <header-backdrop
+    style="
+      background-image: url(/lanefinder/assets/images/header-image-inspecting.png);
+    "
+  ></header-backdrop>
 
   <view-header>
     <header-content>
-      <header-title>
-        Carriers
-      </header-title>
+      <header-title> Carriers </header-title>
     </header-content>
   </view-header>
 
@@ -59,14 +61,11 @@
     <button-container id="send-button" data-position="fixed" data-hide>
       <button data-glow data-color="accent">Send to these carriers</button>
     </button-container>
-
   </view-content>
 </main-view>
 
 <navigation-bar class="detect-top">
-  <block-left>
-    Carriers
-  </block-left>
+  <block-left> Carriers </block-left>
   <block-right>
     <a href="#">Help</a>
   </block-right>
