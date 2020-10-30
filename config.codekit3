@@ -7,7 +7,7 @@
 		"uuidString": "54D7E568-8F0E-4362-9437-364668100561"
 		}
 	],
-"creatorBuild": "33070",
+"creatorBuild": "33081",
 "files": {
 	"/docs": {
 		"ft": 65536,
@@ -533,16 +533,6 @@
 		"oAP": "/docs/ux-directives/validation.html",
 		"oF": 0
 		},
-	"/source/youcruit/assets/images/youcruit-logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/docs/youcruit/assets/images/youcruit-logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
 	"/source/youcruit/assets/styles/_variables.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -606,7 +596,7 @@
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
-	"abortBuildOnError": 1,
+	"abortBuildOnError": 0,
 	"allowInjectionReloads": 1,
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
