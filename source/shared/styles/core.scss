@@ -73,6 +73,52 @@ i {
   }
 }
 
+tag-item {
+  display: inline-block;
+  background-color: $gray-2;
+  margin-right: 2px;
+  padding: 6px 8px;
+  border-radius: $border-radius;
+  font-size: $font-size-small;
+  font-weight: $font-bold;
+  margin-bottom: 0.25rem;
+  line-height: 1;
+
+  &:empty {
+    display: none;
+  }
+
+  &.accent {
+    background-color: $accent;
+    color: $white;
+  }
+
+  &.primary {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &.secondary {
+    background-color: $secondary;
+    color: $white;
+  }
+
+  &.contrast {
+    background-color: $contrast;
+    color: $white;
+  }
+
+  &.success {
+    background-color: $success;
+    color: $white;
+  }
+
+  &.danger {
+    background-color: $danger;
+    color: $white;
+  }
+}
+
 @import "_grid.scss";
 @import "_buttons.scss";
 @import "_utilities.scss";

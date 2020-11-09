@@ -109,32 +109,6 @@ view-content {
   border-radius: $border-radius * 4 $border-radius * 4 0 0;
 }
 
-tag-item {
-  display: inline-block;
-  background-color: $gray-2;
-  margin-right: 2px;
-  padding: 6px 8px;
-  border-radius: $border-radius;
-  font-size: $font-size-small;
-  font-weight: $font-bold;
-  margin-bottom: 0.25rem;
-  line-height: 1;
-
-  &:empty {
-    display: none;
-  }
-
-  &[data-color="accent"] {
-    background-color: $accent;
-    color: $white;
-  }
-
-  &[data-color="primary"] {
-    background-color: $primary;
-    color: $white;
-  }
-}
-
 my-item-title {
   display: block;
   margin-bottom: 0.25rem;
