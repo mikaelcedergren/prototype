@@ -17,57 +17,56 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=69fc107d85112c35bde8e720a77fb41e">
+  <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=06cb73d4368e5642416b821919f43328">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=626628675"></script>
-  <script type="text/javascript"
-    src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=626628675"></script>
+  <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=626706631"></script> -->
+  <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=626706631"></script> -->
 </head>
 
 <body>
 
 <main-view>
-  <header-backdrop
-    style="
+  <header-backdrop style="
       background-image: url(/lanefinder/assets/images/header-image-looking-out.png);
       background-size: 120%;
-    "
-  >
+    ">
   </header-backdrop>
   <view-header>
-    <header-content>
-      <header-title> Jobs </header-title>
+    <header>
+      <h2> Jobs </h2>
       <header-button>
-        <button
-          id="save-search"
-          data-open="modal-save-search"
-          data-size="small"
-        >
+        <button id="save-search" data-open="modal-save-search" class="small">
           <i class="material-icons">favorite</i><span>Save search</span>
         </button>
       </header-button>
-    </header-content>
+    </header>
   </view-header>
 
   <box-block id="filters" data-open="overlay-filters" class="mb-1 mr-1 ml-1">
-    <grid-row-fixed data-align="center">
-      <grid-cell>
-        <i class="material-icons color-discreet">tune</i><span class="color-text-discreet">Filters</span>
+    <grid-row-fixed class="gutter-small">
+      <grid-cell class="shrink">
+        <i class="material-icons color-discreet">search</i>
       </grid-cell>
-      <grid-cell data-align="right">
-        <a href="#" class="link">Edit</a>
+      <grid-cell>
+        <p class="color-text-discreet">Team OTR, local company driver jobs in 90210 with a minimum weekly average...
+        </p>
+        <grid-row-fixed>
+          <grid-cell>
+            <strong>12 out of 284 jobs</strong>
+          </grid-cell>
+          <grid-cell class="shrink align-right">
+            <a href="#" class="link">Edit</a>
+          </grid-cell>
+        </grid-row-fixed>
       </grid-cell>
     </grid-row-fixed>
-    <p class="color-text-discreet">Team OTR, local company driver jobs in 90210 with a minimum weekly average...
-    </p>
-    <strong>12 out of 284 jobs</strong>
   </box-block>
   
 
   <view-content>
     <list-heading>
-      <block-left>Matching all of your filters</block-left>
-      <block-right>2 jobs</block-right>
+      <h4>Matching all of your filters</h4>
+      <div>2 jobs</div>
     </list-heading>
 
     <job-list-item id="job-item-1" data-open="overlay-ad">
@@ -116,8 +115,8 @@
                             
 
     <list-heading>
-      <block-left>You might also be interested in</block-left>
-      <block-right>12 jobs</block-right>
+      <h4>You might also be interested in</h4>
+      <div>12 jobs</div>
     </list-heading>
 
     <job-list-item id="job-item-1" data-open="overlay-ad">
@@ -152,15 +151,12 @@
   </view-content>
 </main-view>
 
-<navigation-bar class="detect-top">
-  <block-left> Jobs </block-left>
-  <block-right>
+<navigation-bar class="detect-top space-between">
+  <h3> Jobs </h3>
+  <div>
     <a href="#">Help</a>
     <i class="material-icons" data-open="overlay-filters">tune</i>
-    <i class="material-icons" data-open="modal-save-search"
-      >favorite</i
-    ></block-right
-  >
+    <i class="material-icons" data-open="modal-save-search">favorite</i></div>
 </navigation-bar>
 
 <my-mobile-tabs>
@@ -202,16 +198,14 @@
 
 
 <generic-overlay id="overlay-filters">
-  <overlay-wrapper>
-    <overlay-header>
-      <icon-button data-close
-        ><i class="material-icons">expand_more</i></icon-button
-      >
-      242 jobs
-    </overlay-header>
-    <overlay-content>
+  <section>
+    <header>
+      <icon-button data-close><i class="material-icons">expand_more</i></icon-button>
+      <tag-item class="secondary">242 jobs</tag-item>
+    </header>
+    <div>
       <p>
-        <strong>Press ✕, ESC, or click outside of the modal to close it</strong>
+        <strong>This is the filters</strong>
       </p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus
@@ -245,21 +239,18 @@
         annoying consequences, or one who avoids a pain that produces no
         resultant pleasure
       </p>
-    </overlay-content>
-  </overlay-wrapper>
+    </div>
+  </section>
 </generic-overlay>
 
 <ad-overlay id="overlay-ad">
-  <ad-overlay-wrapper>
-    <ad-overlay-header>
+  <section>
+    <header>
       <i class="material-icons" data-close>expand_more</i>
-    </ad-overlay-header>
-    <ad-overlay-content>
-      <ad-overlay-sub-heading>W Trucking Inc</ad-overlay-sub-heading>
-      <ad-overlay-heading>Line Haul Regional Team</ad-overlay-heading>
-      <p>
-        <strong>Press ✕, ESC, or click outside of the modal to close it</strong>
-      </p>
+    </header>
+    <div>
+      <sub>W Trucking Inc</sub>
+      <h3>Line Haul Regional Team</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus
         reprehenderit accusamus totam ratione! Nesciunt, nemo dolorum recusandae
@@ -292,29 +283,30 @@
         annoying consequences, or one who avoids a pain that produces no
         resultant pleasure
       </p>
-      <a href="/lanefinder/wizards/apply/step-1.html"
-        ><button data-color="accent" data-size="large" data-glow>
-          Apply now
-        </button></a
-      >
-    </ad-overlay-content>
-  </ad-overlay-wrapper>
+      <button-container class="fixed">
+        <a href="/lanefinder/wizards/apply/step-1.html"><button class="accent large glow">
+            Apply now
+          </button></a>
+      </button-container>
+    </div>
+  </section>
 </ad-overlay>
 
 <generic-modal id="modal-save-search">
-  <modal-wrapper>
-    <modal-header>Save this search</modal-header>
-    <modal-content>
+  <section>
+    <header>Save search</header>
+    <div>
       <p>
-        We will notify you once a day when any jobs become available that match
-        this search.
+        Get notified when jobs matching this search become available.
       </p>
-    </modal-content>
-    <modal-footer>
-      <button data-close data-color="accent" data-block>Save search</button>
-      <button data-close data-block>Close</button>
-    </modal-footer>
-  </modal-wrapper>
+      <label>Name this search</label>
+      <input type="text" />
+    </div>
+    <footer>
+      <button data-close class="discreet">Cancel</button>
+      <button data-close class="accent">Save</button>
+    </footer>
+  </section>
 </generic-modal>
 
 <status-bar class="detect-top" data-color="">
@@ -324,7 +316,7 @@
     <img src="/shared/images/status-bar-right.png" class="white"/>
 </status-bar>
 
-<script type="text/javascript" src="/shared/scripts/footer-scripts-min.js?ckcachebust=ad484f855002ba4b718f03e318baf44c"></script>
+<script type="text/javascript" src="/shared/scripts/footer-scripts-min.js?ckcachebust=e0599e50ed3928823f6dc2ec51455850"></script>
 </body>
 
 </html>

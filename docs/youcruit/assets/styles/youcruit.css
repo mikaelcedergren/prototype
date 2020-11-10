@@ -338,12 +338,33 @@ body {
   -webkit-backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent; }
 
+a + i.material-icons {
+  margin-left: 0.5rem; }
+
+h1 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 3rem; }
+
+h2 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.5rem; }
+
+h3 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: -0.05rem; }
+
+h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem; }
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 0; }
 
 small {
   font-size: 14px; }
@@ -358,6 +379,38 @@ i {
   i + span {
     vertical-align: middle;
     margin-left: 0.5rem; }
+
+sub {
+  display: block;
+  width: 100%;
+  line-height: 1;
+  bottom: auto;
+  vertical-align: auto;
+  color: #ef3662;
+  font-size: 14px;
+  font-weight: 700; }
+
+input[type="text"] {
+  height: 44px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  outline: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+  color: #3e4a5e; }
+
+label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.02rem;
+  display: block;
+  width: 100%;
+  margin-bottom: 0.25rem; }
+
+i.material-icons + i.material-icons {
+  margin-left: 0.5rem; }
 
 tag-item {
   display: inline-block;
@@ -396,23 +449,27 @@ grid-row, grid-row-fixed {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: stretch;
-  margin: -0.5rem -0.5rem 0.5rem -0.5rem; }
-  grid-row:last-of-type, grid-row-fixed:last-of-type {
-    margin-bottom: 0; }
-  grid-row[data-align="middle"] > grid-cell, grid-row-fixed[data-align="middle"] > grid-cell {
+  margin: -1rem; }
+  grid-row.gutter-none, grid-row-fixed.gutter-none {
+    margin: 0; }
+    grid-row.gutter-none > grid-cell, grid-row-fixed.gutter-none > grid-cell {
+      margin: 0; }
+  grid-row.gutter-small, grid-row-fixed.gutter-small {
+    margin: -0.5rem; }
+    grid-row.gutter-small > grid-cell, grid-row-fixed.gutter-small > grid-cell {
+      margin: 0.5rem; }
+  grid-row.middle > grid-cell, grid-row-fixed.middle > grid-cell {
     align-self: center; }
   grid-row > grid-cell, grid-row-fixed > grid-cell {
     vertical-align: baseline;
     font-size: inherit;
     min-width: 220px;
     flex: 1 1 0%;
-    margin: 0.5rem;
+    margin: 1rem;
     max-width: 100%; }
-    grid-row > grid-cell[data-shrink], grid-row-fixed > grid-cell[data-shrink] {
+    grid-row > grid-cell.shrink, grid-row-fixed > grid-cell.shrink {
       flex-basis: auto;
       flex-grow: 0; }
-    grid-row > grid-cell[data-align="right"], grid-row-fixed > grid-cell[data-align="right"] {
-      text-align: right; }
   grid-row grid-row > grid-cell, grid-row-fixed grid-row > grid-cell, grid-row grid-row-fixed > grid-cell, grid-row-fixed grid-row-fixed > grid-cell {
     min-width: 0; }
 
@@ -423,8 +480,8 @@ grid-row-fixed {
 
 button {
   border-radius: 100px;
-  background-color: #778396;
-  color: #fff;
+  background-color: #e6eaf0;
+  color: #3e4a5e;
   border: none;
   outline: none;
   font-weight: 700;
@@ -437,22 +494,33 @@ button {
   height: 48px;
   font-size: 14px; }
   button i {
-    font-size: 14px; }
-  button[data-block] {
+    font-size: 16px; }
+  button.block {
     display: block;
     width: 100%; }
-  button i {
-    font-size: 16px; }
-  button[data-color="accent"] {
+  button.discreet {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.12); }
+  button.primary, button.secondary, button.success, button.danger, button.accent {
+    color: #fff; }
+  button.primary {
+    background-color: #ff8b4a; }
+  button.secondary {
     background-color: #ef3662; }
-  button[data-size="small"] {
+  button.success {
+    background-color: #9fd168; }
+  button.danger {
+    background-color: #eb6363; }
+  button.accent {
+    background-color: #ef3662; }
+    button.accent.glow {
+      box-shadow: 0 8px 12px rgba(239, 54, 98, 0.3); }
+  button.small {
     padding: 0 1rem;
     height: 32px;
     font-size: 14px; }
-    button[data-size="small"] i {
+    button.small i {
       font-size: 14px; }
-  button[data-glow] {
-    box-shadow: 0 8px 12px rgba(239, 54, 98, 0.5); }
 
 icon-button {
   display: inline-block; }
@@ -592,6 +660,11 @@ icon-button {
 
 .color-text-discreet {
   color: #778396; }
+
+.space-between {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
 
 body {
   background-color: #eff1f4; }

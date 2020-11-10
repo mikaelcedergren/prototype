@@ -1,7 +1,7 @@
 button {
   border-radius: 100px;
-  background-color: $gray-5;
-  color: $white;
+  background-color: $gray-2;
+  color: $black;
   border: none;
   outline: none;
   font-weight: $font-bold;
@@ -15,23 +15,52 @@ button {
   font-size: $font-size-small;
 
   i {
-    font-size: $font-size-small;
+    font-size: $font-size;
   }
 
-  &[data-block] {
+  &.block {
     display: block;
     width: 100%;
   }
 
-  i {
-    font-size: $font-size;
+  &.discreet {
+    background-color: transparent;
+    border: $line;
   }
 
-  &[data-color="accent"] {
+  &.primary,
+  &.secondary,
+  &.success,
+  &.danger,
+  &.accent {
+    color: $white;
+  }
+
+  &.primary {
+    background-color: $primary;
+  }
+
+  &.secondary {
+    background-color: $secondary;
+  }
+
+  &.success {
+    background-color: $success;
+  }
+
+  &.danger {
+    background-color: $danger;
+  }
+
+  &.accent {
     background-color: $accent;
+
+    &.glow {
+      box-shadow: 0 8px 12px rgba($accent, 0.3);
+    }
   }
 
-  &[data-size="small"] {
+  &.small {
     padding: 0 1rem;
     height: 32px;
     font-size: $font-size-small;
@@ -39,10 +68,6 @@ button {
     i {
       font-size: $font-size-small;
     }
-  }
-
-  &[data-glow] {
-    box-shadow: 0 8px 12px rgba($accent, 0.5);
   }
 }
 

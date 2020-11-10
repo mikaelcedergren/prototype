@@ -4,13 +4,25 @@ grid-row {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: stretch;
-  margin: -0.5rem -0.5rem 0.5rem -0.5rem;
+  margin: -1rem;
 
-  &:last-of-type {
-    margin-bottom: 0;
+  &.gutter-none {
+    margin: 0;
+
+    & > grid-cell {
+      margin: 0;
+    }
   }
 
-  &[data-align="middle"] {
+  &.gutter-small {
+    margin: -0.5rem;
+
+    & > grid-cell {
+      margin: 0.5rem;
+    }
+  }
+
+  &.middle {
     & > grid-cell {
       align-self: center;
     }
@@ -21,16 +33,12 @@ grid-row {
     font-size: inherit;
     min-width: 220px;
     flex: 1 1 0%;
-    margin: 0.5rem;
+    margin: 1rem;
     max-width: 100%;
 
-    &[data-shrink] {
+    &.shrink {
       flex-basis: auto;
       flex-grow: 0;
-    }
-
-    &[data-align="right"] {
-      text-align: right;
     }
   }
 

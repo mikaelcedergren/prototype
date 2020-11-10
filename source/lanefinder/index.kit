@@ -1,33 +1,27 @@
 <!-- @import '/source/lanefinder/components/_page-header.kit' -->
 <main-view>
-  <header-backdrop
-    style="
+  <header-backdrop style="
       background-image: url(/lanefinder/assets/images/header-image-looking-out.png);
       background-size: 120%;
-    "
-  >
+    ">
   </header-backdrop>
   <view-header>
-    <header-content>
-      <header-title> Jobs </header-title>
+    <header>
+      <h2> Jobs </h2>
       <header-button>
-        <button
-          id="save-search"
-          data-open="modal-save-search"
-          data-size="small"
-        >
+        <button id="save-search" data-open="modal-save-search" class="small">
           <i class="material-icons">favorite</i><span>Save search</span>
         </button>
       </header-button>
-    </header-content>
+    </header>
   </view-header>
 
   <!-- @import '/source/lanefinder/components/_filters-box.kit -->
 
   <view-content>
     <list-heading>
-      <block-left>Matching all of your filters</block-left>
-      <block-right>2 jobs</block-right>
+      <h4>Matching all of your filters</h4>
+      <div>2 jobs</div>
     </list-heading>
 
     <!-- $header-tags = <tag-item class="accent">Urgently hiring</tag-item> -->
@@ -55,8 +49,8 @@
     <!-- @import '/source/lanefinder/components/_job-item.kit -->
 
     <list-heading>
-      <block-left>You might also be interested in</block-left>
-      <block-right>12 jobs</block-right>
+      <h4>You might also be interested in</h4>
+      <div>12 jobs</div>
     </list-heading>
 
     <!-- $header-tags = nil -->
@@ -77,31 +71,26 @@
   </view-content>
 </main-view>
 
-<navigation-bar class="detect-top">
-  <block-left> Jobs </block-left>
-  <block-right>
+<navigation-bar class="detect-top space-between">
+  <h3> Jobs </h3>
+  <div>
     <a href="#">Help</a>
     <i class="material-icons" data-open="overlay-filters">tune</i>
-    <i class="material-icons" data-open="modal-save-search"
-      >favorite</i
-    ></block-right
-  >
+    <i class="material-icons" data-open="modal-save-search">favorite</i></div>
 </navigation-bar>
 
 <!-- $tab-item-1 = active -->
 <!-- @import '/source/lanefinder/components/_mobile-tabs.kit -->
 
 <generic-overlay id="overlay-filters">
-  <overlay-wrapper>
-    <overlay-header>
-      <icon-button data-close
-        ><i class="material-icons">expand_more</i></icon-button
-      >
-      242 jobs
-    </overlay-header>
-    <overlay-content>
+  <section>
+    <header>
+      <icon-button data-close><i class="material-icons">expand_more</i></icon-button>
+      <tag-item class="secondary">242 jobs</tag-item>
+    </header>
+    <div>
       <p>
-        <strong>Press ✕, ESC, or click outside of the modal to close it</strong>
+        <strong>This is the filters</strong>
       </p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus
@@ -135,21 +124,18 @@
         annoying consequences, or one who avoids a pain that produces no
         resultant pleasure
       </p>
-    </overlay-content>
-  </overlay-wrapper>
+    </div>
+  </section>
 </generic-overlay>
 
 <ad-overlay id="overlay-ad">
-  <ad-overlay-wrapper>
-    <ad-overlay-header>
+  <section>
+    <header>
       <i class="material-icons" data-close>expand_more</i>
-    </ad-overlay-header>
-    <ad-overlay-content>
-      <ad-overlay-sub-heading>W Trucking Inc</ad-overlay-sub-heading>
-      <ad-overlay-heading>Line Haul Regional Team</ad-overlay-heading>
-      <p>
-        <strong>Press ✕, ESC, or click outside of the modal to close it</strong>
-      </p>
+    </header>
+    <div>
+      <sub>W Trucking Inc</sub>
+      <h3>Line Haul Regional Team</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus
         reprehenderit accusamus totam ratione! Nesciunt, nemo dolorum recusandae
@@ -182,29 +168,30 @@
         annoying consequences, or one who avoids a pain that produces no
         resultant pleasure
       </p>
-      <a href="/lanefinder/wizards/apply/step-1.html"
-        ><button data-color="accent" data-size="large" data-glow>
-          Apply now
-        </button></a
-      >
-    </ad-overlay-content>
-  </ad-overlay-wrapper>
+      <button-container class="fixed">
+        <a href="/lanefinder/wizards/apply/step-1.html"><button class="accent large glow">
+            Apply now
+          </button></a>
+      </button-container>
+    </div>
+  </section>
 </ad-overlay>
 
 <generic-modal id="modal-save-search">
-  <modal-wrapper>
-    <modal-header>Save this search</modal-header>
-    <modal-content>
+  <section>
+    <header>Save search</header>
+    <div>
       <p>
-        We will notify you once a day when any jobs become available that match
-        this search.
+        Get notified when jobs matching this search become available.
       </p>
-    </modal-content>
-    <modal-footer>
-      <button data-close data-color="accent" data-block>Save search</button>
-      <button data-close data-block>Close</button>
-    </modal-footer>
-  </modal-wrapper>
+      <label>Name this search</label>
+      <input type="text" />
+    </div>
+    <footer>
+      <button data-close class="discreet">Cancel</button>
+      <button data-close class="accent">Save</button>
+    </footer>
+  </section>
 </generic-modal>
 
 <!-- @import '/source/lanefinder/components/_status-bar.kit -->

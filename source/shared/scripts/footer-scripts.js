@@ -1,12 +1,21 @@
 window.onscroll = function () {
     [...document.querySelectorAll('.detect-top')].forEach(sticker => {
-        if (window.pageYOffset > 172) {
+        if (window.pageYOffset > 120) {
             sticker.classList.add('at-top');
         } else {
             sticker.classList.remove('at-top');
         }
     });
+    [...document.querySelectorAll('.detect-top-wizard')].forEach(wizardSticker => {
+        if (window.pageYOffset > 22) {
+            wizardSticker.classList.add('at-top');
+        } else {
+            wizardSticker.classList.remove('at-top');
+        }
+    });
  };
+
+
 
 const openEls = document.querySelectorAll("[data-open]");
 const closeEls = document.querySelectorAll("[data-close]");
