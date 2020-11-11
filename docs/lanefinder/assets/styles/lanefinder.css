@@ -360,8 +360,9 @@ h3 {
   font-size: 1.1rem; }
 
 h4 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 1rem; }
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem; }
 
 hr {
   display: block;
@@ -1064,9 +1065,6 @@ ad-overlay {
     font-weight: 700;
     font-family: "Helvetica Neue", sans-serif;
     margin-bottom: 1rem; }
-  ad-overlay strong {
-    display: block;
-    margin-bottom: 0.5rem; }
   ad-overlay section > div {
     display: block;
     padding: 0 1rem calc(44px + 2rem) 1rem;

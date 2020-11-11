@@ -68,8 +68,9 @@ h3 {
 }
 
 h4 {
-  font-family: $font-family;
+  font-family: $font-family-headings;
   font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 hr {
@@ -129,17 +130,16 @@ ul {
   margin: 0 0 2rem 0;
   padding: 0;
   list-style: none;
-    position: relative;
+  position: relative;
 
-    ul {
-      margin-bottom: 0;
+  ul {
+    margin-bottom: 0;
 
-      li::before {
-        content: "◦";
-        color: $gray-4;
-      }
+    li::before {
+      content: "◦";
+      color: $gray-4;
     }
-
+  }
 
   li {
     padding-left: 1rem;
