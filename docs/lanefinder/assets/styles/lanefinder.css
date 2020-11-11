@@ -795,6 +795,15 @@ icon-button {
   flex-flow: row nowrap;
   justify-content: space-between; }
 
+.align-right {
+  text-align: right; }
+
+.text-small {
+  font-size: 14px; }
+
+.no-break {
+  white-space: nowrap; }
+
 html.dark {
   background-color: #2c1232; }
 
@@ -1191,6 +1200,16 @@ list-item {
   position: relative;
   background-color: #fff;
   padding: 1rem 0 0 0; }
+  list-item.new h3 span {
+    display: inline-block;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: #ff8b4a;
+    border-radius: 100%;
+    vertical-align: initial;
+    margin-right: 0.5rem; }
+  list-item.new p {
+    color: #3e4a5e; }
   list-item > div {
     padding: 0 1rem; }
   list-item h3 {

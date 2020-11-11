@@ -1,14 +1,20 @@
-<list-item data-layout="<!-- $list-layout? -->">
+<list-item data-layout="<!-- $list-layout? -->" class="<!-- $item-class? -->">
     <div>
         <h3>
+            <span></span>
             <!-- $item-title? -->
         </h3>
         <p>
             <!-- $item-description? -->
         </p>
-        <div>
-            <!-- $item-tags? -->
-        </div>
+        <grid-row-fixed class="middle">
+            <grid-cell>
+                <!-- $item-tags? -->
+            </grid-cell>
+            <grid-cell class="align-right text-small color-discreet shrink">
+                <!-- $item-additional? -->
+            </grid-cell>
+        </grid-row-fixed>
     </div>
     <hr class="depth">
 </list-item>

@@ -554,6 +554,23 @@ list-item {
   background-color: $white;
   padding: 1rem 0 0 0;
 
+  &.new {
+    h3 {
+      span {
+        display: inline-block;
+      height: 0.75rem;
+      width: 0.75rem;
+      background-color: $primary;
+      border-radius: 100%;
+      vertical-align: initial;
+      margin-right: 0.5rem;
+      }
+    }
+    p {
+      color: $black;
+    }
+  }
+
   & > div {
     padding: 0 1rem;
   }

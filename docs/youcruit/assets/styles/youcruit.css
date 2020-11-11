@@ -795,6 +795,15 @@ icon-button {
   flex-flow: row nowrap;
   justify-content: space-between; }
 
+.align-right {
+  text-align: right; }
+
+.text-small {
+  font-size: 14px; }
+
+.no-break {
+  white-space: nowrap; }
+
 body {
   background-color: #eff1f4; }
 

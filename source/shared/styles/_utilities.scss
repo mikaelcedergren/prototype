@@ -38,3 +38,15 @@
   flex-flow: row nowrap;
   justify-content: space-between;
 }
+
+.align-right {
+  text-align: right;
+}
+
+.text-small {
+  font-size: $font-size-small;
+}
+
+.no-break {
+  white-space: nowrap;
+}
