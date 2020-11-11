@@ -250,7 +250,7 @@ status-bar {
   }
 }
 
-my-mobile-tabs {
+mobile-tabs {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -267,33 +267,27 @@ my-mobile-tabs {
   padding: 0 0.25rem;
   border-top: $line;
 
-  my-mobile-tab-item {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 20%;
-    align-items: center;
+  div {
+    font-size: $font-size-tiny;
+  }
+
+  a {
     font-weight: $font-bold;
+    width: 20%;
+    color: $gray-4;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
 
-    a {
-      color: $gray-4;
-      display: flex;
-      align-items: center;
-      flex-flow: column nowrap;
-      width: 100%;
-    }
-
-    i {
-      font-size: 21px !important;
-      margin-bottom: 2px;
-    }
-
-    my-mobile-tab-title {
-      font-size: $font-size-tiny;
-    }
-
-    &.active a {
+    &.active {
       color: $black;
     }
+  }
+
+  i {
+    font-size: 21px !important;
+    margin-bottom: 2px;
   }
 }
 
