@@ -89,41 +89,117 @@
       <tag-item class="secondary">242 jobs</tag-item>
     </header>
     <div>
-      <p>
-        <h4>This is the filters</h4>
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus
-        reprehenderit accusamus totam ratione! Nesciunt, nemo dolorum recusandae
-        ad ex nam similique dolorem ab perspiciatis qui. Facere, dignissimos.
-        Nemo, ea.
-      </p>
-      <p>
-        Nor again is there anyone who loves or pursues or desires to obtain pain
-        of itself, because it is pain, but because occasionally circumstances
-        occur in which toil and pain can procure him some great pleasure. To
-        take a trivial example, which of us ever undertakes laborious physical
-        exercise, except to obtain some advantage from it? But who has any right
-        to find fault with a man who chooses to enjoy a pleasure that has no
-        annoying consequences, or one who avoids a pain that produces no
-        resultant pleasure
-      </p>
-      <p>
-        Nullam vitae enim vel diam elementum tincidunt a eget metus. Curabitur
-        finibus vestibulum rutrum. Vestibulum semper tellus vitae tortor
-        condimentum porta. Sed id ex arcu. Vestibulum eleifend tortor non purus
-        porta dapibus
-      </p>
-      <p>
-        Nor again is there anyone who loves or pursues or desires to obtain pain
-        of itself, because it is pain, but because occasionally circumstances
-        occur in which toil and pain can procure him some great pleasure. To
-        take a trivial example, which of us ever undertakes laborious physical
-        exercise, except to obtain some advantage from it? But who has any right
-        to find fault with a man who chooses to enjoy a pleasure that has no
-        annoying consequences, or one who avoids a pain that produces no
-        resultant pleasure
-      </p>
+      <h3>Filters</h3>
+      <form-block>
+        <input type="text" placeholder="Your zip code..." />
+      </form-block>
+
+      <form-block>
+        <label>Type of work</label>
+        <!-- $checkbox-id = checkbox1 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Local -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox2 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Semi-local -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox3 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Regional -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox4 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = OTR -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+      </form-block>
+
+      <form-block>
+        <label>Type of trailer</label>
+        <!-- $checkbox-id = checkbox-trailer-1 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Dry Van -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox-trailer-2 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Flatbed -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox-trailer-3 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Refridgerated -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox-trailer-4 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Liquid Bulk Tanker -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox-trailer-5 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Dry Bulk Tanker -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox-trailer-6 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Flatbed -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox-trailer-7 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Hopper Bottom -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox-trailer-8 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Heavy Haul & Specialized -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox-trailer-9 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Live Haul -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox-trailer-10 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Intermodal Container -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox-trailer-11 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Car Carrier & Decking -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox-trailer-12 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Log -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+
+        <!-- $checkbox-id = checkbox-trailer-13 -->
+        <!-- $checkbox-checked = checked -->
+        <!-- $checkbox-label = Dump -->
+        <!-- @include /source/shared/components/_checkbox.kit -->
+      </form-block>
+
+      <form-block>
+        <label>Weekends home per month</label>
+        <input type="text" placeholder="Your zip code..." />
+      </form-block>
+
+      <form-block>
+        <label>No touch freight</label>
+        <input type="text" placeholder="Your zip code..." />
+      </form-block>
+
+      <form-block>
+        <label>Minimum weekly average pay</label>
+        <input type="text" placeholder="Your zip code..." />
+      </form-block>
+
     </div>
   </section>
 </generic-overlay>
@@ -139,7 +215,9 @@
       <h3>Line Haul Regional Team</h3>
       <h4>About the company</h4>
       <p>
-        Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+        Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl
+        consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
       </p>
       <h4>Job summary</h4>
       <ul>

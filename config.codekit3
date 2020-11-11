@@ -331,6 +331,14 @@
 		"oAP": "/docs/lanefinder/wizards/apply/step-1.html",
 		"oF": 0
 		},
+	"/source/shared/components/_checkbox.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/shared/components/_checkbox.html",
+		"oF": 0
+		},
 	"/source/shared/images/status-bar-black-left.png": {
 		"ft": 32768,
 		"iS": 2906,
@@ -403,6 +411,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/docs/shared/styles/_buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/source/shared/styles/_forms.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/docs/shared/styles/_forms.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
