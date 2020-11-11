@@ -383,6 +383,8 @@ small {
 
 p {
   margin: 0 0 1rem 0; }
+  p:empty {
+    display: none; }
   p:last-child {
     margin-bottom: 0; }
 
@@ -793,7 +795,8 @@ icon-button {
 .space-between {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .align-right {
   text-align: right; }
