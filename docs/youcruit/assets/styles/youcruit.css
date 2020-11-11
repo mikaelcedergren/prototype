@@ -496,13 +496,15 @@ grid-row, grid-row-fixed {
   justify-content: space-between;
   align-items: stretch;
   margin: -1rem;
-  width: 100%; }
+  width: calc(100% + 2rem); }
   grid-row.gutter-none, grid-row-fixed.gutter-none {
-    margin: 0; }
+    margin: 0;
+    width: 100%; }
     grid-row.gutter-none > grid-cell, grid-row-fixed.gutter-none > grid-cell {
       margin: 0; }
   grid-row.gutter-small, grid-row-fixed.gutter-small {
-    margin: -0.5rem; }
+    margin: -0.5rem;
+    width: calc(100% + 1rem); }
     grid-row.gutter-small > grid-cell, grid-row-fixed.gutter-small > grid-cell {
       margin: 0.5rem; }
   grid-row.middle > grid-cell, grid-row-fixed.middle > grid-cell {
