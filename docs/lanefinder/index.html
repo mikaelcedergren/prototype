@@ -17,11 +17,11 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=8b25f1f0e5346a5f7e0facd7356d1ddb">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css?ckcachebust=626790336" rel="stylesheet">
+  <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=d3d07599e9892acae8b8ce2345b2351e">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css?ckcachebust=626793004" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-  <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=626790336"></script> -->
-  <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=626790336"></script> -->
+  <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=626793004"></script> -->
+  <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=626793004"></script> -->
 </head>
 
 <body>
@@ -201,14 +201,16 @@
 <generic-overlay id="overlay-filters">
   <section>
     <header>
-      <icon-button data-close><i class="material-icons">expand_more</i></icon-button>
+          <icon-button data-close><i class="material-icons">expand_more</i></icon-button>
+        <span>Filters</span>
       <tag-item class="secondary">242 jobs</tag-item>
     </header>
     <div>
-      <h3>Filters</h3>
       <form-block>
         <input type="text" placeholder="Your zip code..." />
       </form-block>
+
+      <hr />
 
       <form-block>
         <label>Type of work</label>
@@ -337,7 +339,12 @@
 
       <form-block>
         <label>Weekends home per month</label>
-        <input type="text" placeholder="Your zip code..." />
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
       </form-block>
 
       <form-block>
@@ -357,7 +364,9 @@
 <ad-overlay id="overlay-ad">
   <section>
     <header>
-      <i class="material-icons" data-close>expand_more</i>
+      <icon-button data-close>
+        <i class="material-icons">expand_more</i>
+      </icon-button>
     </header>
 
     <div>
@@ -482,7 +491,7 @@
     <img src="/shared/images/status-bar-right.png" class="white"/>
 </status-bar>
 
-<script type="text/javascript" src="/shared/scripts/footer-scripts-min.js?ckcachebust=372c6d5a4c869931d971ebcaa6a2a7c2"></script>
+<script type="text/javascript" src="/shared/scripts/footer-scripts-min.js?ckcachebust=cab9751e19c30f11bedd321bc201d806"></script>
 </body>
 
 </html>

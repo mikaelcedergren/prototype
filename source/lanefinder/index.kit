@@ -85,14 +85,16 @@
 <generic-overlay id="overlay-filters">
   <section>
     <header>
-      <icon-button data-close><i class="material-icons">expand_more</i></icon-button>
+          <icon-button data-close><i class="material-icons">expand_more</i></icon-button>
+        <span>Filters</span>
       <tag-item class="secondary">242 jobs</tag-item>
     </header>
     <div>
-      <h3>Filters</h3>
       <form-block>
         <input type="text" placeholder="Your zip code..." />
       </form-block>
+
+      <hr />
 
       <form-block>
         <label>Type of work</label>
@@ -187,7 +189,12 @@
 
       <form-block>
         <label>Weekends home per month</label>
-        <input type="text" placeholder="Your zip code..." />
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
       </form-block>
 
       <form-block>
@@ -207,7 +214,9 @@
 <ad-overlay id="overlay-ad">
   <section>
     <header>
-      <i class="material-icons" data-close>expand_more</i>
+      <icon-button data-close>
+        <i class="material-icons">expand_more</i>
+      </icon-button>
     </header>
 
     <div>

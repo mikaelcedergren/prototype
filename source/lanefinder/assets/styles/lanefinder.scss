@@ -327,6 +327,15 @@ generic-overlay {
   transition: background 0.3s ease-in;
   pointer-events: none;
 
+  &.is-visible {
+    background: rgba(black, 0.7);
+    pointer-events: all;
+
+    section {
+      transform: translateY(0) translateZ(0);
+    }
+  }
+
   section {
     transition: transform 0.3s $ease-out;
     position: relative;
@@ -344,23 +353,6 @@ generic-overlay {
     padding: 1rem;
     max-height: calc(80vh - #{$header-height} - 1rem);
     overflow-y: auto;
-  }
-
-  &.is-visible {
-    background: rgba(black, 0.7);
-    pointer-events: all;
-
-    section {
-      transform: translateY(0) translateZ(0);
-    }
-  }
-
-  header {
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: $font-bold;
   }
 }
 
@@ -435,6 +427,24 @@ generic-modal {
   }
 }
 
+generic-overlay, ad-overlay {
+  header {
+      display: flex;
+      padding: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: $font-bold;
+
+      & > span {
+        margin-right: auto;
+    }
+  }
+
+  hr {
+    margin-bottom: 1rem;
+  }
+}
+
 ad-overlay {
   display: block;
   position: fixed;
@@ -472,26 +482,6 @@ ad-overlay {
 
     section {
       transform: translateY(0);
-    }
-  }
-
-  header {
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: $font-bold;
-
-    i.material-icons {
-      background-color: $accent;
-      border-radius: 100%;
-      color: $white;
-      font-size: 20px;
-      height: 28px;
-      width: 28px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
 
@@ -636,6 +626,8 @@ list-item {
 // }
 
 icon-button {
+  margin-right: 0.5rem;
+
   i.material-icons {
     background-color: $accent;
   }

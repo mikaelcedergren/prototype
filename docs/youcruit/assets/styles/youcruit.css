@@ -585,6 +585,29 @@ checkbox-with-label {
     width: auto;
     margin: 0 0 0 0.25rem; }
 
+select {
+  background-image: url("../../static/images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  background-size: 44px 44px;
+  background-color: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-transform: none;
+  height: 44px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  font-family: "DM Sans", sans-serif;
+  color: #3e4a5e;
+  margin: 0;
+  box-shadow: none; }
+
 button {
   border-radius: 100px;
   background-color: #e6eaf0;
