@@ -40,7 +40,7 @@ input[type="checkbox"] {
 checkbox-with-label {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   margin-bottom: 0.25rem;
 
@@ -56,7 +56,7 @@ checkbox-with-label {
 }
 
 select {
-  background-image: url('../../static/images/select-arrow.svg');
+  background-image: url('/shared/images/select-arrow.svg');
   background-repeat: no-repeat;
   background-position: 100% center;
   background-size: $input-height $input-height;

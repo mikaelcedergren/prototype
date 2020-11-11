@@ -339,6 +339,16 @@
 		"oAP": "/docs/shared/components/_checkbox.html",
 		"oF": 0
 		},
+	"/source/shared/images/select-arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/docs/shared/images/select-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/source/shared/images/status-bar-black-left.png": {
 		"ft": 32768,
 		"iS": 2906,

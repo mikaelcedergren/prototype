@@ -361,8 +361,7 @@ h3 {
 
 h4 {
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  margin-bottom: 0.5rem; }
+  font-size: 1rem; }
 
 hr {
   display: block;
@@ -573,7 +572,7 @@ input[type="checkbox"] {
 checkbox-with-label {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   margin-bottom: 0.25rem; }
   checkbox-with-label label {
@@ -586,7 +585,7 @@ checkbox-with-label {
     margin: 0 0 0 0.25rem; }
 
 select {
-  background-image: url("../../static/images/select-arrow.svg");
+  background-image: url("/shared/images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: 100% center;
   background-size: 44px 44px;
@@ -1106,6 +1105,9 @@ generic-overlay header, ad-overlay header {
   font-weight: 700; }
   generic-overlay header > span, ad-overlay header > span {
     margin-right: auto; }
+
+generic-overlay h4, ad-overlay h4 {
+  margin-bottom: 0.5rem; }
 
 generic-overlay hr, ad-overlay hr {
   margin-bottom: 1rem; }
