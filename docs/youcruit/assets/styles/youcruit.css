@@ -489,7 +489,8 @@ grid-row, grid-row-fixed {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: stretch;
-  margin: -1rem; }
+  margin: -1rem;
+  width: 100%; }
   grid-row.gutter-none, grid-row-fixed.gutter-none {
     margin: 0; }
     grid-row.gutter-none > grid-cell, grid-row-fixed.gutter-none > grid-cell {

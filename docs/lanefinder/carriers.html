@@ -17,11 +17,11 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=323bfbdb39a775e2437ee4c83f93d40a">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css?ckcachebust=626775692" rel="stylesheet">
+  <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=ca42caca0f1ae633f8ef487040b5ddd6">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css?ckcachebust=626776539" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-  <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=626775692"></script> -->
-  <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=626775692"></script> -->
+  <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=626776539"></script> -->
+  <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=626776539"></script> -->
 </head>
 
 <body>
@@ -30,7 +30,8 @@
 <script>
   function showSendButton() {
     var element = document.getElementById("send-button");
-    element.classList.add("show");
+    element.classList.toggle("show");
+
   }
 </script>
 
@@ -70,100 +71,142 @@
 
   <view-content>
     <carrier-list-item>
-                    <list-item-checkbox>
-                        <input type="checkbox" onClick="showSendButton();">
-                    </list-item-checkbox>
-                    <list-item-carrier>
-                        Martin Rodriguez
-                        <div>10 trucks</div>
-                    </list-item-carrier>
-                    <list-item-distance>
-                        Nearby
-                    </list-item-distance>
+                    <grid-row-fixed class="gutter-small">
+                        <grid-cell class="shrink">
+                            <input type="checkbox" onClick="showSendButton();">
+                        </grid-cell>
+                        <grid-cell>
+                            <grid-row-fixed class="gutter-none">
+                                <grid-cell>
+                                    Martin Rodriguez
+                                </grid-cell>
+                                <grid-cell class="shrink align-right color-discreet">
+                                    Nearby
+                                </grid-cell>
+                            </grid-row-fixed>
+                            <div class="color-discreet">10 trucks</div>
+                        </grid-cell>
+                    </grid-row-fixed>
                 </carrier-list-item>
                 
 
     <carrier-list-item>
-                    <list-item-checkbox>
-                        <input type="checkbox" onClick="showSendButton();">
-                    </list-item-checkbox>
-                    <list-item-carrier>
-                        Mike Moralez
-                        <div>1 truck</div>
-                    </list-item-carrier>
-                    <list-item-distance>
-                        1 mile
-                    </list-item-distance>
+                    <grid-row-fixed class="gutter-small">
+                        <grid-cell class="shrink">
+                            <input type="checkbox" onClick="showSendButton();">
+                        </grid-cell>
+                        <grid-cell>
+                            <grid-row-fixed class="gutter-none">
+                                <grid-cell>
+                                    Mike Moralez
+                                </grid-cell>
+                                <grid-cell class="shrink align-right color-discreet">
+                                    1 mile
+                                </grid-cell>
+                            </grid-row-fixed>
+                            <div class="color-discreet">1 truck</div>
+                        </grid-cell>
+                    </grid-row-fixed>
                 </carrier-list-item>
                 
 
     <carrier-list-item>
-                    <list-item-checkbox>
-                        <input type="checkbox" onClick="showSendButton();">
-                    </list-item-checkbox>
-                    <list-item-carrier>
-                        Emmet Logistics
-                        <div>42 trucks</div>
-                    </list-item-carrier>
-                    <list-item-distance>
-                        1 miles
-                    </list-item-distance>
+                    <grid-row-fixed class="gutter-small">
+                        <grid-cell class="shrink">
+                            <input type="checkbox" onClick="showSendButton();">
+                        </grid-cell>
+                        <grid-cell>
+                            <grid-row-fixed class="gutter-none">
+                                <grid-cell>
+                                    Emmet Logistics
+                                </grid-cell>
+                                <grid-cell class="shrink align-right color-discreet">
+                                    1 miles
+                                </grid-cell>
+                            </grid-row-fixed>
+                            <div class="color-discreet">42 trucks</div>
+                        </grid-cell>
+                    </grid-row-fixed>
                 </carrier-list-item>
                 
 
     <carrier-list-item>
-                    <list-item-checkbox>
-                        <input type="checkbox" onClick="showSendButton();">
-                    </list-item-checkbox>
-                    <list-item-carrier>
-                        Eazy Line Express Inc
-                        <div>8 trucks</div>
-                    </list-item-carrier>
-                    <list-item-distance>
-                        3 miles
-                    </list-item-distance>
+                    <grid-row-fixed class="gutter-small">
+                        <grid-cell class="shrink">
+                            <input type="checkbox" onClick="showSendButton();">
+                        </grid-cell>
+                        <grid-cell>
+                            <grid-row-fixed class="gutter-none">
+                                <grid-cell>
+                                    Eazy Line Express Inc
+                                </grid-cell>
+                                <grid-cell class="shrink align-right color-discreet">
+                                    3 miles
+                                </grid-cell>
+                            </grid-row-fixed>
+                            <div class="color-discreet">8 trucks</div>
+                        </grid-cell>
+                    </grid-row-fixed>
                 </carrier-list-item>
                 
 
     <carrier-list-item>
-                    <list-item-checkbox>
-                        <input type="checkbox" onClick="showSendButton();">
-                    </list-item-checkbox>
-                    <list-item-carrier>
-                        Eazy Line Express Inc
-                        <div>8 trucks</div>
-                    </list-item-carrier>
-                    <list-item-distance>
-                        3 miles
-                    </list-item-distance>
+                    <grid-row-fixed class="gutter-small">
+                        <grid-cell class="shrink">
+                            <input type="checkbox" onClick="showSendButton();">
+                        </grid-cell>
+                        <grid-cell>
+                            <grid-row-fixed class="gutter-none">
+                                <grid-cell>
+                                    Eazy Line Express Inc
+                                </grid-cell>
+                                <grid-cell class="shrink align-right color-discreet">
+                                    3 miles
+                                </grid-cell>
+                            </grid-row-fixed>
+                            <div class="color-discreet">8 trucks</div>
+                        </grid-cell>
+                    </grid-row-fixed>
                 </carrier-list-item>
                 
 
     <carrier-list-item>
-                    <list-item-checkbox>
-                        <input type="checkbox" onClick="showSendButton();">
-                    </list-item-checkbox>
-                    <list-item-carrier>
-                        Eazy Line Express Inc
-                        <div>8 trucks</div>
-                    </list-item-carrier>
-                    <list-item-distance>
-                        3 miles
-                    </list-item-distance>
+                    <grid-row-fixed class="gutter-small">
+                        <grid-cell class="shrink">
+                            <input type="checkbox" onClick="showSendButton();">
+                        </grid-cell>
+                        <grid-cell>
+                            <grid-row-fixed class="gutter-none">
+                                <grid-cell>
+                                    Eazy Line Express Inc
+                                </grid-cell>
+                                <grid-cell class="shrink align-right color-discreet">
+                                    3 miles
+                                </grid-cell>
+                            </grid-row-fixed>
+                            <div class="color-discreet">8 trucks</div>
+                        </grid-cell>
+                    </grid-row-fixed>
                 </carrier-list-item>
                 
 
     <carrier-list-item>
-                    <list-item-checkbox>
-                        <input type="checkbox" onClick="showSendButton();">
-                    </list-item-checkbox>
-                    <list-item-carrier>
-                        Eazy Line Express Inc
-                        <div>8 trucks</div>
-                    </list-item-carrier>
-                    <list-item-distance>
-                        3 miles
-                    </list-item-distance>
+                    <grid-row-fixed class="gutter-small">
+                        <grid-cell class="shrink">
+                            <input type="checkbox" onClick="showSendButton();">
+                        </grid-cell>
+                        <grid-cell>
+                            <grid-row-fixed class="gutter-none">
+                                <grid-cell>
+                                    Eazy Line Express Inc
+                                </grid-cell>
+                                <grid-cell class="shrink align-right color-discreet">
+                                    3 miles
+                                </grid-cell>
+                            </grid-row-fixed>
+                            <div class="color-discreet">8 trucks</div>
+                        </grid-cell>
+                    </grid-row-fixed>
                 </carrier-list-item>
                 
 
@@ -181,30 +224,30 @@
 </navigation-bar>
 
 <mobile-tabs>
-        <a href="index.html" class="">
-            <i class="material-icons">search</i>
-            <div>Jobs</div>
-        </a>
+    <a href="index.html" class="">
+        <i class="material-icons">search</i>
+        <div>Jobs</div>
+    </a>
 
-        <a href="carriers.html" class="active">
-            <i class="material-icons">apartment</i>
-            <div>Carriers</div>
-        </a>
+    <a href="carriers.html" class="active">
+        <i class="material-icons">apartment</i>
+        <div>Carriers</div>
+    </a>
 
-        <a href="saved.html" class="">
-            <i class="material-icons">favorite</i>
-            <div>Saved</div>
-        </a>
+    <a href="saved.html" class="">
+        <i class="material-icons">favorite</i>
+        <div>Saved</div>
+    </a>
 
-        <a href="notifications.html" class="">
-            <i class="material-icons">notifications</i>
-            <div>Notifications</div>
-        </a>
+    <a href="notifications.html" class="">
+        <i class="material-icons">notifications</i>
+        <div>Notifications</div>
+    </a>
 
-        <a href="more.html" class="">
-            <i class="material-icons">menu</i>
-            <div>More</div>
-        </a>
+    <a href="more.html" class="">
+        <i class="material-icons">menu</i>
+        <div>More</div>
+    </a>
 </mobile-tabs>
 
 
@@ -215,7 +258,7 @@
     <img src="/shared/images/status-bar-right.png" class="white"/>
 </status-bar>
 
-<script type="text/javascript" src="/shared/scripts/footer-scripts-min.js?ckcachebust=a45501fdce0f183d422cf0f6f3507d4f"></script>
+<script type="text/javascript" src="/shared/scripts/footer-scripts-min.js?ckcachebust=32b405f05141e19727dbebad036199a3"></script>
 </body>
 
 </html>

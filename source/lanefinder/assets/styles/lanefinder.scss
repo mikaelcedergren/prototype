@@ -26,6 +26,7 @@ button-container {
   display: block;
   text-align: center;
   padding: 1rem;
+  z-index: 10;
 
   &.fixed {
     transition: transform 0.3s $ease-out;
@@ -38,7 +39,7 @@ button-container {
       bottom: $tab-bar-height;
     }
 
-    .hide {
+    &.hide {
       transform: translateX(-50%) translateY(200%);
 
       &.show {
@@ -639,7 +640,7 @@ carrier-list-item {
   justify-content: space-between;
   align-items: flex-start;
   flex-flow: row nowrap;
-  padding: 1rem 0;
+  padding: 1rem;
   border-bottom: $line;
   background-color: $white;
 

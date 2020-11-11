@@ -1,12 +1,18 @@
 <carrier-list-item>
-    <list-item-checkbox>
-        <input type="checkbox" onClick="showSendButton();">
-    </list-item-checkbox>
-    <list-item-carrier>
-        <!-- $carrier -->
-        <div><!-- $carrier-size --></div>
-    </list-item-carrier>
-    <list-item-distance>
-        <!-- $distance -->
-    </list-item-distance>
+    <grid-row-fixed class="gutter-small">
+        <grid-cell class="shrink">
+            <input type="checkbox" onClick="showSendButton();">
+        </grid-cell>
+        <grid-cell>
+            <grid-row-fixed class="gutter-none">
+                <grid-cell>
+                    <!-- $carrier -->
+                </grid-cell>
+                <grid-cell class="shrink align-right color-discreet">
+                    <!-- $distance -->
+                </grid-cell>
+            </grid-row-fixed>
+            <div class="color-discreet"><!-- $carrier-size --></div>
+        </grid-cell>
+    </grid-row-fixed>
 </carrier-list-item>

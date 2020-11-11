@@ -489,7 +489,8 @@ grid-row, grid-row-fixed {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: stretch;
-  margin: -1rem; }
+  margin: -1rem;
+  width: 100%; }
   grid-row.gutter-none, grid-row-fixed.gutter-none {
     margin: 0; }
     grid-row.gutter-none > grid-cell, grid-row-fixed.gutter-none > grid-cell {
@@ -725,7 +726,8 @@ a {
 button-container {
   display: block;
   text-align: center;
-  padding: 1rem; }
+  padding: 1rem;
+  z-index: 10; }
   button-container.fixed {
     transition: transform 0.3s cubic-bezier(0, 0.6, 0.5, 1);
     position: fixed;
@@ -734,9 +736,9 @@ button-container {
     bottom: 0; }
     button-container.fixed.account-for-tab-menu {
       bottom: 48px; }
-    button-container.fixed .hide {
+    button-container.fixed.hide {
       transform: translateX(-50%) translateY(200%); }
-      button-container.fixed .hide.show {
+      button-container.fixed.hide.show {
         transform: translateX(-50%) translateY(0%); }
 
 main-view {
@@ -1139,7 +1141,7 @@ carrier-list-item {
   justify-content: space-between;
   align-items: flex-start;
   flex-flow: row nowrap;
-  padding: 1rem 0;
+  padding: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   background-color: #fff; }
   carrier-list-item:first-child {
