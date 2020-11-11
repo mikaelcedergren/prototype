@@ -167,7 +167,11 @@ input[type="text"] {
   outline: none;
   font-size: 1rem;
   padding: 0 1rem;
+  background-color: $white;
+  text-rendering: optimizeLegibility;
+  font-family: $font-family;
   color: $black;
+  -webkit-appearance: none;
 }
 
 label {

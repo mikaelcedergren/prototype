@@ -438,7 +438,11 @@ input[type="text"] {
   outline: none;
   font-size: 1rem;
   padding: 0 1rem;
-  color: #3e4a5e; }
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+  font-family: "DM Sans", sans-serif;
+  color: #3e4a5e;
+  -webkit-appearance: none; }
 
 label {
   font-size: 0.7rem;
