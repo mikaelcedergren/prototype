@@ -442,7 +442,9 @@ input[type="text"] {
   text-rendering: optimizeLegibility;
   font-family: "DM Sans", sans-serif;
   color: #3e4a5e;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none; }
 
 label {
   font-size: 0.7rem;
