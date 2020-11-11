@@ -125,6 +125,35 @@ sub {
   font-weight: $font-bold;
 }
 
+ul {
+  margin: 0 0 2rem 0;
+  padding: 0;
+  list-style: none;
+    position: relative;
+
+    ul {
+      margin-bottom: 0;
+
+      li::before {
+        content: "◦";
+        color: $gray-4;
+      }
+    }
+
+
+  li {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+
+    &::before {
+      position: absolute;
+      content: "•";
+      color: $secondary;
+      left: 0;
+    }
+  }
+}
+
 input[type="checkbox"] {
   transition: background 0.3s ease, border-color 0.3s ease;
   position: relative;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -400,6 +401,25 @@ sub {
   color: #ef3662;
   font-size: 14px;
   font-weight: 700; }
+
+ul {
+  margin: 0 0 2rem 0;
+  padding: 0;
+  list-style: none;
+  position: relative; }
+  ul ul {
+    margin-bottom: 0; }
+    ul ul li::before {
+      content: "◦";
+      color: #a3afbf; }
+  ul li {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem; }
+    ul li::before {
+      position: absolute;
+      content: "•";
+      color: #ef3662;
+      left: 0; }
 
 input[type="checkbox"] {
   transition: background 0.3s ease, border-color 0.3s ease;
