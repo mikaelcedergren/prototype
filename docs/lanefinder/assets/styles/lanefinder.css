@@ -12,7 +12,7 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
 
-/* Sections
+/* mains
      ========================================================================== */
 /**
    * Remove the margin in all browsers.
@@ -27,7 +27,7 @@ main {
   display: block; }
 
 /**
-   * Correct the font size and margin on `h1` elements within `section` and
+   * Correct the font size and margin on `h1` elements within `main` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
 h1 {
@@ -375,7 +375,7 @@ hr {
     background-color: #eff1f4;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
 
-section {
+main {
   width: 100%; }
 
 small {
@@ -1033,9 +1033,9 @@ generic-overlay {
   generic-overlay.is-visible {
     background: rgba(0, 0, 0, 0.7);
     pointer-events: all; }
-    generic-overlay.is-visible section {
+    generic-overlay.is-visible main {
       transform: translateY(0) translateZ(0); }
-  generic-overlay section {
+  generic-overlay main {
     transition: transform 0.3s cubic-bezier(0, 0.6, 0.5, 1);
     position: relative;
     max-width: 480px;
@@ -1045,7 +1045,7 @@ generic-overlay {
     overflow: hidden;
     cursor: default;
     transform: translateY(100%) translateZ(0); }
-  generic-overlay section > div {
+  generic-overlay main > div {
     display: block;
     padding: 1rem;
     max-height: calc(80vh - 48px - 1rem);
@@ -1066,7 +1066,7 @@ generic-modal {
   cursor: pointer;
   transition: background 0.3s ease-in;
   pointer-events: none; }
-  generic-modal section > div {
+  generic-modal main > div {
     display: block;
     padding: 0 1rem 1rem 1rem;
     max-height: calc(50vh - 48px - 1rem);
@@ -1074,7 +1074,7 @@ generic-modal {
   generic-modal.is-visible {
     background: rgba(0, 0, 0, 0.7);
     pointer-events: all; }
-    generic-modal.is-visible section {
+    generic-modal.is-visible main {
       transform: translateY(0); }
   generic-modal header {
     display: flex;
@@ -1090,7 +1090,7 @@ generic-modal {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between; }
-  generic-modal section {
+  generic-modal main {
     transition: transform 0.3s 0.1s cubic-bezier(0, 0.6, 0.5, 1);
     position: relative;
     max-width: 480px;
@@ -1148,7 +1148,7 @@ ad-overlay {
     font-weight: 700;
     font-family: "Helvetica Neue", sans-serif;
     margin-bottom: 1rem; }
-  ad-overlay section > div {
+  ad-overlay main > div {
     display: block;
     padding: 0 1rem calc(44px + 2rem) 1rem;
     max-height: calc(100vh - 48px - 2rem);
@@ -1156,9 +1156,9 @@ ad-overlay {
   ad-overlay.is-visible {
     background: rgba(0, 0, 0, 0.7);
     pointer-events: all; }
-    ad-overlay.is-visible section {
+    ad-overlay.is-visible main {
       transform: translateY(0); }
-  ad-overlay section {
+  ad-overlay main {
     transition: transform 0.3s 0.1s cubic-bezier(0, 0.6, 0.5, 1);
     position: relative;
     max-width: 480px;

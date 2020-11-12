@@ -331,12 +331,12 @@ generic-overlay {
     background: rgba(black, 0.7);
     pointer-events: all;
 
-    section {
+    main {
       transform: translateY(0) translateZ(0);
     }
   }
 
-  section {
+  main {
     transition: transform 0.3s $ease-out;
     position: relative;
     max-width: 480px;
@@ -348,7 +348,7 @@ generic-overlay {
     transform: translateY(100%) translateZ(0);
   }
 
-  section > div {
+  main > div {
     display: block;
     padding: 1rem;
     max-height: calc(80vh - #{$header-height} - 1rem);
@@ -372,7 +372,7 @@ generic-modal {
   transition: background 0.3s ease-in;
   pointer-events: none;
 
-  section > div {
+  main > div {
     display: block;
     padding: 0 1rem 1rem 1rem;
     max-height: calc(50vh - #{$header-height} - 1rem);
@@ -383,7 +383,7 @@ generic-modal {
     background: rgba(black, 0.7);
     pointer-events: all;
 
-    section {
+    main {
       transform: translateY(0);
     }
   }
@@ -406,7 +406,7 @@ generic-modal {
     justify-content: space-between;
   }
 
-  section {
+  main {
     transition: transform 0.3s 0.1s $ease-out;
     position: relative;
     max-width: 480px;
@@ -474,7 +474,7 @@ ad-overlay {
     margin-bottom: 1rem;
   }
 
-  section > div {
+  main > div {
     display: block;
     padding: 0 1rem calc(#{$input-height} + 2rem) 1rem;
     max-height: calc(100vh - #{$header-height} - 2rem);
@@ -485,12 +485,12 @@ ad-overlay {
     background: rgba(black, 0.7);
     pointer-events: all;
 
-    section {
+    main {
       transform: translateY(0);
     }
   }
 
-  section {
+  main {
     transition: transform 0.3s 0.1s $ease-out;
     position: relative;
     max-width: 480px;
