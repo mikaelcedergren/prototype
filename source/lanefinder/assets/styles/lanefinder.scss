@@ -603,46 +603,10 @@ list-item {
       font-family: "Material Icons";
       content: "navigate_next";
       -webkit-font-feature-settings: "liga";
+      font-feature-settings: "liga";
     }
   }
 }
-
-// list-item-title {
-//   display: block;
-//   margin-bottom: 0.25rem;
-//   font-family: $font-family-headings;
-//   font-size: 1.1rem;
-//   font-weight: $font-bold;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-//   white-space: nowrap;
-//   max-width: calc(100% - 2rem);
-//   padding: 0 1rem;
-// }
-
-// list-item-sub-title {
-//   display: block;
-//   padding: 0 1rem;
-//   margin-bottom: 0.5rem;
-//   color: $gray-5;
-// }
-
-// list-item-description {
-//   display: block;
-//   padding: 0 1rem;
-//   color: $gray-4;
-// }
-
-// list-item-tags {
-//   display: block;
-//   margin-top: 1rem;
-//   padding: 0 1rem;
-// }
-
-// list-item-header-tags {
-//   display: block;
-//   padding: 0 1rem;
-// }
 
 tooltip-once {
   animation: tooltip-once-in 0.5s 0.5s $ease-out forwards, tooltip-once-out 0.3s 5s ease-in forwards;

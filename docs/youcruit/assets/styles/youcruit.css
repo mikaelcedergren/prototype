@@ -402,7 +402,6 @@ sub {
   width: 100%;
   line-height: 1;
   bottom: auto;
-  vertical-align: auto;
   color: #ef3662;
   font-size: 14px;
   font-weight: 700; }
