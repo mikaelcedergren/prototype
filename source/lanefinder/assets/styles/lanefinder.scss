@@ -427,16 +427,17 @@ generic-modal {
   }
 }
 
-generic-overlay, ad-overlay {
+generic-overlay,
+ad-overlay {
   header {
-      display: flex;
-      padding: 1rem;
-      align-items: center;
-      justify-content: space-between;
-      font-weight: $font-bold;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: $font-bold;
 
-      & > span {
-        margin-right: auto;
+    & > span {
+      margin-right: auto;
     }
   }
 
@@ -553,12 +554,12 @@ list-item {
     h3 {
       span {
         display: inline-block;
-      height: 0.75rem;
-      width: 0.75rem;
-      background-color: $primary;
-      border-radius: 100%;
-      vertical-align: initial;
-      margin-right: 0.5rem;
+        height: 0.75rem;
+        width: 0.75rem;
+        background-color: $primary;
+        border-radius: 100%;
+        vertical-align: initial;
+        margin-right: 0.5rem;
       }
     }
     p {
@@ -642,6 +643,57 @@ list-item {
 //   display: block;
 //   padding: 0 1rem;
 // }
+
+tooltip-once {
+  animation: tooltip-once-in 0.5s 0.5s $ease-out forwards, tooltip-once-out 0.3s 5s ease-in forwards;
+  background-color: $accent;
+  padding: 1rem;
+  box-shadow: 0 8px 12px rgba($accent, 0.3);
+  position: absolute;
+  z-index: 10;
+  width: 80vw;
+  left: 50%;
+  transform: translateY(2rem) translateX(-50%);
+  margin-top: 0.5rem;
+  color: $white;
+  font-size: $font-size-small;
+  border-radius: $border-radius * 2;
+  opacity: 0;
+
+  &::after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: $accent;
+    border-width: 0.5rem;
+    margin-left: -0.5rem;
+  }
+
+  @keyframes tooltip-once-in {
+    from {
+      opacity: 0;
+      transform: translateY(2rem) translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) translateX(-50%);
+    }
+  }
+
+  @keyframes tooltip-once-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}
 
 icon-button {
   margin-right: 0.5rem;

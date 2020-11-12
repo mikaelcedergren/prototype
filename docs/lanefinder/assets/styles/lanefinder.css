@@ -1109,19 +1109,23 @@ generic-modal {
   background: transparent;
   /* Optional: just make scrollbar invisible */ }
 
-generic-overlay header, ad-overlay header {
+generic-overlay header,
+ad-overlay header {
   display: flex;
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
   font-weight: 700; }
-  generic-overlay header > span, ad-overlay header > span {
+  generic-overlay header > span,
+  ad-overlay header > span {
     margin-right: auto; }
 
-generic-overlay h4, ad-overlay h4 {
+generic-overlay h4,
+ad-overlay h4 {
   margin-bottom: 0.5rem; }
 
-generic-overlay hr, ad-overlay hr {
+generic-overlay hr,
+ad-overlay hr {
   margin-bottom: 1rem; }
 
 ad-overlay {
@@ -1236,6 +1240,63 @@ list-item {
     font-family: "Material Icons";
     content: "navigate_next";
     -webkit-font-feature-settings: "liga"; }
+
+tooltip-once {
+  -webkit-animation: tooltip-once-in 0.5s 0.5s cubic-bezier(0, 0.6, 0.5, 1) forwards, tooltip-once-out 0.3s 5s ease-in forwards;
+          animation: tooltip-once-in 0.5s 0.5s cubic-bezier(0, 0.6, 0.5, 1) forwards, tooltip-once-out 0.3s 5s ease-in forwards;
+  background-color: #ef3662;
+  padding: 1rem;
+  box-shadow: 0 8px 12px rgba(239, 54, 98, 0.3);
+  position: absolute;
+  z-index: 10;
+  width: 80vw;
+  left: 50%;
+  transform: translateY(2rem) translateX(-50%);
+  margin-top: 0.5rem;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 8px;
+  opacity: 0; }
+  tooltip-once::after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #ef3662;
+    border-width: 0.5rem;
+    margin-left: -0.5rem; }
+
+@-webkit-keyframes tooltip-once-in {
+  from {
+    opacity: 0;
+    transform: translateY(2rem) translateX(-50%); }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%); } }
+
+@keyframes tooltip-once-in {
+  from {
+    opacity: 0;
+    transform: translateY(2rem) translateX(-50%); }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%); } }
+
+@-webkit-keyframes tooltip-once-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes tooltip-once-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 
 icon-button {
   margin-right: 0.5rem; }
