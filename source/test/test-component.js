@@ -1,29 +1,18 @@
-const template = document.createElement("template");
-template.innerHTML = `
-  <div class="user-card">
-    <img />
-      <h3></h3>
-        <p><slot /></p>
-  </div>
-`;
-
 class UserCard extends HTMLElement {
   constructor() {
     super();
 
-    this.attachShadow({ mode: "open" });
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
-    this.shadowRoot.querySelector("h3").innerText = this.getAttribute("name");
-    this.shadowRoot.querySelector("img").src = this.getAttribute("avatar");
+    const avatar = this.getAttribute('avatar') ?? '';
+    const primary = this.getAttribute('primary') === '' ? 'primary' : '';
+
+    this.innerHTML = `
+    <div class="user-card ${primary}">
+        <img />
+        <h3>${this.getAttribute('name')}</h3>
+        <div>${avatar}</div>
+    </div>
+    `;
   }
-
-  //   connectedCallback() {
-  //     this.shadowRoot.querySelector('#toggle-info').addEventListener('click', () => this.toggleInfo());
-  //   }
-
-  //   disconnectedCallback() {
-  //     this.shadowRoot.querySelector('#toggle-info').removeEventListener();
-  //   }
 }
 
 window.customElements.define("user-card", UserCard);
