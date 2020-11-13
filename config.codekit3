@@ -417,7 +417,7 @@
 		"oA": 0,
 		"oAP": "/docs/shared/scripts/footer-scripts.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/shared/styles/_buttons.scss": {
@@ -524,6 +524,25 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/source/test/index.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/test/index.html",
+		"oF": 0
+		},
+	"/source/test/test-component.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/docs/test/test-component.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/source/ux-directives/currency.kit": {
 		"cB": 1,
 		"ft": 2048,
@@ -540,7 +559,7 @@
 		"oA": 0,
 		"oAP": "/docs/ux-directives/scripts.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/ux-directives/styles.scss": {
@@ -580,7 +599,7 @@
 		"oA": 0,
 		"oAP": "/docs/validate.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/youcruit/assets/images/youcruit-logo.svg": {
@@ -2484,7 +2503,7 @@
 		"bundleFormat": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 3,
+		"syntaxCheckerStyle": 0,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {

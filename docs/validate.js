@@ -1,1 +1,1 @@
-function check(e){"mikael"==e.userid.value&&"password"==e.pswrd.value?window.open("menu.html"):alert("Incorrect username or password.")}
+function check(e){"mikael"==e.userid.value&&"ringmuskel"==e.pswrd.value?window.open("menu.html"):alert("Incorrect username or password.")}
