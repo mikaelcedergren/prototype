@@ -707,49 +707,65 @@ carrier-list-item {
   }
 }
 
-.list-item {
-  background-color: $white;
-  padding: 1rem;
-
-  h3 {
-    span {
-      display: inline-block;
-      height: 0.5rem;
-      width: 0.5rem;
-      background-color: $primary;
-      border-radius: 100%;
-      margin-right: 0.5rem;
-    }
-  }
-
-  p {
-    color: $gray-5;
-    margin-top: 0.5rem;
-  }
-
-  .list-item-extra {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    span {
-      color: $gray-3;
-      font-size: $font-size-small;
-    }
-  }
-
-  &.unread {
-    p {
-      color: $black;
-    }
-  }
+unread-marker {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: $primary;
+  border-radius: 100%;
+  margin-right: 0.5rem;
 }
 
-test-element {
-  background: red;
+list-element {
+  &:first-of-type {
+    .list-item {
+      border-top-left-radius: $border-radius * 5;
+      border-top-right-radius: $border-radius * 5;
+    }
+  }
 
-  &[primary] {
-    background: $primary;
+  .list-item {
+    position: relative;
+    background-color: $white;
+    padding: 1rem;
+
+    p {
+      color: $gray-5;
+      margin-top: 0.5rem;
+    }
+
+    &.unread {
+      p {
+        color: $black;
+      }
+    }
+
+    &.layout-right {
+      &::after {
+        position: absolute;
+        top: 1rem;
+        line-height: 1.5rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        color: $gray-3;
+        font-family: "Material Icons";
+        content: "navigate_next";
+        -webkit-font-feature-settings: "liga";
+        font-feature-settings: "liga";
+      }
+    }
+
+    .list-item-extra {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        color: $gray-3;
+        font-size: $font-size-small;
+        margin-left: auto;
+      }
+    }
   }
 }
 

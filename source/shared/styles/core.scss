@@ -210,32 +210,32 @@ tag-item {
     display: none;
   }
 
-  &.accent {
+  &[accent] {
     background-color: $accent;
     color: $white;
   }
 
-  &.primary {
+  &[primary] {
     background-color: $primary;
     color: $white;
   }
 
-  &.secondary {
+  &[secondary] {
     background-color: $secondary;
     color: $white;
   }
 
-  &.contrast {
+  &[contrast] {
     background-color: $contrast;
     color: $white;
   }
 
-  &.success {
+  &[success] {
     background-color: $success;
     color: $white;
   }
 
-  &.danger {
+  &[danger] {
     background-color: $danger;
     color: $white;
   }

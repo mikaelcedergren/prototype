@@ -468,22 +468,22 @@ tag-item {
   line-height: 1; }
   tag-item:empty {
     display: none; }
-  tag-item.accent {
+  tag-item[accent] {
     background-color: #ef3662;
     color: #fff; }
-  tag-item.primary {
+  tag-item[primary] {
     background-color: #ff8b4a;
     color: #fff; }
-  tag-item.secondary {
+  tag-item[secondary] {
     background-color: #fcbb37;
     color: #fff; }
-  tag-item.contrast {
+  tag-item[contrast] {
     background-color: #4e2055;
     color: #fff; }
-  tag-item.success {
+  tag-item[success] {
     background-color: #78d16a;
     color: #fff; }
-  tag-item.danger {
+  tag-item[danger] {
     background-color: #ed3737;
     color: #fff; }
 
@@ -1333,33 +1333,45 @@ carrier-list-item {
     white-space: nowrap;
     color: #a3afbf; }
 
-.list-item {
+unread-marker {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: #ff8b4a;
+  border-radius: 100%;
+  margin-right: 0.5rem; }
+
+list-element:first-of-type .list-item {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; }
+
+list-element .list-item {
+  position: relative;
   background-color: #fff;
   padding: 1rem; }
-  .list-item h3 span {
-    display: inline-block;
-    height: 0.5rem;
-    width: 0.5rem;
-    background-color: #ff8b4a;
-    border-radius: 100%;
-    margin-right: 0.5rem; }
-  .list-item p {
+  list-element .list-item p {
     color: #778396;
     margin-top: 0.5rem; }
-  .list-item .list-item-extra {
+  list-element .list-item.unread p {
+    color: #3e4a5e; }
+  list-element .list-item.layout-right::after {
+    position: absolute;
+    top: 1rem;
+    line-height: 1.5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #d3d9e0;
+    font-family: "Material Icons";
+    content: "navigate_next";
+    font-feature-settings: "liga"; }
+  list-element .list-item .list-item-extra {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    .list-item .list-item-extra span {
+    list-element .list-item .list-item-extra span {
       color: #d3d9e0;
-      font-size: 14px; }
-  .list-item.unread p {
-    color: #3e4a5e; }
-
-test-element {
-  background: red; }
-  test-element[primary] {
-    background: #ff8b4a; }
+      font-size: 14px;
+      margin-left: auto; }
 
 html {
   visibility: visible;
