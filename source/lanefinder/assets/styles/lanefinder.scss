@@ -745,6 +745,14 @@ carrier-list-item {
   }
 }
 
+test-element {
+  background: red;
+
+  &[primary] {
+    background: $primary;
+  }
+}
+
 // FIX FOR FOUC
 html {
   visibility: visible;

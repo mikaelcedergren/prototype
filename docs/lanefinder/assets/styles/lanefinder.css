@@ -1356,6 +1356,11 @@ carrier-list-item {
   .list-item.unread p {
     color: #3e4a5e; }
 
+test-element {
+  background: red; }
+  test-element[primary] {
+    background: #ff8b4a; }
+
 html {
   visibility: visible;
   opacity: 1; }
