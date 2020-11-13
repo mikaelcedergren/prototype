@@ -160,7 +160,7 @@ ul {
   }
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
   height: $input-height;
   width: 100%;
   border-radius: $border-radius;

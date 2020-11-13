@@ -331,6 +331,14 @@
 		"oAP": "/docs/lanefinder/wizards/apply/step-1.html",
 		"oF": 0
 		},
+	"/source/menu.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/menu.html",
+		"oF": 0
+		},
 	"/source/shared/components/_checkbox.kit": {
 		"cB": 1,
 		"ft": 2048,
@@ -407,7 +415,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/docs/shared/scripts/footer-scripts-min.js",
+		"oAP": "/docs/shared/scripts/footer-scripts.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -530,7 +538,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/docs/ux-directives/scripts-min.js",
+		"oAP": "/docs/ux-directives/scripts.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -563,6 +571,17 @@
 		"oA": 0,
 		"oAP": "/docs/ux-directives/validation.html",
 		"oF": 0
+		},
+	"/source/validate.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/docs/validate.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/source/youcruit/assets/images/youcruit-logo.svg": {
 		"ft": 2097152,
@@ -2457,7 +2476,7 @@
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathFilenamePattern": "*.js",
 		"autoOutputPathRelativePath": "/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
