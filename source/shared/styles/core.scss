@@ -48,6 +48,8 @@ h2,
 h3,
 h4,
 h5 {
+  display: flex;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -74,7 +76,7 @@ h4 {
 
 hr {
   display: block;
-  margin: 1rem 0 0 0;
+  margin: 0;
   padding: 0;
   border: 0;
   border-top: $line;
@@ -160,7 +162,8 @@ ul {
   }
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"] {
   height: $input-height;
   width: 100%;
   border-radius: $border-radius;

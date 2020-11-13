@@ -344,6 +344,8 @@ h2,
 h3,
 h4,
 h5 {
+  display: flex;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 0; }
 
@@ -365,7 +367,7 @@ h4 {
 
 hr {
   display: block;
-  margin: 1rem 0 0 0;
+  margin: 0;
   padding: 0;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.12); }
@@ -425,7 +427,8 @@ ul {
       color: #fcbb37;
       left: 0; }
 
-input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"] {
   height: 44px;
   width: 100%;
   border-radius: 4px;
@@ -1329,6 +1332,29 @@ carrier-list-item {
     padding-right: 1rem;
     white-space: nowrap;
     color: #a3afbf; }
+
+.list-item {
+  background-color: #fff;
+  padding: 1rem; }
+  .list-item h3 span {
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #ff8b4a;
+    border-radius: 100%;
+    margin-right: 0.5rem; }
+  .list-item p {
+    color: #778396;
+    margin-top: 0.5rem; }
+  .list-item .list-item-extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .list-item .list-item-extra span {
+      color: #d3d9e0;
+      font-size: 14px; }
+  .list-item.unread p {
+    color: #3e4a5e; }
 
 html {
   visibility: visible;

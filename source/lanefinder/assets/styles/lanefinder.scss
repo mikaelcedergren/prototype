@@ -609,7 +609,8 @@ list-item {
 }
 
 tooltip-once {
-  animation: tooltip-once-in 0.5s 0.5s $ease-out forwards, tooltip-once-out 0.3s 5s ease-in forwards;
+  animation: tooltip-once-in 0.5s 0.5s $ease-out forwards,
+    tooltip-once-out 0.3s 5s ease-in forwards;
   background-color: $accent;
   padding: 1rem;
   box-shadow: 0 8px 12px rgba($accent, 0.3);
@@ -703,6 +704,44 @@ carrier-list-item {
     padding-right: 1rem;
     white-space: nowrap;
     color: $gray-4;
+  }
+}
+
+.list-item {
+  background-color: $white;
+  padding: 1rem;
+
+  h3 {
+    span {
+      display: inline-block;
+      height: 0.5rem;
+      width: 0.5rem;
+      background-color: $primary;
+      border-radius: 100%;
+      margin-right: 0.5rem;
+    }
+  }
+
+  p {
+    color: $gray-5;
+    margin-top: 0.5rem;
+  }
+
+  .list-item-extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      color: $gray-3;
+      font-size: $font-size-small;
+    }
+  }
+
+  &.unread {
+    p {
+      color: $black;
+    }
   }
 }
 
