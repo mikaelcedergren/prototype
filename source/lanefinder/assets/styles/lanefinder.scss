@@ -246,6 +246,20 @@ status-bar {
   img {
     max-height: 15px;
   }
+
+  .dark {
+    display: none;
+  }
+
+  &[dark],
+  &.at-top {
+    .dark {
+      display: block;
+    }
+    .light {
+      display: none;
+    }
+  }
 }
 
 mobile-tabs {
