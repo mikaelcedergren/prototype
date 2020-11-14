@@ -573,13 +573,13 @@ input[type="checkbox"] {
       content: "\f00c";
       -webkit-font-feature-settings: "liga"; }
 
-checkbox-with-label {
+checkbox-item {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 0.25rem; }
-  checkbox-with-label label {
+  checkbox-item label {
     display: inline-block;
     text-transform: initial;
     font-size: 1rem;

@@ -30,9 +30,9 @@
       src="https://kit.fontawesome.com/84e7c43de7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=7519bd764b81a465aa210dda46517210" />
-    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=627060040"></script> -->
-    <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=627060040"></script> -->
+    <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=1020f406b86fbb0a5157fb8ad36e7acc" />
+    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=627061474"></script> -->
+    <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=627061474"></script> -->
   </head>
 
   <body></body>
@@ -228,127 +228,26 @@
 
       <form-block>
         <label>Type of work</label>
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox1" checked />
-                                    <label for="checkbox1">
-                                        Local</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox2" checked />
-                                    <label for="checkbox2">
-                                        Semi-local</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox3" checked />
-                                    <label for="checkbox3">
-                                        Regional</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox4" checked />
-                                    <label for="checkbox4">
-                                        OTR</label>
-                                </checkbox-with-label>
-                                
+        <checkbox-item id="local" label="Local" checked></checkbox-item>
+        <checkbox-item id="semiLocal" label="Semi-local" checked></checkbox-item>
+        <checkbox-item id="regional" label="Regional" checked></checkbox-item>
+        <checkbox-item id="otr" label="OTR" checked></checkbox-item>
       </form-block>
 
       <form-block>
         <label>Type of trailer</label>
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-1" checked />
-                                    <label for="checkbox-trailer-1">
-                                        Dry Van</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-2" checked />
-                                    <label for="checkbox-trailer-2">
-                                        Flatbed</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-3" checked />
-                                    <label for="checkbox-trailer-3">
-                                        Refridgerated</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-4" checked />
-                                    <label for="checkbox-trailer-4">
-                                        Liquid Bulk Tanker</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-5" checked />
-                                    <label for="checkbox-trailer-5">
-                                        Dry Bulk Tanker</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-6" checked />
-                                    <label for="checkbox-trailer-6">
-                                        Flatbed</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-7" checked />
-                                    <label for="checkbox-trailer-7">
-                                        Hopper Bottom</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-8" checked />
-                                    <label for="checkbox-trailer-8">
-                                        Heavy Haul & Specialized</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-9" checked />
-                                    <label for="checkbox-trailer-9">
-                                        Live Haul</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-10" checked />
-                                    <label for="checkbox-trailer-10">
-                                        Intermodal Container</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-11" checked />
-                                    <label for="checkbox-trailer-11">
-                                        Car Carrier & Decking</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-12" checked />
-                                    <label for="checkbox-trailer-12">
-                                        Log</label>
-                                </checkbox-with-label>
-                                
-
-        <checkbox-with-label>
-                                    <input type="checkbox" id="checkbox-trailer-13" checked />
-                                    <label for="checkbox-trailer-13">
-                                        Dump</label>
-                                </checkbox-with-label>
-                                
+        <checkbox-item id="checkbox-trailer-1" label="Dry Van" checked></checkbox-item>
+        <checkbox-item id="checkbox-trailer-2" label="Flatbed" checked></checkbox-item>
+        <checkbox-item id="checkbox-trailer-6" label="Refridgerated" checked></checkbox-item>
+        <checkbox-item id="checkbox-trailer-7" label="Liquid Bulk Tanker" checked></checkbox-item>
+        <checkbox-item id="checkbox-trailer-8" label="Dry Bulk Tanker" checked></checkbox-item>
+        <checkbox-item id="checkbox-trailer-3" label="Hopper Bottom" checked></checkbox-item>
+        <checkbox-item id="checkbox-trailer-4" label="Heavy Haul & Specialized" checked></checkbox-item>
+        <checkbox-item id="checkbox-trailer-5" label="Live Haul" checked></checkbox-item>
+        <checkbox-item id="checkbox-trailer-5" label="Intermodal Container" checked></checkbox-item>
+        <checkbox-item id="checkbox-trailer-9" label="Car Carrier & Decking" checked></checkbox-item>
+        <checkbox-item id="checkbox-trailer-10" label="Log" checked></checkbox-item>
+        <checkbox-item id="checkbox-trailer-11" label="Dump" checked></checkbox-item>
       </form-block>
 
       <form-block>
@@ -505,8 +404,8 @@
     <img src="/shared/images/status-bar-right.png" class="white"/>
 </status-bar>
 
-<script type="text/javascript" src="/shared/scripts/footer-scripts.js?ckcachebust=dad6a4185006379fee6994d12443db12"></script>
-<script type="text/javascript" src="/lanefinder/assets/scripts/components.js?ckcachebust=f74358f8fcf456f9b62405ea2dadd6b2"></script>
+<script type="text/javascript" src="/shared/scripts/footer-scripts.js?ckcachebust=94fe3e22609451c926320d57b865cc5c"></script>
+<script type="text/javascript" src="/lanefinder/assets/scripts/components.js?ckcachebust=0d829ca6240225dbc31a65a5587af99e"></script>
 </body>
 
 </html>

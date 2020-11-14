@@ -43,4 +43,20 @@ class ListItem extends HTMLElement {
   }
 }
 
+class Checkbox extends HTMLElement {
+  constructor() {
+    super();
+
+    const checked = this.getAttribute("checked") === "" ? "checked" : "";
+
+    this.innerHTML = `
+      <input type="checkbox" id="${this.getAttribute("id")}" ${checked} />
+      <label for="${this.getAttribute("id")}">${this.getAttribute(
+      "label"
+    )}</label>
+      `;
+  }
+}
+
+window.customElements.define("checkbox-item", Checkbox);
 window.customElements.define("list-element", ListItem);
