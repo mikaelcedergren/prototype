@@ -246,20 +246,6 @@ status-bar {
   img {
     max-height: 15px;
   }
-
-  .black {
-    display: none;
-  }
-
-  &[data-color="black"],
-  &.at-top {
-    .black {
-      display: block;
-    }
-    .white {
-      display: none;
-    }
-  }
 }
 
 mobile-tabs {

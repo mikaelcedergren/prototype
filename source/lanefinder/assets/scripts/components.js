@@ -58,5 +58,26 @@ class Checkbox extends HTMLElement {
   }
 }
 
+class StatusBar extends HTMLElement {
+  constructor() {
+    super();
+
+    const dark = this.getAttribute("dark") === "" ? "dark" : "";
+
+    if (dark) {
+      this.innerHTML = `
+        <img src="/shared/images/status-bar-black-left.png" />
+        <img src="/shared/images/status-bar-black-right.png" />
+      `;
+    } else {
+      this.innerHTML = `
+        <img src="/shared/images/status-bar-left.png"/>
+        <img src="/shared/images/status-bar-right.png"/>
+      `;
+    }
+  }
+}
+
 window.customElements.define("checkbox-item", Checkbox);
+window.customElements.define("status-bar", StatusBar);
 window.customElements.define("list-element", ListItem);

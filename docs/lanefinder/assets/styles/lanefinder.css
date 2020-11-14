@@ -972,12 +972,6 @@ status-bar {
   padding: 0 8px; }
   status-bar img {
     max-height: 15px; }
-  status-bar .black {
-    display: none; }
-  status-bar[data-color="black"] .black, status-bar.at-top .black {
-    display: block; }
-  status-bar[data-color="black"] .white, status-bar.at-top .white {
-    display: none; }
 
 mobile-tabs {
   display: flex;
