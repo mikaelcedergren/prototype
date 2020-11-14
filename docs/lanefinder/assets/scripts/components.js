@@ -71,6 +71,22 @@ class StatusBar extends HTMLElement {
   }
 }
 
+class ListHeading extends HTMLElement {
+  constructor() {
+    super();
+
+    const extra = this.getAttribute("extra")
+      ? "<div>" + this.getAttribute("extra") + "</div>"
+      : "";
+
+    this.innerHTML = `
+        <h4>${this.getAttribute("title")}</h4>
+        ${extra}
+      `;
+  }
+}
+
 window.customElements.define("checkbox-item", Checkbox);
+window.customElements.define("list-heading", ListHeading);
 window.customElements.define("status-bar", StatusBar);
 window.customElements.define("list-element", ListItem);
