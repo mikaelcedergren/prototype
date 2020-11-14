@@ -23,6 +23,9 @@ class ListItem extends HTMLElement {
         this.getAttribute("tag-content") +
         "</tag-item>"
       : "";
+    const extra = this.getAttribute("extra-content")
+      ? "<span>" + this.getAttribute("extra-content") + "</span>"
+      : "";
 
     this.innerHTML = `
       <div class="list-item ${unreadClass} ${layoutRightClass}">
@@ -32,7 +35,7 @@ class ListItem extends HTMLElement {
         ${paragraph}
         <div class="list-item-extra">
             ${tag}
-            <span>${this.getAttribute("extra-content")}</span>
+            ${extra}
         </div>
         </div>
         ${hrType}

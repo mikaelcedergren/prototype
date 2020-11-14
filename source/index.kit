@@ -1,42 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="<!-- $html-class? -->">
+  <head>
+    <title>Prototype</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mikael Cedergren" />
+    <meta name="description" content="Prototyping by Mikael Cedergren." />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script> -->
+    <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js"></script> -->
+  </head>
 
-<head>
-  <title>Prototype</title>
-  <meta charset="utf-8">
-  <meta name="author" content="Mikael Cedergren">
-  <meta name="description" content="Prototyping by Mikael Cedergren.">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="robots" content="noindex,nofollow" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-  <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script> -->
-  <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js"></script> -->
-</head>
+  <body>
+    <style>
+      form {
+        margin: 2rem auto;
+        max-width: 300px;
+      }
+      input {
+        margin-bottom: 1rem;
+      }
+    </style>
 
-<body>
+    <form name="login">
+      <input type="text" name="userid" placeholder="Username" />
+      <input type="password" name="pswrd" placeholder="Password" />
+      <button primary block onclick="check(this.form)">Log in</button>
+    </form>
 
-  <style>
-    form {
-      margin: 2rem auto;
-      max-width: 300px;
-    }
-    input {
-      margin-bottom: 1rem;
-    }
-  </style>
-
-<form name="login">
-<input type="text" name="userid" placeholder="Username"/>
-<input type="password" name="pswrd"placeholder="Password"/>
-<button class="primary block" onclick="check(this.form)">Log in</button>
-</form>
-
-<script language="javascript" src="validate.js"></script>
-</body>
+    <script language="javascript" src="validate.js"></script>
+  </body>
 </html>

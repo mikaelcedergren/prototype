@@ -628,31 +628,31 @@ button {
   font-size: 14px; }
   button i {
     font-size: 16px; }
-  button.block {
+  button[block] {
     display: block;
     width: 100%; }
-  button.discreet {
+  button[discreet] {
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.12); }
-  button.primary, button.secondary, button.success, button.danger, button.accent {
+  button[primary], button[secondary], button[success], button[danger], button[accent] {
     color: #fff; }
-  button.primary {
+  button[primary] {
     background-color: #ff8b4a; }
-  button.secondary {
+  button[secondary] {
     background-color: #ef3662; }
-  button.success {
+  button[success] {
     background-color: #9fd168; }
-  button.danger {
+  button[danger] {
     background-color: #eb6363; }
-  button.accent {
+  button[accent] {
     background-color: #ef3662; }
-    button.accent.glow {
+    button[accent] [glow] {
       box-shadow: 0 8px 12px rgba(239, 54, 98, 0.3); }
-  button.small {
+  button[small] {
     padding: 0 1rem;
     height: 32px;
     font-size: 14px; }
-    button.small i {
+    button[small] i {
       font-size: 14px; }
 
 icon-button {

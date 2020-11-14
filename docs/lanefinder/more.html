@@ -1,31 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="">
+  <head>
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
+    <title>Prototype</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mikael Cedergren" />
+    <meta name="description" content="Prototyping by Mikael Cedergren." />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/84e7c43de7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=ed2ef44d37c5007f5bf1d1b23b3ca509" />
+    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=627060381"></script> -->
+    <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=627060381"></script> -->
+  </head>
 
-<head>
-  <style>
-    html {
-      visibility: hidden;
-      opacity: 0;
-    }
-  </style>
-  <title>Prototype</title>
-  <meta charset="utf-8">
-  <meta name="author" content="Mikael Cedergren">
-  <meta name="description" content="Prototyping by Mikael Cedergren.">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="robots" content="noindex,nofollow" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=1dcd535542c71475960d2785ea529920">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css?ckcachebust=626972369" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-  <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=626972369"></script> -->
-  <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=626972369"></script> -->
-</head>
-
-<body>
+  <body></body>
+</html>
 
 
 <main-view>
@@ -37,81 +48,21 @@
 
   <view-header>
     <header>
-      <h2> More </h2>
+      <h2>More</h2>
     </header>
   </view-header>
 
   <view-content>
-
-    <list-item data-layout="right" class="">
-                <div>
-                    <h3><span></span>My profile</h3>
-                    <p></p>
-                    <div class="space-between">
-                        
-                        <span class="item-additional"></span>
-                    </div>
-                </div>
-                <hr class="depth">
-            </list-item>
-            
-
-    <list-item data-layout="right" class="">
-                <div>
-                    <h3><span></span>Applications</h3>
-                    <p></p>
-                    <div class="space-between">
-                        
-                        <span class="item-additional"></span>
-                    </div>
-                </div>
-                <hr class="depth">
-            </list-item>
-            
-
-    <list-item data-layout="right" class="">
-                <div>
-                    <h3><span></span>Messages</h3>
-                    <p></p>
-                    <div class="space-between">
-                        
-                        <span class="item-additional"></span>
-                    </div>
-                </div>
-                <hr class="depth">
-            </list-item>
-            
-
-    <list-item data-layout="right" class="">
-                <div>
-                    <h3><span></span>Support</h3>
-                    <p></p>
-                    <div class="space-between">
-                        
-                        <span class="item-additional"></span>
-                    </div>
-                </div>
-                <hr class="depth">
-            </list-item>
-            
-
-    <list-item data-layout="right" class="">
-                <div>
-                    <h3><span></span>Settings</h3>
-                    <p></p>
-                    <div class="space-between">
-                        
-                        <span class="item-additional"></span>
-                    </div>
-                </div>
-                <hr class="depth">
-            </list-item>
-            
+    <list-element title="My profile" layout-right> </list-element>
+    <list-element title="Applications" layout-right> </list-element>
+    <list-element title="Messages" layout-right> </list-element>
+    <list-element title="Support" layout-right> </list-element>
+    <list-element title="Settings" layout-right> </list-element>
   </view-content>
 </main-view>
 
 <navigation-bar class="detect-top">
-  <h3> More </h3>
+  <h3>More</h3>
   <div>
     <a href="#">Help</a>
   </div>
@@ -152,8 +103,8 @@
     <img src="/shared/images/status-bar-right.png" class="white"/>
 </status-bar>
 
-<script type="text/javascript" src="/shared/scripts/footer-scripts.js?ckcachebust=46c6e194e430f4a40b14997f98670c4d"></script>
-<script type="text/javascript" src="/lanefinder/assets/scripts/components.js?ckcachebust=2af3e6d8fe7642d70b89a0d2a93716e0"></script>
+<script type="text/javascript" src="/shared/scripts/footer-scripts.js?ckcachebust=ed30bd04053abf5bc7acd863845317ab"></script>
+<script type="text/javascript" src="/lanefinder/assets/scripts/components.js?ckcachebust=5f2db4c6dd6df3796e7bf02c35489d4c"></script>
 </body>
 
 </html>

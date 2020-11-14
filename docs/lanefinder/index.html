@@ -1,31 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="">
+  <head>
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
+    <title>Prototype</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mikael Cedergren" />
+    <meta name="description" content="Prototyping by Mikael Cedergren." />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/84e7c43de7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=7519bd764b81a465aa210dda46517210" />
+    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=627060040"></script> -->
+    <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=627060040"></script> -->
+  </head>
 
-<head>
-  <style>
-    html {
-      visibility: hidden;
-      opacity: 0;
-    }
-  </style>
-  <title>Prototype</title>
-  <meta charset="utf-8">
-  <meta name="author" content="Mikael Cedergren">
-  <meta name="description" content="Prototyping by Mikael Cedergren.">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="robots" content="noindex,nofollow" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=21a6b50bf9031fff81cba2788073d261">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css?ckcachebust=626972369" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-  <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=626972369"></script> -->
-  <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=626972369"></script> -->
-</head>
-
-<body>
+  <body></body>
+</html>
 
 <main-view>
   <header-backdrop style="
@@ -37,7 +48,7 @@
     <header>
       <h2> Jobs </h2>
       <header-button>
-        <button id="save-search" data-open="modal-save-search" class="small">
+        <button id="save-search" data-open="modal-save-search" small>
           <i class="material-icons">favorite</i><span>Save search</span>
         </button>
       </header-button>
@@ -206,7 +217,7 @@
     <header>
           <icon-button data-close><i class="material-icons">expand_more</i></icon-button>
         <span>Filters</span>
-      <tag-item class="secondary">242 jobs</tag-item>
+      <tag-item secondary>242 jobs</tag-item>
     </header>
     <div>
       <form-block>
@@ -462,7 +473,7 @@
     </div>
 
     <button-container class="fixed">
-      <a href="/lanefinder/wizards/apply/step-1.html"><button class="accent large glow">
+      <a href="/lanefinder/wizards/apply/step-1.html"><button accent large glow>
           Apply now
         </button></a>
     </button-container>
@@ -481,8 +492,8 @@
       <input type="text" />
     </div>
     <footer>
-      <button data-close class="discreet">Cancel</button>
-      <button data-close class="accent">Save</button>
+      <button data-close discreet>Cancel</button>
+      <button data-close accent>Save</button>
     </footer>
   </main>
 </generic-modal>
@@ -494,8 +505,8 @@
     <img src="/shared/images/status-bar-right.png" class="white"/>
 </status-bar>
 
-<script type="text/javascript" src="/shared/scripts/footer-scripts.js?ckcachebust=706e50d698f8974d21c97b3250b19684"></script>
-<script type="text/javascript" src="/lanefinder/assets/scripts/components.js?ckcachebust=476752c47ee2f8139c856487332992d2"></script>
+<script type="text/javascript" src="/shared/scripts/footer-scripts.js?ckcachebust=dad6a4185006379fee6994d12443db12"></script>
+<script type="text/javascript" src="/lanefinder/assets/scripts/components.js?ckcachebust=f74358f8fcf456f9b62405ea2dadd6b2"></script>
 </body>
 
 </html>
