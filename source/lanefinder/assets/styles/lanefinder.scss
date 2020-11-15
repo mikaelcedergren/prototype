@@ -550,6 +550,11 @@ job-list-item {
   background-color: $white;
   padding: 1rem;
 
+  &:first-of-type {
+    border-top-left-radius: $border-radius * 5;
+    border-top-right-radius: $border-radius * 5;
+  }
+
   &.layout-right {
     &::after {
       position: absolute;
@@ -563,6 +568,11 @@ job-list-item {
       -webkit-font-feature-settings: "liga";
       font-feature-settings: "liga";
     }
+  }
+
+  .list-item-sub-title {
+    color: $gray-4;
+    font-size: $font-size-small;
   }
 
   .list-item-extra {

@@ -1,5 +1,7 @@
 const app = Vue.createApp({});
 
+// LIST HEADING
+
 app.component("list-heading", {
   props: {
     title: {
@@ -18,6 +20,8 @@ app.component("list-heading", {
               </div>
           `,
 });
+
+// STATUS BAR
 
 app.component("status-bar", {
   props: {
@@ -40,9 +44,15 @@ app.component("status-bar", {
           `,
 });
 
+// LIST ITEM
+
 app.component("list-item", {
   props: {
     title: {
+      type: String,
+      default: null,
+    },
+    subTitle: {
       type: String,
       default: null,
     },
@@ -58,7 +68,7 @@ app.component("list-item", {
       type: Boolean,
       default: null,
     },
-    right: {
+    layoutRight: {
       type: Boolean,
       default: null,
     },
@@ -69,19 +79,22 @@ app.component("list-item", {
   },
   template: `
               <div>
-                <div class="list-item" :class="{'layout-right': right}">
+                <div class="list-item" :class="{'layout-right': layoutRight}">
                   <tag-item accent v-if="sponsored">Urgently hiring</tag-item>
                   <h3><div v-if="unread" class="unread-marker"></div>{{title}}</h3>
+                  <div v-if="subTitle" class="list-item-sub-title">{{subTitle}}</div>
                   <p v-if="paragraph">{{paragraph}}</p>
                   <div class="list-item-extra">
-                  <slot></slot>
-                  <span>{{extra}}</span>
+                    <slot></slot>
+                    <span>{{extra}}</span>
                   </div>
                 </div>
-                <hr :class="{'depth' : !right}"/>
+                <hr :class="{'depth' : !layoutRight}"/>
               </div>
           `,
 });
+
+// TAG
 
 app.component("tag-item", {
   props: {
@@ -91,9 +104,11 @@ app.component("tag-item", {
     },
   },
   template: `
-              <div class="tag-item"><slot></slot></div>
+              <div class="tag"><slot></slot></div>
           `,
 });
+
+// CHECKBOX
 
 app.component("checkbox-item", {
   props: {
@@ -117,6 +132,8 @@ app.component("checkbox-item", {
               </div>
           `,
 });
+
+// USER
 
 app.component("user-list", {
   props: {

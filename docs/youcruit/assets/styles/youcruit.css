@@ -456,7 +456,7 @@ label {
 i.material-icons + i.material-icons {
   margin-left: 0.5rem; }
 
-.tag-item {
+.tag {
   display: inline-block;
   background-color: #e6eaf0;
   margin-right: 2px;
@@ -466,24 +466,24 @@ i.material-icons + i.material-icons {
   font-weight: 700;
   margin-bottom: 0.25rem;
   line-height: 1; }
-  .tag-item:empty {
+  .tag:empty {
     display: none; }
-  .tag-item[accent] {
+  .tag[accent] {
     background-color: #ef3662;
     color: #fff; }
-  .tag-item[primary] {
+  .tag[primary] {
     background-color: #ff8b4a;
     color: #fff; }
-  .tag-item[secondary] {
+  .tag[secondary] {
     background-color: #ef3662;
     color: #fff; }
-  .tag-item[contrast] {
+  .tag[contrast] {
     background-color: #4e2055;
     color: #fff; }
-  .tag-item[success] {
+  .tag[success] {
     background-color: #9fd168;
     color: #fff; }
-  .tag-item[danger] {
+  .tag[danger] {
     background-color: #eb6363;
     color: #fff; }
 
