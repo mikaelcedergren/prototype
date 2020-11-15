@@ -1,12 +1,5 @@
 <!-- @import '/source/lanefinder/components/_page-header.kit' -->
 
-<script>
-  function showSendButton() {
-    var element = document.getElementById("send-button");
-    element.classList.toggle("show");
-  }
-</script>
-
 <main-view>
   <header-backdrop
     style="
@@ -23,46 +16,51 @@
   <!-- @import '/source/lanefinder/components/_carrier-filters-box.kit -->
 
   <view-content>
-    <!-- $carrier = Martin Rodriguez -->
-    <!-- $carrier-size = 10 trucks -->
-    <!-- $distance = Nearby -->
-    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
+    <carrier-list-item
+      title="Martin Rodriguez"
+      size="10 trucks"
+      distance="Nearby"
+    >
+    </carrier-list-item>
 
-    <!-- $carrier = Mike Moralez -->
-    <!-- $carrier-size = 1 truck -->
-    <!-- $distance = 1 mile -->
-    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
+    <carrier-list-item title="Mike Moralez" size="1 truck" distance="1 mile">
+    </carrier-list-item>
 
-    <!-- $carrier = Emmet Logistics -->
-    <!-- $carrier-size = 42 trucks -->
-    <!-- $distance = 1 miles -->
-    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
+    <carrier-list-item
+      title="Emmet Logistics"
+      size="42 trucks"
+      distance="1 mile"
+    >
+    </carrier-list-item>
 
-    <!-- $carrier = Eazy Line Express Inc -->
-    <!-- $carrier-size = 8 trucks -->
-    <!-- $distance = 3 miles -->
-    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
-
-    <!-- $carrier = Eazy Line Express Inc -->
-    <!-- $carrier-size = 8 trucks -->
-    <!-- $distance = 3 miles -->
-    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
-
-    <!-- $carrier = Eazy Line Express Inc -->
-    <!-- $carrier-size = 8 trucks -->
-    <!-- $distance = 3 miles -->
-    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
-
-    <!-- $carrier = Eazy Line Express Inc -->
-    <!-- $carrier-size = 8 trucks -->
-    <!-- $distance = 3 miles -->
-    <!-- @import '/source/lanefinder/components/_carrier-list-item.kit -->
+    <carrier-list-item
+      title="Eazy Line Express Inc"
+      size="8"
+      distance="3 miles"
+    >
+    </carrier-list-item>
 
     <button-container id="send-button" class="fixed hide account-for-tab-menu">
       <button glow accent>Send to these carriers</button>
     </button-container>
   </view-content>
 </main-view>
+
+<generic-overlay id="overlay-filters" title="Filters" extra="242 jobs">
+  <form-block>
+    <input type="text" placeholder="Your zip code..." />
+  </form-block>
+
+  <hr />
+
+  <form-block>
+    <label>Type of work</label>
+    <checkbox-item name="local" label="Local" checked></checkbox-item>
+    <checkbox-item name="semiLocal" label="Semi-local" checked></checkbox-item>
+    <checkbox-item name="regional" label="Regional" checked></checkbox-item>
+    <checkbox-item name="otr" label="OTR" checked></checkbox-item>
+  </form-block>
+</generic-overlay>
 
 <navigation-bar class="detect-top">
   <h3>Carriers</h3>

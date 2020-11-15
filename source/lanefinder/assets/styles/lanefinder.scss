@@ -547,7 +547,18 @@ job-list-item {
   background-color: $white;
   padding: 1rem;
 
-  &:first-of-type {
+  &.unread {
+    p {
+      color: $black;
+    }
+  }
+
+  p {
+    margin-top: 0.5rem;
+    color: $gray-5;
+  }
+
+  &.first {
     border-top-left-radius: $border-radius * 5;
     border-top-right-radius: $border-radius * 5;
   }
@@ -576,6 +587,7 @@ job-list-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 1rem;
 
     span {
       color: $gray-3;
@@ -645,7 +657,7 @@ job-list-item {
   }
 }
 
-carrier-list-item {
+.carrier-list-item {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -658,30 +670,6 @@ carrier-list-item {
     border-top-left-radius: $border-radius-large;
     border-top-right-radius: $border-radius-large;
   }
-
-  list-item-checkbox {
-    display: block;
-    flex: 0 1 auto;
-    padding-left: 1rem;
-  }
-
-  list-item-carrier {
-    display: block;
-    flex: 1 1 auto;
-    padding: 0 1rem;
-
-    & > div {
-      color: $gray-4;
-    }
-  }
-
-  list-item-distance {
-    display: block;
-    flex: 0 1 auto;
-    padding-right: 1rem;
-    white-space: nowrap;
-    color: $gray-4;
-  }
 }
 
 .unread-marker {
@@ -691,59 +679,6 @@ carrier-list-item {
   background-color: $primary;
   border-radius: 100%;
   margin-right: 0.5rem;
-}
-
-list-element {
-  &:first-of-type {
-    .list-item {
-      border-top-left-radius: $border-radius * 5;
-      border-top-right-radius: $border-radius * 5;
-    }
-  }
-
-  .list-item {
-    position: relative;
-    background-color: $white;
-    padding: 1rem;
-
-    p {
-      color: $gray-5;
-      margin-top: 0.5rem;
-    }
-
-    &.unread {
-      p {
-        color: $black;
-      }
-    }
-
-    &.layout-right {
-      &::after {
-        position: absolute;
-        top: 1rem;
-        line-height: 1.5rem;
-        right: 1rem;
-        font-size: 1.5rem;
-        color: $gray-3;
-        font-family: "Material Icons";
-        content: "navigate_next";
-        -webkit-font-feature-settings: "liga";
-        font-feature-settings: "liga";
-      }
-    }
-
-    .list-item-extra {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      span {
-        color: $gray-3;
-        font-size: $font-size-small;
-        margin-left: auto;
-      }
-    }
-  }
 }
 
 // FIX FOR FOUC

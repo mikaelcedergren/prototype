@@ -60,6 +60,10 @@ app.component("list-item", {
       type: String,
       default: null,
     },
+    secondParagraph: {
+      type: String,
+      default: null,
+    },
     extra: {
       type: String,
       default: null,
@@ -76,14 +80,19 @@ app.component("list-item", {
       type: Boolean,
       default: null,
     },
+    first: {
+      type: Boolean,
+      default: null,
+    },
   },
   template: `
               <div>
-                <div class="list-item" :class="{'layout-right': layoutRight}">
+                <div class="list-item" :class="{'layout-right': layoutRight, first, unread}">
                   <tag-item accent v-if="sponsored">Urgently hiring</tag-item>
                   <h3><div v-if="unread" class="unread-marker"></div>{{title}}</h3>
                   <div v-if="subTitle" class="list-item-sub-title">{{subTitle}}</div>
                   <p v-if="paragraph">{{paragraph}}</p>
+                  <p v-if="secondParagraph">{{secondParagraph}}</p>
                   <div class="list-item-extra">
                     <slot></slot>
                     <span>{{extra}}</span>
@@ -133,6 +142,45 @@ app.component("grid-cell", {
 
 <div class="grid-cell" :class="{shrink}">
 <slot></slot>
+</div>
+
+`,
+});
+
+app.component("carrier-list-item", {
+  props: {
+    title: {
+      type: String,
+      default: null,
+    },
+    size: {
+      type: String,
+      default: null,
+    },
+    distance: {
+      type: String,
+      default: null,
+    },
+  },
+  template: `
+
+<div class="carrier-list-item">
+  <grid-row fixed gutter-small>
+    <grid-cell shrink>
+      <input type="checkbox" onClick="showSendButton();" />
+    </grid-cell>
+    <grid-cell>
+      <grid-row gutter-none>
+        <grid-cell>
+          {{title}}
+        </grid-cell>
+        <grid-cell class="shrink align-right color-discreet">
+          {{distance}}
+        </grid-cell>
+      </grid-row>
+      <div class="color-discreet">{{size}}</div>
+    </grid-cell>
+  </grid-row>
 </div>
 
 `,

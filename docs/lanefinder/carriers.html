@@ -30,20 +30,13 @@
       src="https://kit.fontawesome.com/84e7c43de7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=84d18e17f8d7d206b80527c2f219e131" />
-    <script src="https://unpkg.com/vue@next?ckcachebust=627139803"></script>
+    <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=f746a015f341854895d04bb1bdcd0282" />
+    <script src="https://unpkg.com/vue@next?ckcachebust=627140584"></script>
   </head>
 
   <body>
     <div id="app">
 
-
-<script>
-  function showSendButton() {
-    var element = document.getElementById("send-button");
-    element.classList.toggle("show");
-  }
-</script>
 
 <main-view>
   <header-backdrop
@@ -81,151 +74,51 @@
   
 
   <view-content>
-    <carrier-list-item>
-                  <grid-row fixed gutter-small>
-                    <grid-cell class="shrink">
-                      <input type="checkbox" onClick="showSendButton();" />
-                    </grid-cell>
-                    <grid-cell>
-                      <grid-row gutter-none>
-                        <grid-cell>
-                          Martin Rodriguez
-                        </grid-cell>
-                        <grid-cell class="shrink align-right color-discreet">
-                          Nearby
-                        </grid-cell>
-                      </grid-row>
-                      <div class="color-discreet">10 trucks</div>
-                    </grid-cell>
-                  </grid-row>
-                </carrier-list-item>
-                
+    <carrier-list-item
+      title="Martin Rodriguez"
+      size="10 trucks"
+      distance="Nearby"
+    >
+    </carrier-list-item>
 
-    <carrier-list-item>
-                  <grid-row fixed gutter-small>
-                    <grid-cell class="shrink">
-                      <input type="checkbox" onClick="showSendButton();" />
-                    </grid-cell>
-                    <grid-cell>
-                      <grid-row gutter-none>
-                        <grid-cell>
-                          Mike Moralez
-                        </grid-cell>
-                        <grid-cell class="shrink align-right color-discreet">
-                          1 mile
-                        </grid-cell>
-                      </grid-row>
-                      <div class="color-discreet">1 truck</div>
-                    </grid-cell>
-                  </grid-row>
-                </carrier-list-item>
-                
+    <carrier-list-item title="Mike Moralez" size="1 truck" distance="1 mile">
+    </carrier-list-item>
 
-    <carrier-list-item>
-                  <grid-row fixed gutter-small>
-                    <grid-cell class="shrink">
-                      <input type="checkbox" onClick="showSendButton();" />
-                    </grid-cell>
-                    <grid-cell>
-                      <grid-row gutter-none>
-                        <grid-cell>
-                          Emmet Logistics
-                        </grid-cell>
-                        <grid-cell class="shrink align-right color-discreet">
-                          1 miles
-                        </grid-cell>
-                      </grid-row>
-                      <div class="color-discreet">42 trucks</div>
-                    </grid-cell>
-                  </grid-row>
-                </carrier-list-item>
-                
+    <carrier-list-item
+      title="Emmet Logistics"
+      size="42 trucks"
+      distance="1 mile"
+    >
+    </carrier-list-item>
 
-    <carrier-list-item>
-                  <grid-row fixed gutter-small>
-                    <grid-cell class="shrink">
-                      <input type="checkbox" onClick="showSendButton();" />
-                    </grid-cell>
-                    <grid-cell>
-                      <grid-row gutter-none>
-                        <grid-cell>
-                          Eazy Line Express Inc
-                        </grid-cell>
-                        <grid-cell class="shrink align-right color-discreet">
-                          3 miles
-                        </grid-cell>
-                      </grid-row>
-                      <div class="color-discreet">8 trucks</div>
-                    </grid-cell>
-                  </grid-row>
-                </carrier-list-item>
-                
-
-    <carrier-list-item>
-                  <grid-row fixed gutter-small>
-                    <grid-cell class="shrink">
-                      <input type="checkbox" onClick="showSendButton();" />
-                    </grid-cell>
-                    <grid-cell>
-                      <grid-row gutter-none>
-                        <grid-cell>
-                          Eazy Line Express Inc
-                        </grid-cell>
-                        <grid-cell class="shrink align-right color-discreet">
-                          3 miles
-                        </grid-cell>
-                      </grid-row>
-                      <div class="color-discreet">8 trucks</div>
-                    </grid-cell>
-                  </grid-row>
-                </carrier-list-item>
-                
-
-    <carrier-list-item>
-                  <grid-row fixed gutter-small>
-                    <grid-cell class="shrink">
-                      <input type="checkbox" onClick="showSendButton();" />
-                    </grid-cell>
-                    <grid-cell>
-                      <grid-row gutter-none>
-                        <grid-cell>
-                          Eazy Line Express Inc
-                        </grid-cell>
-                        <grid-cell class="shrink align-right color-discreet">
-                          3 miles
-                        </grid-cell>
-                      </grid-row>
-                      <div class="color-discreet">8 trucks</div>
-                    </grid-cell>
-                  </grid-row>
-                </carrier-list-item>
-                
-
-    <carrier-list-item>
-                  <grid-row fixed gutter-small>
-                    <grid-cell class="shrink">
-                      <input type="checkbox" onClick="showSendButton();" />
-                    </grid-cell>
-                    <grid-cell>
-                      <grid-row gutter-none>
-                        <grid-cell>
-                          Eazy Line Express Inc
-                        </grid-cell>
-                        <grid-cell class="shrink align-right color-discreet">
-                          3 miles
-                        </grid-cell>
-                      </grid-row>
-                      <div class="color-discreet">8 trucks</div>
-                    </grid-cell>
-                  </grid-row>
-                </carrier-list-item>
-                
+    <carrier-list-item
+      title="Eazy Line Express Inc"
+      size="8"
+      distance="3 miles"
+    >
+    </carrier-list-item>
 
     <button-container id="send-button" class="fixed hide account-for-tab-menu">
       <button glow accent>Send to these carriers</button>
     </button-container>
   </view-content>
 </main-view>
+
+<generic-overlay id="overlay-filters" title="Filters" extra="242 jobs">
+  <form-block>
+    <input type="text" placeholder="Your zip code..." />
+  </form-block>
+
+  <hr />
+
+  <form-block>
+    <label>Type of work</label>
+    <checkbox-item name="local" label="Local" checked></checkbox-item>
+    <checkbox-item name="semiLocal" label="Semi-local" checked></checkbox-item>
+    <checkbox-item name="regional" label="Regional" checked></checkbox-item>
+    <checkbox-item name="otr" label="OTR" checked></checkbox-item>
+  </form-block>
+</generic-overlay>
 
 <navigation-bar class="detect-top">
   <h3>Carriers</h3>
@@ -265,8 +158,8 @@
 <status-bar class="detect-top"></status-bar>
 
         </div>
-    <script type="application/javascript" src="/lanefinder/assets/scripts/components.js?ckcachebust=5fa85d19c2e2803222f88beb3c9bd90c"></script>
-    <script type="text/javascript" src="/shared/scripts/footer-scripts.js?ckcachebust=b8de2c4d161debf9e93e30421eba194a"></script>
+    <script type="application/javascript" src="/lanefinder/assets/scripts/components.js?ckcachebust=87d42f90bb88a0170b7dc03daf1f7415"></script>
+    <script type="text/javascript" src="/shared/scripts/footer-scripts.js?ckcachebust=a06fc5fe04873def8db844b3fde07904"></script>
     </body>
 </html>
 

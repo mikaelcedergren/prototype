@@ -1206,7 +1206,12 @@ job-list-item {
   position: relative;
   background-color: #fff;
   padding: 1rem; }
-  .list-item:first-of-type {
+  .list-item.unread p {
+    color: #3e4a5e; }
+  .list-item p {
+    margin-top: 0.5rem;
+    color: #778396; }
+  .list-item.first {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; }
   .list-item.layout-right::after {
@@ -1225,7 +1230,8 @@ job-list-item {
   .list-item .list-item-extra {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: 1rem; }
     .list-item .list-item-extra span {
       color: #d3d9e0;
       font-size: 14px;
@@ -1293,7 +1299,7 @@ job-list-item {
   .icon-button i.material-icons {
     background-color: #ef3662; }
 
-carrier-list-item {
+.carrier-list-item {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1301,25 +1307,9 @@ carrier-list-item {
   padding: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   background-color: #fff; }
-  carrier-list-item:first-child {
+  .carrier-list-item:first-child {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px; }
-  carrier-list-item list-item-checkbox {
-    display: block;
-    flex: 0 1 auto;
-    padding-left: 1rem; }
-  carrier-list-item list-item-carrier {
-    display: block;
-    flex: 1 1 auto;
-    padding: 0 1rem; }
-    carrier-list-item list-item-carrier > div {
-      color: #a3afbf; }
-  carrier-list-item list-item-distance {
-    display: block;
-    flex: 0 1 auto;
-    padding-right: 1rem;
-    white-space: nowrap;
-    color: #a3afbf; }
 
 .unread-marker {
   display: inline-block;
@@ -1328,38 +1318,6 @@ carrier-list-item {
   background-color: #ff8b4a;
   border-radius: 100%;
   margin-right: 0.5rem; }
-
-list-element:first-of-type .list-item {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px; }
-
-list-element .list-item {
-  position: relative;
-  background-color: #fff;
-  padding: 1rem; }
-  list-element .list-item p {
-    color: #778396;
-    margin-top: 0.5rem; }
-  list-element .list-item.unread p {
-    color: #3e4a5e; }
-  list-element .list-item.layout-right::after {
-    position: absolute;
-    top: 1rem;
-    line-height: 1.5rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    color: #d3d9e0;
-    font-family: "Material Icons";
-    content: "navigate_next";
-    font-feature-settings: "liga"; }
-  list-element .list-item .list-item-extra {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    list-element .list-item .list-item-extra span {
-      color: #d3d9e0;
-      font-size: 14px;
-      margin-left: auto; }
 
 html {
   visibility: visible;
