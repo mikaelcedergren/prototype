@@ -62,7 +62,7 @@ main-view {
   padding-bottom: $mobile-tabs-height;
 }
 
-header-backdrop {
+.header-backdrop {
   display: block;
   position: fixed;
   top: 0;
@@ -99,13 +99,11 @@ view-header {
     justify-content: space-between;
   }
 
-  header-button {
-    button {
-      transition: all 0.3s ease;
-      background-color: rgba(black, 0.5);
-      backdrop-filter: blur(2px);
-      color: $white;
-    }
+  button {
+    transition: all 0.3s ease;
+    background-color: rgba(black, 0.5);
+    backdrop-filter: blur(2px);
+    color: $white;
   }
 }
 

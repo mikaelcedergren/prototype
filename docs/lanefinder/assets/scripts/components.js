@@ -108,6 +108,13 @@ app.component("tag-item", {
           `,
 });
 
+app.component("header-backdrop", {
+  props: {},
+  template: `
+              <div class="header-backdrop"></div>
+          `,
+});
+
 // CHECKBOX
 
 app.component("checkbox-item", {
