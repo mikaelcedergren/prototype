@@ -655,9 +655,9 @@ button {
     button[small] i {
       font-size: 14px; }
 
-icon-button {
+.icon-button {
   display: inline-block; }
-  icon-button i.material-icons {
+  .icon-button i.material-icons {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 100%;
     color: #fff;

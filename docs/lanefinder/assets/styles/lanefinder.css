@@ -655,9 +655,9 @@ button {
     button[small] i {
       font-size: 14px; }
 
-icon-button {
+.icon-button {
   display: inline-block; }
-  icon-button i.material-icons {
+  .icon-button i.material-icons {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 100%;
     color: #fff;
@@ -923,7 +923,7 @@ padding-wrapper {
     font-weight: normal;
     color: #a3afbf; }
 
-navigation-bar {
+.navigation-bar {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -939,23 +939,23 @@ navigation-bar {
   transition: transform 0.3s cubic-bezier(0, 0.6, 0.5, 1), background-color 0.3s cubic-bezier(0, 0.6, 0.5, 1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px); }
-  navigation-bar a + a {
+  .navigation-bar a + a {
     margin-left: 0.5rem; }
-  navigation-bar[data-static] {
+  .navigation-bar[data-static] {
     position: fixed;
     background-color: transparent;
     transform: translateY(0);
     backdrop-filter: none;
     -webkit-backdrop-filter: none; }
-    navigation-bar.at-top[data-static] {
+    .navigation-bar.at-top[data-static] {
       background-color: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(5px);
       -webkit-backdrop-filter: blur(5px); }
-      navigation-bar.at-top[data-static] a {
+      .navigation-bar.at-top[data-static] a {
         color: #3e4a5e; }
-  navigation-bar[data-on-dark] a {
+  .navigation-bar[data-on-dark] a {
     color: #ff8b4a; }
-  navigation-bar.at-top {
+  .navigation-bar.at-top {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     transform: translateY(0) translate3d(0, 0, 0); }
 
@@ -979,7 +979,7 @@ navigation-bar {
   .status-bar[dark] .light, .status-bar.at-top .light {
     display: none; }
 
-mobile-tabs {
+.mobile-tabs {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -995,9 +995,9 @@ mobile-tabs {
   height: 56px;
   padding: 0 0.25rem;
   border-top: 1px solid rgba(0, 0, 0, 0.12); }
-  mobile-tabs div {
+  .mobile-tabs div {
     font-size: 12px; }
-  mobile-tabs a {
+  .mobile-tabs a {
     font-weight: 700;
     width: 20%;
     color: #a3afbf;
@@ -1005,9 +1005,9 @@ mobile-tabs {
     align-items: center;
     flex-flow: column nowrap;
     width: 100%; }
-    mobile-tabs a.active {
+    .mobile-tabs a.active {
       color: #3e4a5e; }
-  mobile-tabs i {
+  .mobile-tabs i {
     font-size: 21px !important;
     margin-bottom: 2px; }
 
@@ -1288,9 +1288,9 @@ job-list-item {
   to {
     opacity: 0; } }
 
-icon-button {
+.icon-button {
   margin-right: 0.5rem; }
-  icon-button i.material-icons {
+  .icon-button i.material-icons {
     background-color: #ef3662; }
 
 carrier-list-item {

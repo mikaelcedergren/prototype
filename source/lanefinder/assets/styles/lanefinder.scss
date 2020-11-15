@@ -147,7 +147,7 @@ padding-wrapper {
   }
 }
 
-navigation-bar {
+.navigation-bar {
   $height: 44px;
 
   display: flex;
@@ -259,7 +259,7 @@ navigation-bar {
   }
 }
 
-mobile-tabs {
+.mobile-tabs {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -637,7 +637,7 @@ job-list-item {
   }
 }
 
-icon-button {
+.icon-button {
   margin-right: 0.5rem;
 
   i.material-icons {

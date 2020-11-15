@@ -164,6 +164,27 @@ app.component("view-content", {
           `,
 });
 
+app.component("navigation-bar", {
+  props: {},
+  template: `
+              <div class="navigation-bar"><slot></slot></div>
+          `,
+});
+
+app.component("mobile-tabs", {
+  props: {},
+  template: `
+              <div class="mobile-tabs"><slot></slot></div>
+          `,
+});
+
+app.component("icon-button", {
+  props: {},
+  template: `
+              <div class="icon-button"><slot></slot></div>
+          `,
+});
+
 // CHECKBOX
 
 app.component("checkbox-item", {
