@@ -540,7 +540,7 @@ grid-row-fixed {
   grid-row-fixed > grid-cell {
     min-width: 0; }
 
-form-block {
+.form-block {
   display: block;
   margin-bottom: 1rem; }
 

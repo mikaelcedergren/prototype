@@ -115,6 +115,55 @@ app.component("header-backdrop", {
           `,
 });
 
+app.component("view-header", {
+  props: {},
+  template: `
+              <div class="view-header"><slot></slot></div>
+          `,
+});
+
+app.component("main-view", {
+  props: {},
+  template: `
+              <div class="main-view"><slot></slot></div>
+          `,
+});
+
+app.component("box-block", {
+  props: {},
+  template: `
+              <div class="box"><slot></slot></div>
+          `,
+});
+
+app.component("tooltip-once", {
+  props: {},
+  template: `
+              <div class="tooltip-once"><slot></slot></div>
+          `,
+});
+
+app.component("form-block", {
+  props: {},
+  template: `
+              <div class="form-block"><slot></slot></div>
+          `,
+});
+
+app.component("button-container", {
+  props: {},
+  template: `
+              <div class="button-container"><slot></slot></div>
+          `,
+});
+
+app.component("view-content", {
+  props: {},
+  template: `
+              <div class="view-content"><slot></slot></div>
+          `,
+});
+
 // CHECKBOX
 
 app.component("checkbox-item", {

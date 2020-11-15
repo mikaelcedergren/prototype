@@ -540,7 +540,7 @@ grid-row-fixed {
   grid-row-fixed > grid-cell {
     min-width: 0; }
 
-form-block {
+.form-block {
   display: block;
   margin-bottom: 1rem; }
 
@@ -828,25 +828,25 @@ a {
       background-color: #ff8b4a;
       height: 1px; }
 
-button-container {
+.button-container {
   display: block;
   text-align: center;
   padding: 1rem;
   z-index: 10; }
-  button-container.fixed {
+  .button-container.fixed {
     transition: transform 0.3s cubic-bezier(0, 0.6, 0.5, 1);
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0; }
-    button-container.fixed.account-for-tab-menu {
+    .button-container.fixed.account-for-tab-menu {
       bottom: 48px; }
-    button-container.fixed.hide {
+    .button-container.fixed.hide {
       transform: translateX(-50%) translateY(200%); }
-      button-container.fixed.hide.show {
+      .button-container.fixed.hide.show {
         transform: translateX(-50%) translateY(0%); }
 
-main-view {
+.main-view {
   display: block;
   min-height: 100vh;
   padding-bottom: 56px; }
@@ -864,7 +864,7 @@ main-view {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0); }
 
-view-header {
+.view-header {
   position: relative;
   left: 0;
   top: 0;
@@ -875,21 +875,21 @@ view-header {
   padding: 0.5rem 1rem;
   height: 172px;
   z-index: 1; }
-  view-header h2 {
+  .view-header h2 {
     color: #fff; }
-  view-header header {
+  .view-header header {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between; }
-  view-header button {
+  .view-header button {
     transition: all 0.3s ease;
     background-color: rgba(0, 0, 0, 0.5);
     -webkit-backdrop-filter: blur(2px);
             backdrop-filter: blur(2px);
     color: #fff; }
 
-view-content {
+.view-content {
   position: relative;
   display: block;
   background-color: #eff1f4;
@@ -1011,7 +1011,7 @@ mobile-tabs {
     font-size: 21px !important;
     margin-bottom: 2px; }
 
-box-block {
+.box {
   position: relative;
   display: block;
   padding: 1rem;
@@ -1231,7 +1231,7 @@ job-list-item {
       font-size: 14px;
       margin-left: auto; }
 
-tooltip-once {
+.tooltip-once {
   -webkit-animation: tooltip-once-in 0.5s 0.5s cubic-bezier(0, 0.6, 0.5, 1) forwards, tooltip-once-out 0.3s 5s ease-in forwards;
           animation: tooltip-once-in 0.5s 0.5s cubic-bezier(0, 0.6, 0.5, 1) forwards, tooltip-once-out 0.3s 5s ease-in forwards;
   background-color: #ef3662;
@@ -1247,7 +1247,7 @@ tooltip-once {
   font-size: 14px;
   border-radius: 8px;
   opacity: 0; }
-  tooltip-once::after {
+  .tooltip-once::after {
     bottom: 100%;
     left: 50%;
     border: solid transparent;

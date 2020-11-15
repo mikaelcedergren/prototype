@@ -28,7 +28,7 @@ a {
   }
 }
 
-button-container {
+.button-container {
   display: block;
   text-align: center;
   padding: 1rem;
@@ -55,10 +55,9 @@ button-container {
   }
 }
 
-main-view {
+.main-view {
   display: block;
   min-height: 100vh;
-  // padding-bottom: calc(#{$mobile-tabs-height} + 1rem + 48px);
   padding-bottom: $mobile-tabs-height;
 }
 
@@ -76,7 +75,7 @@ main-view {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-view-header {
+.view-header {
   position: relative;
   left: 0;
   top: 0;
@@ -107,7 +106,7 @@ view-header {
   }
 }
 
-view-content {
+.view-content {
   position: relative;
   display: block;
   background-color: $gray-1;
@@ -301,7 +300,7 @@ mobile-tabs {
   }
 }
 
-box-block {
+.box {
   position: relative;
   display: block;
   padding: 1rem;
@@ -586,7 +585,7 @@ job-list-item {
   }
 }
 
-tooltip-once {
+.tooltip-once {
   animation: tooltip-once-in 0.5s 0.5s $ease-out forwards,
     tooltip-once-out 0.3s 5s ease-in forwards;
   background-color: $accent;
