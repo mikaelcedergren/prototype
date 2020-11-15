@@ -1018,7 +1018,7 @@ padding-wrapper {
   border-radius: 12px;
   background: #fff; }
 
-generic-overlay {
+.generic-overlay {
   display: block;
   position: fixed;
   top: 0;
@@ -1033,12 +1033,12 @@ generic-overlay {
   cursor: pointer;
   transition: background 0.3s ease-in;
   pointer-events: none; }
-  generic-overlay.is-visible {
+  .generic-overlay.is-visible {
     background: rgba(0, 0, 0, 0.7);
     pointer-events: all; }
-    generic-overlay.is-visible main {
+    .generic-overlay.is-visible main {
       transform: translateY(0) translateZ(0); }
-  generic-overlay main {
+  .generic-overlay main {
     transition: transform 0.3s cubic-bezier(0, 0.6, 0.5, 1);
     position: relative;
     max-width: 480px;
@@ -1048,7 +1048,7 @@ generic-overlay {
     overflow: hidden;
     cursor: default;
     transform: translateY(100%) translateZ(0); }
-  generic-overlay main > div {
+  .generic-overlay main > div {
     display: block;
     padding: 1rem;
     max-height: calc(80vh - 48px - 1rem);
@@ -1111,26 +1111,26 @@ generic-modal {
   background: transparent;
   /* Optional: just make scrollbar invisible */ }
 
-generic-overlay header,
-ad-overlay header {
+.generic-overlay header,
+.ad-overlay header {
   display: flex;
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
   font-weight: 700; }
-  generic-overlay header > span,
-  ad-overlay header > span {
+  .generic-overlay header > span,
+  .ad-overlay header > span {
     margin-right: auto; }
 
-generic-overlay h4,
-ad-overlay h4 {
+.generic-overlay h4,
+.ad-overlay h4 {
   margin-bottom: 0.5rem; }
 
-generic-overlay hr,
-ad-overlay hr {
+.generic-overlay hr,
+.ad-overlay hr {
   margin-bottom: 1rem; }
 
-ad-overlay {
+.ad-overlay {
   display: block;
   position: fixed;
   top: 0;
@@ -1145,23 +1145,23 @@ ad-overlay {
   cursor: pointer;
   transition: background 0.3s ease-in;
   pointer-events: none; }
-  ad-overlay h3 {
+  .ad-overlay h3 {
     display: block;
     font-size: 18px;
     font-weight: 700;
     font-family: "Helvetica Neue", sans-serif;
     margin-bottom: 1rem; }
-  ad-overlay main > div {
+  .ad-overlay main > div {
     display: block;
     padding: 0 1rem calc(44px + 2rem) 1rem;
     max-height: calc(100vh - 48px - 2rem);
     overflow-y: auto; }
-  ad-overlay.is-visible {
+  .ad-overlay.is-visible {
     background: rgba(0, 0, 0, 0.7);
     pointer-events: all; }
-    ad-overlay.is-visible main {
+    .ad-overlay.is-visible main {
       transform: translateY(0); }
-  ad-overlay main {
+  .ad-overlay main {
     transition: transform 0.3s 0.1s cubic-bezier(0, 0.6, 0.5, 1);
     position: relative;
     max-width: 480px;

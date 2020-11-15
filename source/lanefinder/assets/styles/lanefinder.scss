@@ -308,7 +308,7 @@ padding-wrapper {
   background: $white;
 }
 
-generic-overlay {
+.generic-overlay {
   display: block;
   position: fixed;
   top: 0;
@@ -424,8 +424,8 @@ generic-modal {
   }
 }
 
-generic-overlay,
-ad-overlay {
+.generic-overlay,
+.ad-overlay {
   header {
     display: flex;
     padding: 1rem;
@@ -447,7 +447,7 @@ ad-overlay {
   }
 }
 
-ad-overlay {
+.ad-overlay {
   display: block;
   position: fixed;
   top: 0;

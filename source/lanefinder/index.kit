@@ -83,234 +83,209 @@
 <!-- $tab-item-1 = active -->
 <!-- @import '/source/lanefinder/components/_mobile-tabs.kit -->
 
-<generic-overlay id="overlay-filters">
-  <main>
-    <header>
-      <icon-button data-close
-        ><i class="material-icons">expand_more</i></icon-button
-      >
-      <span>Filters</span>
-      <tag-item secondary>242 jobs</tag-item>
-    </header>
-    <div>
-      <form-block>
-        <input type="text" placeholder="Your zip code..." />
-      </form-block>
+<generic-overlay id="overlay-filters" title="Filters" extra="242 jobs">
+  <form-block>
+    <input type="text" placeholder="Your zip code..." />
+  </form-block>
 
-      <hr />
+  <hr />
 
-      <form-block>
-        <label>Type of work</label>
-        <checkbox-item name="local" label="Local" checked></checkbox-item>
-        <checkbox-item
-          name="semiLocal"
-          label="Semi-local"
-          checked
-        ></checkbox-item>
-        <checkbox-item name="regional" label="Regional" checked></checkbox-item>
-        <checkbox-item name="otr" label="OTR" checked></checkbox-item>
-      </form-block>
+  <form-block>
+    <label>Type of work</label>
+    <checkbox-item name="local" label="Local" checked></checkbox-item>
+    <checkbox-item name="semiLocal" label="Semi-local" checked></checkbox-item>
+    <checkbox-item name="regional" label="Regional" checked></checkbox-item>
+    <checkbox-item name="otr" label="OTR" checked></checkbox-item>
+  </form-block>
 
-      <form-block>
-        <label>Type of trailer</label>
-        <checkbox-item
-          name="checkbox-trailer-1"
-          label="Dry Van"
-          checked
-        ></checkbox-item>
-        <checkbox-item
-          name="checkbox-trailer-2"
-          label="Flatbed"
-          checked
-        ></checkbox-item>
-        <checkbox-item
-          name="checkbox-trailer-6"
-          label="Refridgerated"
-          checked
-        ></checkbox-item>
-        <checkbox-item
-          name="checkbox-trailer-7"
-          label="Liquid Bulk Tanker"
-          checked
-        ></checkbox-item>
-        <checkbox-item
-          name="checkbox-trailer-8"
-          label="Dry Bulk Tanker"
-          checked
-        ></checkbox-item>
-        <checkbox-item
-          name="checkbox-trailer-3"
-          label="Hopper Bottom"
-          checked
-        ></checkbox-item>
-        <checkbox-item
-          name="checkbox-trailer-4"
-          label="Heavy Haul & Specialized"
-          checked
-        ></checkbox-item>
-        <checkbox-item
-          name="checkbox-trailer-5"
-          label="Live Haul"
-          checked
-        ></checkbox-item>
-        <checkbox-item
-          name="checkbox-trailer-5"
-          label="Intermodal Container"
-          checked
-        ></checkbox-item>
-        <checkbox-item
-          name="checkbox-trailer-9"
-          label="Car Carrier & Decking"
-          checked
-        ></checkbox-item>
-        <checkbox-item
-          name="checkbox-trailer-10"
-          label="Log"
-          checked
-        ></checkbox-item>
-        <checkbox-item
-          name="checkbox-trailer-11"
-          label="Dump"
-          checked
-        ></checkbox-item>
-      </form-block>
+  <form-block>
+    <label>Type of trailer</label>
+    <checkbox-item
+      name="checkbox-trailer-1"
+      label="Dry Van"
+      checked
+    ></checkbox-item>
+    <checkbox-item
+      name="checkbox-trailer-2"
+      label="Flatbed"
+      checked
+    ></checkbox-item>
+    <checkbox-item
+      name="checkbox-trailer-6"
+      label="Refridgerated"
+      checked
+    ></checkbox-item>
+    <checkbox-item
+      name="checkbox-trailer-7"
+      label="Liquid Bulk Tanker"
+      checked
+    ></checkbox-item>
+    <checkbox-item
+      name="checkbox-trailer-8"
+      label="Dry Bulk Tanker"
+      checked
+    ></checkbox-item>
+    <checkbox-item
+      name="checkbox-trailer-3"
+      label="Hopper Bottom"
+      checked
+    ></checkbox-item>
+    <checkbox-item
+      name="checkbox-trailer-4"
+      label="Heavy Haul & Specialized"
+      checked
+    ></checkbox-item>
+    <checkbox-item
+      name="checkbox-trailer-5"
+      label="Live Haul"
+      checked
+    ></checkbox-item>
+    <checkbox-item
+      name="checkbox-trailer-5"
+      label="Intermodal Container"
+      checked
+    ></checkbox-item>
+    <checkbox-item
+      name="checkbox-trailer-9"
+      label="Car Carrier & Decking"
+      checked
+    ></checkbox-item>
+    <checkbox-item
+      name="checkbox-trailer-10"
+      label="Log"
+      checked
+    ></checkbox-item>
+    <checkbox-item
+      name="checkbox-trailer-11"
+      label="Dump"
+      checked
+    ></checkbox-item>
+  </form-block>
 
-      <form-block>
-        <label>Weekends home per month</label>
-        <select name="cars" id="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
-      </form-block>
+  <form-block>
+    <label>Weekends home per month</label>
+    <select name="cars" id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+  </form-block>
 
-      <form-block>
-        <label>No touch freight</label>
-        <input type="text" />
-      </form-block>
+  <form-block>
+    <label>No touch freight</label>
+    <input type="text" />
+  </form-block>
 
-      <form-block>
-        <label>Minimum weekly average pay</label>
-        <input type="text" />
-      </form-block>
-    </div>
-  </main>
+  <form-block>
+    <label>Minimum weekly average pay</label>
+    <input type="text" />
+  </form-block>
 </generic-overlay>
 
 <ad-overlay id="overlay-ad">
-  <main>
-    <header>
-      <icon-button data-close>
-        <i class="material-icons">expand_more</i>
-      </icon-button>
-    </header>
+  <sub>W Trucking Inc</sub>
+  <h3>Line Haul Regional Team</h3>
+  <h4>About the company</h4>
+  <p>
+    Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Donec id elit
+    non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl
+    consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit
+    aliquet.
+  </p>
+  <h4>Job summary</h4>
+  <ul>
+    <li>$2,000 - $3,000 total average weekly pay</li>
+    <li>$1,000 sign on bonus</li>
+    <li>2,500 - 3,500 average miles per week</li>
+    <li>OTR</li>
 
-    <div>
-      <sub>W Trucking Inc</sub>
-      <h3>Line Haul Regional Team</h3>
-      <h4>About the company</h4>
-      <p>
-        Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Donec id
-        elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Praesent commodo cursus magna, vel
-        scelerisque nisl consectetur et. Integer posuere erat a ante venenatis
-        dapibus posuere velit aliquet.
-      </p>
-      <h4>Job summary</h4>
+    <li>Line haul</li>
+    <li>Contract driver (1099, solo)</li>
+
+    <li>Flatbed and Dry Van</li>
+  </ul>
+
+  <h4>Home time</h4>
+  <ul>
+    <li>14 days on, 4 days off</li>
+    <li>7 - 14 required days out</li>
+    <li>Home at least 2 weekends per month</li>
+  </ul>
+
+  <h4>Freight handling</h4>
+  <ul>
+    <li>20% drop and hook</li>
+
+    <li>80% live load / unload</li>
+    <li>100% no touch freight</li>
+    <li>No tarping</li>
+  </ul>
+
+  <h4>Pet and rider policy</h4>
+  <ul>
+    <li>Pets are allowed</li>
+    <li>Riders are allowed</li>
+  </ul>
+
+  <h4>Core responsibilities include, but are not limited to</h4>
+  <ul>
+    <li>
+      Submitting customer paperwork and deposits including invoices, load
+      orders, and handheld reports.
+    </li>
+    <li>
+      Inspection of vehicle, equipment, and cargo to ensure everything is safe,
+      legal, and secure.
+    </li>
+    <li>Maintaining a clean, sanitary, and safe work area.</li>
+    <li>Maintaining a driver's log in accordance with DOT regulations.</li>
+  </ul>
+
+  <h4>Carrier and truck information</h4>
+  <ul>
+    <li>Carrier size 20 - 49 trucks</li>
+    <li>Mostly automatic trucks</li>
+    <li>
+      Governed trucks at 70 mph on cruise control (may vary when off cruise
+      control)
+    </li>
+
+    <li>Can take truck home if requirements are met</li>
+  </ul>
+
+  <h4>Hiring requirements</h4>
+  <ul>
+    <li>At least 23 years old</li>
+    <li>Class A license</li>
+    <li>
+      Not qualified if you have night driving restriction, no semi trailer
+      restriction or medical variance restriction
+    </li>
+    <li>
+      OTR experience
       <ul>
-        <li>$2,000 - $3,000 total average weekly pay</li>
-        <li>$1,000 sign on bonus</li>
-        <li>2,500 - 3,500 average miles per week</li>
-        <li>OTR</li>
-
-        <li>Line haul</li>
-        <li>Contract driver (1099, solo)</li>
-
-        <li>Flatbed and Dry Van</li>
+        <li>at least 2 years in the last 4 years</li>
       </ul>
+    </li>
+    <li>Experience must be with a 53 ft trailer minimum</li>
 
-      <h4>Home time</h4>
-      <ul>
-        <li>14 days on, 4 days off</li>
-        <li>7 - 14 required days out</li>
-        <li>Home at least 2 weekends per month</li>
-      </ul>
+    <li>Must be able to pass urine test</li>
 
-      <h4>Freight handling</h4>
-      <ul>
-        <li>20% drop and hook</li>
+    <li>Must be eligible to work in the US</li>
+    <li>Must have basic proficiency in the English language</li>
 
-        <li>80% live load / unload</li>
-        <li>100% no touch freight</li>
-        <li>No tarping</li>
-      </ul>
+    <li>Must have a valid DOT medical card</li>
+    <li>Good driving record</li>
+    <li>Stable work history</li>
+  </ul>
 
-      <h4>Pet and rider policy</h4>
-      <ul>
-        <li>Pets are allowed</li>
-        <li>Riders are allowed</li>
-      </ul>
-
-      <h4>Core responsibilities include, but are not limited to</h4>
-      <ul>
-        <li>
-          Submitting customer paperwork and deposits including invoices, load
-          orders, and handheld reports.
-        </li>
-        <li>
-          Inspection of vehicle, equipment, and cargo to ensure everything is
-          safe, legal, and secure.
-        </li>
-        <li>Maintaining a clean, sanitary, and safe work area.</li>
-        <li>Maintaining a driver's log in accordance with DOT regulations.</li>
-      </ul>
-
-      <h4>Carrier and truck information</h4>
-      <ul>
-        <li>Carrier size 20 - 49 trucks</li>
-        <li>Mostly automatic trucks</li>
-        <li>
-          Governed trucks at 70 mph on cruise control (may vary when off cruise
-          control)
-        </li>
-
-        <li>Can take truck home if requirements are met</li>
-      </ul>
-
-      <h4>Hiring requirements</h4>
-      <ul>
-        <li>At least 23 years old</li>
-        <li>Class A license</li>
-        <li>
-          Not qualified if you have night driving restriction, no semi trailer
-          restriction or medical variance restriction
-        </li>
-        <li>
-          OTR experience
-          <ul>
-            <li>at least 2 years in the last 4 years</li>
-          </ul>
-        </li>
-        <li>Experience must be with a 53 ft trailer minimum</li>
-
-        <li>Must be able to pass urine test</li>
-
-        <li>Must be eligible to work in the US</li>
-        <li>Must have basic proficiency in the English language</li>
-
-        <li>Must have a valid DOT medical card</li>
-        <li>Good driving record</li>
-        <li>Stable work history</li>
-      </ul>
-
-      <button-container class="fixed">
-        <a href="/lanefinder/wizards/apply/step-1.html"
-          ><button accent large glow>Apply now</button></a
-        >
-      </button-container>
-    </div>
-  </main>
+  <button-container class="fixed">
+    <a href="/lanefinder/wizards/apply/step-1.html"
+      ><button accent large glow>Apply now</button></a
+    >
+  </button-container>
 </ad-overlay>
 
 <generic-modal id="modal-save-search">
