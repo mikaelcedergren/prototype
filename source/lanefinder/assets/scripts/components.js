@@ -85,6 +85,11 @@ app.component("list-item", {
       default: null,
     },
   },
+  computed: {
+    hasSlotData() {
+      return this.$slots.default;
+    },
+  },
   template: `
               <div>
                 <div class="list-item" :class="{'layout-right': layoutRight, first, unread}">
@@ -93,7 +98,7 @@ app.component("list-item", {
                   <div v-if="subTitle" class="list-item-sub-title">{{subTitle}}</div>
                   <p v-if="paragraph">{{paragraph}}</p>
                   <p v-if="secondParagraph">{{secondParagraph}}</p>
-                  <div class="list-item-extra">
+                  <div v-if="hasSlotData || extra" class="list-item-extra">
                     <slot></slot>
                     <span>{{extra}}</span>
                   </div>

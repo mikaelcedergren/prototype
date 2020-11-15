@@ -249,36 +249,12 @@
 		"oAP": "/docs/lanefinder/components/_carrier-filters-box.html",
 		"oF": 0
 		},
-	"/source/lanefinder/components/_carrier-list-item.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/lanefinder/components/_carrier-list-item.html",
-		"oF": 0
-		},
 	"/source/lanefinder/components/_filters-box.kit": {
 		"cB": 1,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/docs/lanefinder/components/_filters-box.html",
-		"oF": 0
-		},
-	"/source/lanefinder/components/_job-item.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/lanefinder/components/_job-item.html",
-		"oF": 0
-		},
-	"/source/lanefinder/components/_list-item.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/lanefinder/components/_list-item.html",
 		"oF": 0
 		},
 	"/source/lanefinder/components/_mobile-tabs.kit": {
@@ -303,14 +279,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/docs/lanefinder/components/_page-header.html",
-		"oF": 0
-		},
-	"/source/lanefinder/components/_status-bar.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/lanefinder/components/_status-bar.html",
 		"oF": 0
 		},
 	"/source/lanefinder/index.kit": {
@@ -1153,7 +1121,7 @@
 		},
 	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
-	"esLintECMAVersion": 7,
+	"esLintECMAVersion": 11,
 	"esLintEnvironmentsMask": 1,
 	"esLintRules": {
 		"accessor-pairs": {
@@ -1217,7 +1185,7 @@
 			},
 		"comma-dangle": {
 			"active": 1,
-			"optionString": "'never'"
+			"optionString": "'only-multiline'"
 			},
 		"comma-spacing": {
 			"active": 0,
@@ -1806,7 +1774,7 @@
 			"optionString": "{'skipBlankLines': false, 'ignoreComments': false}"
 			},
 		"no-undef": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'typeof': false}"
 			},
 		"no-undef-init": {
