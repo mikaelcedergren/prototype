@@ -30,23 +30,24 @@
       src="https://kit.fontawesome.com/84e7c43de7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=4dc8c4c6727d352734ed76db6dd715d7" />
-    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js?ckcachebust=627079427"></script> -->
-    <!-- <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js?ckcachebust=627079427"></script> -->
+    <link rel="stylesheet" href="/lanefinder/assets/styles/lanefinder.css?ckcachebust=560bb24702040e81eb15e118db6054a5" />
+    <script src="https://unpkg.com/vue@next?ckcachebust=627130402"></script>
   </head>
 
-  <body></body>
-</html>
+  <body>
+    <div id="app">
 
 <main-view>
-  <header-backdrop style="
+  <header-backdrop
+    style="
       background-image: url(/lanefinder/assets/images/header-image-looking-out.png);
       background-size: 120%;
-    ">
+    "
+  >
   </header-backdrop>
   <view-header>
     <header>
-      <h2> Jobs </h2>
+      <h2>Jobs</h2>
       <header-button>
         <button id="save-search" data-open="modal-save-search" small>
           <i class="material-icons">favorite</i><span>Save search</span>
@@ -78,7 +79,18 @@
   
 
   <view-content>
-    <list-heading title="Matching all of your filters" extra="2 jobs"></list-heading>
+    <list-heading
+      title="Matching all of your filters"
+      extra="2 jobs"
+    ></list-heading>
+
+    <list-item
+      title="title is here"
+      paragraph="adsfafasd"
+      extra="24 may 2020"
+      sponsored
+      ><tag-item>1099</tag-item><tag-item>20-49 trucks</tag-item></list-item
+    >
 
     <job-list-item id="job-item-1" data-open="overlay-ad">
                                 <div>
@@ -131,7 +143,10 @@
                             </job-list-item>
                             
 
-    <list-heading title="You might also be interested in" extra="12 jobs"></list-heading>
+    <list-heading
+      title="You might also be interested in"
+      extra="12 jobs"
+    ></list-heading>
 
     <job-list-item id="job-item-1" data-open="overlay-ad">
                                 <div>
@@ -170,11 +185,12 @@
 </main-view>
 
 <navigation-bar class="detect-top">
-  <h3> Jobs </h3>
+  <h3>Jobs</h3>
   <div>
     <a href="#">Help</a>
     <i class="material-icons" data-open="overlay-filters">tune</i>
-    <i class="material-icons" data-open="modal-save-search">favorite</i></div>
+    <i class="material-icons" data-open="modal-save-search">favorite</i>
+  </div>
 </navigation-bar>
 
 <mobile-tabs>
@@ -208,8 +224,10 @@
 <generic-overlay id="overlay-filters">
   <main>
     <header>
-        <icon-button data-close><i class="material-icons">expand_more</i></icon-button>
-        <span>Filters</span>
+      <icon-button data-close
+        ><i class="material-icons">expand_more</i></icon-button
+      >
+      <span>Filters</span>
       <tag-item secondary>242 jobs</tag-item>
     </header>
     <div>
@@ -221,26 +239,78 @@
 
       <form-block>
         <label>Type of work</label>
-        <checkbox-item id="local" label="Local" checked></checkbox-item>
-        <checkbox-item id="semiLocal" label="Semi-local" checked></checkbox-item>
-        <checkbox-item id="regional" label="Regional" checked></checkbox-item>
-        <checkbox-item id="otr" label="OTR" checked></checkbox-item>
+        <checkbox-item name="local" label="Local" checked></checkbox-item>
+        <checkbox-item
+          name="semiLocal"
+          label="Semi-local"
+          checked
+        ></checkbox-item>
+        <checkbox-item name="regional" label="Regional" checked></checkbox-item>
+        <checkbox-item name="otr" label="OTR" checked></checkbox-item>
       </form-block>
 
       <form-block>
         <label>Type of trailer</label>
-        <checkbox-item id="checkbox-trailer-1" label="Dry Van" checked></checkbox-item>
-        <checkbox-item id="checkbox-trailer-2" label="Flatbed" checked></checkbox-item>
-        <checkbox-item id="checkbox-trailer-6" label="Refridgerated" checked></checkbox-item>
-        <checkbox-item id="checkbox-trailer-7" label="Liquid Bulk Tanker" checked></checkbox-item>
-        <checkbox-item id="checkbox-trailer-8" label="Dry Bulk Tanker" checked></checkbox-item>
-        <checkbox-item id="checkbox-trailer-3" label="Hopper Bottom" checked></checkbox-item>
-        <checkbox-item id="checkbox-trailer-4" label="Heavy Haul & Specialized" checked></checkbox-item>
-        <checkbox-item id="checkbox-trailer-5" label="Live Haul" checked></checkbox-item>
-        <checkbox-item id="checkbox-trailer-5" label="Intermodal Container" checked></checkbox-item>
-        <checkbox-item id="checkbox-trailer-9" label="Car Carrier & Decking" checked></checkbox-item>
-        <checkbox-item id="checkbox-trailer-10" label="Log" checked></checkbox-item>
-        <checkbox-item id="checkbox-trailer-11" label="Dump" checked></checkbox-item>
+        <checkbox-item
+          name="checkbox-trailer-1"
+          label="Dry Van"
+          checked
+        ></checkbox-item>
+        <checkbox-item
+          name="checkbox-trailer-2"
+          label="Flatbed"
+          checked
+        ></checkbox-item>
+        <checkbox-item
+          name="checkbox-trailer-6"
+          label="Refridgerated"
+          checked
+        ></checkbox-item>
+        <checkbox-item
+          name="checkbox-trailer-7"
+          label="Liquid Bulk Tanker"
+          checked
+        ></checkbox-item>
+        <checkbox-item
+          name="checkbox-trailer-8"
+          label="Dry Bulk Tanker"
+          checked
+        ></checkbox-item>
+        <checkbox-item
+          name="checkbox-trailer-3"
+          label="Hopper Bottom"
+          checked
+        ></checkbox-item>
+        <checkbox-item
+          name="checkbox-trailer-4"
+          label="Heavy Haul & Specialized"
+          checked
+        ></checkbox-item>
+        <checkbox-item
+          name="checkbox-trailer-5"
+          label="Live Haul"
+          checked
+        ></checkbox-item>
+        <checkbox-item
+          name="checkbox-trailer-5"
+          label="Intermodal Container"
+          checked
+        ></checkbox-item>
+        <checkbox-item
+          name="checkbox-trailer-9"
+          label="Car Carrier & Decking"
+          checked
+        ></checkbox-item>
+        <checkbox-item
+          name="checkbox-trailer-10"
+          label="Log"
+          checked
+        ></checkbox-item>
+        <checkbox-item
+          name="checkbox-trailer-11"
+          label="Dump"
+          checked
+        ></checkbox-item>
       </form-block>
 
       <form-block>
@@ -262,7 +332,6 @@
         <label>Minimum weekly average pay</label>
         <input type="text" />
       </form-block>
-
     </div>
   </main>
 </generic-overlay>
@@ -280,9 +349,11 @@
       <h3>Line Haul Regional Team</h3>
       <h4>About the company</h4>
       <p>
-        Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl
-        consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+        Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Donec id
+        elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Praesent commodo cursus magna, vel
+        scelerisque nisl consectetur et. Integer posuere erat a ante venenatis
+        dapibus posuere velit aliquet.
       </p>
       <h4>Job summary</h4>
       <ul>
@@ -293,7 +364,6 @@
 
         <li>Line haul</li>
         <li>Contract driver (1099, solo)</li>
-
 
         <li>Flatbed and Dry Van</li>
       </ul>
@@ -316,14 +386,20 @@
 
       <h4>Pet and rider policy</h4>
       <ul>
-        <li>Pets are allowed </li>
-        <li>Riders are allowed </li>
+        <li>Pets are allowed</li>
+        <li>Riders are allowed</li>
       </ul>
 
       <h4>Core responsibilities include, but are not limited to</h4>
       <ul>
-        <li>Submitting customer paperwork and deposits including invoices, load orders, and handheld reports.</li>
-        <li>Inspection of vehicle, equipment, and cargo to ensure everything is safe, legal, and secure.</li>
+        <li>
+          Submitting customer paperwork and deposits including invoices, load
+          orders, and handheld reports.
+        </li>
+        <li>
+          Inspection of vehicle, equipment, and cargo to ensure everything is
+          safe, legal, and secure.
+        </li>
         <li>Maintaining a clean, sanitary, and safe work area.</li>
         <li>Maintaining a driver's log in accordance with DOT regulations.</li>
       </ul>
@@ -332,7 +408,10 @@
       <ul>
         <li>Carrier size 20 - 49 trucks</li>
         <li>Mostly automatic trucks</li>
-        <li>Governed trucks at 70 mph on cruise control (may vary when off cruise control)</li>
+        <li>
+          Governed trucks at 70 mph on cruise control (may vary when off cruise
+          control)
+        </li>
 
         <li>Can take truck home if requirements are met</li>
       </ul>
@@ -341,15 +420,17 @@
       <ul>
         <li>At least 23 years old</li>
         <li>Class A license</li>
-        <li>Not qualified if you have night driving restriction, no semi trailer restriction or medical variance
-          restriction</li>
-        <li>OTR experience<ul>
+        <li>
+          Not qualified if you have night driving restriction, no semi trailer
+          restriction or medical variance restriction
+        </li>
+        <li>
+          OTR experience
+          <ul>
             <li>at least 2 years in the last 4 years</li>
           </ul>
         </li>
         <li>Experience must be with a 53 ft trailer minimum</li>
-
-
 
         <li>Must be able to pass urine test</li>
 
@@ -360,13 +441,12 @@
         <li>Good driving record</li>
         <li>Stable work history</li>
       </ul>
-    </div>
 
-    <button-container class="fixed">
-      <a href="/lanefinder/wizards/apply/step-1.html"><button accent large glow>
-          Apply now
-        </button></a>
-    </button-container>
+      <button-container class="fixed">
+        <a href="/lanefinder/wizards/apply/step-1.html"
+          ><button accent large glow>Apply now</button></a
+        >
+      </button-container>
     </div>
   </main>
 </ad-overlay>
@@ -375,9 +455,7 @@
   <main>
     <header>Save search</header>
     <div>
-      <p>
-        Get notified when jobs matching this search become available.
-      </p>
+      <p>Get notified when jobs matching this search become available.</p>
       <label>Name this search</label>
       <input type="text" />
     </div>
@@ -388,11 +466,10 @@
   </main>
 </generic-modal>
 
-
 <status-bar class="detect-top"></status-bar>
-<script type="text/javascript" src="/shared/scripts/footer-scripts.js?ckcachebust=789027016b796e6a4cbe72db0ee6879e"></script>
-<script type="text/javascript" src="/lanefinder/assets/scripts/components.js?ckcachebust=e6d0cc625f383042ab537f766de1681d"></script>
-</body>
-
+        <script type="text/javascript" src="/shared/scripts/footer-scripts.js?ckcachebust=19f7c05b7df1e977c12664470f4fdbac"></script>
+        <script type="text/javascript" src="/lanefinder/assets/scripts/components.js?ckcachebust=b31b5ed70ed5cf03dfd411048f82cfc8"></script>
+        </div>
+    </body>
 </html>
 

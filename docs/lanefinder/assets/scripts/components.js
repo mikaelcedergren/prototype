@@ -1,92 +1,140 @@
-class ListItem extends HTMLElement {
-  constructor() {
-    super();
+const app = Vue.createApp({});
 
-    const unread =
-      this.getAttribute("unread") === ""
-        ? "<unread-marker></unread-marker>"
-        : "";
-    const hrType =
-      this.getAttribute("layout-right") === ""
-        ? "<hr />"
-        : '<hr class="depth" />';
-    const unreadClass = this.getAttribute("unread") === "" ? "unread" : "";
-    const layoutRightClass =
-      this.getAttribute("layout-right") === "" ? "layout-right" : "";
-    const paragraph = this.getAttribute("paragraph")
-      ? "<p>" + this.getAttribute("paragraph") + "</p>"
-      : "";
-    const tag = this.getAttribute("tag-content")
-      ? "<tag-item " +
-        this.getAttribute("tag-color") +
-        ">" +
-        this.getAttribute("tag-content") +
-        "</tag-item>"
-      : "";
-    const extra = this.getAttribute("extra-content")
-      ? "<span>" + this.getAttribute("extra-content") + "</span>"
-      : "";
+app.component("list-heading", {
+  props: {
+    title: {
+      type: String,
+      default: null,
+    },
+    extra: {
+      type: String,
+      default: null,
+    },
+  },
+  template: `
+              <div class="list-heading">
+                  <h4>{{title}}</h4>
+                  <div v-if="extra">{{extra}}</div>
+              </div>
+          `,
+});
 
-    this.innerHTML = `
-      <div class="list-item ${unreadClass} ${layoutRightClass}">
-        <h3>
-        ${unread}
-        ${this.getAttribute("title")}</h3>
-        ${paragraph}
-        <div class="list-item-extra">
-            ${tag}
-            ${extra}
-        </div>
-        </div>
-        ${hrType}
-      `;
-  }
-}
+app.component("status-bar", {
+  props: {
+    title: {
+      type: String,
+      default: null,
+    },
+    extra: {
+      type: String,
+      default: null,
+    },
+  },
+  template: `
+              <div class="status-bar">
+                <img src="/shared/images/status-bar-black-left.png" class="dark" />
+                <img src="/shared/images/status-bar-black-right.png" class="dark" />
+                <img src="/shared/images/status-bar-left.png" class="light" />
+                <img src="/shared/images/status-bar-right.png" class="light" />
+              </div>
+          `,
+});
 
-class Checkbox extends HTMLElement {
-  constructor() {
-    super();
+app.component("list-item", {
+  props: {
+    title: {
+      type: String,
+      default: null,
+    },
+    paragraph: {
+      type: String,
+      default: null,
+    },
+    extra: {
+      type: String,
+      default: null,
+    },
+    unread: {
+      type: Boolean,
+      default: null,
+    },
+    right: {
+      type: Boolean,
+      default: null,
+    },
+    sponsored: {
+      type: Boolean,
+      default: null,
+    },
+  },
+  template: `
+              <div>
+                <div class="list-item" :class="{'layout-right': right}">
+                  <tag-item accent v-if="sponsored">Urgently hiring</tag-item>
+                  <h3><div v-if="unread" class="unread-marker"></div>{{title}}</h3>
+                  <p v-if="paragraph">{{paragraph}}</p>
+                  <div class="list-item-extra">
+                  <slot></slot>
+                  <span>{{extra}}</span>
+                  </div>
+                </div>
+                <hr :class="{'depth' : !right}"/>
+              </div>
+          `,
+});
 
-    const checked = this.getAttribute("checked") === "" ? "checked" : "";
+app.component("tag-item", {
+  props: {
+    primary: {
+      type: Boolean,
+      default: null,
+    },
+  },
+  template: `
+              <div class="tag-item"><slot></slot></div>
+          `,
+});
 
-    this.innerHTML = `
-      <input type="checkbox" id="${this.getAttribute("id")}" ${checked} />
-      <label for="${this.getAttribute("id")}">${this.getAttribute(
-      "label"
-    )}</label>
-      `;
-  }
-}
+app.component("checkbox-item", {
+  props: {
+    name: {
+      type: String,
+      default: null,
+    },
+    label: {
+      type: String,
+      default: null,
+    },
+    checked: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  template: `
+              <div class="checkbox-item">
+                <input type="checkbox" :id="name" :checked="checked" />
+                <label>{{label}}</label>
+              </div>
+          `,
+});
 
-class StatusBar extends HTMLElement {
-  constructor() {
-    super();
+app.component("user-list", {
+  props: {
+    title: {
+      type: String,
+      default: null,
+    },
+    primary: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  template: `
+            <div :class="{ 'this-is-primary': primary, primary}">
+                <div>{{title}}</div>
+                <div v-if="primary">This is primary</div>
+            </div>
+        `,
+});
 
-    this.innerHTML = `
-        <img src="/shared/images/status-bar-black-left.png" class="dark" />
-        <img src="/shared/images/status-bar-black-right.png" class="dark" />
-        <img src="/shared/images/status-bar-left.png" class="light" />
-        <img src="/shared/images/status-bar-right.png" class="light" />
-      `;
-  }
-}
-
-class ListHeading extends HTMLElement {
-  constructor() {
-    super();
-
-    const extra = this.getAttribute("extra")
-      ? "<div>" + this.getAttribute("extra") + "</div>"
-      : "";
-
-    this.innerHTML = `
-        <h4>${this.getAttribute("title")}</h4>
-        ${extra}
-      `;
-  }
-}
-
-window.customElements.define("checkbox-item", Checkbox);
-window.customElements.define("list-heading", ListHeading);
-window.customElements.define("status-bar", StatusBar);
-window.customElements.define("list-element", ListItem);
+app.mount("#app");

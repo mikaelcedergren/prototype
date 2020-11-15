@@ -132,7 +132,7 @@ padding-wrapper {
   padding: 1rem;
 }
 
-list-heading {
+.list-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -231,7 +231,7 @@ navigation-bar {
   }
 }
 
-status-bar {
+.status-bar {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -544,55 +544,13 @@ job-list-item {
   }
 }
 
-list-item {
+.list-item {
   display: block;
   position: relative;
   background-color: $white;
-  padding: 1rem 0 0 0;
+  padding: 1rem;
 
-  &.new {
-    h3 {
-      span {
-        display: inline-block;
-        height: 0.75rem;
-        width: 0.75rem;
-        background-color: $primary;
-        border-radius: 100%;
-        vertical-align: initial;
-        margin-right: 0.5rem;
-      }
-    }
-    p {
-      color: $black;
-    }
-  }
-
-  & > div {
-    padding: 0 1rem;
-  }
-
-  p {
-    color: $gray-4;
-    margin-top: 0.5rem;
-  }
-
-  &:first-child {
-    border-top-left-radius: $border-radius-large;
-    border-top-right-radius: $border-radius-large;
-  }
-
-  .item-additional {
-    color: $gray-4;
-    font-size: $font-size-small;
-  }
-
-  &[data-layout="right"] {
-    hr {
-      height: 0;
-      border-top: $line;
-      background-color: transparent;
-      box-shadow: none;
-    }
+  &.layout-right {
     &::after {
       position: absolute;
       top: 1rem;
@@ -604,6 +562,18 @@ list-item {
       content: "navigate_next";
       -webkit-font-feature-settings: "liga";
       font-feature-settings: "liga";
+    }
+  }
+
+  .list-item-extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      color: $gray-3;
+      font-size: $font-size-small;
+      margin-left: auto;
     }
   }
 }
@@ -707,7 +677,7 @@ carrier-list-item {
   }
 }
 
-unread-marker {
+.unread-marker {
   display: inline-block;
   height: 0.5rem;
   width: 0.5rem;
