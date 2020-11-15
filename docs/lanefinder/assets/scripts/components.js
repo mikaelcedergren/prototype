@@ -14,11 +14,13 @@ app.component("list-heading", {
     },
   },
   template: `
-              <div class="list-heading">
-                  <h4>{{title}}</h4>
-                  <div v-if="extra">{{extra}}</div>
-              </div>
-          `,
+
+<div class="list-heading">
+    <h4>{{title}}</h4>
+    <div v-if="extra">{{extra}}</div>
+</div>
+
+`,
 });
 
 // STATUS BAR
