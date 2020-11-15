@@ -94,6 +94,50 @@ app.component("list-item", {
           `,
 });
 
+app.component("grid-row", {
+  props: {
+    fixed: {
+      type: Boolean,
+      default: null,
+    },
+    middle: {
+      type: Boolean,
+      default: null,
+    },
+    gutterNone: {
+      type: Boolean,
+      default: null,
+    },
+    gutterSmall: {
+      type: Boolean,
+      default: null,
+    },
+  },
+  template: `
+
+<div class="grid-row" :class="{fixed, middle, 'gutter-small': gutterSmall, 'gutter-none': gutterNone}">
+<slot></slot>
+</div>
+
+`,
+});
+
+app.component("grid-cell", {
+  props: {
+    shrink: {
+      type: Boolean,
+      default: null,
+    },
+  },
+  template: `
+
+<div class="grid-cell" :class="{shrink}">
+<slot></slot>
+</div>
+
+`,
+});
+
 // TAG
 
 app.component("tag-item", {

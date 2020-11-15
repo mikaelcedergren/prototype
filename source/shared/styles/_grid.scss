@@ -1,4 +1,4 @@
-grid-row {
+.grid-row {
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
@@ -7,11 +7,19 @@ grid-row {
   margin: -1rem;
   width: calc(100% + 2rem);
 
+  &.fixed {
+    flex-flow: row nowrap;
+
+    & > .grid-cell {
+      min-width: 0;
+    }
+  }
+
   &.gutter-none {
     margin: 0;
     width: 100%;
 
-    & > grid-cell {
+    & > .grid-cell {
       margin: 0;
     }
   }
@@ -20,18 +28,18 @@ grid-row {
     margin: -0.5rem;
     width: calc(100% + 1rem);
 
-    & > grid-cell {
+    & > .grid-cell {
       margin: 0.5rem;
     }
   }
 
   &.middle {
-    & > grid-cell {
+    & > .grid-cell {
       align-self: center;
     }
   }
 
-  & > grid-cell {
+  & > .grid-cell {
     vertical-align: baseline;
     font-size: inherit;
     min-width: 220px;
@@ -42,21 +50,13 @@ grid-row {
     &.shrink {
       flex-basis: auto;
       flex-grow: 0;
+      min-width: unset;
     }
   }
 
-  grid-row {
-    & > grid-cell {
+  .grid-row {
+    & > .grid-cell {
       min-width: 0;
     }
-  }
-}
-
-grid-row-fixed {
-  @extend grid-row;
-  flex-flow: row nowrap;
-
-  & > grid-cell {
-    min-width: 0;
   }
 }

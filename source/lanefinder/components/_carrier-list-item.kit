@@ -1,18 +1,18 @@
 <carrier-list-item>
-    <grid-row-fixed class="gutter-small">
-        <grid-cell class="shrink">
-            <input type="checkbox" onClick="showSendButton();">
-        </grid-cell>
+  <grid-row fixed gutter-small>
+    <grid-cell class="shrink">
+      <input type="checkbox" onClick="showSendButton();" />
+    </grid-cell>
+    <grid-cell>
+      <grid-row gutter-none>
         <grid-cell>
-            <grid-row-fixed class="gutter-none">
-                <grid-cell>
-                    <!-- $carrier -->
-                </grid-cell>
-                <grid-cell class="shrink align-right color-discreet">
-                    <!-- $distance -->
-                </grid-cell>
-            </grid-row-fixed>
-            <div class="color-discreet"><!-- $carrier-size --></div>
+          <!-- $carrier -->
         </grid-cell>
-    </grid-row-fixed>
+        <grid-cell class="shrink align-right color-discreet">
+          <!-- $distance -->
+        </grid-cell>
+      </grid-row>
+      <div class="color-discreet"><!-- $carrier-size --></div>
+    </grid-cell>
+  </grid-row>
 </carrier-list-item>
