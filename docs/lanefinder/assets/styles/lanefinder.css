@@ -1054,7 +1054,7 @@ padding-wrapper {
     max-height: calc(80vh - 48px - 1rem);
     overflow-y: auto; }
 
-generic-modal {
+.generic-modal {
   display: block;
   position: fixed;
   top: 0;
@@ -1069,17 +1069,17 @@ generic-modal {
   cursor: pointer;
   transition: background 0.3s ease-in;
   pointer-events: none; }
-  generic-modal main > div {
+  .generic-modal main > div {
     display: block;
     padding: 0 1rem 1rem 1rem;
     max-height: calc(50vh - 48px - 1rem);
     overflow-y: auto; }
-  generic-modal.is-visible {
+  .generic-modal.is-visible {
     background: rgba(0, 0, 0, 0.7);
     pointer-events: all; }
-    generic-modal.is-visible main {
+    .generic-modal.is-visible main {
       transform: translateY(0); }
-  generic-modal header {
+  .generic-modal header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1087,13 +1087,13 @@ generic-modal {
     padding: 1rem 1rem 0.5rem 1rem;
     font-size: 1.2rem;
     font-family: "Helvetica Neue", sans-serif; }
-  generic-modal footer {
+  .generic-modal footer {
     display: block;
     padding: 1rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between; }
-  generic-modal main {
+  .generic-modal main {
     transition: transform 0.3s 0.1s cubic-bezier(0, 0.6, 0.5, 1);
     position: relative;
     max-width: 480px;

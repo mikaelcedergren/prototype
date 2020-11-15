@@ -188,6 +188,7 @@ app.component("icon-button", {
 app.component("ad-overlay", {
   props: {},
   template: `
+
 <div class="ad-overlay">
   <main>
     <header>
@@ -201,7 +202,8 @@ app.component("ad-overlay", {
     </div>
   </main>
 </div>
-          `,
+
+`,
 });
 
 app.component("generic-overlay", {
@@ -226,6 +228,29 @@ app.component("generic-overlay", {
                   </div>
                 </main>
               </div>
+          `,
+});
+
+app.component("generic-modal", {
+  props: {
+    title: {
+      type: String,
+      default: null,
+    },
+  },
+  template: `
+<div class="generic-modal">
+  <main>
+    <header>{{title}}</header>
+    <div>
+      <slot></slot>
+    </div>
+    <footer>
+      <button data-close discreet>Cancel</button>
+      <button data-close accent>Save</button>
+    </footer>
+  </main>
+</div>
           `,
 });
 
