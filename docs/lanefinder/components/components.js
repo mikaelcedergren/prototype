@@ -371,8 +371,15 @@
 
   const app = Vue.createApp({});
 
+  // *********************************************************************************
+  // INCLUDE ALL SHARED COMPONENTS
+  // *********************************************************************************
   app.component('grid-cell', GridCell);
   app.component('grid-row', GridRow);
+
+  // *********************************************************************************
+  // INCLUDE ALL LANEFINDER COMPONENTS
+  // *********************************************************************************
   app.component('list-heading', ListHeading);
   app.component('list-item', ListItem);
   app.component('status-bar', StatusBar);
