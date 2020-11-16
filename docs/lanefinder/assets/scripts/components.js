@@ -3,6 +3,7 @@ import GridRow from '../../components/grid-row.js';
 import ListHeading from '../../components/list-heading.js';
 import ListItem from '../../components/list-item.js';
 import StatusBar from '../../components/status-bar.js';
+import CarrierListItem from '../../components/carrier-list-item.js';
 const app = Vue.createApp({});
 
 app.component('grid-cell', GridCell);
@@ -10,47 +11,10 @@ app.component('grid-row', GridRow);
 app.component('list-heading', ListHeading);
 app.component('list-item', ListItem);
 app.component('status-bar', StatusBar);
+app.component('carrier-list-item', CarrierListItem);
 
-app.component('carrier-list-item', {
-  props: {
-    title: {
-      type: String,
-      default: null,
-    },
-    size: {
-      type: String,
-      default: null,
-    },
-    distance: {
-      type: String,
-      default: null,
-    },
-  },
-  template: `
 
-<div class="carrier-list-item">
-  <grid-row fixed gutter-small>
-    <grid-cell shrink>
-      <input type="checkbox" onClick="showSendButton();" />
-    </grid-cell>
-    <grid-cell>
-      <grid-row gutter-none>
-        <grid-cell>
-          {{title}}
-        </grid-cell>
-        <grid-cell class="shrink align-right color-discreet">
-          {{distance}}
-        </grid-cell>
-      </grid-row>
-      <div class="color-discreet">{{size}}</div>
-    </grid-cell>
-  </grid-row>
-</div>
 
-`,
-});
-
-// TAG
 
 app.component('tag-item', {
   props: {
