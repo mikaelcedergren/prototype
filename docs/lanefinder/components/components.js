@@ -228,6 +228,41 @@
           `,
   };
 
+  var TooltipOnce = {
+    props: {},
+    template: `
+              <div class="tooltip-once"><slot></slot></div>
+          `,
+  };
+
+  var FormBlock = {
+    props: {},
+    template: `
+              <div class="form-block"><slot></slot></div>
+          `,
+  };
+
+  var ButtonContainer = {
+    props: {},
+    template: `
+              <div class="button-container"><slot></slot></div>
+          `,
+  };
+
+  var ViewContent = {
+    props: {},
+    template: `
+              <div class="view-content"><slot></slot></div>
+          `,
+  };
+
+  var NavigationBar = {
+    props: {},
+    template: `
+              <div class="navigation-bar"><slot></slot></div>
+          `,
+  };
+
   const app = Vue.createApp({});
 
   app.component('grid-cell', GridCell);
@@ -241,41 +276,11 @@
   app.component('view-header', ViewHeader);
   app.component('main-view', MainView);
   app.component('box-block', BoxBlock);
-
-  app.component('tooltip-once', {
-    props: {},
-    template: `
-              <div class="tooltip-once"><slot></slot></div>
-          `,
-  });
-
-  app.component('form-block', {
-    props: {},
-    template: `
-              <div class="form-block"><slot></slot></div>
-          `,
-  });
-
-  app.component('button-container', {
-    props: {},
-    template: `
-              <div class="button-container"><slot></slot></div>
-          `,
-  });
-
-  app.component('view-content', {
-    props: {},
-    template: `
-              <div class="view-content"><slot></slot></div>
-          `,
-  });
-
-  app.component('navigation-bar', {
-    props: {},
-    template: `
-              <div class="navigation-bar"><slot></slot></div>
-          `,
-  });
+  app.component('tooltip-once', TooltipOnce);
+  app.component('form-block', FormBlock);
+  app.component('button-container', ButtonContainer);
+  app.component('view-content', ViewContent);
+  app.component('navigation-bar', NavigationBar);
 
   app.component('mobile-tabs', {
     props: {},
