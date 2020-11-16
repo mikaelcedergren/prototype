@@ -1,1 +1,0 @@
-class UserCard extends HTMLElement{constructor(){super();const t=this.getAttribute("avatar")??"",e=""===this.getAttribute("primary")?"primary":"";this.innerHTML=`\n    <div class="user-card ${e}">\n        <img />\n        <h3>${this.getAttribute("name")}</h3>\n        <div>${t}</div>\n    </div>\n    `}}window.customElements.define("user-card",UserCard);

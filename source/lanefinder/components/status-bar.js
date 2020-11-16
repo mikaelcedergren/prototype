@@ -11,10 +11,10 @@ export default {
   },
   template: `
               <div class="status-bar">
-                <img src="/shared/images/status-bar-black-left.png" class="dark" />
-                <img src="/shared/images/status-bar-black-right.png" class="dark" />
-                <img src="/shared/images/status-bar-left.png" class="light" />
-                <img src="/shared/images/status-bar-right.png" class="light" />
+                <img src="/shared/assets/images/status-bar-black-left.png" class="dark" />
+                <img src="/shared/assets/images/status-bar-black-right.png" class="dark" />
+                <img src="/shared/assets/images/status-bar-left.png" class="light" />
+                <img src="/shared/assets/images/status-bar-right.png" class="light" />
               </div>
           `,
 };
