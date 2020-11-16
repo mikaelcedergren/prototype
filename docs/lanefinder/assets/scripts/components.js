@@ -1,160 +1,17 @@
+import GridCell from '../../../shared/components/grid-cell.js';
+import GridRow from '../../components/grid-row.js';
+import ListHeading from '../../components/list-heading.js';
+import ListItem from '../../components/list-item.js';
+import StatusBar from '../../components/status-bar.js';
 const app = Vue.createApp({});
 
-// LIST HEADING
+app.component('grid-cell', GridCell);
+app.component('grid-row', GridRow);
+app.component('list-heading', ListHeading);
+app.component('list-item', ListItem);
+app.component('status-bar', StatusBar);
 
-app.component("list-heading", {
-  props: {
-    title: {
-      type: String,
-      default: null,
-    },
-    extra: {
-      type: String,
-      default: null,
-    },
-  },
-  template: `
-
-<div class="list-heading">
-    <h4>{{title}}</h4>
-    <div v-if="extra">{{extra}}</div>
-</div>
-
-`,
-});
-
-// STATUS BAR
-
-app.component("status-bar", {
-  props: {
-    title: {
-      type: String,
-      default: null,
-    },
-    extra: {
-      type: String,
-      default: null,
-    },
-  },
-  template: `
-              <div class="status-bar">
-                <img src="/shared/images/status-bar-black-left.png" class="dark" />
-                <img src="/shared/images/status-bar-black-right.png" class="dark" />
-                <img src="/shared/images/status-bar-left.png" class="light" />
-                <img src="/shared/images/status-bar-right.png" class="light" />
-              </div>
-          `,
-});
-
-// LIST ITEM
-
-app.component("list-item", {
-  props: {
-    title: {
-      type: String,
-      default: null,
-    },
-    subTitle: {
-      type: String,
-      default: null,
-    },
-    paragraph: {
-      type: String,
-      default: null,
-    },
-    secondParagraph: {
-      type: String,
-      default: null,
-    },
-    extra: {
-      type: String,
-      default: null,
-    },
-    unread: {
-      type: Boolean,
-      default: null,
-    },
-    layoutRight: {
-      type: Boolean,
-      default: null,
-    },
-    sponsored: {
-      type: Boolean,
-      default: null,
-    },
-    first: {
-      type: Boolean,
-      default: null,
-    },
-  },
-  computed: {
-    hasSlotData() {
-      return this.$slots.default;
-    },
-  },
-  template: `
-              <div>
-                <div class="list-item" :class="{'layout-right': layoutRight, first, unread}">
-                  <tag-item accent v-if="sponsored">Urgently hiring</tag-item>
-                  <h3><div v-if="unread" class="unread-marker"></div>{{title}}</h3>
-                  <div v-if="subTitle" class="list-item-sub-title">{{subTitle}}</div>
-                  <p v-if="paragraph">{{paragraph}}</p>
-                  <p v-if="secondParagraph">{{secondParagraph}}</p>
-                  <div v-if="hasSlotData || extra" class="list-item-extra">
-                    <slot></slot>
-                    <span>{{extra}}</span>
-                  </div>
-                </div>
-                <hr :class="{'depth' : !layoutRight}"/>
-              </div>
-          `,
-});
-
-app.component("grid-row", {
-  props: {
-    fixed: {
-      type: Boolean,
-      default: null,
-    },
-    middle: {
-      type: Boolean,
-      default: null,
-    },
-    gutterNone: {
-      type: Boolean,
-      default: null,
-    },
-    gutterSmall: {
-      type: Boolean,
-      default: null,
-    },
-  },
-  template: `
-
-<div class="grid-row" :class="{fixed, middle, 'gutter-small': gutterSmall, 'gutter-none': gutterNone}">
-<slot></slot>
-</div>
-
-`,
-});
-
-app.component("grid-cell", {
-  props: {
-    shrink: {
-      type: Boolean,
-      default: null,
-    },
-  },
-  template: `
-
-<div class="grid-cell" :class="{shrink}">
-<slot></slot>
-</div>
-
-`,
-});
-
-app.component("carrier-list-item", {
+app.component('carrier-list-item', {
   props: {
     title: {
       type: String,
@@ -195,7 +52,7 @@ app.component("carrier-list-item", {
 
 // TAG
 
-app.component("tag-item", {
+app.component('tag-item', {
   props: {
     primary: {
       type: Boolean,
@@ -207,84 +64,84 @@ app.component("tag-item", {
           `,
 });
 
-app.component("header-backdrop", {
+app.component('header-backdrop', {
   props: {},
   template: `
               <div class="header-backdrop"></div>
           `,
 });
 
-app.component("view-header", {
+app.component('view-header', {
   props: {},
   template: `
               <div class="view-header"><slot></slot></div>
           `,
 });
 
-app.component("main-view", {
+app.component('main-view', {
   props: {},
   template: `
               <div class="main-view"><slot></slot></div>
           `,
 });
 
-app.component("box-block", {
+app.component('box-block', {
   props: {},
   template: `
               <div class="box"><slot></slot></div>
           `,
 });
 
-app.component("tooltip-once", {
+app.component('tooltip-once', {
   props: {},
   template: `
               <div class="tooltip-once"><slot></slot></div>
           `,
 });
 
-app.component("form-block", {
+app.component('form-block', {
   props: {},
   template: `
               <div class="form-block"><slot></slot></div>
           `,
 });
 
-app.component("button-container", {
+app.component('button-container', {
   props: {},
   template: `
               <div class="button-container"><slot></slot></div>
           `,
 });
 
-app.component("view-content", {
+app.component('view-content', {
   props: {},
   template: `
               <div class="view-content"><slot></slot></div>
           `,
 });
 
-app.component("navigation-bar", {
+app.component('navigation-bar', {
   props: {},
   template: `
               <div class="navigation-bar"><slot></slot></div>
           `,
 });
 
-app.component("mobile-tabs", {
+app.component('mobile-tabs', {
   props: {},
   template: `
               <div class="mobile-tabs"><slot></slot></div>
           `,
 });
 
-app.component("icon-button", {
+app.component('icon-button', {
   props: {},
   template: `
               <div class="icon-button"><slot></slot></div>
           `,
 });
 
-app.component("ad-overlay", {
+app.component('ad-overlay', {
   props: {},
   template: `
 
@@ -305,7 +162,7 @@ app.component("ad-overlay", {
 `,
 });
 
-app.component("generic-overlay", {
+app.component('generic-overlay', {
   props: {
     title: {
       type: String,
@@ -330,7 +187,7 @@ app.component("generic-overlay", {
           `,
 });
 
-app.component("generic-modal", {
+app.component('generic-modal', {
   props: {
     title: {
       type: String,
@@ -355,7 +212,7 @@ app.component("generic-modal", {
 
 // CHECKBOX
 
-app.component("checkbox-item", {
+app.component('checkbox-item', {
   props: {
     name: {
       type: String,
@@ -380,7 +237,7 @@ app.component("checkbox-item", {
 
 // USER
 
-app.component("user-list", {
+app.component('user-list', {
   props: {
     title: {
       type: String,
@@ -399,4 +256,4 @@ app.component("user-list", {
         `,
 });
 
-app.mount("#app");
+app.mount('#app');

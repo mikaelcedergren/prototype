@@ -339,6 +339,9 @@ body {
   -webkit-backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent; }
 
+[v-cloak] {
+  display: none; }
+
 h1,
 h2,
 h3,
