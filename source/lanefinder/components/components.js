@@ -1,5 +1,13 @@
-import GridRow from './grid-row.js';
-import GridCell from './grid-cell.js';
+// *********************************************************************************
+// INCLUDE ALL SHARED COMPONENTS
+// *********************************************************************************
+import GridRow from '../../shared/components/_grid-row.js';
+import GridCell from '../../shared/components/_grid-cell.js';
+import CheckboxItem from '../../shared/components/checkbox-item.js';
+
+// *********************************************************************************
+// INCLUDE ALL LOCAL COMPONENTS
+// *********************************************************************************
 import ListHeading from './list-heading.js';
 import ListItem from './list-item.js';
 import StatusBar from './status-bar.js';
@@ -8,29 +16,29 @@ import TagItem from './tag-item.js';
 import HeaderBackdrop from './header-backdrop.js';
 import ViewHeader from './view-header.js';
 import MainView from './main-view.js';
-import BoxBlock from './box-block.js';
+import BoxBlock from './_box-block.js';
 import TooltipOnce from './tooltip-once.js';
 import FormBlock from './form-block.js';
-import ButtonContainer from './button-container.js';
+import ButtonContainer from './_button-container.js';
 import ViewContent from './view-content.js';
 import NavigationBar from './navigation-bar.js';
 import MobileTabs from './mobile-tabs.js';
 import IconButton from './icon-button.js';
-import AdOverlay from './ad-overlay.js';
+import AdOverlay from './_ad-overlay.js';
 import GenericOverlay from './generic-overlay.js';
 import GenericModal from './generic-modal.js';
-import CheckboxItem from './checkbox-item.js';
 
 const app = Vue.createApp({});
 
 // *********************************************************************************
-// INCLUDE ALL SHARED COMPONENTS
+// REGISTER ALL SHARED COMPONENTS
 // *********************************************************************************
 app.component('grid-cell', GridCell);
 app.component('grid-row', GridRow);
+app.component('checkbox-item', CheckboxItem);
 
 // *********************************************************************************
-// INCLUDE ALL LANEFINDER COMPONENTS
+// REGISTER ALL LANEFINDER COMPONENTS
 // *********************************************************************************
 app.component('list-heading', ListHeading);
 app.component('list-item', ListItem);
@@ -51,6 +59,5 @@ app.component('icon-button', IconButton);
 app.component('ad-overlay', AdOverlay);
 app.component('generic-overlay', GenericOverlay);
 app.component('generic-modal', GenericModal);
-app.component('checkbox-item', CheckboxItem);
 
 app.mount('#app');

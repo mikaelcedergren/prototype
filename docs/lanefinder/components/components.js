@@ -2,48 +2,71 @@
   'use strict';
 
   var GridRow = {
-    props: {
-      fixed: {
-        type: Boolean,
-        default: null,
+      props: {
+        fixed: {
+          type: Boolean,
+          default: null,
+        },
+        middle: {
+          type: Boolean,
+          default: null,
+        },
+        gutterNone: {
+          type: Boolean,
+          default: null,
+        },
+        gutterSmall: {
+          type: Boolean,
+          default: null,
+        },
       },
-      middle: {
-        type: Boolean,
-        default: null,
-      },
-      gutterNone: {
-        type: Boolean,
-        default: null,
-      },
-      gutterSmall: {
-        type: Boolean,
-        default: null,
-      },
-    },
-    template: `
-
-<div class="grid-row" :class="{fixed, middle, 'gutter-small': gutterSmall, 'gutter-none': gutterNone}">
-<slot></slot>
-</div>
-
-`,
-  };
+      template: `
+  
+  <div class="grid-row" :class="{fixed, middle, 'gutter-small': gutterSmall, 'gutter-none': gutterNone}">
+  <slot></slot>
+  </div>
+  
+  `,
+    };
 
   var GridCell = {
-    props: {
-      shrink: {
-        type: Boolean,
-        default: null,
+      props: {
+        shrink: {
+          type: Boolean,
+          default: null,
+        },
       },
-    },
-    template: `
+      template: `
+  
+  <div class="grid-cell" :class="{shrink}">
+  <slot></slot>
+  </div>
+  
+  `,
+    };
 
-<div class="grid-cell" :class="{shrink}">
-<slot></slot>
-</div>
-
-`,
-  };
+  var CheckboxItem = {
+      props: {
+        name: {
+          type: String,
+          default: null,
+        },
+        label: {
+          type: String,
+          default: null,
+        },
+        checked: {
+          type: Boolean,
+          default: false,
+        },
+      },
+      template: `
+                <div class="checkbox-item">
+                  <input type="checkbox" :id="name" :checked="checked" />
+                  <label>{{label}}</label>
+                </div>
+            `,
+    };
 
   var ListHeading = {
     props: {
@@ -371,39 +394,19 @@
           `,
   };
 
-  var CheckboxItem = {
-    props: {
-      name: {
-        type: String,
-        default: null,
-      },
-      label: {
-        type: String,
-        default: null,
-      },
-      checked: {
-        type: Boolean,
-        default: false,
-      },
-    },
-    template: `
-              <div class="checkbox-item">
-                <input type="checkbox" :id="name" :checked="checked" />
-                <label>{{label}}</label>
-              </div>
-          `,
-  };
+  // *********************************************************************************
 
   const app = Vue.createApp({});
 
   // *********************************************************************************
-  // INCLUDE ALL SHARED COMPONENTS
+  // REGISTER ALL SHARED COMPONENTS
   // *********************************************************************************
   app.component('grid-cell', GridCell);
   app.component('grid-row', GridRow);
+  app.component('checkbox-item', CheckboxItem);
 
   // *********************************************************************************
-  // INCLUDE ALL LANEFINDER COMPONENTS
+  // REGISTER ALL LANEFINDER COMPONENTS
   // *********************************************************************************
   app.component('list-heading', ListHeading);
   app.component('list-item', ListItem);
@@ -424,7 +427,6 @@
   app.component('ad-overlay', AdOverlay);
   app.component('generic-overlay', GenericOverlay);
   app.component('generic-modal', GenericModal);
-  app.component('checkbox-item', CheckboxItem);
 
   app.mount('#app');
 
