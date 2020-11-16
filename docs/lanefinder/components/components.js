@@ -1,9 +1,33 @@
-(function (GridRow) {
+(function () {
   'use strict';
 
-  function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+  var GridRow = {
+    props: {
+      fixed: {
+        type: Boolean,
+        default: null,
+      },
+      middle: {
+        type: Boolean,
+        default: null,
+      },
+      gutterNone: {
+        type: Boolean,
+        default: null,
+      },
+      gutterSmall: {
+        type: Boolean,
+        default: null,
+      },
+    },
+    template: `
 
-  var GridRow__default = /*#__PURE__*/_interopDefaultLegacy(GridRow);
+<div class="grid-row" :class="{fixed, middle, 'gutter-small': gutterSmall, 'gutter-none': gutterNone}">
+<slot></slot>
+</div>
+
+`,
+  };
 
   var GridCell = {
     props: {
@@ -164,19 +188,7 @@
   `,
     };
 
-  const app = Vue.createApp({});
-
-  app.component('grid-cell', GridCell);
-  app.component('grid-row', GridRow__default['default']);
-  app.component('list-heading', ListHeading);
-  app.component('list-item', ListItem);
-  app.component('status-bar', StatusBar);
-  app.component('carrier-list-item', CarrierListItem);
-
-
-
-
-  app.component('tag-item', {
+  var TagItem = {
     props: {
       primary: {
         type: Boolean,
@@ -186,35 +198,49 @@
     template: `
               <div class="tag"><slot></slot></div>
           `,
-  });
+  };
 
-  app.component('header-backdrop', {
+  var HeaderBackdrop = {
     props: {},
     template: `
               <div class="header-backdrop"></div>
           `,
-  });
+  };
 
-  app.component('view-header', {
+  var ViewHeader = {
     props: {},
     template: `
               <div class="view-header"><slot></slot></div>
           `,
-  });
+  };
 
-  app.component('main-view', {
+  var MainView = {
     props: {},
     template: `
               <div class="main-view"><slot></slot></div>
           `,
-  });
+  };
 
-  app.component('box-block', {
+  var BoxBlock = {
     props: {},
     template: `
               <div class="box"><slot></slot></div>
           `,
-  });
+  };
+
+  const app = Vue.createApp({});
+
+  app.component('grid-cell', GridCell);
+  app.component('grid-row', GridRow);
+  app.component('list-heading', ListHeading);
+  app.component('list-item', ListItem);
+  app.component('status-bar', StatusBar);
+  app.component('carrier-list-item', CarrierListItem);
+  app.component('tag-item', TagItem);
+  app.component('header-backdrop', HeaderBackdrop);
+  app.component('view-header', ViewHeader);
+  app.component('main-view', MainView);
+  app.component('box-block', BoxBlock);
 
   app.component('tooltip-once', {
     props: {},
@@ -382,4 +408,4 @@
 
   app.mount('#app');
 
-}(GridRow));
+}());

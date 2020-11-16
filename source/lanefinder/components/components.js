@@ -1,9 +1,14 @@
-import GridCell from '../../../shared/components/grid-cell.js';
-import GridRow from '../../components/grid-row.js';
-import ListHeading from '../../components/list-heading.js';
-import ListItem from '../../components/list-item.js';
-import StatusBar from '../../components/status-bar.js';
-import CarrierListItem from '../../components/carrier-list-item.js';
+import GridRow from './grid-row.js';
+import GridCell from './grid-cell.js';
+import ListHeading from './list-heading.js';
+import ListItem from './list-item.js';
+import StatusBar from './status-bar.js';
+import CarrierListItem from './carrier-list-item.js';
+import TagItem from './tag-item.js';
+import HeaderBackdrop from './header-backdrop.js';
+import ViewHeader from './view-header.js';
+import MainView from './main-view.js';
+import BoxBlock from './box-block.js';
 const app = Vue.createApp({});
 
 app.component('grid-cell', GridCell);
@@ -12,49 +17,11 @@ app.component('list-heading', ListHeading);
 app.component('list-item', ListItem);
 app.component('status-bar', StatusBar);
 app.component('carrier-list-item', CarrierListItem);
-
-
-
-
-app.component('tag-item', {
-  props: {
-    primary: {
-      type: Boolean,
-      default: null,
-    },
-  },
-  template: `
-              <div class="tag"><slot></slot></div>
-          `,
-});
-
-app.component('header-backdrop', {
-  props: {},
-  template: `
-              <div class="header-backdrop"></div>
-          `,
-});
-
-app.component('view-header', {
-  props: {},
-  template: `
-              <div class="view-header"><slot></slot></div>
-          `,
-});
-
-app.component('main-view', {
-  props: {},
-  template: `
-              <div class="main-view"><slot></slot></div>
-          `,
-});
-
-app.component('box-block', {
-  props: {},
-  template: `
-              <div class="box"><slot></slot></div>
-          `,
-});
+app.component('tag-item', TagItem);
+app.component('header-backdrop', HeaderBackdrop);
+app.component('view-header', ViewHeader);
+app.component('main-view', MainView);
+app.component('box-block', BoxBlock);
 
 app.component('tooltip-once', {
   props: {},

@@ -186,25 +186,14 @@
 		"rq": 75
 		},
 	"/source/lanefinder/assets/scripts/backup-components.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
 		"oAP": "/docs/lanefinder/assets/scripts/backup-components.js",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/source/lanefinder/assets/scripts/components.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "/docs/lanefinder/assets/scripts/components.js",
-		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/lanefinder/assets/styles/_variables.scss": {
@@ -281,59 +270,136 @@
 		"oAP": "/docs/lanefinder/components/_page-header.html",
 		"oF": 0
 		},
+	"/source/lanefinder/components/box-block.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/box-block.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/source/lanefinder/components/carrier-list-item.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
 		"oAP": "/docs/lanefinder/components/carrier-list-item.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
+		"tS": 0
+		},
+	"/source/lanefinder/components/components.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/docs/lanefinder/components/components.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/source/lanefinder/components/grid-cell.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/grid-cell.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/source/lanefinder/components/grid-row.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/grid-row.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/source/lanefinder/components/header-backdrop.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/header-backdrop.js",
+		"oF": 0,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/lanefinder/components/list-heading.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
 		"oAP": "/docs/lanefinder/components/list-heading.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/lanefinder/components/list-item.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
 		"oAP": "/docs/lanefinder/components/list-item.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
+		"tS": 0
+		},
+	"/source/lanefinder/components/main-view.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/main-view.js",
+		"oF": 0,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/lanefinder/components/status-bar.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
 		"oAP": "/docs/lanefinder/components/status-bar.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/lanefinder/components/tag-item.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/docs/lanefinder/components/tag-item.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
+		"tS": 0
+		},
+	"/source/lanefinder/components/view-header.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/view-header.js",
+		"oF": 0,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/lanefinder/index.kit": {
@@ -391,28 +457,6 @@
 		"oA": 1,
 		"oAP": "/docs/shared/components/_checkbox.html",
 		"oF": 0
-		},
-	"/source/shared/components/grid-cell.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "/docs/shared/components/grid-cell.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/source/shared/components/grid-row.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "/docs/shared/components/grid-row.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		},
 	"/source/shared/images/select-arrow.svg": {
 		"ft": 2097152,
@@ -477,25 +521,25 @@
 		"rq": 75
 		},
 	"/source/shared/scripts/components.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
 		"oAP": "/docs/shared/scripts/components.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/shared/scripts/footer-scripts.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
 		"oAP": "/docs/shared/scripts/footer-scripts.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/shared/styles/_buttons.scss": {
@@ -611,14 +655,14 @@
 		"oF": 0
 		},
 	"/source/test/test-component.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
 		"oAP": "/docs/test/test-component.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/ux-directives/currency.kit": {
@@ -630,14 +674,14 @@
 		"oF": 0
 		},
 	"/source/ux-directives/scripts.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
 		"oAP": "/docs/ux-directives/scripts.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/ux-directives/styles.scss": {
@@ -670,14 +714,14 @@
 		"oF": 0
 		},
 	"/source/validate.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
 		"oAP": "/docs/validate.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/youcruit/assets/images/youcruit-logo.svg": {
@@ -691,14 +735,14 @@
 		"prP": 0
 		},
 	"/source/youcruit/assets/scripts/components.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
 		"oAP": "/docs/youcruit/assets/scripts/components.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"/source/youcruit/assets/styles/_variables.scss": {
@@ -2589,10 +2633,10 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"bundleFormat": 0,
+		"bundleFormat": 4,
 		"createSourceMap": 0,
 		"minifyOutput": 0,
-		"syntaxCheckerStyle": 3,
+		"syntaxCheckerStyle": 0,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {
