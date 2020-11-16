@@ -16,6 +16,10 @@ import ViewContent from './view-content.js';
 import NavigationBar from './navigation-bar.js';
 import MobileTabs from './mobile-tabs.js';
 import IconButton from './icon-button.js';
+import AdOverlay from './ad-overlay.js';
+import GenericOverlay from './generic-overlay.js';
+import GenericModal from './generic-modal.js';
+import CheckboxItem from './checkbox-item.js';
 
 const app = Vue.createApp({});
 
@@ -37,120 +41,9 @@ app.component('view-content', ViewContent);
 app.component('navigation-bar', NavigationBar);
 app.component('mobile-tabs', MobileTabs);
 app.component('icon-button', IconButton);
-
-app.component('ad-overlay', {
-  props: {},
-  template: `
-
-<div class="ad-overlay">
-  <main>
-    <header>
-      <icon-button data-close>
-        <i class="material-icons">expand_more</i>
-      </icon-button>
-    </header>
-
-    <div>
-      <slot></slot>
-    </div>
-  </main>
-</div>
-
-`,
-});
-
-app.component('generic-overlay', {
-  props: {
-    title: {
-      type: String,
-      default: null,
-    },
-  },
-  template: `
-              <div class="generic-overlay">
-                <main>
-                  <header>
-                    <icon-button data-close
-                      ><i class="material-icons">expand_more</i></icon-button
-                    >
-                    <span>{{title}}</span>
-                    <tag-item secondary>242 jobs</tag-item>
-                  </header>
-                  <div>
-                    <slot></slot>
-                  </div>
-                </main>
-              </div>
-          `,
-});
-
-app.component('generic-modal', {
-  props: {
-    title: {
-      type: String,
-      default: null,
-    },
-  },
-  template: `
-<div class="generic-modal">
-  <main>
-    <header>{{title}}</header>
-    <div>
-      <slot></slot>
-    </div>
-    <footer>
-      <button data-close discreet>Cancel</button>
-      <button data-close accent>Save</button>
-    </footer>
-  </main>
-</div>
-          `,
-});
-
-// CHECKBOX
-
-app.component('checkbox-item', {
-  props: {
-    name: {
-      type: String,
-      default: null,
-    },
-    label: {
-      type: String,
-      default: null,
-    },
-    checked: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  template: `
-              <div class="checkbox-item">
-                <input type="checkbox" :id="name" :checked="checked" />
-                <label>{{label}}</label>
-              </div>
-          `,
-});
-
-// USER
-
-app.component('user-list', {
-  props: {
-    title: {
-      type: String,
-      default: null,
-    },
-    primary: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  template: `
-            <div :class="{ 'this-is-primary': primary, primary}">
-                <div>{{title}}</div>
-                <div v-if="primary">This is primary</div>
-            </div>
-        `,
-});
+app.component('ad-overlay', AdOverlay);
+app.component('generic-overlay', GenericOverlay);
+app.component('generic-modal', GenericModal);
+app.component('checkbox-item', CheckboxItem);
 
 app.mount('#app');

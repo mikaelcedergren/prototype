@@ -277,28 +277,7 @@
           `,
   };
 
-  const app = Vue.createApp({});
-
-  app.component('grid-cell', GridCell);
-  app.component('grid-row', GridRow);
-  app.component('list-heading', ListHeading);
-  app.component('list-item', ListItem);
-  app.component('status-bar', StatusBar);
-  app.component('carrier-list-item', CarrierListItem);
-  app.component('tag-item', TagItem);
-  app.component('header-backdrop', HeaderBackdrop);
-  app.component('view-header', ViewHeader);
-  app.component('main-view', MainView);
-  app.component('box-block', BoxBlock);
-  app.component('tooltip-once', TooltipOnce);
-  app.component('form-block', FormBlock);
-  app.component('button-container', ButtonContainer);
-  app.component('view-content', ViewContent);
-  app.component('navigation-bar', NavigationBar);
-  app.component('mobile-tabs', MobileTabs);
-  app.component('icon-button', IconButton);
-
-  app.component('ad-overlay', {
+  var AdOverlay = {
     props: {},
     template: `
 
@@ -317,9 +296,9 @@
 </div>
 
 `,
-  });
+  };
 
-  app.component('generic-overlay', {
+  var GenericOverlay = {
     props: {
       title: {
         type: String,
@@ -342,9 +321,9 @@
                 </main>
               </div>
           `,
-  });
+  };
 
-  app.component('generic-modal', {
+  var GenericModal = {
     props: {
       title: {
         type: String,
@@ -365,11 +344,9 @@
   </main>
 </div>
           `,
-  });
+  };
 
-  // CHECKBOX
-
-  app.component('checkbox-item', {
+  var CheckboxItem = {
     props: {
       name: {
         type: String,
@@ -390,28 +367,32 @@
                 <label>{{label}}</label>
               </div>
           `,
-  });
+  };
 
-  // USER
+  const app = Vue.createApp({});
 
-  app.component('user-list', {
-    props: {
-      title: {
-        type: String,
-        default: null,
-      },
-      primary: {
-        type: Boolean,
-        default: false,
-      },
-    },
-    template: `
-            <div :class="{ 'this-is-primary': primary, primary}">
-                <div>{{title}}</div>
-                <div v-if="primary">This is primary</div>
-            </div>
-        `,
-  });
+  app.component('grid-cell', GridCell);
+  app.component('grid-row', GridRow);
+  app.component('list-heading', ListHeading);
+  app.component('list-item', ListItem);
+  app.component('status-bar', StatusBar);
+  app.component('carrier-list-item', CarrierListItem);
+  app.component('tag-item', TagItem);
+  app.component('header-backdrop', HeaderBackdrop);
+  app.component('view-header', ViewHeader);
+  app.component('main-view', MainView);
+  app.component('box-block', BoxBlock);
+  app.component('tooltip-once', TooltipOnce);
+  app.component('form-block', FormBlock);
+  app.component('button-container', ButtonContainer);
+  app.component('view-content', ViewContent);
+  app.component('navigation-bar', NavigationBar);
+  app.component('mobile-tabs', MobileTabs);
+  app.component('icon-button', IconButton);
+  app.component('ad-overlay', AdOverlay);
+  app.component('generic-overlay', GenericOverlay);
+  app.component('generic-modal', GenericModal);
+  app.component('checkbox-item', CheckboxItem);
 
   app.mount('#app');
 
