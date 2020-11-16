@@ -820,7 +820,7 @@ a {
     text-decoration: none;
     color: #ff8b4a; }
     a.link::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       bottom: 0;
@@ -1221,9 +1221,9 @@ job-list-item {
     right: 1rem;
     font-size: 1.5rem;
     color: #d3d9e0;
-    font-family: "Material Icons";
-    content: "navigate_next";
-    font-feature-settings: "liga"; }
+    font-family: 'Material Icons';
+    content: 'navigate_next';
+    font-feature-settings: 'liga'; }
   .list-item .list-item-sub-title {
     color: #a3afbf;
     font-size: 14px; }
@@ -1257,7 +1257,7 @@ job-list-item {
     bottom: 100%;
     left: 50%;
     border: solid transparent;
-    content: "";
+    content: '';
     height: 0;
     width: 0;
     position: absolute;

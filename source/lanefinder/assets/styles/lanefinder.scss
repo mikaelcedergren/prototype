@@ -1,5 +1,5 @@
-@import "_variables.scss";
-@import "../../../shared/styles/core.scss";
+@import '_variables.scss';
+@import '../../../shared/styles/core.scss';
 
 html {
   &.dark {
@@ -17,7 +17,7 @@ a {
     color: $primary;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       bottom: 0;
@@ -504,7 +504,7 @@ wizard-view {
   display: block;
   min-height: 100vh;
   background-color: $contrast;
-  background-image: url("/lanefinder/assets/images/wizard-background-1.png");
+  background-image: url('/lanefinder/assets/images/wizard-background-1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -571,10 +571,10 @@ job-list-item {
       right: 1rem;
       font-size: 1.5rem;
       color: $gray-3;
-      font-family: "Material Icons";
-      content: "navigate_next";
-      -webkit-font-feature-settings: "liga";
-      font-feature-settings: "liga";
+      font-family: 'Material Icons';
+      content: 'navigate_next';
+      -webkit-font-feature-settings: 'liga';
+      font-feature-settings: 'liga';
     }
   }
 
@@ -618,7 +618,7 @@ job-list-item {
     bottom: 100%;
     left: 50%;
     border: solid transparent;
-    content: "";
+    content: '';
     height: 0;
     width: 0;
     position: absolute;
