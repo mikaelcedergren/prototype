@@ -407,7 +407,7 @@ sub {
   width: 100%;
   line-height: 1;
   bottom: auto;
-  color: #ef3662;
+  color: #62D0A1;
   font-size: 14px;
   font-weight: 700; }
 
@@ -427,7 +427,7 @@ ul {
     ul li::before {
       position: absolute;
       content: "•";
-      color: #fcbb37;
+      color: #FFCF45;
       left: 0; }
 
 input[type="text"],
@@ -472,22 +472,22 @@ i.material-icons + i.material-icons {
   .tag:empty {
     display: none; }
   .tag[accent] {
-    background-color: #ef3662;
+    background-color: #62D0A1;
     color: #fff; }
   .tag[primary] {
-    background-color: #ff8b4a;
+    background-color: #FF9C49;
     color: #fff; }
   .tag[secondary] {
-    background-color: #fcbb37;
+    background-color: #FFCF45;
     color: #fff; }
   .tag[contrast] {
-    background-color: #4e2055;
+    background-color: #3E4A5F;
     color: #fff; }
   .tag[success] {
-    background-color: #78d16a;
+    background-color: #9ED362;
     color: #fff; }
   .tag[danger] {
-    background-color: #ed3737;
+    background-color: #ED6260;
     color: #fff; }
 
 ::-webkit-input-placeholder {
@@ -560,8 +560,8 @@ input[type="checkbox"] {
   border-radius: 4px;
   outline: none; }
   input[type="checkbox"]:checked {
-    background-color: #ff8b4a;
-    border-color: #ff8b4a; }
+    background-color: #FF9C49;
+    border-color: #FF9C49; }
     input[type="checkbox"]:checked::after {
       position: absolute;
       height: 1rem;
@@ -640,17 +640,17 @@ button {
   button[primary], button[secondary], button[success], button[danger], button[accent] {
     color: #fff; }
   button[primary] {
-    background-color: #ff8b4a; }
+    background-color: #FF9C49; }
   button[secondary] {
-    background-color: #fcbb37; }
+    background-color: #FFCF45; }
   button[success] {
-    background-color: #78d16a; }
+    background-color: #9ED362; }
   button[danger] {
-    background-color: #ed3737; }
+    background-color: #ED6260; }
   button[accent] {
-    background-color: #ef3662; }
+    background-color: #62D0A1; }
     button[accent] [glow] {
-      box-shadow: 0 8px 12px rgba(239, 54, 98, 0.3); }
+      box-shadow: 0 8px 12px rgba(98, 208, 161, 0.3); }
   button[small] {
     padding: 0 1rem;
     height: 32px;
@@ -821,14 +821,14 @@ a {
   a.link {
     position: relative;
     text-decoration: none;
-    color: #ff8b4a; }
+    color: #FF9C49; }
     a.link::after {
       content: '';
       position: absolute;
       left: 0;
       bottom: 0;
       width: 100%;
-      background-color: #ff8b4a;
+      background-color: #FF9C49;
       height: 1px; }
 
 .button-container {
@@ -957,7 +957,7 @@ padding-wrapper {
       .navigation-bar.at-top[data-static] a {
         color: #3e4a5e; }
   .navigation-bar[data-on-dark] a {
-    color: #ff8b4a; }
+    color: #FF9C49; }
   .navigation-bar.at-top {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     transform: translateY(0) translate3d(0, 0, 0); }
@@ -1178,7 +1178,7 @@ padding-wrapper {
 wizard-view {
   display: block;
   min-height: 100vh;
-  background-color: #4e2055;
+  background-color: #3E4A5F;
   background-image: url("/lanefinder/assets/images/wizard-background-1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1243,9 +1243,9 @@ job-list-item {
 .tooltip-once {
   -webkit-animation: tooltip-once-in 0.5s 0.5s cubic-bezier(0, 0.6, 0.5, 1) forwards, tooltip-once-out 0.3s 5s ease-in forwards;
           animation: tooltip-once-in 0.5s 0.5s cubic-bezier(0, 0.6, 0.5, 1) forwards, tooltip-once-out 0.3s 5s ease-in forwards;
-  background-color: #ef3662;
+  background-color: #62D0A1;
   padding: 1rem;
-  box-shadow: 0 8px 12px rgba(239, 54, 98, 0.3);
+  box-shadow: 0 8px 12px rgba(98, 208, 161, 0.3);
   position: absolute;
   z-index: 10;
   width: 80vw;
@@ -1265,7 +1265,7 @@ job-list-item {
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-bottom-color: #ef3662;
+    border-bottom-color: #62D0A1;
     border-width: 0.5rem;
     margin-left: -0.5rem; }
 
@@ -1300,7 +1300,7 @@ job-list-item {
 .icon-button {
   margin-right: 0.5rem; }
   .icon-button i.material-icons {
-    background-color: #ef3662; }
+    background-color: #62D0A1; }
 
 .carrier-list-item {
   display: flex;
@@ -1318,7 +1318,7 @@ job-list-item {
   display: inline-block;
   height: 0.5rem;
   width: 0.5rem;
-  background-color: #ff8b4a;
+  background-color: #FF9C49;
   border-radius: 100%;
   margin-right: 0.5rem; }
 

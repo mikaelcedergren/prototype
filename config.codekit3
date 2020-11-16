@@ -547,10 +547,10 @@
 	"/source/shared/assets/images/select-arrow.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/docs/shared/assets/images/select-arrow.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 52780316221407,
 		"prP": 0
 		},
@@ -605,17 +605,6 @@
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
-		},
-	"/source/shared/assets/scripts/components.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "/docs/shared/assets/scripts/components.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
 		},
 	"/source/shared/assets/scripts/footer-scripts.js": {
 		"bF": 4,
@@ -726,30 +715,11 @@
 		"ec": 1,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/docs/shared/assets/styles/core.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
-		},
-	"/source/test/index.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/docs/test/index.html",
-		"oF": 0
-		},
-	"/source/test/test-component.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "/docs/test/test-component.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
 		},
 	"/source/ux-directives/currency.kit": {
 		"cB": 1,
@@ -857,28 +827,28 @@
 		"oS": 0,
 		"sct": 1
 		},
-	"/source/youcruit/components/_page-footer.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/youcruit/components/_page-footer.html",
-		"oF": 0
-		},
-	"/source/youcruit/components/_page-header.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/youcruit/components/_page-header.html",
-		"oF": 0
-		},
 	"/source/youcruit/index.kit": {
 		"cB": 1,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/docs/youcruit/index.html",
+		"oF": 0
+		},
+	"/source/youcruit/partials/_page-footer.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/youcruit/partials/_page-footer.html",
+		"oF": 0
+		},
+	"/source/youcruit/partials/_page-header.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/youcruit/partials/_page-header.html",
 		"oF": 0
 		}
 	},
