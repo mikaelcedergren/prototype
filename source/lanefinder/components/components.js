@@ -3,30 +3,30 @@
 // *********************************************************************************
 import GridRow from '../../shared/components/_grid-row.js';
 import GridCell from '../../shared/components/_grid-cell.js';
-import CheckboxItem from '../../shared/components/checkbox-item.js';
+import CheckboxItem from '../../shared/components/_checkbox-item.js';
 
 // *********************************************************************************
 // INCLUDE ALL LOCAL COMPONENTS
 // *********************************************************************************
-import ListHeading from './list-heading.js';
-import ListItem from './list-item.js';
-import StatusBar from './status-bar.js';
-import CarrierListItem from './carrier-list-item.js';
-import TagItem from './tag-item.js';
-import HeaderBackdrop from './header-backdrop.js';
-import ViewHeader from './view-header.js';
-import MainView from './main-view.js';
+import ListHeading from './_list-heading.js';
+import ListItem from './_list-item.js';
+import StatusBar from './_status-bar.js';
+import CarrierListItem from './_carrier-list-item.js';
+import TagItem from './_tag-item.js';
+import HeaderBackdrop from './_header-backdrop.js';
+import ViewHeader from './_view-header.js';
+import MainView from './_main-view.js';
 import BoxBlock from './_box-block.js';
-import TooltipOnce from './tooltip-once.js';
-import FormBlock from './form-block.js';
+import TooltipOnce from './_tooltip-once.js';
+import FormBlock from './_form-block.js';
 import ButtonContainer from './_button-container.js';
-import ViewContent from './view-content.js';
-import NavigationBar from './navigation-bar.js';
-import MobileTabs from './mobile-tabs.js';
-import IconButton from './icon-button.js';
+import ViewContent from './_view-content.js';
+import NavigationBar from './_navigation-bar.js';
+import MobileTabs from './_mobile-tabs.js';
+import IconButton from './_icon-button.js';
 import AdOverlay from './_ad-overlay.js';
-import GenericOverlay from './generic-overlay.js';
-import GenericModal from './generic-modal.js';
+import GenericOverlay from './_generic-overlay.js';
+import GenericModal from './_generic-modal.js';
 
 const app = Vue.createApp({});
 
