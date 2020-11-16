@@ -1227,18 +1227,6 @@ job-list-item {
     font-family: 'Material Icons';
     content: 'navigate_next';
     font-feature-settings: 'liga'; }
-  .list-item .list-item-sub-title {
-    color: #a3afbf;
-    font-size: 14px; }
-  .list-item .list-item-extra {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem; }
-    .list-item .list-item-extra span {
-      color: #d3d9e0;
-      font-size: 14px;
-      margin-left: auto; }
 
 .tooltip-once {
   -webkit-animation: tooltip-once-in 0.5s 0.5s cubic-bezier(0, 0.6, 0.5, 1) forwards, tooltip-once-out 0.3s 5s ease-in forwards;
