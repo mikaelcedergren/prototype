@@ -238,46 +238,6 @@
 		"oAP": "/docs/lanefinder/carriers.html",
 		"oF": 0
 		},
-	"/source/lanefinder/components/_carrier-filters-box.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/lanefinder/components/_carrier-filters-box.html",
-		"oF": 0
-		},
-	"/source/lanefinder/components/_filters-box.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/lanefinder/components/_filters-box.html",
-		"oF": 0
-		},
-	"/source/lanefinder/components/_mobile-tabs.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/lanefinder/components/_mobile-tabs.html",
-		"oF": 0
-		},
-	"/source/lanefinder/components/_page-footer.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/lanefinder/components/_page-footer.html",
-		"oF": 0
-		},
-	"/source/lanefinder/components/_page-header.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/lanefinder/components/_page-header.html",
-		"oF": 0
-		},
 	"/source/lanefinder/components/ad-overlay.js": {
 		"bF": 4,
 		"ft": 64,
@@ -555,6 +515,22 @@
 		"oAP": "/docs/lanefinder/notifications.html",
 		"oF": 0
 		},
+	"/source/lanefinder/partials/_page-footer.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/partials/_page-footer.html",
+		"oF": 0
+		},
+	"/source/lanefinder/partials/_page-header.kit": {
+		"cB": 1,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/partials/_page-header.html",
+		"oF": 0
+		},
 	"/source/lanefinder/saved.kit": {
 		"cB": 1,
 		"ft": 2048,
@@ -577,14 +553,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/docs/menu.html",
-		"oF": 0
-		},
-	"/source/shared/components/_checkbox.kit": {
-		"cB": 1,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/shared/components/_checkbox.html",
 		"oF": 0
 		},
 	"/source/shared/images/select-arrow.svg": {

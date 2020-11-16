@@ -1,4 +1,4 @@
-<!-- @import '/source/lanefinder/components/_page-header.kit' -->
+<!-- @import '/source/lanefinder/partials/_page-header.kit' -->
 
 <main-view>
   <header-backdrop
@@ -13,7 +13,26 @@
     </header>
   </view-header>
 
-  <!-- @import '/source/lanefinder/components/_carrier-filters-box.kit -->
+  <box-block id="filters" data-open="overlay-filters" class="mb-1 mr-1 ml-1">
+    <grid-row fixed gutter-small>
+      <grid-cell class="shrink">
+        <i class="material-icons color-discreet">search</i>
+      </grid-cell>
+      <grid-cell>
+        <p class="color-text-discreet">
+          Carriers in 90210 offering Dry Van, Flatbed, Tanker Jobs..
+        </p>
+        <grid-row fixed>
+          <grid-cell>
+            <strong>298 carriers</strong>
+          </grid-cell>
+          <grid-cell class="shrink align-right">
+            <a href="#" class="link">Edit</a>
+          </grid-cell>
+        </grid-row>
+      </grid-cell>
+    </grid-row>
+  </box-block>
 
   <view-content>
     <carrier-list-item
@@ -70,8 +89,8 @@
 </navigation-bar>
 
 <!-- $tab-item-2 = active -->
-<!-- @import '/source/lanefinder/components/_mobile-tabs.kit -->
+<mobile-tabs></mobile-tabs>
 
 <status-bar class="detect-top"></status-bar>
 
-<!-- @import '/source/lanefinder/components/_page-footer.kit' -->
+<!-- @import '/source/lanefinder/partials/_page-footer.kit' -->

@@ -1,4 +1,4 @@
-<!-- @import '/source/lanefinder/components/_page-header.kit' -->
+<!-- @import '/source/lanefinder/partials/_page-header.kit' -->
 <main-view>
   <header-backdrop
     style="
@@ -16,7 +16,26 @@
     </header>
   </view-header>
 
-  <!-- @import '/source/lanefinder/components/_filters-box.kit -->
+  <box-block id="filters" data-open="overlay-filters" class="mb-1 mr-1 ml-1">
+    <grid-row fixed gutter-small>
+      <grid-cell shrink>
+        <i class="material-icons color-discreet">search</i>
+      </grid-cell>
+      <grid-cell>
+        <p class="color-text-discreet">Team OTR, local company driver jobs in 90210 with a minimum weekly average...
+        </p>
+        <grid-row fixed>
+          <grid-cell>
+            <strong>12 out of 284 jobs</strong>
+          </grid-cell>
+          <grid-cell shrink class="align-right">
+            <a href="#" class="link">Edit</a>
+          </grid-cell>
+        </grid-row fixed>
+      </grid-cell>
+    </grid-row fixed>
+    <tooltip-once>Tap here to narrow down your search.</tooltip-once>
+  </box-block>
 
   <view-content>
     <list-heading
@@ -88,8 +107,7 @@
   </div>
 </navigation-bar>
 
-<!-- $tab-item-1 = active -->
-<!-- @import '/source/lanefinder/components/_mobile-tabs.kit -->
+<mobile-tabs></mobile-tabs>
 
 <generic-overlay id="overlay-filters" title="Filters" extra="242 jobs">
   <form-block>
@@ -305,4 +323,4 @@
 </generic-modal>
 
 <status-bar class="detect-top"></status-bar>
-<!-- @import '/source/lanefinder/components/_page-footer.kit' -->
+<!-- @import '/source/lanefinder/partials/_page-footer.kit' -->
