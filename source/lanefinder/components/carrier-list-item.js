@@ -1,19 +1,19 @@
 export default {
-    props: {
-      title: {
-        type: String,
-        default: null,
-      },
-      size: {
-        type: String,
-        default: null,
-      },
-      distance: {
-        type: String,
-        default: null,
-      },
+  props: {
+    title: {
+      type: String,
+      default: null,
     },
-    template: `
+    size: {
+      type: String,
+      default: null,
+    },
+    distance: {
+      type: String,
+      default: null,
+    },
+  },
+  template: `
   
   <div class="carrier-list-item">
     <grid-row fixed gutter-small>
@@ -35,4 +35,4 @@ export default {
   </div>
   
   `,
-  }
+};
