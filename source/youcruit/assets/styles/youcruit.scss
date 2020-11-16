@@ -1,5 +1,5 @@
-@import "_variables.scss";
-@import "../../../shared/styles/core.scss";
+@import '_variables.scss';
+@import '../../../shared/assets/styles/_core.scss';
 
 body {
   background-color: $gray-1;
@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;

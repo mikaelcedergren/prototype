@@ -729,30 +729,6 @@
 		"oAP": "/docs/ux-directives/currency.html",
 		"oF": 0
 		},
-	"/source/ux-directives/scripts.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "/docs/ux-directives/scripts.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"/source/ux-directives/styles.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/docs/ux-directives/styles.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
 	"/source/ux-directives/typography.kit": {
 		"cB": 1,
 		"ft": 2048,
@@ -760,6 +736,17 @@
 		"oA": 0,
 		"oAP": "/docs/ux-directives/typography.html",
 		"oF": 0
+		},
+	"/source/ux-directives/validate.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/docs/ux-directives/validate.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
 		},
 	"/source/ux-directives/validation.kit": {
 		"cB": 1,
