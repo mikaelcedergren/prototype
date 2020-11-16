@@ -263,6 +263,20 @@
           `,
   };
 
+  var MobileTabs = {
+    props: {},
+    template: `
+              <div class="mobile-tabs"><slot></slot></div>
+          `,
+  };
+
+  var IconButton = {
+    props: {},
+    template: `
+              <div class="icon-button"><slot></slot></div>
+          `,
+  };
+
   const app = Vue.createApp({});
 
   app.component('grid-cell', GridCell);
@@ -281,20 +295,8 @@
   app.component('button-container', ButtonContainer);
   app.component('view-content', ViewContent);
   app.component('navigation-bar', NavigationBar);
-
-  app.component('mobile-tabs', {
-    props: {},
-    template: `
-              <div class="mobile-tabs"><slot></slot></div>
-          `,
-  });
-
-  app.component('icon-button', {
-    props: {},
-    template: `
-              <div class="icon-button"><slot></slot></div>
-          `,
-  });
+  app.component('mobile-tabs', MobileTabs);
+  app.component('icon-button', IconButton);
 
   app.component('ad-overlay', {
     props: {},

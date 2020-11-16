@@ -358,6 +358,17 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/source/lanefinder/components/icon-button.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/icon-button.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/source/lanefinder/components/list-heading.js": {
 		"bF": 4,
 		"ft": 64,
@@ -387,6 +398,17 @@
 		"mi": 0,
 		"oA": 1,
 		"oAP": "/docs/lanefinder/components/main-view.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/source/lanefinder/components/mobile-tabs.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/docs/lanefinder/components/mobile-tabs.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0

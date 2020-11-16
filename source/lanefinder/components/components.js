@@ -14,6 +14,8 @@ import FormBlock from './form-block.js';
 import ButtonContainer from './button-container.js';
 import ViewContent from './view-content.js';
 import NavigationBar from './navigation-bar.js';
+import MobileTabs from './mobile-tabs.js';
+import IconButton from './icon-button.js';
 
 const app = Vue.createApp({});
 
@@ -33,20 +35,8 @@ app.component('form-block', FormBlock);
 app.component('button-container', ButtonContainer);
 app.component('view-content', ViewContent);
 app.component('navigation-bar', NavigationBar);
-
-app.component('mobile-tabs', {
-  props: {},
-  template: `
-              <div class="mobile-tabs"><slot></slot></div>
-          `,
-});
-
-app.component('icon-button', {
-  props: {},
-  template: `
-              <div class="icon-button"><slot></slot></div>
-          `,
-});
+app.component('mobile-tabs', MobileTabs);
+app.component('icon-button', IconButton);
 
 app.component('ad-overlay', {
   props: {},
