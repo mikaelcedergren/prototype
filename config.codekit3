@@ -630,6 +630,19 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/source/shared/assets/styles/_core.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/docs/shared/assets/styles/_core.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/source/shared/assets/styles/_forms.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -704,19 +717,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/docs/shared/assets/styles/_variables.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/source/shared/assets/styles/core.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/docs/shared/assets/styles/core.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
